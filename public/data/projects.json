@@ -1,0 +1,309 @@
+{
+    "projects": [
+        {
+            "companyId": "IDA",
+            "period": {
+                "start": {
+                    "year": 2021,
+                    "month": 8
+                },
+                "end": {
+                    "year": 2021,
+                    "month": 9
+                }
+            },
+            "dk": {
+                "project": "OData nuget pakke",
+                "description": "Erfaringer høstet i IDA med brug af OData som adgangslag til CRM blev implementeret i en nuget pakke, som kan bruges af andre applikationer og gør det at bruge OData ganske let."
+            },
+            "en": {
+                "project": "OData nuget package",
+                "description": "Implementing a nuget package allowing for using OData as access layer for IDA Crm"
+            },
+            "technologies": [
+                "VS",
+                "Netstandard2",
+                "Nuget",
+                "OData"
+            ]
+        },
+        {
+            "companyId": "IDA",
+            "period": {
+                "start": {
+                    "year": 2020,
+                    "month": 9
+                },
+                "end": {
+                    "year": 2021,
+                    "month": 5
+                }
+            },
+            "dk": {
+                "project": "Arrangementsoprettelse",
+                "description": "Team Spirit re-implementerede et tidligere Drupal website (som var end-of-life), som IDAs aktive/parlamentarikere bruger til oprettelse af arrangementer. Dette nye website blev udviklet på IDAs SOA platform."
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "VS",
+                "aspnetcore",
+                "netcore3",
+                "rest",
+                "wcf",
+                "net",
+                "nsb",
+                "reacts",
+                "odata",
+                "docker",
+                "kubernetes"
+            ]
+        },
+        {
+            "companyId": "IDA",
+            "period": {
+                "start": {
+                    "year": 2019,
+                    "month": 2
+                },
+                "end": {
+                    "year": 2019,
+                    "month": 6
+                }
+            },
+            "dk": {
+                "project": "Tillidshvervsanmeldelse website",
+                "description": "Som den første faktiske applikation på dels IDAs SOA-platform og dels IDAs Design System implementeredes et nyt website med ASP.NET Core backend og frontend i ReactTS"
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "vs",
+                "aspnetcore",
+                "netcore21",
+                "wcf",
+                "rest",
+                "reactts",
+                "docker",
+                "kubernetes"
+            ]
+        },
+        {
+            "companyId": "IDA",
+            "period": {
+                "start": {
+                    "year": 2016,
+                    "month": 3
+                },
+                "end": {
+                    "year": 2016,
+                    "month": 11
+                }
+            },
+            "dk": {
+                "project": "Mit Ida website",
+                "description": "Sammen med en anden konsulent byggedes et Umbraco-website til Mit Ida (https://mitida.dk), som var en migrering og opdatering af et eksisterende website (service.ida.dk)."
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "vs15",
+                "umbraco",
+                "css",
+                "js",
+                "angular",
+                "octopus",
+                "teamcity"
+            ]
+        },
+        {
+            "companyId": "IDA",
+            "period": {
+                "start": {
+                    "year": 2015,
+                    "month": 12
+                },
+                "end": {
+                    "year": 2021,
+                    "month": 12
+                }
+            },
+            "dk": {
+                "project": "IDA Crm - Microsoft Dynamics CRM",
+                "description": "Sammen med forskellige eksterne konsulenter lavedes vedligehold, opgraderinger og viderudvikling på IDAs CRM installation."
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "vs",
+                "crm",
+                "net",
+                "octopus",
+                "teamcity"
+            ]
+        },
+        {
+            "companyId": "IDA",
+            "period": {
+                "start": {
+                    "year": 2015,
+                    "month": 9
+                },
+                "end": {
+                    "year": 2016,
+                    "month": 2
+                }
+            },
+            "dk": {
+                "project": "IDA Forsikring website",
+                "description": "Sammen med en anden konsulent byggedes et Umbraco-website til IDA forsikring (https://idaforsikring.dk)"
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "vs15",
+                "umbraco",
+                "net",
+                "css",
+                "angularjs",
+                "octopus",
+                "teamcity"
+            ]
+        },
+        {
+            "companyId": "IDA",
+            "period": {
+                "start": {
+                    "year": 2014,
+                    "month": 10
+                },
+                "end": {
+                    "year": 2014,
+                    "month": 12
+                }
+            },
+            "dk": {
+                "project": "IDA Logging",
+                "description": "Design og implementation af generisk application logging system. Der blev bygget en AngularJS frontend, en ASP.NET backend op mod en SQL Server. Endvidere en nuget-pakke til nem installation i diverse applikationer. Et generisk logging-framework (SoftwarePassion.LogBridge - https://github.com/TorbenRahbekKoch/LogBridge) bruges som Logging-api."
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "vs13",
+                "mssql2008",
+                "tsql",
+                "net45",
+                "webapi2",
+                "aspnet",
+                "rest",
+                "ef",
+                "angularjs",
+                "odata",
+                "octopus",
+                "teamcity"
+            ]
+        },
+        {
+            "companyId": "IDA",
+            "period": {
+                "start": {
+                    "year": 2014,
+                    "month": 10
+                },
+                "end": {
+                    "year": 2021,
+                    "month": 12
+                }
+            },
+            "dk": {
+                "project": "TeamCity",
+                "description": "Løbende vedligehold og opbygning af build configuration templates. Sammen med IDAs “The architect” blev der løbende opbygget nye templates, der passede til de forskellige behov, som forskellige grupper af applikationer har. Sammen med driften lavedes løbende opdateringer af selve TeamCity-build-serveren."
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "teamcity"
+            ]
+        },
+        {
+            "companyId": "IDA",
+            "period": {
+                "start": {
+                    "year": 2014,
+                    "month": 5
+                },
+                "end": {
+                    "year": 2021,
+                    "month": 12
+                }
+            },
+            "dk": {
+                "project": "Diverse",
+                "description": "Opdatering og vedligehold af diverse eksisterende og nye applikationer, en blandet landhandel, eksempelvis: batch jobs, Windows services, websites og web services, word templates. En del “find koden”-arbejde (det var ikke altid klart, hvor koden var), løbendeopdatering til nyere .NET Frameworks, oprydning/refaktorering, samarbejde med drift om deploy, snak med forretning om “hvad det nu lige er den applikation laver”."
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "vs",
+                "mssql",
+                "net",
+                "webapi",
+                "aspnet",
+                "asp",
+                "wcf",
+                "angularjs",
+                "reactjs",
+                "reactts",
+                "js",
+                "typescript"
+            ]
+        },
+        {
+            "companyId": "KMD",
+            "period": {
+                "start": {
+                    "year": 2012,
+                    "month": 3
+                },
+                "end": {
+                    "year": 2013,
+                    "month": 4
+                }
+            },
+            "dk": {
+                "project": "Workflow Engine",
+                "description": "I samarbejde med flere interne og eksterne konsulenter designes og implementeres et system til at afvikle workflows baseret på forskellige eksterne hændelser."
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "vs10",
+                "vs12",
+                "mssql2008r2",
+                "net4",
+                "net45",
+                "wcf",
+                "wpf",
+                "wf4"
+            ]
+        }
+    ]
+}

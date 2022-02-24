@@ -1,0 +1,12 @@
+// .vscode/settings.json​
+{
+    "files.exclude": {
+        "node_modules": true,
+        "package-lock.json": true
+    },
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.maxTokenizationLineLength": 2500
+    },
+    "typescript.tsdk": "node_modules\\typescript\\lib"
+}

@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { User } from './Users'
+import { Header } from './Header'
+import { Profile } from './Profile/Profile'
+import { Quote } from './Quotes/Quote'
+import { ApplicationState, useStore } from './BootStrapping/'; 
+import * as WorkExperience from './WorkExperience'
 
 function App() {
+  const state = useStore(state => state)
+  console.log("App: ", state)
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Header/>
+         {/* <Menu></Menu> */}
+         <Quote/>
+         <User></User>
+        <Profile></Profile>
+        <WorkExperience.List {...state.component1.workExperience}></WorkExperience.List>
       </header>
     </div>
   );
 }
 
 export default App;
+ 
