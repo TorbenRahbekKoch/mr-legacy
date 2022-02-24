@@ -1,5 +1,3 @@
-import { MonthNames } from "../State/MonthNames"
-
 export interface PeriodPoint {
   month : number
   year : number
@@ -20,7 +18,7 @@ export function formatPeriod(period: Period, monthNames: string[], now: string):
 }
 
 export function comparePeriods(period1: Period, period2: Period){
-  if (period1.start.year != period2.start.year) {
+  if (period1.start.year !== period2.start.year) {
     return period1.start.year < period2.start.year
       ? -1
       : 1

@@ -47,7 +47,7 @@ export function List({...props} :Props) {
   const texts = props.texts
   const projects = props.projects
 
-  if (projects === undefined || texts === undefined || props.companies === undefined || props.companies.length == 0) {
+  if (projects === undefined || texts === undefined || props.companies === undefined || props.companies.length === 0) {
     return null;
   }
   console.log("In list: ", texts, props)
@@ -71,13 +71,13 @@ export function List({...props} :Props) {
     period : texts.period
   }
   companies.forEach(company => {
-    company.company.texts = texts
+    company.company.texts = companyTexts
     // if (company.childCompanies.length == 0 && company.projects.length == 0)
     //   return;
     elements.push(<Company.Company {...company.company} key={company.company.id} />)
 
     company.childCompanies.forEach(company => {
-      company.company.texts = texts;
+      company.company.texts = companyTexts;
       elements.push(<Company.Company {...company.company} key={company.company.id} />)
       company.projects.forEach(project => {
         project.texts = texts

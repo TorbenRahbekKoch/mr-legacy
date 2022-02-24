@@ -29,7 +29,6 @@ export interface Props extends ComponentState {
 }
 
 export function Project(props: Props) {
-  const monthNames = useStore(store => store.i8n.monthNames)
   const technologies = props.technologies?.reduce((prev, current) => `${prev}, ${current}`)
   const texts = props.texts
 
