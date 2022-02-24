@@ -37,7 +37,7 @@ export const i8nMonthNames = {
 }
 
 export function getMonthNames(language: string) : MonthNames {
-  if (language == "dk")
+  if (language === "dk")
     return i8nMonthNames.dk
   else
     return i8nMonthNames.en
