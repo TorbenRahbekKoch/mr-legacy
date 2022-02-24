@@ -16,7 +16,7 @@ function fetchData(language: string) {
     console.log("texts: ", allTexts)
 
     let monthNames: string[]
-    if (language == "dk")
+    if (language === "dk")
       monthNames = State.i8nMonthNames.dk.longNames
     else
       monthNames = State.i8nMonthNames.en.longNames

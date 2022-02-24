@@ -3,7 +3,7 @@ import { User } from './Users'
 import { Header } from './Header'
 import { Profile } from './Profile/Profile'
 import { Quote } from './Quotes/Quote'
-import { ApplicationState, useStore } from './BootStrapping/'; 
+import { useStore } from './BootStrapping/'; 
 import * as WorkExperience from './WorkExperience'
 
 function App() {
