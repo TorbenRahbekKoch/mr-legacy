@@ -81,7 +81,7 @@ function fetchData(language: string) {
   Fetch.fetchProfile(language, profileData => {
     useStore.setState(state => {
       state.ambient.initializing += 1
-      state.component.set(Profile.defaultName, { profile: profileData }) 
+      state.component1.profile.profile = profileData
     })
   })
 }
@@ -92,7 +92,7 @@ export function createApplicationState(): UseBoundStore<ApplicationState, StoreA
   const defaultState: ApplicationState = {
     ambient: { username: "Your username", language: defaultLanguage, initializing: 0 },
     component: new Map<string, ComponentState>(),
-    component1: { workExperience: WorkExperience.defaultProps },
+    component1: { workExperience: WorkExperience.defaultProps, profile: Profile.defaultProps },
     i8n: { component: new Map<string, ComponentI8n>(), monthNames: monthNames },
   }
 

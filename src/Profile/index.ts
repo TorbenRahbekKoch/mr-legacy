@@ -1,2 +1,2 @@
-export type { State } from './Profile'
-export { defaultName } from './Profile'
+export type { Props } from './Profile'
+export { defaultProps  } from './Profile'

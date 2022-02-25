@@ -1,22 +1,21 @@
 import ReactMarkDown from 'react-markdown'
-import { ComponentName, StateContainer } from '../State/State'
-import { useStore } from '../BootStrapping'
-import { ApplicationState } from '../BootStrapping/ApplicationState'
+import * as Style from './Style'
 
-export interface State {
+export interface Props {
   profile: string
 }
 
-export const defaultName = "profile"
+export const defaultProps = {
+  profile: ''
+}
 
-export function Profile({ componentName }: ComponentName) {
-  const name = componentName ?? defaultName
-  const profile = useStore(state => StateContainer.Get<State, ApplicationState>(state, name)?.profile)
-
-  if (profile == null)
+export function Profile({...props}: Props) {
+  if (props?.profile == null)
     return null
 
   return (
-    <ReactMarkDown>{profile}</ReactMarkDown>
+    <Style.Profile>
+      <ReactMarkDown>{props.profile}</ReactMarkDown>
+    </Style.Profile>
   )
 }

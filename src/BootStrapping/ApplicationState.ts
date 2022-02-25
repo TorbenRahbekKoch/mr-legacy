@@ -1,5 +1,6 @@
 import { StateData } from '../State/State'
 import * as WorkExperience from '../WorkExperience'
+import * as Profile from '../Profile'
 import { AllTexts } from './AllTexts'
 
 /// Application specific definitions
@@ -11,6 +12,7 @@ export interface AmbientState {
 
 export interface ComponentState {
   workExperience : WorkExperience.Props
+  profile: Profile.Props
 }
 
 export interface ApplicationState extends StateData {
