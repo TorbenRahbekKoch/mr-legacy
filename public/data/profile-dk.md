@@ -12,7 +12,7 @@ erfaring, så jeg med med sindsro kan kalde mig selv erfaren, vidende, engageret
 Sammen med en vis portion stædighed driver det mig frem mod en god løsning.
 
 Mr. Legacy er ikke (alene) et udtryk for min alder, men lige så meget et udtryk for min
-evne (og lyst) til at arbejde med og rydde op gammel kode. Kode med en historie.
+evne (og lyst) til at arbejde med og rydde op i gammel kode. Kode med en historie.
 
 Jeg er en venlig og omgængelig person, veludstyret med humor, selvironi og en professionel og
 pragmatisk indstilling til mit fag. Jeg nyder at øse af min viden, og jeg betragter det som en

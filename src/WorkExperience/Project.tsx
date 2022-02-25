@@ -1,3 +1,4 @@
+import ReactMarkDown from 'react-markdown'
 import { useStore } from '../BootStrapping'
 import { ComponentState } from '../State/State'
 import * as Style from './Style'
@@ -55,7 +56,7 @@ export function Project(props: Props) {
           </tr>
           <tr>
             <ProjectHeader>{texts.description}</ProjectHeader>
-            <ProjectText>{project.description}
+            <ProjectText><ReactMarkDown>{project.description}</ReactMarkDown>
             </ProjectText>
           </tr>
           <tr>

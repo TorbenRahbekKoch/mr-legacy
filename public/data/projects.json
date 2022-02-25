@@ -2,6 +2,7 @@
     "projects": [
         {
             "companyId": "IDA",
+            "id": "ODatanuget",
             "period": {
                 "start": {
                     "year": 2021,
@@ -29,6 +30,7 @@
         },
         {
             "companyId": "IDA",
+            "id": "Arrangementsoprettelse",
             "period": {
                 "start": {
                     "year": 2020,
@@ -63,6 +65,7 @@
         },
         {
             "companyId": "IDA",
+            "id": "tillidssite",
             "period": {
                 "start": {
                     "year": 2019,
@@ -94,6 +97,7 @@
         },
         {
             "companyId": "IDA",
+            "id": "mitida",
             "period": {
                 "start": {
                     "year": 2016,
@@ -124,6 +128,7 @@
         },
         {
             "companyId": "IDA",
+            "id": "idacrm",
             "period": {
                 "start": {
                     "year": 2015,
@@ -152,6 +157,7 @@
         },
         {
             "companyId": "IDA",
+            "id": "idaforsikring",
             "period": {
                 "start": {
                     "year": 2015,
@@ -182,6 +188,7 @@
         },
         {
             "companyId": "IDA",
+            "id": "idalogging",
             "period": {
                 "start": {
                     "year": 2014,
@@ -217,6 +224,7 @@
         },
         {
             "companyId": "IDA",
+            "id": "teamcity",
             "period": {
                 "start": {
                     "year": 2014,
@@ -241,6 +249,7 @@
         },
         {
             "companyId": "IDA",
+            "id": "idadiverse",
             "period": {
                 "start": {
                     "year": 2014,
@@ -276,6 +285,7 @@
         },
         {
             "companyId": "KMD",
+            "id": "workflowengine",
             "period": {
                 "start": {
                     "year": 2012,
@@ -288,7 +298,7 @@
             },
             "dk": {
                 "project": "Workflow Engine",
-                "description": "I samarbejde med flere interne og eksterne konsulenter designes og implementeres et system til at afvikle workflows baseret på forskellige eksterne hændelser."
+                "description": "I samarbejde med flere interne udviklere og eksterne konsulenter designes og implementeres et system til at afvikle workflows baseret på forskellige eksterne hændelser."
             },
             "en": {
                 "project": "",
@@ -303,6 +313,214 @@
                 "wcf",
                 "wpf",
                 "wf4"
+            ]
+        },
+        {
+            "companyId": "KMD",
+            "id": "servicelayer",
+            "period": {
+                "start": {
+                    "year": 2013,
+                    "month": 8
+                },
+                "end": {
+                    "year": 2013,
+                    "month": 12
+                }
+            },
+            "dk": {
+                "project": "Servicelayer",
+                "description": "I samarbejde med flere interne udviklere designes og implementeres et servicelag til at abstrahere flere meget forskellige underliggende systemer til et mere generisk og sammenhængende REST interface"
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "vs12",
+                "mssql2008r2",
+                "net45",
+                "rest",
+                "webapi",
+                "odata"
+            ]
+        },
+        {
+            "companyId": "COOK",
+            "id": "phoenix",
+            "period": {
+                "start": {
+                    "year": 2010,
+                    "month": 3
+                },
+                "end": {
+                    "year": 2012,
+                    "month": 2
+                }
+            },
+            "dk": {
+                "project": "Phoenix",
+                "description": "Et nyt passenger management system til håndtering af bookinger fra turoperatører (charterselskaber)I samarbejde med 4 andre konsulenter og 3 interne medarbejdere udviklere designes og bygges Phoenix over to år. Systemet indeholder et væld af integrationspunkter til andre systemer. Det erstatter et eksisterende system (Pegasus) med et tidsvarende og opgavesvarende UI. Der er tale om et traditionelt client/serversystem. Personligt stod jeg blandt andet for udlæsning af PNL’er (Passenger Name Lists), som sendes til check-in-skranker rundt omkring i verden"
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "vs10",
+                "mssql2008",
+                "net4",
+                "wcf",
+                "wpf",
+                "wf",
+                "msmq"
+            ]
+        },
+        {
+            "companyId": "COOK",
+            "id": "configurationmanager",
+            "period": {
+                "start": {
+                    "year": 2010,
+                    "month": 3
+                },
+                "end": {
+                    "year": 2012,
+                    "month": 2
+                }
+            },
+            "dk": {
+                "project": "Configuration Manager",
+                "description": "Centralt konfigureringssystem til at lette byrden med at styre konfigurationer i udvikling, test og produktion. Klientprogrammer forbinder sig til Configuration Manager for at få at vide, hvor eksempelvis databaser og services befinder sig. Environment styres fra configfil eller kommandolinje."
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "vs10",
+                "mssql2008",
+                "net4",
+                "wcf",
+                "wpf"
+            ]
+        },
+        {
+            "companyId": "COOK",
+            "id": "wfmmanager",
+            "period": {
+                "start": {
+                    "year": 2010,
+                    "month": 3
+                },
+                "end": {
+                    "year": 2012,
+                    "month": 2
+                }
+            },
+            "dk": {
+                "project": "WFM Workflow Manager",
+                "description": "Et batchhåndteringssystem baseret på Workflow Foundation. Workflow Manager bruges til at specificere batchjobs som workflows i stedet for eksempelvis Powershell"
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "vs10",
+                "mssql2008",
+                "net4",
+                "wcf",
+                "wpf",
+                "wf",
+                "msmq"
+            ]
+        },
+        {
+            "companyId": "GK",
+            "id": "ansættelsesbreve",
+            "period": {
+                "start": {
+                    "year": 2009,
+                    "month": 3
+                },
+                "end": {
+                    "year": 2009,
+                    "month": 5
+                }
+            },
+            "dk": {
+                "project": "Ansættelsesbreve",
+                "description": "Et frasebaseret websystem til generering af ansættelsesbreve. Centralt oprettes fraser og kombinationer af disse knyttes til bestemte stillinger. Herefter kan decentralt fra udvælges en stilling, indtastes navn, adresse osv, hvorefter ansættelsesbrevet genereres og sendes til brugeren via mail."
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "vs08",
+                "mssql2005",
+                "smartclient",
+                "fckeditor",
+                "asposewords"
+            ]
+        },
+        {
+            "companyId": "EF",
+            "id": "easyplan",
+            "period": {
+                "start": {
+                    "year": 2008,
+                    "month": 12
+                },
+                "end": {
+                    "year": 2009,
+                    "month": 10
+                }
+            },
+            "dk": {
+                "project": "EasyPlan",
+                "description": "Tilret og fejlret C++ applikation til brug for vagtplanlægning.  \nPåbegyndte en længerevarende ”opretning” af applikationen, så den opnår databaseuafhængighed og lettere kan opfylde sine fremtidige opgaver. Projektet blev afsluttet da vi desværre løb tør for tid."
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "c++builder2006",
+                "xml",
+                "xsl",
+                "mssql2005",
+                "subversion"
+            ]
+        },
+        {
+            "companyId": "PD",
+            "id": "trs",
+            "period": {
+                "start": {
+                    "year": 2007,
+                    "month": 12
+                },
+                "end": {
+                    "year": 2008,
+                    "month": 10
+                }
+            },
+            "dk": {
+                "project": "TRS (Telefoniregistreringssystem)",
+                "description": "Byg en web-applikation til vedligeholdelse af koncernbetalte mobil- og privatabonnementer.  \nStore dele af analysen og design af databasen var gjort, da jeg kom ind i projektet. Min første opgave blev at lave et Data Access Lag, som blev kraftigt inspireret af LINQ (som vi grundet begrænsninger i produktionen ikke kunne anvende på daværende tidspunkt). Senere i forløbet påbegyndtes en migrering til LINQ.  \nUdover DAL bestod mine opgaver af at lave grænseflader til migrering af data fra eksisterende systemer. Herunder en MSSQL database med eksisterende abonnementer, medarbejderdata og organisationsdata fra SAP, samt en nogle excel og tekstfiler.  \nProjektet gjorde sig store anstrengelser for at holde logik væk fra GUI-laget (code-behind-filerne) og bruger i stor grad unit tests.  \nJeg stod i samarbejde med testerne for en stor del af slutbrugerundervisning."
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "c++builder2006",
+                "xml",
+                "xsl",
+                "mssql2005",
+                "subversion"
             ]
         }
     ]

@@ -11,7 +11,9 @@ const StyledApp = styled.div`
 `
 
 function App() {
-  const state = useStore(state => state)
+  const state = useStore(state => state.ambient.initializing)
+  const profile = useStore(state => state.component1.profile)
+  const workExperience= useStore(state => state.component1.workExperience)
   console.log("App: ", state)
 
   return (
@@ -21,8 +23,8 @@ function App() {
          {/* <Menu></Menu> */}
          <Quote/>
          {/* <User></User> */}
-        <Profile {...state.component1.profile}></Profile>
-        <WorkExperience.List {...state.component1.workExperience}></WorkExperience.List>
+        <Profile {...profile}></Profile>
+        <WorkExperience.List {...workExperience}></WorkExperience.List>
       </header>
     </StyledApp>
   );
