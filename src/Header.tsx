@@ -11,7 +11,7 @@ const StyledHeader = styled.h1`
 export function Header() {
   return (
     <div>
-      <img src="/images/mugshot.jpg" />
+      <img src="/images/mugshot.jpg" alt="mugshot"/>
       <StyledHeader>Mr. Legacy</StyledHeader>
     </div>
   )
