@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+const MugShot = styled.img`
+  position: absolute;
+  left: 10%;
+  top: 15px;
+`
 const StyledHeader = styled.h1`
   margin-top: 10px;
   font-family: Luminary;
@@ -7,11 +12,10 @@ const StyledHeader = styled.h1`
   font-size: 2.5em;
   font-weight: bold;
 `
-
 export function Header() {
   return (
     <div>
-      <img src="/images/mugshot.jpg" alt="mugshot"/>
+      <MugShot src="/images/mugshot.jpg"/>
       <StyledHeader>Mr. Legacy</StyledHeader>
     </div>
   )

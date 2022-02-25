@@ -1,6 +1,6 @@
 import create, { UseBoundStore, StoreApi } from 'zustand'
 import { ApplicationState } from './ApplicationState'
-import { ComponentI8n, ComponentState } from '../State/State'
+import { ComponentState } from '../State/State'
 import * as State from '../State'
 import * as WorkExperience from '../WorkExperience'
 import * as Fetch from './Fetch'
@@ -93,7 +93,7 @@ export function createApplicationState(): UseBoundStore<ApplicationState, StoreA
     ambient: { username: "Your username", language: defaultLanguage, initializing: 0 },
     component: new Map<string, ComponentState>(),
     component1: { workExperience: WorkExperience.defaultProps, profile: Profile.defaultProps },
-    i8n: { component: new Map<string, ComponentI8n>(), monthNames: monthNames },
+    i8n: { monthNames: monthNames },
   }
 
   const useStore = create(set => defaultState)

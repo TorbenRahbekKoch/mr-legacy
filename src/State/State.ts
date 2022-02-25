@@ -20,19 +20,7 @@ export interface ComponentI8n {
 }
 
 export interface I8n {
-  // constructor() {
-  //   this.component = new Map<string, ComponentI8n>()
-  // }
-  component: Map<string, ComponentI8n>
   monthNames: MonthNames
-
-  // public Set(componentName: string, texts: ComponentI8n){
-  //   this.component.set(componentName, texts)
-  // }
-
-  // public Get<TComponent extends ComponentI8n>(componentName: string) {
-  //   return this.component.get(componentName) as TComponent
-  // }
 }
 
 export interface StateEntry {
