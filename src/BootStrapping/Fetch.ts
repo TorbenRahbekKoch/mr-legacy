@@ -6,16 +6,12 @@ async function fetchJson(url: string, dataReceived: (data: any) => void) {
   dataReceived(json)  
 }
 
-export async function fetchTexts(language: string, textsReceived: (texts: any) => void) {
-  const response = await fetch(`/data/texts-${language}.json`)
-  const json = await response.json()
-  textsReceived(json)  
+export async function fetchTexts(language: string, dataReceived: DataReceived) {
+  fetchJson(`/data/texts-${language}.json`, dataReceived)
 }
 
-export async function fetchProjects(dataReceived: (data: any) => void){
-  const response = await fetch('/data/projects.json')
-  const json = await response.json()
-  dataReceived(json)
+export async function fetchProjects(dataReceived: DataReceived){
+  fetchJson('/data/projects.json', dataReceived)
 }
 
 export async function fetchProfile(language: string, dataReceived: (data: any) => void) {

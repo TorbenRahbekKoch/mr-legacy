@@ -3,19 +3,27 @@ import * as Style from './Style'
 
 export interface Props {
   profile: string
+  birthDate: Date
 }
 
 export const defaultProps = {
-  profile: ''
+  profile: '',
+  birthDate: new Date()
 }
 
-export function Profile({...props}: Props) {
-  if (props?.profile == null)
+export function Profile({ ...props }: Props) {
+  if (props?.profile == null || props?.birthDate == null)
     return null
 
+  const now = new Date()
+  // Hacky, hacky and probably not entirely correct in the birth month
+  const ageDiff = now.getFullYear() - props.birthDate.getFullYear()
+    + (now.getMonth() < props.birthDate.getMonth() ? -1 : 0)
+
+  const profileText = props.profile.replace("{age}", ageDiff.toString())
   return (
     <Style.Profile>
-      <ReactMarkDown>{props.profile}</ReactMarkDown>
+      <ReactMarkDown>{profileText}</ReactMarkDown>
     </Style.Profile>
   )
 }

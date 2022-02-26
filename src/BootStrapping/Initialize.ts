@@ -1,10 +1,13 @@
+import { produce } from 'immer'
+import { setAutoFreeze } from 'immer';
+import { unstable_batchedUpdates } from 'react-dom'
 import create, { UseBoundStore, StoreApi } from 'zustand'
 import { ApplicationState } from './ApplicationState'
-import { ComponentState } from '../State/State'
 import * as State from '../State'
 import * as WorkExperience from '../WorkExperience'
 import * as Fetch from './Fetch'
 import * as Profile from '../Profile'
+import * as Quotes from '../Quotes'
 import { AllTexts } from './AllTexts'
 
 const defaultLanguage = 'dk'
@@ -21,7 +24,7 @@ function fetchData(language: string) {
     else
       monthNames = State.i8nMonthNames.en.longNames
 
-    const weTexts : WorkExperience.Texts = {
+    const weTexts: WorkExperience.Texts = {
       period: texts.period,
       project: texts.project,
       description: texts.description,
@@ -32,72 +35,94 @@ function fetchData(language: string) {
       monthNames: monthNames
     }
 
-    useStore.setState(state => {
-      state.ambient.initializing += 1
-      state.component1.workExperience.texts = weTexts
-      return state
-    })
+    unstable_batchedUpdates(() =>
+      useStore.setState(prevState => {
+        const result = produce(prevState, draft => {
+          console.log("fetchTexts:", prevState, draft)
+          draft.ambient.initializing = prevState.ambient.initializing + 1
+          draft.component.workExperience.texts = weTexts
+        })
+        console.log("fetchTexts result:", result)
+        return result
+        // {
+        //   ambient: {
+        //     initializing: prevState.ambient.initializing + 1
+        //   },
+        //   component: {
+        //     workExperience: {
+        //       texts: weTexts
+        //     }
+        //   }
+        // } as ApplicationState
+      }))
   })
 
   Fetch.fetchProjects(projects => {
     console.log("Projects:", projects)
-    useStore.setState(state => {
-      state.ambient.initializing += 1
-      state.component1.workExperience.projects = projects["projects"]
-      // const currentState = state.component1.workExperience
-      // console.log("currentState: ", currentState)
-
-      // let newProps: WorkExperience.Props = currentState
-      // if (newProps == null) {
-      //   newProps = WorkExperience.defaultProps
-      // }
-
-      // newProps.projects = projects["projects"]
-      // console.log("newState we: ", newProps)
-      // state.component1.workExperience = newProps
-      console.log("fetchProjects: ", state)
-      return state;
-    })
+    unstable_batchedUpdates(() =>
+      useStore.setState(prevState => {
+        const result = produce(prevState, draft => {
+          draft.ambient.initializing = prevState.ambient.initializing + 1
+          draft.component.workExperience.projects = projects["projects"]
+        })
+        console.log("Fetchprojects result: ", result)
+        return result;
+      }))
   })
 
   Fetch.fetchCompanies(companies => {
-    useStore.setState(state => {     
-      state.ambient.initializing += 1 
-      state.component1.workExperience.companies = companies["companies"]
-      //const currentState = state.component1.workExperience
-      // let newProps: WorkExperience.Props = currentState
-      // if (newProps == null) {
-      //   newProps = WorkExperience.defaultProps
-      // }
-
-      // newProps.companies = companies["companies"]
-      // console.log("newState companies: ", newProps)
-      // state.component1.workExperience = newProps
-      console.log("fetchCompanies: ", state)
-      return state;
-    })
+    unstable_batchedUpdates(() =>
+      useStore.setState(prevState => {
+        const result = produce(prevState, draft => {
+          draft.ambient.initializing = prevState.ambient.initializing + 1
+          draft.component.workExperience.companies = companies["companies"]
+        })
+        console.log("Fetchcompanies result: ", result)
+        return result;
+      }))
   })
 
-  Fetch.fetchProfile(language, profileData => {
-    useStore.setState(state => {
-      state.ambient.initializing += 1
-      state.component1.profile.profile = profileData
-    })
+  Fetch.fetchProfile(language, profileText => {
+    //unstable_batchedUpdates(() =>
+    useStore.setState(prevState => {
+      return produce(prevState, draft => {
+        console.log("fetchprofile draft:", prevState, draft)
+        draft.ambient.initializing = prevState.ambient.initializing + 1
+        draft.component.profile.profile =  profileText
+      })
+
+      // return {
+      //   ambient: {
+      //     initializing: prevState.ambient.initializing + 1
+      //   },
+      //   component: {
+      //     profile: {
+      //       profile: profileText
+      //     }
+      //   }
+      // } as ApplicationState
+    })//)
   })
 }
 
 export function createApplicationState(): UseBoundStore<ApplicationState, StoreApi<ApplicationState>> {
-  const monthNames = State.getMonthNames(defaultLanguage) 
+  setAutoFreeze(false); // Stop immer from being stupid
+  const monthNames = State.getMonthNames(defaultLanguage)
 
   const defaultState: ApplicationState = {
     ambient: { username: "Your username", language: defaultLanguage, initializing: 0 },
-    component: new Map<string, ComponentState>(),
-    component1: { workExperience: WorkExperience.defaultProps, profile: Profile.defaultProps },
+    component: {
+      workExperience: WorkExperience.defaultProps,
+      profile: Profile.defaultProps,
+      quotes: Quotes.defaultProps
+    },
     i8n: { monthNames: monthNames },
   }
 
+  defaultState.component.profile.birthDate = new Date(1970, 6, 30)
   const useStore = create(set => defaultState)
 
+  console.log("Default state: ", defaultState)
   fetchData(defaultLanguage)
 
   return useStore;

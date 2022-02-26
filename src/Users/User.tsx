@@ -1,30 +1,15 @@
-import { StateContainer, StateEntry, ComponentState, ComponentName } from '../State/State'
-import { useStore } from '../BootStrapping'
-import { ApplicationState } from '../BootStrapping/ApplicationState'
-
-export function defaultName(): string {
-  return "user"
-} 
-
-export interface UserState extends ComponentState {
+export interface Props {
   greeting: string
+  username: string
 }
 
-export function defaultState(): StateEntry {
-  return {
-    componentName : defaultName(),
-    state: {
-        greeting: "Hello again"
-    }
-  }
+export const defaultProps: Props = {
+  greeting: "Hello again",
+  username: "Unknown user"
 }
 
-export function User({ componentName }: ComponentName) {
-  const name = componentName ?? defaultName()
-  const greeting = useStore(state => StateContainer.Get<UserState, ApplicationState>(state, name)?.greeting) ?? "Goodbye"
-  const ambient = useStore(state => state.ambient)
-
+export function User({ ...props }: Props) {
   return (
-    <span>{greeting} {ambient.username}</span>
+    <span>{props.greeting} {props.username}</span>
   )
 } 

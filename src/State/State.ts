@@ -29,29 +29,29 @@ export interface StateEntry {
 }
 
 export interface StateData {
-  component: Map<string, ComponentState> // component name, State
+  //component: Map<string, ComponentState> // component name, State
   i8n: I8n  
 }
 
-export class StateContainer<TStateData extends StateData>{
-  constructor(stateData: TStateData) {
-    this.stateData = stateData
-  }
+// export class StateContainer<TStateData extends StateData>{
+//   constructor(stateData: TStateData) {
+//     this.stateData = stateData
+//   }
     
-  public static Get<TComponent, TStateData extends StateData>(
-    stateData: TStateData, componentName
-    : string): TComponent {
+//   public static Get<TComponent, TStateData extends StateData>(
+//     stateData: TStateData, componentName
+//     : string): TComponent {
 
-    return stateData.component.get(componentName) as TComponent
-  }
+//     return stateData.component.get(componentName) as TComponent
+//   }
 
-  public Set(stateEntry: StateEntry) {
-    this.stateData.component.set(stateEntry.componentName, stateEntry.state)
-  }
+//   public Set(stateEntry: StateEntry) {
+//     this.stateData.component.set(stateEntry.componentName, stateEntry.state)
+//   }
 
-  public Get<TComponent>(componentName: string): TComponent {
-    return this.stateData.component.get(componentName) as TComponent
-  }
+//   public Get<TComponent>(componentName: string): TComponent {
+//     return this.stateData.component.get(componentName) as TComponent
+//   }
 
-  stateData : TStateData
-}
+//   stateData : TStateData
+// }
