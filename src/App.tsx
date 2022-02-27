@@ -1,4 +1,3 @@
-import shallow from 'zustand/shallow'
 import './App.css';
 import styled from 'styled-components'
 import { Header } from './Header'
@@ -12,10 +11,9 @@ const StyledApp = styled.div`
 
 function App() {
   const initialization = useStore(state => state.ambient.initializing)
-  //const profile = useStore(state => state.component.profile, (prev, current) => current != null && (prev.profile !== current.profile || prev.birthDate !== current.birthDate))
   const profile = useStore(state => state.component.profile)
-  const workExperience= useStore(state => state.component.workExperience, shallow)
-  const quotes = useStore(state => state.component.quotes, shallow)
+  const workExperience= useStore(state => state.component.workExperience)
+  const quotes = useStore(state => state.component.quotes)
   console.log("App: ", initialization, profile, workExperience, quotes)
   if (initialization < 4)
     return null

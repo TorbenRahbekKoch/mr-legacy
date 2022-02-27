@@ -62,7 +62,6 @@ export function List({...props} :Props) {
   console.log("companies: ", companies)
   const elements: any[] = []
 
-
   const companyTexts: Company.Texts = {
     company : texts.company,
     jobDescription : texts.jobDescription,
@@ -70,6 +69,16 @@ export function List({...props} :Props) {
     now : texts.now,
     period : texts.period
   }
+
+  const projectTexts: Project.Texts = {
+    period: texts.period,
+    project: texts.project,
+    description: texts.description,
+    technologies: texts.technologies,
+    now: texts.now,
+    monthNames: texts.monthNames
+  }
+
   companies.forEach(company => {
     company.company.texts = companyTexts
     // if (company.childCompanies.length == 0 && company.projects.length == 0)
@@ -80,11 +89,14 @@ export function List({...props} :Props) {
       company.company.texts = companyTexts;
       elements.push(<Company.Company {...company.company} key={company.company.id} />)
       company.projects.forEach(project => {
-        project.texts = texts
+        project.texts = projectTexts
         elements.push(<Project.Project {...project} key={project.id} />)
       })
     })
-    company.projects.forEach(project => elements.push(<Project.Project {...project} key={project.id} />))
+    company.projects.forEach(project => {
+      project.texts = projectTexts
+      elements.push(<Project.Project {...project} key={project.id} />)
+    })
   })
 
   console.log("Elements: ", elements)

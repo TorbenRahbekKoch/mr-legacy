@@ -16,7 +16,7 @@ export function Profile({ ...props }: Props) {
     return null
 
   const now = new Date()
-  // Hacky, hacky and probably not entirely correct in the birth month
+  // Hacky, hacky and probably not entirely correct in the actual birth month
   const ageDiff = now.getFullYear() - props.birthDate.getFullYear()
     + (now.getMonth() < props.birthDate.getMonth() ? -1 : 0)
 

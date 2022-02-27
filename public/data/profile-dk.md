@@ -20,4 +20,3 @@ spændende udfordring at gøre tekniske problemstillinger forståelige for mine 
 Min arbejdsplads betragter jeg som et sted, hvor jeg primært er for at udføre et job i tæt samarbejde
 med mine kollegaer, men jeg lægger også vægt på en uformel omgangstone, hvor der er plads til
 humor og personlige interesser.
-

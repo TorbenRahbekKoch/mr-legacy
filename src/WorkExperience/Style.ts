@@ -19,6 +19,7 @@ export const Td = styled.td`
   text-align: left;
   padding: 0.5rem;
   overflow: hidden;
+  vertical-align: top;
 `
 
 export const TitleTd = styled(Td)`
@@ -37,7 +38,8 @@ export const CompanyTable = styled(Table)`
 export const CompanyHeader = styled(TitleTd)`
 `
 
-export const ItemText = styled(Td)`    
+export const ItemText = styled(Td)`
+  vertial-align: top;
 `
 
 export const ItemTable = styled(Table)`

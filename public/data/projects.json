@@ -522,6 +522,114 @@
                 "mssql2005",
                 "subversion"
             ]
+        },
+        {
+            "companyId": "EFS",
+            "id": "lasernet",
+            "period": {
+                "start": {
+                    "year": 2002,
+                    "month": 1
+                },
+                "end": {
+                    "year": 2007,
+                    "month": 9
+                }
+            },
+            "dk": {
+                "project": "LaserNet v6",
+                "description": "Design og implementer en ny, teknologisk tidssvarende version af output management systemet LaserNet 5. Den gamle version kunne kun generere PCL og arbejdede med PCL internt. Den nye version skal benytte et mere gængs format - EMF (Windows Enhanced Metafile) lignende.  \nalget faldt på at implementere i C++. LaserNet v6 er opbygget modulært, benytter sig af egenudviklede printer drivers, print processors og print monitors, der gør det muligt at arbejde med både Windows EMF og en modificeret udgave tilpasset egne formål.  \nDer kan ombrydes både tekst og XML. Der kan skrives ud til printer og fax, lagres i fil og database, sendes via email, ftp og http.  \nData tages ind via printer driver (Windows Spool System), fil, database, ftp, http. Der kan laves XML (f.eks. UBL/OIOXML) transformeringer ved hjælp af XPath, XSLT og DOM. Der kan produceres tekst til f.eks. print eller PDF. Der understøttes avanceret filtrering ved hjælp af regulære udtryk.  \nI september 2007 bestod LaserNet v6 af 400.000 linjer C++ kode."
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "c++",
+                "com",
+                "activex",
+                "odbc",
+                "xml",
+                "xpath",
+                "xslt",
+                "dom",
+                "ws",
+                "mapi",
+                "soap",
+                "windowsnt",
+                "windows2000",
+                "windowsxp",
+                "windowsvista",
+                "visualc++6",
+                "visualc++2003",
+                "visualc++2005",
+                "qt",
+                "qsa"
+            ]
+        },
+        {
+            "companyId": "EFS",
+            "id": "buildsystem",
+            "period": {
+                "start": {
+                    "year": 2004,
+                    "month": 1
+                },
+                "end": {
+                    "year": 2007,
+                    "month": 9
+                }
+            },
+            "dk": {
+                "project": "Build system og issue tracking",
+                "description": "Opbygning af et system til styring af builds af forskellige produkter og versioner af disse.  \nFastlægning af strategier for brug af Fogbugz (issue tracking) og Subversion.  \nAutomatisk vedligeholdelse af symbol database.  \nEn web-frontend (C#, IIS) op mod SQL Server 2000.  \nFørste udgave var med Visual Build, som blev afviklet af serveren.  \nI anden udgave bliver builds foretaget af LaserNet v6 som \"mellemmand\" i forhold til database, Visual Studio, Setup Factory og SymStore.  \nBuild-steps bliver fastlagt af en xml-fil, som LaserNet v6 parser og reagerer på."
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "windows2003",
+                "mssql",
+                "c#",
+                "j#",
+                "aspnet",
+                "xml",
+                "fogbugz",
+                "subversion",
+                "visualbuild",
+                "lasernetv6",
+                "setupfactory",
+                "symstore"
+            ]
+        },
+        {
+            "companyId": "XP",
+            "id": "loyalty",
+            "period": {
+                "start": {
+                    "year": 2001,
+                    "month": 1
+                },
+                "end": {
+                    "year": 2001,
+                    "month": 12
+                }
+            },
+            "dk": {
+                "project": "Loyalitetskort",
+                "description": "Opbygning af et system til ind- og udlæsning af plastickortdata (loyalitetskort) til Oracle database.  \nSystemet blev implementeret i Borland Delphi 6. Til at beskrive formatet af inputdata brugtes bla. Regular expressions."
+            },
+            "en": {
+                "project": "",
+                "description": ""
+            },
+            "technologies": [
+                "windows2000",
+                "delphi6",
+                "scripthosting",
+                "oracle"
+            ]
         }
     ]
 }
