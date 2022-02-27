@@ -70,38 +70,39 @@ function fetchData(language: string) {
       }))
   })
 
-  Fetch.fetchCompanies(companies => {
-    unstable_batchedUpdates(() =>
+  Fetch.fetchCompanies(companyData => {
+    unstable_batchedUpdates(() => {
+      console.log("fetchCompanies: ", companyData)
+      const companies = companyData["companies"]
+        .map((company: any): WorkExperience.Company => ({
+          id: company["id"],
+          parentId: company["parentId"],
+          period: company["period"],
+          name: company["name"],
+          description: language === "dk" ? company["dk"].description : company["en"].description
+        } as WorkExperience.Company))
+
+      console.log("fetchCompanies 2: ", companies)
       useStore.setState(prevState => {
         const result = produce(prevState, draft => {
           draft.ambient.initializing = prevState.ambient.initializing + 1
-          draft.component.workExperience.companies = companies["companies"]
+          draft.component.workExperience.companies = companies
         })
         console.log("Fetchcompanies result: ", result)
         return result;
-      }))
+      })
+    })
   })
 
   Fetch.fetchProfile(language, profileText => {
-    //unstable_batchedUpdates(() =>
-    useStore.setState(prevState => {
-      return produce(prevState, draft => {
-        console.log("fetchprofile draft:", prevState, draft)
-        draft.ambient.initializing = prevState.ambient.initializing + 1
-        draft.component.profile.profile =  profileText
-      })
-
-      // return {
-      //   ambient: {
-      //     initializing: prevState.ambient.initializing + 1
-      //   },
-      //   component: {
-      //     profile: {
-      //       profile: profileText
-      //     }
-      //   }
-      // } as ApplicationState
-    })//)
+    unstable_batchedUpdates(() =>
+      useStore.setState(prevState => {
+        return produce(prevState, draft => {
+          console.log("fetchprofile draft:", prevState, draft)
+          draft.ambient.initializing = prevState.ambient.initializing + 1
+          draft.component.profile.profile = profileText
+        })
+      }))
   })
 }
 

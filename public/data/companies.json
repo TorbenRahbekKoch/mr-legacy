@@ -75,8 +75,17 @@
         "parentId" : null,
         "name" : "XPonCard A/S",
         "period": {"start" : { "year": 2001, "month": 9},
-        "end" : { "year": 2001, "month": 10}},
-        "dk":{ "description" : "", "jobDescription": ""}, 
+        "end" : { "year": 2001, "month": 12}},
+        "dk":{ "description" : "Afdelingen for printerløsninger, som blev købt ud og blev til EFS Technology.  \nAfdelingen for loyalitetskort (XSS).  \n\nFastansættelse", "jobDescription": ""}, 
+        "uk":{ "description" : "", "jobDescription": ""}        
+    },
+    {
+        "id": "GRAPH" ,
+        "parentId" : "MIT",
+        "name" : "Graphium",
+        "period": {"start" : { "year": 2000, "month": 2},
+        "end" : { "year": 2001, "month": 8}},
+        "dk":{ "description" : "SIM-kort, plastkort, VISA.  \nSkiftede senere navn til XPonCard", "jobDescription": ""}, 
         "uk":{ "description" : "", "jobDescription": ""}        
     },
     {
@@ -94,7 +103,7 @@
         "name" : "Danish Company ApS",
         "period": {"start" : { "year": 1999, "month": 3},
         "end" : { "year": 2000, "month": 1}},
-        "dk":{ "description" : "", "jobDescription": ""}, 
+        "dk":{ "description" : "Fastansat konsulent", "jobDescription": ""}, 
         "uk":{ "description" : "", "jobDescription": ""}        
     },
     {
@@ -103,7 +112,7 @@
         "name" : "Olicom A/S",
         "period": {"start" : { "year": 1997, "month": 8},
         "end" : { "year": 1999, "month": 2}},
-        "dk":{ "description" : "", "jobDescription": ""}, 
+        "dk":{ "description" : "Produktion og salg af netværksudstyr.  \n\nFastansættelse", "jobDescription": ""}, 
         "uk":{ "description" : "", "jobDescription": ""}        
     },
     {
@@ -128,9 +137,9 @@
         "id": "GKU",
         "parentId" : null,
         "name" : "Galten Kommunale Ungdomsskole",
-        "period": {"start" : { "year": 1993, "month": null},
-        "end" : { "year": 1996, "month": null}},
-        "dk":{ "description" : "", "jobDescription": ""}, 
+        "period": {"start" : { "year": 1993, "month": 8},
+        "end" : { "year": 1996, "month": 5}},
+        "dk":{ "description" : "Undervisning af 14-15årige skoleelever i \"datalære\".", "jobDescription": ""}, 
         "uk":{ "description" : "", "jobDescription": ""}        
     }
     ]

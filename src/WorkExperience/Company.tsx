@@ -1,3 +1,4 @@
+import ReactMarkDown from 'react-markdown'
 import * as Style from './Style'
 import { CompanyHeader, CompanyTable, ItemText } from './Style'
 import { formatPeriod, Period } from './Period'
@@ -22,9 +23,10 @@ export interface Texts {
 
 export function Company({...props}: Props) {
   const texts = props.texts
+  const description = `**${props.name}**  \n\n${props.description}`
   return (
     <Style.Div>
-      <CompanyTable>
+      <CompanyTable {...props}>
         <colgroup>
           <Style.TitleCol></Style.TitleCol> 
         </colgroup>
@@ -35,7 +37,7 @@ export function Company({...props}: Props) {
           </tr>
           <tr>
             <CompanyHeader>{texts.company}</CompanyHeader>
-            <ItemText>{props.name}</ItemText>
+            <ItemText><ReactMarkDown>{description}</ReactMarkDown></ItemText>
           </tr>
           <tr>
             <CompanyHeader>{texts.jobDescription}</CompanyHeader>

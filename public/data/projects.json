@@ -1,635 +1,822 @@
 {
-    "projects": [
-        {
-            "companyId": "IDA",
-            "id": "ODatanuget",
-            "period": {
-                "start": {
-                    "year": 2021,
-                    "month": 8
-                },
-                "end": {
-                    "year": 2021,
-                    "month": 9
-                }
-            },
-            "dk": {
-                "project": "OData nuget pakke",
-                "description": "Erfaringer høstet i IDA med brug af OData som adgangslag til CRM blev implementeret i en nuget pakke, som kan bruges af andre applikationer og gør det at bruge OData ganske let."
-            },
-            "en": {
-                "project": "OData nuget package",
-                "description": "Implementing a nuget package allowing for using OData as access layer for IDA Crm"
-            },
-            "technologies": [
-                "VS",
-                "Netstandard2",
-                "Nuget",
-                "OData"
-            ]
+  "projects": [
+    {
+      "companyId": "IDA",
+      "id": "ODatanuget",
+      "period": {
+        "start": {
+          "year": 2021,
+          "month": 8
         },
-        {
-            "companyId": "IDA",
-            "id": "Arrangementsoprettelse",
-            "period": {
-                "start": {
-                    "year": 2020,
-                    "month": 9
-                },
-                "end": {
-                    "year": 2021,
-                    "month": 5
-                }
-            },
-            "dk": {
-                "project": "Arrangementsoprettelse",
-                "description": "Team Spirit re-implementerede et tidligere Drupal website (som var end-of-life), som IDAs aktive/parlamentarikere bruger til oprettelse af arrangementer. Dette nye website blev udviklet på IDAs SOA platform."
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "VS",
-                "aspnetcore",
-                "netcore3",
-                "rest",
-                "wcf",
-                "net",
-                "nsb",
-                "reacts",
-                "odata",
-                "docker",
-                "kubernetes"
-            ]
-        },
-        {
-            "companyId": "IDA",
-            "id": "tillidssite",
-            "period": {
-                "start": {
-                    "year": 2019,
-                    "month": 2
-                },
-                "end": {
-                    "year": 2019,
-                    "month": 6
-                }
-            },
-            "dk": {
-                "project": "Tillidshvervsanmeldelse website",
-                "description": "Som den første faktiske applikation på dels IDAs SOA-platform og dels IDAs Design System implementeredes et nyt website med ASP.NET Core backend og frontend i ReactTS"
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "vs",
-                "aspnetcore",
-                "netcore21",
-                "wcf",
-                "rest",
-                "reactts",
-                "docker",
-                "kubernetes"
-            ]
-        },
-        {
-            "companyId": "IDA",
-            "id": "mitida",
-            "period": {
-                "start": {
-                    "year": 2016,
-                    "month": 3
-                },
-                "end": {
-                    "year": 2016,
-                    "month": 11
-                }
-            },
-            "dk": {
-                "project": "Mit Ida website",
-                "description": "Sammen med en anden konsulent byggedes et Umbraco-website til Mit Ida (https://mitida.dk), som var en migrering og opdatering af et eksisterende website (service.ida.dk)."
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "vs15",
-                "umbraco",
-                "css",
-                "js",
-                "angular",
-                "octopus",
-                "teamcity"
-            ]
-        },
-        {
-            "companyId": "IDA",
-            "id": "idacrm",
-            "period": {
-                "start": {
-                    "year": 2015,
-                    "month": 12
-                },
-                "end": {
-                    "year": 2021,
-                    "month": 12
-                }
-            },
-            "dk": {
-                "project": "IDA Crm - Microsoft Dynamics CRM",
-                "description": "Sammen med forskellige eksterne konsulenter lavedes vedligehold, opgraderinger og viderudvikling på IDAs CRM installation."
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "vs",
-                "crm",
-                "net",
-                "octopus",
-                "teamcity"
-            ]
-        },
-        {
-            "companyId": "IDA",
-            "id": "idaforsikring",
-            "period": {
-                "start": {
-                    "year": 2015,
-                    "month": 9
-                },
-                "end": {
-                    "year": 2016,
-                    "month": 2
-                }
-            },
-            "dk": {
-                "project": "IDA Forsikring website",
-                "description": "Sammen med en anden konsulent byggedes et Umbraco-website til IDA forsikring (https://idaforsikring.dk)"
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "vs15",
-                "umbraco",
-                "net",
-                "css",
-                "angularjs",
-                "octopus",
-                "teamcity"
-            ]
-        },
-        {
-            "companyId": "IDA",
-            "id": "idalogging",
-            "period": {
-                "start": {
-                    "year": 2014,
-                    "month": 10
-                },
-                "end": {
-                    "year": 2014,
-                    "month": 12
-                }
-            },
-            "dk": {
-                "project": "IDA Logging",
-                "description": "Design og implementation af generisk application logging system. Der blev bygget en AngularJS frontend, en ASP.NET backend op mod en SQL Server. Endvidere en nuget-pakke til nem installation i diverse applikationer. Et generisk logging-framework (SoftwarePassion.LogBridge - https://github.com/TorbenRahbekKoch/LogBridge) bruges som Logging-api."
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "vs13",
-                "mssql2008",
-                "tsql",
-                "net45",
-                "webapi2",
-                "aspnet",
-                "rest",
-                "ef",
-                "angularjs",
-                "odata",
-                "octopus",
-                "teamcity"
-            ]
-        },
-        {
-            "companyId": "IDA",
-            "id": "teamcity",
-            "period": {
-                "start": {
-                    "year": 2014,
-                    "month": 10
-                },
-                "end": {
-                    "year": 2021,
-                    "month": 12
-                }
-            },
-            "dk": {
-                "project": "TeamCity",
-                "description": "Løbende vedligehold og opbygning af build configuration templates. Sammen med IDAs “The architect” blev der løbende opbygget nye templates, der passede til de forskellige behov, som forskellige grupper af applikationer har. Sammen med driften lavedes løbende opdateringer af selve TeamCity-build-serveren."
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "teamcity"
-            ]
-        },
-        {
-            "companyId": "IDA",
-            "id": "idadiverse",
-            "period": {
-                "start": {
-                    "year": 2014,
-                    "month": 5
-                },
-                "end": {
-                    "year": 2021,
-                    "month": 12
-                }
-            },
-            "dk": {
-                "project": "Diverse",
-                "description": "Opdatering og vedligehold af diverse eksisterende og nye applikationer, en blandet landhandel, eksempelvis: batch jobs, Windows services, websites og web services, word templates. En del “find koden”-arbejde (det var ikke altid klart, hvor koden var), løbendeopdatering til nyere .NET Frameworks, oprydning/refaktorering, samarbejde med drift om deploy, snak med forretning om “hvad det nu lige er den applikation laver”."
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "vs",
-                "mssql",
-                "net",
-                "webapi",
-                "aspnet",
-                "asp",
-                "wcf",
-                "angularjs",
-                "reactjs",
-                "reactts",
-                "js",
-                "typescript"
-            ]
-        },
-        {
-            "companyId": "KMD",
-            "id": "workflowengine",
-            "period": {
-                "start": {
-                    "year": 2012,
-                    "month": 3
-                },
-                "end": {
-                    "year": 2013,
-                    "month": 4
-                }
-            },
-            "dk": {
-                "project": "Workflow Engine",
-                "description": "I samarbejde med flere interne udviklere og eksterne konsulenter designes og implementeres et system til at afvikle workflows baseret på forskellige eksterne hændelser."
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "vs10",
-                "vs12",
-                "mssql2008r2",
-                "net4",
-                "net45",
-                "wcf",
-                "wpf",
-                "wf4"
-            ]
-        },
-        {
-            "companyId": "KMD",
-            "id": "servicelayer",
-            "period": {
-                "start": {
-                    "year": 2013,
-                    "month": 8
-                },
-                "end": {
-                    "year": 2013,
-                    "month": 12
-                }
-            },
-            "dk": {
-                "project": "Servicelayer",
-                "description": "I samarbejde med flere interne udviklere designes og implementeres et servicelag til at abstrahere flere meget forskellige underliggende systemer til et mere generisk og sammenhængende REST interface"
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "vs12",
-                "mssql2008r2",
-                "net45",
-                "rest",
-                "webapi",
-                "odata"
-            ]
-        },
-        {
-            "companyId": "COOK",
-            "id": "phoenix",
-            "period": {
-                "start": {
-                    "year": 2010,
-                    "month": 3
-                },
-                "end": {
-                    "year": 2012,
-                    "month": 2
-                }
-            },
-            "dk": {
-                "project": "Phoenix",
-                "description": "Et nyt passenger management system til håndtering af bookinger fra turoperatører (charterselskaber)I samarbejde med 4 andre konsulenter og 3 interne medarbejdere udviklere designes og bygges Phoenix over to år. Systemet indeholder et væld af integrationspunkter til andre systemer. Det erstatter et eksisterende system (Pegasus) med et tidsvarende og opgavesvarende UI. Der er tale om et traditionelt client/serversystem. Personligt stod jeg blandt andet for udlæsning af PNL’er (Passenger Name Lists), som sendes til check-in-skranker rundt omkring i verden"
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "vs10",
-                "mssql2008",
-                "net4",
-                "wcf",
-                "wpf",
-                "wf",
-                "msmq"
-            ]
-        },
-        {
-            "companyId": "COOK",
-            "id": "configurationmanager",
-            "period": {
-                "start": {
-                    "year": 2010,
-                    "month": 3
-                },
-                "end": {
-                    "year": 2012,
-                    "month": 2
-                }
-            },
-            "dk": {
-                "project": "Configuration Manager",
-                "description": "Centralt konfigureringssystem til at lette byrden med at styre konfigurationer i udvikling, test og produktion. Klientprogrammer forbinder sig til Configuration Manager for at få at vide, hvor eksempelvis databaser og services befinder sig. Environment styres fra configfil eller kommandolinje."
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "vs10",
-                "mssql2008",
-                "net4",
-                "wcf",
-                "wpf"
-            ]
-        },
-        {
-            "companyId": "COOK",
-            "id": "wfmmanager",
-            "period": {
-                "start": {
-                    "year": 2010,
-                    "month": 3
-                },
-                "end": {
-                    "year": 2012,
-                    "month": 2
-                }
-            },
-            "dk": {
-                "project": "WFM Workflow Manager",
-                "description": "Et batchhåndteringssystem baseret på Workflow Foundation. Workflow Manager bruges til at specificere batchjobs som workflows i stedet for eksempelvis Powershell"
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "vs10",
-                "mssql2008",
-                "net4",
-                "wcf",
-                "wpf",
-                "wf",
-                "msmq"
-            ]
-        },
-        {
-            "companyId": "GK",
-            "id": "ansættelsesbreve",
-            "period": {
-                "start": {
-                    "year": 2009,
-                    "month": 3
-                },
-                "end": {
-                    "year": 2009,
-                    "month": 5
-                }
-            },
-            "dk": {
-                "project": "Ansættelsesbreve",
-                "description": "Et frasebaseret websystem til generering af ansættelsesbreve. Centralt oprettes fraser og kombinationer af disse knyttes til bestemte stillinger. Herefter kan decentralt fra udvælges en stilling, indtastes navn, adresse osv, hvorefter ansættelsesbrevet genereres og sendes til brugeren via mail."
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "vs08",
-                "mssql2005",
-                "smartclient",
-                "fckeditor",
-                "asposewords"
-            ]
-        },
-        {
-            "companyId": "EF",
-            "id": "easyplan",
-            "period": {
-                "start": {
-                    "year": 2008,
-                    "month": 12
-                },
-                "end": {
-                    "year": 2009,
-                    "month": 10
-                }
-            },
-            "dk": {
-                "project": "EasyPlan",
-                "description": "Tilret og fejlret C++ applikation til brug for vagtplanlægning.  \nPåbegyndte en længerevarende ”opretning” af applikationen, så den opnår databaseuafhængighed og lettere kan opfylde sine fremtidige opgaver. Projektet blev afsluttet da vi desværre løb tør for tid."
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "c++builder2006",
-                "xml",
-                "xsl",
-                "mssql2005",
-                "subversion"
-            ]
-        },
-        {
-            "companyId": "PD",
-            "id": "trs",
-            "period": {
-                "start": {
-                    "year": 2007,
-                    "month": 12
-                },
-                "end": {
-                    "year": 2008,
-                    "month": 10
-                }
-            },
-            "dk": {
-                "project": "TRS (Telefoniregistreringssystem)",
-                "description": "Byg en web-applikation til vedligeholdelse af koncernbetalte mobil- og privatabonnementer.  \nStore dele af analysen og design af databasen var gjort, da jeg kom ind i projektet. Min første opgave blev at lave et Data Access Lag, som blev kraftigt inspireret af LINQ (som vi grundet begrænsninger i produktionen ikke kunne anvende på daværende tidspunkt). Senere i forløbet påbegyndtes en migrering til LINQ.  \nUdover DAL bestod mine opgaver af at lave grænseflader til migrering af data fra eksisterende systemer. Herunder en MSSQL database med eksisterende abonnementer, medarbejderdata og organisationsdata fra SAP, samt en nogle excel og tekstfiler.  \nProjektet gjorde sig store anstrengelser for at holde logik væk fra GUI-laget (code-behind-filerne) og bruger i stor grad unit tests.  \nJeg stod i samarbejde med testerne for en stor del af slutbrugerundervisning."
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "c++builder2006",
-                "xml",
-                "xsl",
-                "mssql2005",
-                "subversion"
-            ]
-        },
-        {
-            "companyId": "EFS",
-            "id": "lasernet",
-            "period": {
-                "start": {
-                    "year": 2002,
-                    "month": 1
-                },
-                "end": {
-                    "year": 2007,
-                    "month": 9
-                }
-            },
-            "dk": {
-                "project": "LaserNet v6",
-                "description": "Design og implementer en ny, teknologisk tidssvarende version af output management systemet LaserNet 5. Den gamle version kunne kun generere PCL og arbejdede med PCL internt. Den nye version skal benytte et mere gængs format - EMF (Windows Enhanced Metafile) lignende.  \nalget faldt på at implementere i C++. LaserNet v6 er opbygget modulært, benytter sig af egenudviklede printer drivers, print processors og print monitors, der gør det muligt at arbejde med både Windows EMF og en modificeret udgave tilpasset egne formål.  \nDer kan ombrydes både tekst og XML. Der kan skrives ud til printer og fax, lagres i fil og database, sendes via email, ftp og http.  \nData tages ind via printer driver (Windows Spool System), fil, database, ftp, http. Der kan laves XML (f.eks. UBL/OIOXML) transformeringer ved hjælp af XPath, XSLT og DOM. Der kan produceres tekst til f.eks. print eller PDF. Der understøttes avanceret filtrering ved hjælp af regulære udtryk.  \nI september 2007 bestod LaserNet v6 af 400.000 linjer C++ kode."
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "c++",
-                "com",
-                "activex",
-                "odbc",
-                "xml",
-                "xpath",
-                "xslt",
-                "dom",
-                "ws",
-                "mapi",
-                "soap",
-                "windowsnt",
-                "windows2000",
-                "windowsxp",
-                "windowsvista",
-                "visualc++6",
-                "visualc++2003",
-                "visualc++2005",
-                "qt",
-                "qsa"
-            ]
-        },
-        {
-            "companyId": "EFS",
-            "id": "buildsystem",
-            "period": {
-                "start": {
-                    "year": 2004,
-                    "month": 1
-                },
-                "end": {
-                    "year": 2007,
-                    "month": 9
-                }
-            },
-            "dk": {
-                "project": "Build system og issue tracking",
-                "description": "Opbygning af et system til styring af builds af forskellige produkter og versioner af disse.  \nFastlægning af strategier for brug af Fogbugz (issue tracking) og Subversion.  \nAutomatisk vedligeholdelse af symbol database.  \nEn web-frontend (C#, IIS) op mod SQL Server 2000.  \nFørste udgave var med Visual Build, som blev afviklet af serveren.  \nI anden udgave bliver builds foretaget af LaserNet v6 som \"mellemmand\" i forhold til database, Visual Studio, Setup Factory og SymStore.  \nBuild-steps bliver fastlagt af en xml-fil, som LaserNet v6 parser og reagerer på."
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "windows2003",
-                "mssql",
-                "c#",
-                "j#",
-                "aspnet",
-                "xml",
-                "fogbugz",
-                "subversion",
-                "visualbuild",
-                "lasernetv6",
-                "setupfactory",
-                "symstore"
-            ]
-        },
-        {
-            "companyId": "XP",
-            "id": "loyalty",
-            "period": {
-                "start": {
-                    "year": 2001,
-                    "month": 1
-                },
-                "end": {
-                    "year": 2001,
-                    "month": 12
-                }
-            },
-            "dk": {
-                "project": "Loyalitetskort",
-                "description": "Opbygning af et system til ind- og udlæsning af plastickortdata (loyalitetskort) til Oracle database.  \nSystemet blev implementeret i Borland Delphi 6. Til at beskrive formatet af inputdata brugtes bla. Regular expressions."
-            },
-            "en": {
-                "project": "",
-                "description": ""
-            },
-            "technologies": [
-                "windows2000",
-                "delphi6",
-                "scripthosting",
-                "oracle"
-            ]
+        "end": {
+          "year": 2021,
+          "month": 9
         }
-    ]
+      },
+      "dk": {
+        "project": "OData nuget pakke",
+        "description": "Erfaringer høstet i IDA med brug af OData som adgangslag til CRM blev implementeret i en nuget pakke, som kan bruges af andre applikationer og gør det at bruge OData ganske let."
+      },
+      "en": {
+        "project": "OData nuget package",
+        "description": "Implementing a nuget package allowing for using OData as access layer for IDA Crm"
+      },
+      "technologies": [
+        "VS",
+        "Netstandard2",
+        "Nuget",
+        "OData"
+      ]
+    },
+    {
+      "companyId": "IDA",
+      "id": "Arrangementsoprettelse",
+      "period": {
+        "start": {
+          "year": 2020,
+          "month": 9
+        },
+        "end": {
+          "year": 2021,
+          "month": 5
+        }
+      },
+      "dk": {
+        "project": "Arrangementsoprettelse",
+        "description": "Team Spirit re-implementerede et tidligere Drupal website (som var end-of-life), som IDAs aktive/parlamentarikere bruger til oprettelse af arrangementer. Dette nye website blev udviklet på IDAs SOA platform."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "VS",
+        "aspnetcore",
+        "netcore3",
+        "rest",
+        "wcf",
+        "net",
+        "nsb",
+        "reacts",
+        "odata",
+        "docker",
+        "kubernetes"
+      ]
+    },
+    {
+      "companyId": "IDA",
+      "id": "tillidssite",
+      "period": {
+        "start": {
+          "year": 2019,
+          "month": 2
+        },
+        "end": {
+          "year": 2019,
+          "month": 6
+        }
+      },
+      "dk": {
+        "project": "Tillidshvervsanmeldelse website",
+        "description": "Som den første faktiske applikation på dels IDAs SOA-platform og dels IDAs Design System implementeredes et nyt website med ASP.NET Core backend og frontend i ReactTS"
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "vs",
+        "aspnetcore",
+        "netcore21",
+        "wcf",
+        "rest",
+        "reactts",
+        "docker",
+        "kubernetes"
+      ]
+    },
+    {
+      "companyId": "IDA",
+      "id": "mitida",
+      "period": {
+        "start": {
+          "year": 2016,
+          "month": 3
+        },
+        "end": {
+          "year": 2016,
+          "month": 11
+        }
+      },
+      "dk": {
+        "project": "Mit Ida website",
+        "description": "Sammen med en anden konsulent byggedes et Umbraco-website til Mit Ida (https://mitida.dk), som var en migrering og opdatering af et eksisterende website (service.ida.dk)."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "vs15",
+        "umbraco",
+        "css",
+        "js",
+        "angular",
+        "octopus",
+        "teamcity"
+      ]
+    },
+    {
+      "companyId": "IDA",
+      "id": "idacrm",
+      "period": {
+        "start": {
+          "year": 2015,
+          "month": 12
+        },
+        "end": {
+          "year": 2021,
+          "month": 12
+        }
+      },
+      "dk": {
+        "project": "IDA Crm - Microsoft Dynamics CRM",
+        "description": "Sammen med forskellige eksterne konsulenter lavedes vedligehold, opgraderinger og viderudvikling på IDAs CRM installation."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "vs",
+        "crm",
+        "net",
+        "octopus",
+        "teamcity"
+      ]
+    },
+    {
+      "companyId": "IDA",
+      "id": "idaforsikring",
+      "period": {
+        "start": {
+          "year": 2015,
+          "month": 9
+        },
+        "end": {
+          "year": 2016,
+          "month": 2
+        }
+      },
+      "dk": {
+        "project": "IDA Forsikring website",
+        "description": "Sammen med en anden konsulent byggedes et Umbraco-website til IDA forsikring (https://idaforsikring.dk)"
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "vs15",
+        "umbraco",
+        "net",
+        "css",
+        "angularjs",
+        "octopus",
+        "teamcity"
+      ]
+    },
+    {
+      "companyId": "IDA",
+      "id": "idalogging",
+      "period": {
+        "start": {
+          "year": 2014,
+          "month": 10
+        },
+        "end": {
+          "year": 2014,
+          "month": 12
+        }
+      },
+      "dk": {
+        "project": "IDA Logging",
+        "description": "Design og implementation af generisk application logging system. Der blev bygget en AngularJS frontend, en ASP.NET backend op mod en SQL Server. Endvidere en nuget-pakke til nem installation i diverse applikationer. Et generisk logging-framework (SoftwarePassion.LogBridge - https://github.com/TorbenRahbekKoch/LogBridge) bruges som Logging-api."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "vs13",
+        "mssql2008",
+        "tsql",
+        "net45",
+        "webapi2",
+        "aspnet",
+        "rest",
+        "ef",
+        "angularjs",
+        "odata",
+        "octopus",
+        "teamcity"
+      ]
+    },
+    {
+      "companyId": "IDA",
+      "id": "teamcity",
+      "period": {
+        "start": {
+          "year": 2014,
+          "month": 10
+        },
+        "end": {
+          "year": 2021,
+          "month": 12
+        }
+      },
+      "dk": {
+        "project": "TeamCity",
+        "description": "Løbende vedligehold og opbygning af build configuration templates. Sammen med IDAs “The architect” blev der løbende opbygget nye templates, der passede til de forskellige behov, som forskellige grupper af applikationer har. Sammen med driften lavedes løbende opdateringer af selve TeamCity-build-serveren."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "teamcity"
+      ]
+    },
+    {
+      "companyId": "IDA",
+      "id": "idadiverse",
+      "period": {
+        "start": {
+          "year": 2014,
+          "month": 5
+        },
+        "end": {
+          "year": 2021,
+          "month": 12
+        }
+      },
+      "dk": {
+        "project": "Diverse",
+        "description": "Opdatering og vedligehold af diverse eksisterende og nye applikationer, en blandet landhandel, eksempelvis: batch jobs, Windows services, websites og web services, word templates. En del “find koden”-arbejde (det var ikke altid klart, hvor koden var), løbendeopdatering til nyere .NET Frameworks, oprydning/refaktorering, samarbejde med drift om deploy, snak med forretning om “hvad det nu lige er den applikation laver”.  \n\nDet var primært disse opgaver, der gav mig tilnavnet *Mr. Legacy*."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "vs",
+        "mssql",
+        "net",
+        "webapi",
+        "aspnet",
+        "asp",
+        "wcf",
+        "angularjs",
+        "reactjs",
+        "reactts",
+        "js",
+        "typescript"
+      ]
+    },
+    {
+      "companyId": "KMD",
+      "id": "workflowengine",
+      "period": {
+        "start": {
+          "year": 2012,
+          "month": 3
+        },
+        "end": {
+          "year": 2013,
+          "month": 4
+        }
+      },
+      "dk": {
+        "project": "Workflow Engine",
+        "description": "I samarbejde med flere interne udviklere og eksterne konsulenter designes og implementeres et system til at afvikle workflows baseret på forskellige eksterne hændelser."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "vs10",
+        "vs12",
+        "mssql2008r2",
+        "net4",
+        "net45",
+        "wcf",
+        "wpf",
+        "wf4"
+      ]
+    },
+    {
+      "companyId": "KMD",
+      "id": "servicelayer",
+      "period": {
+        "start": {
+          "year": 2013,
+          "month": 8
+        },
+        "end": {
+          "year": 2013,
+          "month": 12
+        }
+      },
+      "dk": {
+        "project": "Servicelayer",
+        "description": "I samarbejde med flere interne udviklere designes og implementeres et servicelag til at abstrahere flere meget forskellige underliggende systemer til et mere generisk og sammenhængende REST interface"
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "vs12",
+        "mssql2008r2",
+        "net45",
+        "rest",
+        "webapi",
+        "odata"
+      ]
+    },
+    {
+      "companyId": "COOK",
+      "id": "phoenix",
+      "period": {
+        "start": {
+          "year": 2010,
+          "month": 3
+        },
+        "end": {
+          "year": 2012,
+          "month": 2
+        }
+      },
+      "dk": {
+        "project": "Phoenix",
+        "description": "Et nyt passenger management system til håndtering af bookinger fra turoperatører (charterselskaber)I samarbejde med 4 andre konsulenter og 3 interne medarbejdere udviklere designes og bygges Phoenix over to år. Systemet indeholder et væld af integrationspunkter til andre systemer. Det erstatter et eksisterende system (Pegasus) med et tidsvarende og opgavesvarende UI. Der er tale om et traditionelt client/serversystem. Personligt stod jeg blandt andet for udlæsning af PNL’er (Passenger Name Lists), som sendes til check-in-skranker rundt omkring i verden"
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "vs10",
+        "mssql2008",
+        "net4",
+        "wcf",
+        "wpf",
+        "wf",
+        "msmq"
+      ]
+    },
+    {
+      "companyId": "COOK",
+      "id": "configurationmanager",
+      "period": {
+        "start": {
+          "year": 2010,
+          "month": 3
+        },
+        "end": {
+          "year": 2012,
+          "month": 2
+        }
+      },
+      "dk": {
+        "project": "Configuration Manager",
+        "description": "Centralt konfigureringssystem til at lette byrden med at styre konfigurationer i udvikling, test og produktion. Klientprogrammer forbinder sig til Configuration Manager for at få at vide, hvor eksempelvis databaser og services befinder sig. Environment styres fra configfil eller kommandolinje."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "vs10",
+        "mssql2008",
+        "net4",
+        "wcf",
+        "wpf"
+      ]
+    },
+    {
+      "companyId": "COOK",
+      "id": "wfmmanager",
+      "period": {
+        "start": {
+          "year": 2010,
+          "month": 3
+        },
+        "end": {
+          "year": 2012,
+          "month": 2
+        }
+      },
+      "dk": {
+        "project": "WFM Workflow Manager",
+        "description": "Et batchhåndteringssystem baseret på Workflow Foundation. Workflow Manager bruges til at specificere batchjobs som workflows i stedet for eksempelvis Powershell"
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "vs10",
+        "mssql2008",
+        "net4",
+        "wcf",
+        "wpf",
+        "wf",
+        "msmq"
+      ]
+    },
+    {
+      "companyId": "GK",
+      "id": "ansættelsesbreve",
+      "period": {
+        "start": {
+          "year": 2009,
+          "month": 3
+        },
+        "end": {
+          "year": 2009,
+          "month": 5
+        }
+      },
+      "dk": {
+        "project": "Ansættelsesbreve",
+        "description": "Et frasebaseret websystem til generering af ansættelsesbreve. Centralt oprettes fraser og kombinationer af disse knyttes til bestemte stillinger. Herefter kan decentralt fra udvælges en stilling, indtastes navn, adresse osv, hvorefter ansættelsesbrevet genereres og sendes til brugeren via mail."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "vs08",
+        "mssql2005",
+        "smartclient",
+        "fckeditor",
+        "asposewords"
+      ]
+    },
+    {
+      "companyId": "EF",
+      "id": "easyplan",
+      "period": {
+        "start": {
+          "year": 2008,
+          "month": 12
+        },
+        "end": {
+          "year": 2009,
+          "month": 10
+        }
+      },
+      "dk": {
+        "project": "EasyPlan",
+        "description": "Tilret og fejlret C++ applikation til brug for vagtplanlægning.  \nPåbegyndte en længerevarende ”opretning” af applikationen, så den opnår databaseuafhængighed og lettere kan opfylde sine fremtidige opgaver. Projektet blev afsluttet da vi desværre løb tør for tid."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "c++builder2006",
+        "xml",
+        "xsl",
+        "mssql2005",
+        "subversion"
+      ]
+    },
+    {
+      "companyId": "PD",
+      "id": "trs",
+      "period": {
+        "start": {
+          "year": 2007,
+          "month": 12
+        },
+        "end": {
+          "year": 2008,
+          "month": 10
+        }
+      },
+      "dk": {
+        "project": "TRS (Telefoniregistreringssystem)",
+        "description": "Byg en web-applikation til vedligeholdelse af koncernbetalte mobil- og privatabonnementer.  \nStore dele af analysen og design af databasen var gjort, da jeg kom ind i projektet. Min første opgave blev at lave et Data Access Lag, som blev kraftigt inspireret af LINQ (som vi grundet begrænsninger i produktionen ikke kunne anvende på daværende tidspunkt). Senere i forløbet påbegyndtes en migrering til LINQ.  \nUdover DAL bestod mine opgaver af at lave grænseflader til migrering af data fra eksisterende systemer. Herunder en MSSQL database med eksisterende abonnementer, medarbejderdata og organisationsdata fra SAP, samt en nogle excel og tekstfiler.  \nProjektet gjorde sig store anstrengelser for at holde logik væk fra GUI-laget (code-behind-filerne) og bruger i stor grad unit tests.  \nJeg stod i samarbejde med testerne for en stor del af slutbrugerundervisning."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "c++builder2006",
+        "xml",
+        "xsl",
+        "mssql2005",
+        "subversion"
+      ]
+    },
+    {
+      "companyId": "EFS",
+      "id": "lasernet",
+      "period": {
+        "start": {
+          "year": 2002,
+          "month": 1
+        },
+        "end": {
+          "year": 2007,
+          "month": 9
+        }
+      },
+      "dk": {
+        "project": "LaserNet v6",
+        "description": "Design og implementer en ny, teknologisk tidssvarende version af output management systemet LaserNet 5. Den gamle version kunne kun generere PCL og arbejdede med PCL internt. Den nye version skal benytte et mere gængs format - EMF (Windows Enhanced Metafile) lignende.  \nalget faldt på at implementere i C++. LaserNet v6 er opbygget modulært, benytter sig af egenudviklede printer drivers, print processors og print monitors, der gør det muligt at arbejde med både Windows EMF og en modificeret udgave tilpasset egne formål.  \nDer kan ombrydes både tekst og XML. Der kan skrives ud til printer og fax, lagres i fil og database, sendes via email, ftp og http.  \nData tages ind via printer driver (Windows Spool System), fil, database, ftp, http. Der kan laves XML (f.eks. UBL/OIOXML) transformeringer ved hjælp af XPath, XSLT og DOM. Der kan produceres tekst til f.eks. print eller PDF. Der understøttes avanceret filtrering ved hjælp af regulære udtryk.  \nI september 2007 bestod LaserNet v6 af 400.000 linjer C++ kode."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "c++",
+        "com",
+        "activex",
+        "odbc",
+        "xml",
+        "xpath",
+        "xslt",
+        "dom",
+        "ws",
+        "mapi",
+        "soap",
+        "windowsnt",
+        "windows2000",
+        "windowsxp",
+        "windowsvista",
+        "visualc++6",
+        "visualc++2003",
+        "visualc++2005",
+        "qt",
+        "qsa"
+      ]
+    },
+    {
+      "companyId": "EFS",
+      "id": "buildsystem",
+      "period": {
+        "start": {
+          "year": 2004,
+          "month": 1
+        },
+        "end": {
+          "year": 2007,
+          "month": 9
+        }
+      },
+      "dk": {
+        "project": "Build system og issue tracking",
+        "description": "Opbygning af et system til styring af builds af forskellige produkter og versioner af disse.  \nFastlægning af strategier for brug af Fogbugz (issue tracking) og Subversion.  \nAutomatisk vedligeholdelse af symbol database.  \nEn web-frontend (C#, IIS) op mod SQL Server 2000.  \nFørste udgave var med Visual Build, som blev afviklet af serveren.  \nI anden udgave bliver builds foretaget af LaserNet v6 som \"mellemmand\" i forhold til database, Visual Studio, Setup Factory og SymStore.  \nBuild-steps bliver fastlagt af en xml-fil, som LaserNet v6 parser og reagerer på."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "windows2003",
+        "mssql",
+        "c#",
+        "j#",
+        "aspnet",
+        "xml",
+        "fogbugz",
+        "subversion",
+        "visualbuild",
+        "lasernetv6",
+        "setupfactory",
+        "symstore"
+      ]
+    },
+    {
+      "companyId": "XP",
+      "id": "loyalty",
+      "period": {
+        "start": {
+          "year": 2001,
+          "month": 1
+        },
+        "end": {
+          "year": 2001,
+          "month": 12
+        }
+      },
+      "dk": {
+        "project": "Loyalitetskort",
+        "description": "Opbygning af et system til ind- og udlæsning af plastickortdata (loyalitetskort) til Oracle database.  \nSystemet blev implementeret i Borland Delphi 6. Til at beskrive formatet af inputdata brugtes bla. Regular expressions."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "windows2000",
+        "delphi6",
+        "scripthosting",
+        "oracle"
+      ]
+    },
+    {
+      "companyId": "GRAPH",
+      "id": "gsm",
+      "period": {
+        "start": {
+          "year": 2000,
+          "month": 2
+        },
+        "end": {
+          "year": 2001,
+          "month": 8
+        }
+      },
+      "dk": {
+        "project": "GSM Data Generator",
+        "description": "Vedligeholdelse af produktionssoftware til generering af data til SIMkort.  \nDesign og implementation af diverse databehandlende dele af programmet.  \nAdministration og programmering af SQL Server 7.0.  \nForskellige NT administrationsopgaver."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "delphi4",
+        "delphi5",
+        "mssql7"
+      ]
+    },
+    {
+      "companyId": "GRAPH",
+      "id": "lasernet2",
+      "period": {
+        "start": {
+          "year": 2000,
+          "month": 2
+        },
+        "end": {
+          "year": 2001,
+          "month": 8
+        }
+      },
+      "dk": {
+        "project": "LaserNet",
+        "description": "Et system til styring af elektroniske blanketter og formularer.  \nFunktionalitetsudvidelse og fejlretning."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "delphi4",
+        "delphi5"
+      ]
+    },
+    {
+      "companyId": "GRAPH",
+      "id": "gsm3",
+      "period": {
+        "start": {
+          "year": 2000,
+          "month": 2
+        },
+        "end": {
+          "year": 2001,
+          "month": 8
+        }
+      },
+      "dk": {
+        "project": "GSM Data Generator",
+        "description": "Vedligeholdelse af produktionssoftware til generering af data til SIMkort.  \nDesign og implementation af diverse databehandlende dele af programmet.  \nAdministration og programmering af SQL Server 7.0.  \nForskellige NT administrationsopgaver."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "delphi4",
+        "delphi5",
+        "mssql7"
+      ]
+    },
+    {
+      "companyId": "DC",
+      "id": "gsm3",
+      "period": {
+        "start": {
+          "year": 2000,
+          "month": 2
+        },
+        "end": {
+          "year": 2001,
+          "month": 8
+        }
+      },
+      "dk": {
+        "project": "GSM Data Generator",
+        "description": "Vedligeholdelse af produktionssoftware til generering af data til SIMkort.  \nDesign og implementation af diverse databehandlende dele af programmet.  \nAdministration og programmering af SQL Server 7.0.  \nForskellige NT administrationsopgaver."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "delphi4",
+        "delphi5",
+        "mssql7"
+      ]
+    },
+    {
+      "companyId": "OLICOM",
+      "id": "pin",
+      "period": {
+        "start": {
+          "year": 1997,
+          "month": 8
+        },
+        "end": {
+          "year": 1999,
+          "month": 2
+        }
+      },
+      "dk": {
+        "project": "PIN",
+        "description": "PIN = Product Information Network. En fejlsporingsdatabase til netværksudstyr og drivere.  \nFlet to eksisterende fejlsporingssystemer. Det ene implementeret i MS Access og det andet i PowerBuilder med en Sybase database bag ved.  \nDet nye system blev implementeret som en web-applikation i MS Internet Explorer 4.0, DHTML og ASP på IIS 4.0."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "dhtml",
+        "rds",
+        "asp",
+        "mssql65"
+      ]
+    },
+    {
+      "companyId": "BOSTIK",
+      "id": "kunde",
+      "period": {
+        "start": {
+          "year": 1993,
+          "month": 3
+        },
+        "end": {
+          "year": 1997,
+          "month": 8
+        }
+      },
+      "dk": {
+        "project": "Kundestyringssystem for laptops",
+        "description": "Et datasynkroniseringsprogram til at synkronisere data mellem bærbare computere og firmaets AS/400 computer (Delphi 1.0).  \nDefinition og dokumentation af brugerkrav.  \nAnalyse og design i samarbejde med brugere.  \nProgram udvikling. Test."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "msaccess2",
+        "delphi1"
+      ]
+    },
+    {
+      "companyId": "FW",
+      "id": "eventyrsjov",
+      "period": {
+        "start": {
+          "year": 1994,
+          "month": 7
+        },
+        "end": {
+          "year": 1995,
+          "month": 6
+        }
+      },
+      "dk": {
+        "project": "Eventyrsjov",
+        "description": "En editor til at lave \"eventyrspil\" i stil med Sværd & Trolddom-bøgerne. Blev brugt i undervisningen i Ungdomsskolen."
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "borlandpascal",
+        "turbovision"
+      ]
+    }
+  ]
 }

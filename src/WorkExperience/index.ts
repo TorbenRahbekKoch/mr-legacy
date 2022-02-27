@@ -1,4 +1,4 @@
-export { Company } from './Company'
+export type { Props as Company } from './Company'
 export type { Texts } from './List'
 export { List } from './List'
 export { defaultProps } from './List'

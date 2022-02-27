@@ -1,6 +1,7 @@
 {
     "vs" : {
-        "Name": "Visual Studio",
-        "Description": "IDE/Udviklingsværktøj fra Microsoft"
+        "name": "Visual Studio",
+        "description": "IDE/Udviklingsværktøj fra Microsoft",
+        "links" : []
     }
 }

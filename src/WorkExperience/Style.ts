@@ -32,7 +32,7 @@ export const TitleCol = styled.col`
 `
 
 export const CompanyTable = styled(Table)`
-    background-color: papayawhip;
+    background-color: ${(props: any) => props.parentId == null ? "papayawhip" : "beige"};
 `
 
 export const CompanyHeader = styled(TitleTd)`
@@ -43,7 +43,7 @@ export const ItemText = styled(Td)`
 `
 
 export const ItemTable = styled(Table)`
-    background-color: gainsboro;
+    background-color: whitesmoke;
 `
 
 export const ItemHeader = styled(TitleTd)`
