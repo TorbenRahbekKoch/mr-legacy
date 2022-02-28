@@ -6,4 +6,10 @@ export interface AllTexts {
   company: string
   jobDescription: string
   now: string
+  workExperience: string
+  education: string
+  length: string
+  location: string
+  time: string
+  course: string
 }

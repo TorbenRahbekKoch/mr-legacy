@@ -1,6 +1,5 @@
 import ReactMarkDown from 'react-markdown'
 import { useStore } from '../BootStrapping'
-import { ComponentState } from '../State/State'
 import * as Style from './Style'
 import { ItemHeader as ProjectHeader, ItemTable as ProjectTable, ItemText as ProjectText } from './Style'
 import { formatPeriod, Period } from './Period'
@@ -19,7 +18,7 @@ export interface ProjectDescription {
   description: string
 }
 
-export interface Props extends ComponentState {
+export interface Props {
   companyId: string
   id: string
   period: Period

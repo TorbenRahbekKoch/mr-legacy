@@ -5,5 +5,11 @@
     "technologies": "Teknologier",
     "company": "Virksomhed",
     "jobDescription": "Jobbeskrivelse",
-    "now" : "Nu"
+    "now" : "Nu",
+    "workExperience" : "Arbejdserfaring",
+    "education": "Uddannelse",
+    "time": "Tidspunkt",
+    "course": "Kursus",
+    "location": "Sted", 
+    "length": "Varighed (dage)"
 }

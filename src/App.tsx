@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Header } from './Header'
 import { Profile } from './Profile/Profile'
 import { Quote } from './Quotes/Quote'
+import { Education } from  './Education'
 import { useStore } from './BootStrapping/'; 
 import * as WorkExperience from './WorkExperience'
 
@@ -13,9 +14,9 @@ function App() {
   const initialization = useStore(state => state.ambient.initializing)
   const profile = useStore(state => state.component.profile)
   const workExperience= useStore(state => state.component.workExperience)
+  const education = useStore(state => state.component.education)
   const quotes = useStore(state => state.component.quotes)
-  console.log("App: ", initialization, profile, workExperience, quotes)
-  if (initialization < 4)
+  if (initialization < 5)
     return null
 
   return (
@@ -26,6 +27,7 @@ function App() {
          <Quote {...quotes}/>
          {/* <User></User> */}
         <Profile {...profile}></Profile>
+        <Education {...education} />
         <WorkExperience.List {...workExperience}></WorkExperience.List>
       </header>
     </StyledApp>

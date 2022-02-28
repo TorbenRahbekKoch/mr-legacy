@@ -1,4 +1,4 @@
-{age} år gammel datalogi-uddannet (i 1997) systemudvikler, arkitekt og designer med rod i Microsoft-
+{age} år gammel datalogi-uddannet (i 1997) systemudvikler, arkitekt og designer med baggrund i Microsoft-
 platformen og fokus på backend-systemer. Udover diverse esoteriske universitetssprog (f.eks. Miranda,
 Trine, Beta) er der gennem tiden stiftet bekendtskab med Pascal, C++, TSQL, PL-SQL, C#, F#, Java, JavaScript, TypeScript.
 
@@ -7,7 +7,7 @@ Builder, Visual Studio, Subversion, Git, SQL Server, Docker, Kubernetes.
 
 Drift, finder jeg, er et spændende og fascinerende område, men mine hovedinteresser ligger dog
 inden for softwarearkitektur og "udviklingsarkitektur" (tooling, osv.) , hvor jeg gennem tiden har erhvervet en del
-erfaring, så jeg med med sindsro kan kalde mig selv erfaren, vidende, engageret og effektiv.
+erfaring, så jeg med sindsro kan kalde mig selv erfaren, vidende, engageret og effektiv.
 Sammen med en vis portion stædighed driver det mig frem mod en god løsning.
 
 Mr. Legacy er ikke (alene) et udtryk for min alder, men lige så meget et udtryk for min

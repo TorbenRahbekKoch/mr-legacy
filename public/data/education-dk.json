@@ -1,0 +1,195 @@
+{
+    "formal": [{
+        "education": "Datalogi",
+        "location" : "DAIMI, Datalogisk afdeling i Matematisk Institut, Århus Universitet",
+        "description" : "Speciale: CSCW (Computer Supported Cooperative Work)(med Lotus Notes) og IT-indflydelse på organisationer. ",
+        "when": "1990-97"
+    },
+    {
+        "education": "Engelsk filologi",
+        "location": "Humanistisk fakultet, Århus Universitet",
+        "description": "Sidefag i engelsk",
+        "when": "1995-97"
+    },
+    {
+        "education": "Gymnasiet",
+        "location": "Viborg Katedralskole",
+        "description": "Mat/fys",
+        "when": "1986-89"
+    }],
+    "courses": [{
+        "course": "SDD Deep Dive",
+        "location": "London",
+        "description": "Identity & Access control for modern web applications & API using ASP.NET Core 1.0",
+        "when": { "year": 2016, "month": 11},
+        "length": 3
+    },
+    {
+        "course": "SDD 2015",
+        "location": "London",
+        "description": "Software Design & Development konference",
+        "when": { "year": 2015, "month": 5},
+        "length": 5
+    },
+    {
+        "course": "SQL Server Saturday #275",
+        "location": "København",
+        "description": "",
+        "when": { "year": 2015, "month": 3},
+        "length": 1
+    },
+    {
+        "course": "Warm Crocodile Developer Conference",
+        "location": "København",
+        "description": "",
+        "when": { "year": 2014, "month": 1},
+        "length": 2
+    },
+    {
+        "course": "BDD Exchange",
+        "location": "Skillsmatter, New York",
+        "description": "",
+        "when": { "year": 2013, "month": 9},
+        "length": 1
+    },
+    {
+        "course": "F# Tutorials",
+        "location": "Skillsmatter, New York",
+        "description": "",
+        "when": { "year": 2013, "month": 9},
+        "length": 2
+    },
+    {
+        "course": "DDD Exchange",
+        "location": "Skillsmatter, New York",
+        "description": "DDD Fast track med Eric Evans",
+        "when": { "year": 2013, "month": 9},
+        "length": 1
+    },
+    {
+        "course": "Fast track to F#",
+        "location": "Skillsmatter, London",
+        "description": "Tomas Petricek",
+        "when": { "year": 2013, "month": 6},
+        "length": 2
+    },
+    {
+        "course": "NoSql Search Roadshow",
+        "location": "Trifork, København",
+        "description": "",
+        "when": { "year": 2013, "month": 4},
+        "length": 1
+    },
+    {
+        "course": "Sql Server Saturday #196",
+        "location": "København",
+        "description": "",
+        "when": { "year": 2013, "month": 4},
+        "length": 1
+    },
+    {
+        "course": "CQRS/Domain Driven Design",
+        "location": "København",
+        "description": "Vaughn Vernon",
+        "when": { "year": 2013, "month": 4},
+        "length": 5
+    },
+    {
+        "course": "Specification by Example",
+        "location": "København",
+        "description": "Gojko Adzic",
+        "when": { "year": 2013, "month": 2},
+        "length": 2
+    },
+    {
+        "course": "Warm Crocodile Developer Conference",
+        "location": "København",
+        "description": "",
+        "when": { "year": 2013, "month": 1},
+        "length": 2
+    },
+    {
+        "course": "SQLSkills Immersion Event for Developers",
+        "location": "SQLSkills, Chicago",
+        "description": "",
+        "when": { "year": 2012, "month": 4},
+        "length": 5
+    },
+    {
+        "course": "Essential Entity Framework 4.0",
+        "location": "DevelopMentor, London",
+        "description": "EF with Data Services Training - Microsoft Entity Framework 4",
+        "when": { "year": 2011, "month": 3},
+        "length": 5
+    },
+    {
+        "course": "Agile Estimating and Planning",
+        "location": "København",
+        "description": "Mike Cohn",
+        "when": { "year": 2010, "month": 12},
+        "length": 1
+    },
+    {
+        "course": "REST in Practice",
+        "location": "Malmø",
+        "description": "Jim Webber",
+        "when": { "year": 2010, "month": 11},
+        "length": 1
+    },
+    {
+        "course": ".NET Architecture and Design Principles",
+        "location": "DevelopMentor, London",
+        "description": "Building distributed applications training - distributed applications in .NET 4",
+        "when": { "year": 2010, "month": 10},
+        "length": 5
+    },
+    {
+        "course": "Træd op, træd nærmere",
+        "location": "Teknologisk Institut, Tåstrup",
+        "description": "Præsentationsteknik med Lars Klingert",
+        "when": { "year": 2008, "month": 10},
+        "length": 2
+    },
+    {
+        "course": "OO Grundbegreber og modellering med UML 2.0",
+        "location": "Teknologisk Institut, Tåstrup",
+        "description": "",
+        "when": { "year": 2008, "month": 8},
+        "length": 2
+    },
+    {
+        "course": "OO analyse, design og realisering med UML 2.0",
+        "location": "Teknologisk Institut, Tåstrup",
+        "description": "",
+        "when": { "year": 2008, "month": 8},
+        "length": 5
+    },
+    {
+        "course": "Software Estimation in Depth",
+        "location": "Construc Software, Seattle",
+        "description": "Demystifying the Black Art",
+        "when": { "year": 2008, "month": 4},
+        "length": 2
+    },
+    {
+        "course": "IBM FA21 Project Management",
+        "location": "Klarskovgaard, Korsør",
+        "description": "",
+        "when": { "year": 1999, "month": 8},
+        "length": 5
+    },
+    {
+        "course": "IBM FA13 Project Management",
+        "location": "Klarskovgaard, Korsør",
+        "description": "",
+        "when": { "year": 1999, "month": 10},
+        "length": 5
+    },
+    {
+        "course": "Data Warehouse Design",
+        "location": "Metodica, Tåstrup",
+        "description": "",
+        "when": { "year": 1998, "month": 1},
+        "length": 1
+    }]
+}

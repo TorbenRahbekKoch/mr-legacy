@@ -8,11 +8,13 @@ import * as WorkExperience from '../WorkExperience'
 import * as Fetch from './Fetch'
 import * as Profile from '../Profile'
 import * as Quotes from '../Quotes'
+import * as Education from '../Education'
 import { AllTexts } from './AllTexts'
 
 const defaultLanguage = 'dk'
 
 function fetchData(language: string) {
+
   Fetch.fetchTexts(language, allTexts => {
 
     const texts: AllTexts = allTexts
@@ -32,7 +34,18 @@ function fetchData(language: string) {
       company: texts.company,
       jobDescription: texts.jobDescription,
       now: texts.now,
+      workExperience: texts.workExperience,
       monthNames: monthNames
+    }
+
+    const educationTexts: Education.Texts = {
+      education: texts.education,
+      length: texts.length,
+      location: texts.location,
+      period: texts.period,
+      course: texts.course,
+      time: texts.time,
+      monthNames : monthNames
     }
 
     unstable_batchedUpdates(() =>
@@ -41,19 +54,10 @@ function fetchData(language: string) {
           console.log("fetchTexts:", prevState, draft)
           draft.ambient.initializing = prevState.ambient.initializing + 1
           draft.component.workExperience.texts = weTexts
+          draft.component.education.texts = educationTexts
         })
         console.log("fetchTexts result:", result)
         return result
-        // {
-        //   ambient: {
-        //     initializing: prevState.ambient.initializing + 1
-        //   },
-        //   component: {
-        //     workExperience: {
-        //       texts: weTexts
-        //     }
-        //   }
-        // } as ApplicationState
       }))
   })
 
@@ -104,6 +108,18 @@ function fetchData(language: string) {
         })
       }))
   })
+
+  Fetch.fetchEducation(language, education => {
+    unstable_batchedUpdates(() => {
+      useStore.setState(prevState => {
+        return produce(prevState, draft => {
+          draft.ambient.initializing = prevState.ambient.initializing + 1
+          draft.component.education.courses = education.courses
+          draft.component.education.formal = education.formal
+        })
+      })
+    })
+  })
 }
 
 export function createApplicationState(): UseBoundStore<ApplicationState, StoreApi<ApplicationState>> {
@@ -115,7 +131,8 @@ export function createApplicationState(): UseBoundStore<ApplicationState, StoreA
     component: {
       workExperience: WorkExperience.defaultProps,
       profile: Profile.defaultProps,
-      quotes: Quotes.defaultProps
+      quotes: Quotes.defaultProps,
+      education: Education.defaultProps
     },
     i8n: { monthNames: monthNames },
   }

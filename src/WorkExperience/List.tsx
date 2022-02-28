@@ -17,6 +17,7 @@ export interface Texts {
   company: string
   jobDescription: string
   now: string 
+  workExperience: string
   monthNames: string[]
 }
 
@@ -31,6 +32,7 @@ export const defaultProps = {
     company: "",
     jobDescription: "",
     now: "",
+    workExperience: "",
     monthNames: []
   }
 }
@@ -50,16 +52,8 @@ export function List({...props} :Props) {
   if (projects === undefined || texts === undefined || props.companies === undefined || props.companies.length === 0) {
     return null;
   }
-  console.log("In list: ", texts, props)
-
-  // const messaging = useMessaging();
-  // messaging.subscribe<SetFilterMessage>(msg => { /*do stuff*/ })
-
-  console.log("List projects", projects)
-  console.log("texts", texts)
 
   const companies = buildWorkExperienceList(props.companies, projects)
-  console.log("companies: ", companies)
   const elements: any[] = []
 
   const companyTexts: Company.Texts = {
@@ -81,8 +75,6 @@ export function List({...props} :Props) {
 
   companies.forEach(company => {
     company.company.texts = companyTexts
-    // if (company.childCompanies.length == 0 && company.projects.length == 0)
-    //   return;
     elements.push(<Company.Company {...company.company} key={company.company.id} />)
 
     company.childCompanies.forEach(company => {
@@ -99,21 +91,10 @@ export function List({...props} :Props) {
     })
   })
 
-  console.log("Elements: ", elements)
   return (
     <div>
+      <h2>{texts.workExperience}</h2>
       {elements}
-      {/* {companies.map(company => {
-        <Company.Company {...company.company} key={company.company.id}>
-        { company.childCompanies.map(company => {
-          return (<Company.Company {...company.company}>
-          { 
-            company.projects.map(project => {
-              return <Project.Project {...project}/>
-            })
-          }</Company.Company>)
-        })
-        }</Company.Company>})} */}
     </div>
   )
 }
