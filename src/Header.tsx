@@ -17,6 +17,7 @@ export function Header() {
     <div>
       <MugShot src="/images/mugshot.jpg"/>
       <StyledHeader>Mr. Legacy</StyledHeader>
+      <p>aka Torben Koch Pløen, +45 2482 1824, torben at kochploeen.dk</p>
     </div>
   )
 }

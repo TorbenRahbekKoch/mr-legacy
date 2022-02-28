@@ -1,16 +1,24 @@
+export interface QuoteData {
+  quote: string
+  author: string
+}
+
 export interface Props {
-  quotes: string[]
+  quotes: QuoteData[]
 }
 
 export const defaultProps = {
-  quotes: ["Det ville jo være smart, så det kan man ikke"]
+  quotes: []
 }
 
 export function Quote({ ...props }: Props) {
-  if (props?.quotes == null)
+  if (props?.quotes == null || props.quotes.length === 0)
     return null
-    
+
+  const now = new Date()
+  const minute = now.getMinutes()
+  const currentQuote = props.quotes[minute % props.quotes.length]
   return (
-    <span>{props.quotes[0]}</span>
+    <span>{currentQuote.quote}</span>
   )
 }

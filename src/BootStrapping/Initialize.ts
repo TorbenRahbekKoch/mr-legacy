@@ -120,6 +120,19 @@ function fetchData(language: string) {
       })
     })
   })
+
+  Fetch.fetchQuotes(quotes => {
+    unstable_batchedUpdates(() => {
+      var applicableQuotes = quotes.quotes
+        .filter(quote => quote.languages.find(value => value === language) != null)
+        .map(quote => ({ quote: quote.quote, author: quote.author} as Quotes.QuoteData))
+
+      useStore.setState(prevState => {
+      return produce(prevState, draft => {
+        draft.component.quotes.quotes = applicableQuotes
+      })})
+    })
+  })
 }
 
 export function createApplicationState(): UseBoundStore<ApplicationState, StoreApi<ApplicationState>> {

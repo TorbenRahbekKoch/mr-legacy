@@ -1,0 +1,36 @@
+{
+    "quotes": [{
+        "quote": "Det ville jo være smart, så det kan man ikke",
+        "author": "Mr. Legacy",
+        "languages": ["dk"]
+    },{
+        "quote": "Computere er noget lort",
+        "author": "Mr. Legacy",
+        "languages": ["dk"]
+    },{
+        "quote": "With decoupling comes flexibility, complexity and responsibiliy",
+        "author": "Mr. Legacy",
+        "languages": ["dk","en"]
+    },{
+        "quote": "The state of a microservice should be null",
+        "author": "Mr. Legacy",
+        "languages": ["dk","en"]
+    },{
+        "quote": "Size does not matter",
+        "author": "Mr. Legacy",
+        "languages": ["dk","en"]
+    },{
+        "quote": "Green fields are green only until someone takes a crap in said field",
+        "author": "Mr. Legacy",
+        "languages": ["dk","en"]
+    },{
+        "quote": "Det er svært at generalisere før 3. forsøg",
+        "author": "Mr. Legacy",
+        "languages": ["dk"]
+    },{
+        "quote": "Esoterisk",
+        "author": "Mr. Legacy",
+        "languages": ["dk"]
+    }
+    ]
+}

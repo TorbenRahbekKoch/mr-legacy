@@ -26,6 +26,10 @@ export async function fetchEducation(language: string, dataReceived: (data: Dto.
   fetchJson(`/data/education-${language}.json`, dataReceived)
 }
 
+export async function fetchQuotes(dataReceived: (data: Dto.QuoteDto) => void) {
+  fetchJson(`/data/quotes.json`, dataReceived)
+}
+
 export async function fetchCompanies(dataReceived: DataReceived) {
   fetchJson('/data/companies.json', dataReceived)
 }

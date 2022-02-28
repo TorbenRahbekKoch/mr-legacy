@@ -31,7 +31,7 @@ export function Course({...props}: Props) {
   const texts = props.texts
 
   function formatTime(when: When) {
-    return `${when.year}, ${texts.monthNames[when.month]}`
+    return `${when.year}, ${texts.monthNames[when.month-1]}`
   }
 
   return (
@@ -50,7 +50,7 @@ export function Course({...props}: Props) {
           {
             props.courses.map(course => {
               return (
-                <tr>
+                <tr key={`${course.course}-${formatTime(course.when)}`}>
                   <Style.EducationText>{formatTime(course.when)}</Style.EducationText>
                   <Style.EducationText>{course.course}<br/>{course.description}</Style.EducationText>
                   <Style.EducationText>{course.length}</Style.EducationText>

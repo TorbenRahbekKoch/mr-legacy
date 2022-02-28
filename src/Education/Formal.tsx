@@ -36,7 +36,7 @@ export function Formal({ ...props }: Props) {
           {
             props.educations.map(education => {
               return (
-                <tr>
+                <tr key={education.education}>
                   <Style.EducationText>{education.when}</Style.EducationText>
                   <Style.EducationText>{education.education}</Style.EducationText>
                   <Style.EducationText>{education.location}</Style.EducationText>
