@@ -56,7 +56,7 @@
         "rest",
         "wcf",
         "nsb",
-        "reacts",
+        "reactts",
         "odata",
         "docker",
         "kubernetes"
@@ -91,7 +91,8 @@
         "rest",
         "reactts",
         "docker",
-        "kubernetes"
+        "kubernetes",
+        "typescript"
       ]
     },
     {
@@ -120,7 +121,7 @@
         "umbraco",
         "css",
         "js",
-        "angular",
+        "angularjs",
         "octopus",
         "teamcity"
       ]
@@ -311,7 +312,7 @@
         "net45",
         "wcf",
         "wpf",
-        "wf4"
+        "wf"
       ]
     },
     {
@@ -626,7 +627,7 @@
       "technologies": [
         "windows2000",
         "delphi6",
-        "scripthosting",
+        "wsh",
         "oracle"
       ]
     },
