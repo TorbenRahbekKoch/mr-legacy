@@ -1,4 +1,5 @@
 export type { Props as Company } from './Company'
+export type { Technology } from './Project'
 export type { Texts } from './List'
 export { List } from './List'
 export { defaultProps } from './List'

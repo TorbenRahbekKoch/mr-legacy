@@ -98,6 +98,29 @@ function fetchData(language: string) {
     })
   })
 
+  Fetch.fetchTechnologies(language, technologyData => {
+    unstable_batchedUpdates(() => {
+      console.log("fetchTechnologies: ", technologyData)
+       const technologies = technologyData.technologies
+         .map((technology): WorkExperience.Technology => ({
+           id : technology.id,
+           name : technology.name,
+           description: technology.description,
+           links : technology.links
+         } as WorkExperience.Technology))
+
+      // console.log("fetchCompanies 2: ", companies)
+      useStore.setState(prevState => {
+        const result = produce(prevState, draft => {
+          draft.ambient.initializing = prevState.ambient.initializing + 1
+          draft.component.workExperience.technologyLookup = technologies
+        })
+        console.log("Fetchcompanies result: ", result)
+        return result;
+      })
+    })
+  })
+
   Fetch.fetchProfile(language, profileText => {
     unstable_batchedUpdates(() =>
       useStore.setState(prevState => {

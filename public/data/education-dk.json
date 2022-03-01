@@ -39,6 +39,13 @@
         "length": 1
     },
     {
+        "course": "Xamarin University",
+        "location": "Online",
+        "description": "Deltog i en del online-kurser i Xamarin for at snuse lidt til mobiludvikling",
+        "when": { "year": 2015, "month": 7},
+        "length": 5
+    },
+    {
         "course": "Warm Crocodile Developer Conference",
         "location": "København",
         "description": "",

@@ -14,3 +14,14 @@ export interface SingleQuote {
 export interface QuoteDto {
   quotes : SingleQuote[]
 }
+
+export interface TechnologyDto {
+  id : string
+  name : string
+  description: string
+  links: string[]
+}
+
+export interface TechnologiesDto {
+  technologies: TechnologyDto[]
+}

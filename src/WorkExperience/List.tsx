@@ -6,6 +6,7 @@ import * as Project from "./Project"
 export interface Props {
   projects: Project.Props[]
   companies: Company.Props[]
+  technologyLookup: Project.Technology[]
   texts: Texts
 }
 
@@ -34,10 +35,9 @@ export const defaultProps = {
     now: "",
     workExperience: "",
     monthNames: []
-  }
+  },
+  technologyLookup: []
 }
-
-export const defaultName = "workExperiences"
 
 export function List({...props} :Props) {
   // const name = componentName ?? defaultName
@@ -82,11 +82,13 @@ export function List({...props} :Props) {
       elements.push(<Company.Company {...company.company} key={company.company.id} />)
       company.projects.forEach(project => {
         project.texts = projectTexts
+        project.technologyLookup = props.technologyLookup
         elements.push(<Project.Project {...project} key={project.id} />)
       })
     })
     company.projects.forEach(project => {
       project.texts = projectTexts
+      project.technologyLookup = props.technologyLookup
       elements.push(<Project.Project {...project} key={project.id} />)
     })
   })

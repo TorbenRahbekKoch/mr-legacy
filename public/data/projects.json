@@ -22,10 +22,10 @@
         "description": "Implementing a nuget package allowing for using OData as access layer for IDA Crm"
       },
       "technologies": [
-        "VS",
-        "Netstandard2",
-        "Nuget",
-        "OData"
+        "vs",
+        "netstandard2",
+        "nuget",
+        "odata"
       ]
     },
     {
@@ -50,12 +50,11 @@
         "description": ""
       },
       "technologies": [
-        "VS",
+        "vs",
         "aspnetcore",
         "netcore3",
         "rest",
         "wcf",
-        "net",
         "nsb",
         "reacts",
         "odata",

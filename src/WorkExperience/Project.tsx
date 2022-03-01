@@ -18,6 +18,13 @@ export interface ProjectDescription {
   description: string
 }
 
+export interface Technology {
+  id: string
+  name: string
+  description: string
+  links: string[]
+}
+
 export interface Props {
   companyId: string
   id: string
@@ -25,11 +32,23 @@ export interface Props {
   dk: ProjectDescription
   en: ProjectDescription
   technologies: string[]
+  technologyLookup: Technology[]
   texts: Texts
 }
 
 export function Project(props: Props) {
-  const technologies = props.technologies?.reduce((prev, current) => `${prev}, ${current}`)
+  const technologies = props.technologies
+    ?.reduce((prev, current) => {
+      const tryFindTech = props.technologyLookup
+        .find(tech => tech.id === current)
+      const actual = tryFindTech != null
+        ? tryFindTech.name
+        : current
+      if (prev === "")
+        return actual
+      else
+        return `${prev}, ${actual}`
+    }, "")
   const texts = props.texts
 
   const language = useStore(state => state.ambient.language)

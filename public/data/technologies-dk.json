@@ -1,7 +1,70 @@
 {
-    "vs" : {
-        "name": "Visual Studio",
-        "description": "IDE/Udviklingsværktøj fra Microsoft",
-        "links" : []
-    }
+    "technologies": [
+        {
+            "id": "vs",
+            "name": "Visual Studio - forskellige versioner",
+            "description": "IDE/Udviklingsværktøj fra Microsoft",
+            "links": []
+        },{
+            "id": "netstandard2",
+            "name": ".NET Standard 2.0",
+            "description": "Formel specification af API'er tilgængelige på flere .NET implementationer",
+            "links": ["https://docs.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0"]
+        },{
+            "id": "nuget",
+            "name": "Nuget",
+            "description": "Fremstilling af nuget-pakker",
+            "links": ["https://docs.microsoft.com/en-us/nuget/"]
+        },{
+            "id": "odata",
+            "name": "OData",
+            "description": "Dataudvekslingsprotokollen OData",
+            "links": ["https://www.odata.org/", "https://docs.microsoft.com/en-us/odata/"]
+        },{
+            "id": "aspnetcore",
+            "name": "ASP.NET Core - forskellige versioner",
+            "description": "Webudviklingsframework",
+            "links": ["https://docs.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-6.0"]
+        },{
+            "id": "netcore3",
+            "name": ".NET Core 3",
+            "description": "Cross-platform .NET framework",
+            "links": [""]
+        },{
+            "id": "rest",
+            "name": "REST",
+            "description": "Brug og design af REST-sites. ",
+            "links": [""]
+        },{
+            "id": "wcf",
+            "name": "WCF",
+            "description": "Windows Communication Foundation - SOAP-framework",
+            "links": [""]
+        },{
+            "id": "nsb",
+            "name": "NServicebus",
+            "description": "Particular Software NServicebus",
+            "links": ["https://particular.net/nservicebus"]
+        },{
+            "id": "reactts",
+            "name": "React TS",
+            "description": "React med TypeScript",
+            "links": ["https://www.typescriptlang.org/docs/handbook/react.html", "https://reactjs.org/"]
+        },{
+            "id": "docker",
+            "name": "Docker",
+            "description": "Container-orchestration",
+            "links": ["https://www.docker.com"]
+        },{
+            "id": "kubernetes",
+            "name": "Kubernets",
+            "description": "Container-miljø",
+            "links": []
+        },{
+            "id": "kubernetes",
+            "name": "Kubernets",
+            "description": "Container-miljø",
+            "links": []
+        }
+    ]
 }
