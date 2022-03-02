@@ -9,7 +9,7 @@ export const Div = styled.div`
 `
 
 export const Table = styled.table`
-  width: 90%;
+  width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
 `

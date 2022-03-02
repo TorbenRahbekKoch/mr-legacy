@@ -40,12 +40,6 @@ export const defaultProps = {
 }
 
 export function List({...props} :Props) {
-  // const name = componentName ?? defaultName
-  // const texts = useStore(store => store.i8n.component.get(name)?.texts as Texts)
-  // const state = useStore(store => store.component.get(name) as Props)
-  // const projects = state?.projects
-
-  console.log("Props in List: ", props)
   const texts = props.texts
   const projects = props.projects
 

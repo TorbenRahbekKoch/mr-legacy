@@ -8,7 +8,7 @@
         "author": "Mr. Legacy",
         "languages": ["dk"]
     },{
-        "quote": "With decoupling comes flexibility, complexity and responsibiliy",
+        "quote": "With decoupling comes flexibility, complexity and responsibility",
         "author": "Mr. Legacy",
         "languages": ["dk","en"]
     },{
@@ -31,6 +31,10 @@
         "quote": "Esoterisk",
         "author": "Mr. Legacy",
         "languages": ["dk"]
+    },{
+        "quote": "Doing microservices just because everyone else is doing it is a terrible idea",
+        "author": "Sam Newman",
+        "languages": ["en","dk"]
     }
     ]
 }

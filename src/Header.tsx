@@ -2,24 +2,23 @@ import styled from 'styled-components';
 
 const MugShot = styled.picture`
   position: absolute;
+  @media screen and (min-width: 1000px) {
+    left: 10%;
+    top: 15px;    
+  }
   @media screen and (max-width: 1000px) {
   left: 20%;
   top: 10px;
   margin-bottom: -72px;
   }
-  @media screen and (min-width: 1000px) {
-    left: 20%;
-    top: 15px;    
-  }
   @media screen and (max-width: 600px) {
-  left: 10px;
+  left: 10%;
   top: 10px;
   margin-bottom: -72px;
   }
 `
 const StyledHeader = styled.h1`
   margin-top: 10px;
-  font-family: Luminary;
   font-style: italic;
   font-size: 2.5em;
   font-weight: bold;

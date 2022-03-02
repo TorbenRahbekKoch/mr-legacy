@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const Profile = styled.div`
-  width: 60%;
+  margin-left: 0%;
+  width: 80%;
   font-size: 1.5em;
   text-align: left;
   @media screen and (max-width: 600px) {

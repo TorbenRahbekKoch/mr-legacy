@@ -18,7 +18,6 @@ function fetchData(language: string) {
   Fetch.fetchTexts(language, allTexts => {
 
     const texts: AllTexts = allTexts
-    console.log("texts: ", allTexts)
 
     let monthNames: string[]
     if (language === "dk")
@@ -51,48 +50,42 @@ function fetchData(language: string) {
     unstable_batchedUpdates(() =>
       useStore.setState(prevState => {
         const result = produce(prevState, draft => {
-          console.log("fetchTexts:", prevState, draft)
           draft.ambient.initializing = prevState.ambient.initializing + 1
           draft.component.workExperience.texts = weTexts
           draft.component.education.texts = educationTexts
         })
-        console.log("fetchTexts result:", result)
         return result
       }))
   })
 
   Fetch.fetchProjects(projects => {
-    console.log("Projects:", projects)
     unstable_batchedUpdates(() =>
       useStore.setState(prevState => {
         const result = produce(prevState, draft => {
           draft.ambient.initializing = prevState.ambient.initializing + 1
           draft.component.workExperience.projects = projects["projects"]
         })
-        console.log("Fetchprojects result: ", result)
         return result;
       }))
   })
 
   Fetch.fetchCompanies(companyData => {
     unstable_batchedUpdates(() => {
-      console.log("fetchCompanies: ", companyData)
       const companies = companyData["companies"]
         .map((company: any): WorkExperience.Company => ({
           id: company["id"],
           parentId: company["parentId"],
           period: company["period"],
           name: company["name"],
+          jobDescription: language === "dk" ? company["dk"].jobDescription : company["en"].jobDescription,
           description: language === "dk" ? company["dk"].description : company["en"].description
         } as WorkExperience.Company))
 
-      console.log("fetchCompanies 2: ", companies)
       useStore.setState(prevState => {
         const result = produce(prevState, draft => {
           draft.ambient.initializing = prevState.ambient.initializing + 1
           draft.component.workExperience.companies = companies
         })
-        console.log("Fetchcompanies result: ", result)
         return result;
       })
     })
@@ -100,7 +93,6 @@ function fetchData(language: string) {
 
   Fetch.fetchTechnologies(language, technologyData => {
     unstable_batchedUpdates(() => {
-      console.log("fetchTechnologies: ", technologyData)
        const technologies = technologyData.technologies
          .map((technology): WorkExperience.Technology => ({
            id : technology.id,
@@ -109,13 +101,11 @@ function fetchData(language: string) {
            links : technology.links
          } as WorkExperience.Technology))
 
-      // console.log("fetchCompanies 2: ", companies)
       useStore.setState(prevState => {
         const result = produce(prevState, draft => {
           draft.ambient.initializing = prevState.ambient.initializing + 1
           draft.component.workExperience.technologyLookup = technologies
         })
-        console.log("Fetchcompanies result: ", result)
         return result;
       })
     })
@@ -125,7 +115,6 @@ function fetchData(language: string) {
     unstable_batchedUpdates(() =>
       useStore.setState(prevState => {
         return produce(prevState, draft => {
-          console.log("fetchprofile draft:", prevState, draft)
           draft.ambient.initializing = prevState.ambient.initializing + 1
           draft.component.profile.profile = profileText
         })
@@ -176,7 +165,6 @@ export function createApplicationState(): UseBoundStore<ApplicationState, StoreA
   defaultState.component.profile.birthDate = new Date(1970, 6, 30)
   const useStore = create(set => defaultState)
 
-  console.log("Default state: ", defaultState)
   fetchData(defaultLanguage)
 
   return useStore;

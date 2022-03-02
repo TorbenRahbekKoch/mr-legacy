@@ -6,7 +6,7 @@
         "name" : "Software Passion",
         "period": {"start" : { "year": 2007, "month": 10},
         "end" :  null},
-        "dk": { "description" : "Mit firma", "jobDescription": "Systemudvikling" },
+        "dk": { "description" : "Selvstændig konsulent", "jobDescription": "Systemudvikling" },
         "uk": { "description" : "", "jobDescription": "" }
     },
     {
@@ -15,7 +15,7 @@
         "name" : "Ingeniørforeningen, IDA",
         "period": {"start" : { "year": 2014, "month": 5},
         "end" : { "year": 2021, "month": 12}},
-        "dk":{ "description" : "", "jobDescription": ""}, 
+        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design, datakonvertering, fejlretning, debugging"}, 
         "uk":{ "description" : "", "jobDescription": ""}        
     },
     {
@@ -24,7 +24,7 @@
         "name" : "KMD",
         "period": {"start" : { "year": 2012, "month": 3},
         "end" : { "year": 2013, "month": 12}},
-        "dk":{ "description" : "", "jobDescription": ""}, 
+        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design"}, 
         "uk":{ "description" : "", "jobDescription": ""}        
     },
     {
@@ -33,7 +33,7 @@
         "name" : "Thomas Cook Airlines",
         "period": {"start" : { "year": 2010, "month": 3},
         "end" : { "year": 2012, "month": 12}},
-        "dk":{ "description" : "", "jobDescription": ""}, 
+        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design"}, 
         "uk":{ "description" : "", "jobDescription": ""}        
     },
     {
@@ -42,7 +42,7 @@
         "name" : "Gentofte Kommune",
         "period": {"start" : { "year": 2009, "month": 3},
         "end" : { "year": 2010, "month": 10}},
-        "dk":{ "description" : "", "jobDescription": ""}, 
+        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design"}, 
         "uk":{ "description" : "", "jobDescription": ""}        
     },
     {
@@ -51,7 +51,7 @@
         "name" : "EasyFlex",
         "period": {"start" : { "year": 2008, "month": 12},
         "end" : { "year": 2009, "month": 10}},
-        "dk":{ "description" : "", "jobDescription": ""}, 
+        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design, datakonvertering"}, 
         "uk":{ "description" : "", "jobDescription": ""}        
     },
     {
@@ -59,7 +59,7 @@
         "parentId" : "SP",
         "name" : "Post Danmark",
         "period": {"start" : { "year": 2002, "month": 12}, "end" : { "year": 2008, "month": 10}},
-        "dk":{ "description" : "", "jobDescription": ""}, 
+        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design, datakonvertering"}, 
         "uk":{ "description" : "", "jobDescription": ""}        
     },
     {
@@ -67,7 +67,7 @@
         "parentId" : null,
         "name" : "EFS Technology",
         "period": {"start" : { "year": 2002, "month": 1 }, "end" : { "year": 2007, "month": 9}},
-        "dk":{ "description" : "", "jobDescription": ""}, 
+        "dk":{ "description" : "Udskilt fra XPonCard 1. januar 2002. Nogle projekter er påbegyndt i XPoncard regi.  \nEFS Technology blev 1. august 2007 solgt til Formpipe.  \n\nFastansættelse", "jobDescription": "Systemdesign, Systemudvikling, Arkitekt, Dokumentation, Database Design, OOD, OOP, Programmering, Release Manager, Brugergrænsefladeudvikling, Datakonvertering, Dokumentation, Fejlretning, Implementering, OOA, Performance Tuning, Technical Writer, Test-drevet udvikling, Undervisning"}, 
         "uk":{ "description" : "", "jobDescription": ""}        
     },
     {
@@ -94,7 +94,7 @@
         "name" : "Miltorb-IT",
         "period": {"start" : { "year": 2000, "month": 2},
         "end" : { "year": 2001, "month": 8}},
-        "dk":{ "description" : "", "jobDescription": ""}, 
+        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": ""}, 
         "uk":{ "description" : "", "jobDescription": ""}        
     },
     {
@@ -121,7 +121,7 @@
         "name" : "FancyWare",
         "period": {"start" : { "year": 1993, "month": 3},
         "end" : { "year": 1997, "month": 8}},
-        "dk":{ "description" : "", "jobDescription": ""}, 
+        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": ""}, 
         "uk":{ "description" : "", "jobDescription": ""}        
     },
     {
@@ -130,7 +130,7 @@
         "name" : "Bostik A/S",
         "period": {"start" : { "year": 1993, "month": 3},
         "end" : { "year": 1997, "month": 8}},
-        "dk":{ "description" : "", "jobDescription": ""}, 
+        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": ""}, 
         "uk":{ "description" : "", "jobDescription": ""}        
     },
     {

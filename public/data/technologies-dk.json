@@ -211,6 +211,11 @@
             "description": "",
             "links": []
         },{
+            "id": "ts",
+            "name": "Teamshare",
+            "description": "",
+            "links": []
+        },{
             "id": "visualc++6",
             "name": "Microsoft Visual C++ 6",
             "description": "",
@@ -438,6 +443,11 @@
         },{
             "id": "j#",
             "name": "J#",
+            "description": "",
+            "links": []
+        },{
+            "id": "ddd",
+            "name": "Domain Driven Design",
             "description": "",
             "links": []
         }

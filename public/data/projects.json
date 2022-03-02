@@ -59,7 +59,43 @@
         "reactts",
         "odata",
         "docker",
-        "kubernetes"
+        "kubernetes",
+        "ddd"
+      ]
+    },
+    {
+      "companyId": "IDA",
+      "id": "tis",
+      "period": {
+        "start": {
+          "year": 2019,
+          "month": 11
+        },
+        "end": {
+          "year": 2020,
+          "month": 3
+        }
+      },
+      "dk": {
+        "project": "Teamshare Integration Service",
+        "description": "Sammen med to IDA kollegaer og “The Architect” implementeredes et API-lag og tilhørende nuget-pakke for at abstrahere adgang til IDAs Teamshare installation (som vitterligt er en pine i bagen at udvikle op imod)"
+      },
+      "en": {
+        "project": "",
+        "description": ""
+      },
+      "technologies": [
+        "vs",
+        "ts",
+        "aspnet",
+        "net48",
+        "wcf",
+        "nuget",
+        "net",
+        "nservicebus",
+        "octopus",
+        "teamcity",
+        "rest"
       ]
     },
     {
@@ -646,7 +682,7 @@
       },
       "dk": {
         "project": "GSM Data Generator",
-        "description": "Vedligeholdelse af produktionssoftware til generering af data til SIMkort.  \nDesign og implementation af diverse databehandlende dele af programmet.  \nAdministration og programmering af SQL Server 7.0.  \nForskellige NT administrationsopgaver."
+        "description": "Stadigt den samme GSM Data Generator.  \nVedligeholdelse af produktionssoftware til generering af data til SIMkort.  \nDesign og implementation af diverse databehandlende dele af programmet.  \nAdministration og programmering af SQL Server 7.0.  \nForskellige NT administrationsopgaver."
       },
       "en": {
         "project": "",
@@ -682,33 +718,6 @@
       "technologies": [
         "delphi4",
         "delphi5"
-      ]
-    },
-    {
-      "companyId": "GRAPH",
-      "id": "gsm3",
-      "period": {
-        "start": {
-          "year": 2000,
-          "month": 2
-        },
-        "end": {
-          "year": 2001,
-          "month": 8
-        }
-      },
-      "dk": {
-        "project": "GSM Data Generator",
-        "description": "Vedligeholdelse af produktionssoftware til generering af data til SIMkort.  \nDesign og implementation af diverse databehandlende dele af programmet.  \nAdministration og programmering af SQL Server 7.0.  \nForskellige NT administrationsopgaver."
-      },
-      "en": {
-        "project": "",
-        "description": ""
-      },
-      "technologies": [
-        "delphi4",
-        "delphi5",
-        "mssql7"
       ]
     },
     {
