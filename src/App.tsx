@@ -4,6 +4,7 @@ import { Header } from './Header'
 import { Profile } from './Profile/Profile'
 import { Quote } from './Quotes/Quote'
 import { Education } from './Education'
+import { Menu } from './Menu'
 import { useStore } from './BootStrapping/';
 import * as WorkExperience from './WorkExperience'
 
@@ -32,8 +33,8 @@ function App() {
   return (
     <StyledApp>
       <Header />
-      {/* <Menu></Menu> */}
       <Quote {...quotes} />
+      <Menu></Menu>
       {/* <User></User> */}
       <Profile {...profile}></Profile>
       <Education {...education} />
