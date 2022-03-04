@@ -18,6 +18,12 @@
         "when": "1986-89"
     }],
     "courses": [{
+        "course": "Persondataforordningen",
+        "location": "København",
+        "description": "Overordnet gennemgang af GDPR",
+        "when": { "year": 2018, "month": 4},
+        "length": 1
+    },{
         "course": "SDD Deep Dive",
         "location": "London",
         "description": "Identity & Access control for modern web applications & API using ASP.NET Core 1.0",

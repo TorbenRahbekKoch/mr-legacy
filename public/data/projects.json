@@ -206,7 +206,7 @@
       },
       "dk": {
         "project": "IDA Forsikring website",
-        "description": "Sammen med en anden konsulent byggedes et Umbraco-website til IDA forsikring (https://idaforsikring.dk)"
+        "description": "Sammen med en anden ekstern konsulent byggedes et Umbraco-website til IDA forsikring (https://idaforsikring.dk).  \nKonvertering af CSS fra tidligere idaforsikring.dk.  \nImplementation af url alias og redirect-system."
       },
       "en": {
         "project": "",
@@ -316,7 +316,10 @@
         "reactjs",
         "reactts",
         "js",
-        "typescript"
+        "typescript",
+        "subversion",
+        "git",
+        "octopus"
       ]
     },
     {
