@@ -19,7 +19,7 @@ const MugShot = styled.picture`
 `
 const StyledHeader = styled.h1`
   margin-top: 10px;
-  font-style: italic;
+  font-family: courier;  
   font-size: 2.5em;
   font-weight: bold;
   padding-left: 72px;

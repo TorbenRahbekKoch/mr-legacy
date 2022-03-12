@@ -39,5 +39,5 @@ export const EducationHeader = styled(TitleTd)`
 `
 
 export const EducationText = styled(Td)`
-  vertial-align: top;
+  vertical-align: top;
 `

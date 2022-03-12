@@ -25,3 +25,16 @@ export interface TechnologyDto {
 export interface TechnologiesDto {
   technologies: TechnologyDto[]
 }
+
+export interface BlogEntry {
+  url: string
+  title : string
+  teaser: string
+  dir: string
+  date: string
+  categories: string[]
+}
+
+export interface BlogEntries {
+  blogEntries: BlogEntry[]
+}

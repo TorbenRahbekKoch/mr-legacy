@@ -32,18 +32,18 @@ export const TitleCol = styled.col`
 `
 
 export const CompanyTable = styled(Table)`
-    background-color: ${(props: any) => props.parentId == null ? "papayawhip" : "beige"};
+  background-color: ${(props: any) => props.parentId == null ? "papayawhip" : "beige"};
 `
 
 export const CompanyHeader = styled(TitleTd)`
 `
 
 export const ItemText = styled(Td)`
-  vertial-align: top;
+  vertical-align: top;
 `
 
 export const ItemTable = styled(Table)`
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 `
 
 export const ItemHeader = styled(TitleTd)`

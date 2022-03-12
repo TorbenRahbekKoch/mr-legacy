@@ -9,6 +9,7 @@ import * as Fetch from './Fetch'
 import * as Profile from '../Profile'
 import * as Quotes from '../Quotes'
 import * as Education from '../Education'
+import * as Blog from '../Blog'
 import { AllTexts } from './AllTexts'
 
 const defaultLanguage = 'dk'
@@ -44,7 +45,7 @@ function fetchData(language: string) {
       period: texts.period,
       course: texts.course,
       time: texts.time,
-      monthNames : monthNames
+      monthNames: monthNames
     }
 
     unstable_batchedUpdates(() =>
@@ -93,13 +94,13 @@ function fetchData(language: string) {
 
   Fetch.fetchTechnologies(language, technologyData => {
     unstable_batchedUpdates(() => {
-       const technologies = technologyData.technologies
-         .map((technology): WorkExperience.Technology => ({
-           id : technology.id,
-           name : technology.name,
-           description: technology.description,
-           links : technology.links
-         } as WorkExperience.Technology))
+      const technologies = technologyData.technologies
+        .map((technology): WorkExperience.Technology => ({
+          id: technology.id,
+          name: technology.name,
+          description: technology.description,
+          links: technology.links
+        } as WorkExperience.Technology))
 
       useStore.setState(prevState => {
         const result = produce(prevState, draft => {
@@ -137,14 +138,41 @@ function fetchData(language: string) {
     unstable_batchedUpdates(() => {
       var applicableQuotes = quotes.quotes
         .filter(quote => quote.languages.find(value => value === language) != null)
-        .map(quote => ({ quote: quote.quote, author: quote.author} as Quotes.QuoteData))
+        .map(quote => ({ quote: quote.quote, author: quote.author } as Quotes.QuoteData))
 
       useStore.setState(prevState => {
-      return produce(prevState, draft => {
-        draft.component.quotes.quotes = applicableQuotes
-      })})
+        return produce(prevState, draft => {
+          draft.component.quotes.quotes = applicableQuotes
+        })
+      })
     })
   })
+
+  Fetch.fetchBlogs(blogs => {
+    const blogEntries = blogs.blogEntries
+      .map(blog => {
+        const date =
+          blog.date === null
+          ? undefined
+          : new Date(blog.date)
+
+        return { 
+        url: blog.url,
+        title: blog.title,
+        teaser: blog.teaser,
+        dir: blog.dir,
+        date: date,
+        categories: blog.categories
+      } as Blog.BlogEntry
+    })
+    
+    useStore.setState(prevState => {
+      return produce(prevState, draft => {
+        draft.component.blogs = { blogEntries: blogEntries }        
+      })
+    })
+  })
+
 }
 
 export function createApplicationState(): UseBoundStore<ApplicationState, StoreApi<ApplicationState>> {
@@ -157,7 +185,8 @@ export function createApplicationState(): UseBoundStore<ApplicationState, StoreA
       workExperience: WorkExperience.defaultProps,
       profile: Profile.defaultProps,
       quotes: Quotes.defaultProps,
-      education: Education.defaultProps
+      education: Education.defaultProps,
+      blogs: Blog.defaultProps
     },
     i8n: { monthNames: monthNames },
   }
@@ -169,5 +198,7 @@ export function createApplicationState(): UseBoundStore<ApplicationState, StoreA
 
   return useStore;
 }
+
+
 
 export const useStore = createApplicationState()

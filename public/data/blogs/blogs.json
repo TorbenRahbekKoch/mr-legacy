@@ -1,0 +1,20 @@
+{
+    "blogEntries": [
+        {
+            "url" : "/blogs/about-this-site",
+            "title": "About this site",
+            "dir": "about-this-site",
+			"teaser": "Fascinating stories about the horrors of...",
+            "date": "2022-03-03",
+			"categories": ["programming"]
+        },
+        {
+            "url" : "/blogs/monolith-to-microservices",
+            "title": "Monolith to microservices - a review",
+            "teaser": "Mr. Microservice did it again - read all about it here...",
+            "dir": "monolith-to-microservices",
+            "date": null,
+			"categories": ["review"]
+        }
+    ]
+}
