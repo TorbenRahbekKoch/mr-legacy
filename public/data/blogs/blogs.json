@@ -4,8 +4,8 @@
             "url" : "/blogs/about-this-site",
             "title": "About this site",
             "dir": "about-this-site",
-			"teaser": "Fascinating stories about the horrors of...",
-            "date": "2022-03-03",
+			"teaser": "Basics of how the site is made...",
+            "date": "2022-03-13",
 			"categories": ["programming"]
         },
         {
