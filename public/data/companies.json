@@ -1,146 +1,369 @@
 {
     "companies": [
-    {
-        "id" : "SP",
-        "parentId" : null,
-        "name" : "Software Passion",
-        "period": {"start" : { "year": 2007, "month": 10},
-        "end" :  null},
-        "dk": { "description" : "Selvstændig konsulent", "jobDescription": "Systemudvikling" },
-        "uk": { "description" : "", "jobDescription": "" }
-    },
-    {
-        "id": "IDA",
-        "parentId" : "SP",
-        "name" : "Ingeniørforeningen, IDA",
-        "period": {"start" : { "year": 2014, "month": 5},
-        "end" : { "year": 2021, "month": 12}},
-        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design, datakonvertering, fejlretning, debugging"}, 
-        "uk":{ "description" : "", "jobDescription": ""}        
-    },
-    {
-        "id": "KMD",
-        "parentId" : "SP",
-        "name" : "KMD",
-        "period": {"start" : { "year": 2012, "month": 3},
-        "end" : { "year": 2013, "month": 12}},
-        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design"}, 
-        "uk":{ "description" : "", "jobDescription": ""}        
-    },
-    {
-        "id" : "COOK",
-        "parentId" : "SP",
-        "name" : "Thomas Cook Airlines",
-        "period": {"start" : { "year": 2010, "month": 3},
-        "end" : { "year": 2012, "month": 12}},
-        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design"}, 
-        "uk":{ "description" : "", "jobDescription": ""}        
-    },
-    {
-        "id": "GK",
-        "parentId" : "SP",
-        "name" : "Gentofte Kommune",
-        "period": {"start" : { "year": 2009, "month": 3},
-        "end" : { "year": 2010, "month": 10}},
-        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design"}, 
-        "uk":{ "description" : "", "jobDescription": ""}        
-    },
-    {
-        "id": "EF",
-        "parentId" : "SP",
-        "name" : "EasyFlex",
-        "period": {"start" : { "year": 2008, "month": 12},
-        "end" : { "year": 2009, "month": 10}},
-        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design, datakonvertering"}, 
-        "uk":{ "description" : "", "jobDescription": ""}        
-    },
-    {
-        "id" : "PD",
-        "parentId" : "SP",
-        "name" : "Post Danmark",
-        "period": {"start" : { "year": 2002, "month": 12}, "end" : { "year": 2008, "month": 10}},
-        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design, datakonvertering"}, 
-        "uk":{ "description" : "", "jobDescription": ""}        
-    },
-    {
-        "id" : "EFS",
-        "parentId" : null,
-        "name" : "EFS Technology",
-        "period": {"start" : { "year": 2002, "month": 1 }, "end" : { "year": 2007, "month": 9}},
-        "dk":{ "description" : "Udskilt fra XPonCard 1. januar 2002. Nogle projekter er påbegyndt i XPoncard regi.  \nEFS Technology blev 1. august 2007 solgt til Formpipe.  \n\nFastansættelse", "jobDescription": "Systemdesign, Systemudvikling, Arkitekt, Dokumentation, Database Design, OOD, OOP, Programmering, Release Manager, Brugergrænsefladeudvikling, Datakonvertering, Dokumentation, Fejlretning, Implementering, OOA, Performance Tuning, Technical Writer, Test-drevet udvikling, Undervisning"}, 
-        "uk":{ "description" : "", "jobDescription": ""}        
-    },
-    {
-        "id": "XP" ,
-        "parentId" : null,
-        "name" : "XPonCard A/S",
-        "period": {"start" : { "year": 2001, "month": 9},
-        "end" : { "year": 2001, "month": 12}},
-        "dk":{ "description" : "Afdelingen for printerløsninger, som blev købt ud og blev til EFS Technology.  \nAfdelingen for loyalitetskort (XSS).  \n\nFastansættelse", "jobDescription": ""}, 
-        "uk":{ "description" : "", "jobDescription": ""}        
-    },
-    {
-        "id": "GRAPH" ,
-        "parentId" : "MIT",
-        "name" : "Graphium",
-        "period": {"start" : { "year": 2000, "month": 2},
-        "end" : { "year": 2001, "month": 8}},
-        "dk":{ "description" : "SIM-kort, plastkort, VISA.  \nSkiftede senere navn til XPonCard", "jobDescription": ""}, 
-        "uk":{ "description" : "", "jobDescription": ""}        
-    },
-    {
-        "id": "MIT",
-        "parentId" : null,
-        "name" : "Miltorb-IT",
-        "period": {"start" : { "year": 2000, "month": 2},
-        "end" : { "year": 2001, "month": 8}},
-        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": ""}, 
-        "uk":{ "description" : "", "jobDescription": ""}        
-    },
-    {
-        "id": "DC",
-        "parentId" : null,
-        "name" : "Danish Company ApS",
-        "period": {"start" : { "year": 1999, "month": 3},
-        "end" : { "year": 2000, "month": 1}},
-        "dk":{ "description" : "Fastansat konsulent", "jobDescription": ""}, 
-        "uk":{ "description" : "", "jobDescription": ""}        
-    },
-    {
-        "id": "OLICOM",
-        "parentId" : null,
-        "name" : "Olicom A/S",
-        "period": {"start" : { "year": 1997, "month": 8},
-        "end" : { "year": 1999, "month": 2}},
-        "dk":{ "description" : "Produktion og salg af netværksudstyr.  \n\nFastansættelse", "jobDescription": ""}, 
-        "uk":{ "description" : "", "jobDescription": ""}        
-    },
-    {
-        "id":"FW",
-        "parentId" : null,
-        "name" : "FancyWare",
-        "period": {"start" : { "year": 1993, "month": 3},
-        "end" : { "year": 1997, "month": 8}},
-        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": ""}, 
-        "uk":{ "description" : "", "jobDescription": ""}        
-    },
-    {
-        "id": "BOSTIK",
-        "parentId" : "FW",
-        "name" : "Bostik A/S",
-        "period": {"start" : { "year": 1993, "month": 3},
-        "end" : { "year": 1997, "month": 8}},
-        "dk":{ "description" : "Selvstændig konsulent", "jobDescription": ""}, 
-        "uk":{ "description" : "", "jobDescription": ""}        
-    },
-    {
-        "id": "GKU",
-        "parentId" : null,
-        "name" : "Galten Kommunale Ungdomsskole",
-        "period": {"start" : { "year": 1993, "month": 8},
-        "end" : { "year": 1996, "month": 5}},
-        "dk":{ "description" : "Undervisning af 14-15årige skoleelever i \"datalære\".", "jobDescription": ""}, 
-        "uk":{ "description" : "", "jobDescription": ""}        
-    }
+        {
+            "id": "SP",
+            "parentId": null,
+            "name": "Software Passion",
+            "period": {
+                "start": {
+                    "year": 2007,
+                    "month": 10
+                },
+                "end": null
+            },
+            "dk": {
+                "description": "Selvstændig konsulent",
+                "jobDescription": "Systemudvikling"
+            },
+            "uk": {
+                "description": "",
+                "jobDescription": ""
+            }
+        },
+        {
+            "id": "IDA",
+            "parentId": "SP",
+            "name": "Ingeniørforeningen, IDA",
+            "period": {
+                "start": {
+                    "year": 2014,
+                    "month": 5
+                },
+                "end": {
+                    "year": 2021,
+                    "month": 12
+                }
+            },
+            "dk": {
+                "description": "Selvstændig konsulent",
+                "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design, datakonvertering, fejlretning, debugging"
+            },
+            "uk": {
+                "description": "",
+                "jobDescription": ""
+            }
+        },
+        {
+            "id": "KMD",
+            "parentId": "SP",
+            "name": "KMD",
+            "period": {
+                "start": {
+                    "year": 2012,
+                    "month": 3
+                },
+                "end": {
+                    "year": 2013,
+                    "month": 12
+                }
+            },
+            "dk": {
+                "description": "Selvstændig konsulent",
+                "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design"
+            },
+            "uk": {
+                "description": "",
+                "jobDescription": ""
+            }
+        },
+        {
+            "id": "COOK",
+            "parentId": "SP",
+            "name": "Thomas Cook Airlines",
+            "period": {
+                "start": {
+                    "year": 2010,
+                    "month": 3
+                },
+                "end": {
+                    "year": 2012,
+                    "month": 12
+                }
+            },
+            "dk": {
+                "description": "Selvstændig konsulent",
+                "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design"
+            },
+            "uk": {
+                "description": "",
+                "jobDescription": ""
+            }
+        },
+        {
+            "id": "GK",
+            "parentId": "SP",
+            "name": "Gentofte Kommune",
+            "period": {
+                "start": {
+                    "year": 2009,
+                    "month": 3
+                },
+                "end": {
+                    "year": 2010,
+                    "month": 10
+                }
+            },
+            "dk": {
+                "description": "Selvstændig konsulent",
+                "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design"
+            },
+            "uk": {
+                "description": "",
+                "jobDescription": ""
+            }
+        },
+        {
+            "id": "EF",
+            "parentId": "SP",
+            "name": "EasyFlex",
+            "period": {
+                "start": {
+                    "year": 2008,
+                    "month": 12
+                },
+                "end": {
+                    "year": 2009,
+                    "month": 10
+                }
+            },
+            "dk": {
+                "description": "Selvstændig konsulent",
+                "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design, datakonvertering"
+            },
+            "uk": {
+                "description": "",
+                "jobDescription": ""
+            }
+        },
+        {
+            "id": "PD",
+            "parentId": "SP",
+            "name": "Post Danmark",
+            "period": {
+                "start": {
+                    "year": 2002,
+                    "month": 12
+                },
+                "end": {
+                    "year": 2008,
+                    "month": 10
+                }
+            },
+            "dk": {
+                "description": "Selvstændig konsulent",
+                "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design, datakonvertering"
+            },
+            "uk": {
+                "description": "",
+                "jobDescription": ""
+            }
+        },
+        {
+            "id": "EFS",
+            "parentId": null,
+            "name": "EFS Technology",
+            "period": {
+                "start": {
+                    "year": 2002,
+                    "month": 1
+                },
+                "end": {
+                    "year": 2007,
+                    "month": 9
+                }
+            },
+            "dk": {
+                "description": "Udskilt fra XPonCard 1. januar 2002. Nogle projekter er påbegyndt i XPoncard regi.  \nEFS Technology blev 1. august 2007 solgt til Formpipe.  \n\nFastansættelse",
+                "jobDescription": "Systemdesign, Systemudvikling, Arkitekt, Dokumentation, Database Design, OOD, OOP, Programmering, Release Manager, Brugergrænsefladeudvikling, Datakonvertering, Dokumentation, Fejlretning, Implementering, OOA, Performance Tuning, Technical Writer, Test-drevet udvikling, Undervisning"
+            },
+            "uk": {
+                "description": "",
+                "jobDescription": ""
+            }
+        },
+        {
+            "id": "XP",
+            "parentId": null,
+            "name": "XPonCard A/S",
+            "period": {
+                "start": {
+                    "year": 2001,
+                    "month": 9
+                },
+                "end": {
+                    "year": 2001,
+                    "month": 12
+                }
+            },
+            "dk": {
+                "description": "Afdelingen for printerløsninger, som blev købt ud og blev til EFS Technology.  \nAfdelingen for loyalitetskort (XSS).  \n\nFastansættelse",
+                "jobDescription": ""
+            },
+            "uk": {
+                "description": "",
+                "jobDescription": ""
+            }
+        },
+        {
+            "id": "GRAPH",
+            "parentId": "MIT",
+            "name": "Graphium",
+            "period": {
+                "start": {
+                    "year": 2000,
+                    "month": 2
+                },
+                "end": {
+                    "year": 2001,
+                    "month": 8
+                }
+            },
+            "dk": {
+                "description": "SIM-kort, plastkort, VISA.  \nSkiftede senere navn til XPonCard",
+                "jobDescription": ""
+            },
+            "uk": {
+                "description": "",
+                "jobDescription": ""
+            }
+        },
+        {
+            "id": "MIT",
+            "parentId": null,
+            "name": "Miltorb-IT",
+            "period": {
+                "start": {
+                    "year": 2000,
+                    "month": 2
+                },
+                "end": {
+                    "year": 2001,
+                    "month": 8
+                }
+            },
+            "dk": {
+                "description": "Selvstændig konsulent",
+                "jobDescription": ""
+            },
+            "uk": {
+                "description": "",
+                "jobDescription": ""
+            }
+        },
+        {
+            "id": "DC",
+            "parentId": null,
+            "name": "Danish Company ApS",
+            "period": {
+                "start": {
+                    "year": 1999,
+                    "month": 3
+                },
+                "end": {
+                    "year": 2000,
+                    "month": 1
+                }
+            },
+            "dk": {
+                "description": "Fastansat konsulent",
+                "jobDescription": ""
+            },
+            "uk": {
+                "description": "",
+                "jobDescription": ""
+            }
+        },
+        {
+            "id": "OLICOM",
+            "parentId": null,
+            "name": "Olicom A/S",
+            "period": {
+                "start": {
+                    "year": 1997,
+                    "month": 8
+                },
+                "end": {
+                    "year": 1999,
+                    "month": 2
+                }
+            },
+            "dk": {
+                "description": "Produktion og salg af netværksudstyr.  \n\nFastansættelse",
+                "jobDescription": ""
+            },
+            "uk": {
+                "description": "",
+                "jobDescription": ""
+            }
+        },
+        {
+            "id": "FW",
+            "parentId": null,
+            "name": "FancyWare",
+            "period": {
+                "start": {
+                    "year": 1993,
+                    "month": 3
+                },
+                "end": {
+                    "year": 1997,
+                    "month": 8
+                }
+            },
+            "dk": {
+                "description": "Selvstændig konsulent",
+                "jobDescription": ""
+            },
+            "uk": {
+                "description": "",
+                "jobDescription": ""
+            }
+        },
+        {
+            "id": "BOSTIK",
+            "parentId": "FW",
+            "name": "Bostik A/S",
+            "period": {
+                "start": {
+                    "year": 1993,
+                    "month": 3
+                },
+                "end": {
+                    "year": 1997,
+                    "month": 8
+                }
+            },
+            "dk": {
+                "description": "Selvstændig konsulent",
+                "jobDescription": ""
+            },
+            "uk": {
+                "description": "",
+                "jobDescription": ""
+            }
+        },
+        {
+            "id": "GKU",
+            "parentId": null,
+            "name": "Galten Kommunale Ungdomsskole",
+            "period": {
+                "start": {
+                    "year": 1993,
+                    "month": 8
+                },
+                "end": {
+                    "year": 1996,
+                    "month": 5
+                }
+            },
+            "dk": {
+                "description": "Undervisning af 14-15årige skoleelever i \"datalære\".",
+                "jobDescription": ""
+            },
+            "uk": {
+                "description": "",
+                "jobDescription": ""
+            }
+        }
     ]
 }

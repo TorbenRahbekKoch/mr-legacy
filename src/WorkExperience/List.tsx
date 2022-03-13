@@ -69,7 +69,14 @@ export function List({...props} :Props) {
 
   companies.forEach(company => {
     company.company.texts = companyTexts
+
     elements.push(<Company.Company {...company.company} key={company.company.id} />)
+    company.projects.forEach(project => {
+      project.texts = projectTexts
+      project.technologyLookup = props.technologyLookup
+      elements.push(<Project.Project {...project} key={project.id} />)
+    })
+
 
     company.childCompanies.forEach(company => {
       company.company.texts = companyTexts;
@@ -79,11 +86,6 @@ export function List({...props} :Props) {
         project.technologyLookup = props.technologyLookup
         elements.push(<Project.Project {...project} key={project.id} />)
       })
-    })
-    company.projects.forEach(project => {
-      project.texts = projectTexts
-      project.technologyLookup = props.technologyLookup
-      elements.push(<Project.Project {...project} key={project.id} />)
     })
   })
 

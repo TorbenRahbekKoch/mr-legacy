@@ -1,6 +1,30 @@
 {
   "projects": [
     {
+      "companyId": "SP",
+      "id": "mrlegacy",
+      "period": {
+        "start": {
+          "year": 2022,
+          "month": 3
+        },
+        "end": null
+      },
+      "dk": {
+        "project": "Mr. Legacy web site",
+        "description": "CV og blog-site udviklet med React og TypeScript: https://www.mrlegacy.dk"
+      },
+      "en": {
+        "project": "Mr. Legacy web site",
+        "description": "CV and blog-site developed with React and TypeScript: https://www.mrlegacy.dk"
+      },
+      "technologies": [
+        "vscode",
+        "reactts",
+        "typescript"
+      ]
+    },
+    {
       "companyId": "IDA",
       "id": "ODatanuget",
       "period": {

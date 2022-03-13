@@ -20,9 +20,9 @@ Frontend development (frontend as in browsers), as it is done now with lots of p
 
 ## React
 
-Well, regardless of my rant against TypeScript above I have chosen to use
+Well, regardless of my rant against TypeScript above I have chosen to
 use exactly that for creating this site together with React, and you may have
-guessed it: I do not *entirely* dislike React. Actually I quite like the component 
+guessed it: I do not *entirely* dislike React. Actually I quite like the component
 based approach of React. More articles about that in the exciting future.
 
 I simply created the site with [create-react-app](https://create-react-app.dev/):

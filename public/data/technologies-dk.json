@@ -6,6 +6,11 @@
             "description": "IDE/Udviklingsværktøj fra Microsoft",
             "links": []
         },{
+            "id": "vscode",
+            "name": "Visual Studio Code",
+            "description": "Cross-platform kodeeditor fra Microsoft",
+            "links": []
+        },{
             "id": "oracle",
             "name": "Oracle",
             "description": "Database",
