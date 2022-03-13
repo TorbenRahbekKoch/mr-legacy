@@ -7,7 +7,6 @@ export const Overview = styled.div`
 `
 export const Article = styled.article`
   .article {
-    margin-left: inherit;
     margin-top: 20px;
     text-align: left;
     width: 100%;
@@ -15,23 +14,27 @@ export const Article = styled.article`
     font-size: 1.2em;
     line-height: 1.3em;
     @media screen and (max-width: 600px) {
-    font-size: 1.1em;
+      font-size: 1.1em;
   };
-  h1, h2, h3 {
+  h1, h2, h3, h5, h6 {
     font-family: 'Courier New', Courier, monospace;
+    word-wrap: break-word;
+    @media screen and (max-width:600px) {
+      font-size: 1.2em;
+    }
   };
-  h1, h2, h3, ul, pre {
+  h1, h2, h3, ul, pre, p {
     margin-left: 10%;
     text-align: left;
   };
   p, pre {
-    margin-left: 10%;
     width: 80%;
-    @media screen and (min-width: 100px) {
+    @media screen and (max-width: 100px) {
       width: 70%;
     }
   };
-  pre {
+  pre {    
+    white-space: pre-wrap;
     padding-left: 20px;
   }
 }`

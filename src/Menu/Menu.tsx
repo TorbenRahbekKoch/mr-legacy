@@ -45,7 +45,7 @@ export function Menu() {
   return (
     <MenuBar>
       <MenuItem title="CV" path="/cv"/>
-      <MenuItem title="blog" path="/blog"/>
+      <MenuItem title="blog" path="/blogs"/>
       {/* <MenuItem title="english" path="" rightAlign={true}/> */}
     </MenuBar>
   )

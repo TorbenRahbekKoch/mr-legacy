@@ -12,7 +12,7 @@ const MugShot = styled.picture`
   margin-bottom: -72px;
   }
   @media screen and (max-width: 600px) {
-  left: 10%;
+  left: 5%;
   top: 10px;
   margin-bottom: -72px;
   }

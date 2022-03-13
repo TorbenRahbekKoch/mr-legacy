@@ -21,7 +21,7 @@ export function Article({ ...props }: Props) {
   }
 
   return (
-    <Style.Article >
+    <Style.Article className='article'>
       <ReactMarkDown className='article'>
         {article}
       </ReactMarkDown>
