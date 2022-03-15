@@ -35,6 +35,26 @@
         "quote": "Doing microservices just because everyone else is doing it is a terrible idea",
         "author": "Sam Newman",
         "languages": ["en","dk"]
+    },{
+        "quote": "If you do a big-bang rewrite, the only thing you're guaranteed of is a big bang",
+        "author": "Martin Fowler",
+        "languages": ["en","dk"]
+    },{
+        "quote": "Copy the questions, not the answers",
+        "author": "Jessica Joy Kerr",
+        "languages": ["en","dk"]
+    },{
+        "quote": "Just because software is deployed into a given environment doesn't mean it's actually being used by customers",
+        "author": "Sam Newman",
+        "languages": ["en","dk"]
+    },{
+        "quote": "Smart endpoints, dumb pipes",
+        "author": "Sam Newman",
+        "languages": ["en","dk"]
+    },{
+        "quote": "It turns out not knowing what you're doing and doing it anyway can have some pretty disastrous implications",
+        "author": "Sam Newman",
+        "languages": ["en","dk"]
     }
     ]
 }
