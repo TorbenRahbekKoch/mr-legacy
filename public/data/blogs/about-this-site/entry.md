@@ -4,12 +4,12 @@ I started this site for two reasons: I wanted a place to have my CV readily avai
 having it be fairly easy to update.
 
 I also want to work with various ideas on how to
-organize SPAs (Single Page Applications) since the they
+organize SPAs (Single Page Applications) since they
 tend to quickly end up in a tangled mess even faster than
 backend applications do.
 
 Backend applications have the advantage of many, many years of
-experience, good advice and - in a lot of cases - relatively decent languages, whereas
+experience, good advice and patterns and stuff. And - in a lot of cases - relatively decent languages, whereas
 frontend applications have, well, JavaScript. Yes, I know, there is TypeScript and I do not
 entirely dislike TypeScript. It is, in some areas, a vast improvement over JavaScript and
 in other areas a syntactic (and close to unreadable) mess. TypeScript seems to me to be a playground for
@@ -31,6 +31,8 @@ I simply created the site with [create-react-app](https://create-react-app.dev/)
 yarn create react-app mr-legacy --template typescript
 ````
 
+which introduces about 870 (yes, seriously!) packages in the *node_modules* subdirectory...
+
 This even initializes a git repository! The code for entire site is available
 on [github](https://github.com/TorbenRahbekKoch/mr-legacy/) - yup, there is some
 confusion about my name, but as it happened I got married and chose her last name.
@@ -38,8 +40,13 @@ Changing the account name on github seems to be a daunting and dangerous task.
 
 ## Interesting components and packages
 
+Aside from the slew of packages introduced with create-react-app I have added
+a few interesting packages, too:
+
 - [Styled Components](https://styled-components.com/)
 - [ReactMarkdown](https://github.com/remarkjs/react-markdown)
+- [Zustand](https://github.com/pmndrs/zustand)
+- [Immer](https://github.com/immerjs/immer)
 
 ## Testing
 
@@ -49,8 +56,8 @@ here and there with [React Testing Library](https://testing-library.com/docs/rea
 ## Hosting
 
 The site is hosted as an Azure Static Web App - see <https://websitebeaver.com/deploy-create-react-app-to-azure-static-web-apps>
-for how to make this work. It is surprisingly easy. With that guide you have
-a CI/CD-pipeline, just like that.
+for how to make this work. It is surprisingly easy. Just by following that guide you have
+a CI/CD-pipeline in no time.
 
 ## Now, what's with that 90s www?
 
