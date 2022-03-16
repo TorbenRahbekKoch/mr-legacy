@@ -12,6 +12,8 @@ export const Table = styled.table`
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
+  
+
 `
 
 export const Td = styled.td`
@@ -44,6 +46,10 @@ export const ItemText = styled(Td)`
 
 export const ItemTable = styled(Table)`
   background-color: whitesmoke;
+
+  @media print {
+    break-inside: avoid;
+  }
 `
 
 export const ItemHeader = styled(TitleTd)`

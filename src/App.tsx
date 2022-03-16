@@ -2,9 +2,8 @@ import { useCallback, useMemo } from 'react';
 import styled from 'styled-components'
 import './App.css';
 import { fetchArticle } from './BootStrapping/Fetch'
-import { Header } from './Header'
+import * as Header from './Header'
 import { Profile } from './Profile/Profile'
-import { Quote } from './Quotes/Quote'
 import { Education } from './Education'
 import { Menu } from './Menu'
 import * as Blog from './Blog'
@@ -65,10 +64,16 @@ function App() {
   if (initialization < 5)
     return null
 
+  // const menuProps = {
+  //   setPrintMode : () => { useStore.setState(prevState => {
+  //     return produce(prevState, draft => {
+  //       draft.ambient.printMode = true
+  //     })
+  //   })}
+  // }
   return (
     <StyledApp>
-      <Header />
-      <Quote {...quotes} />
+      <Header.Header {...quotes}/>
       <Menu />
       {router.execute(window.location)}
     </StyledApp>

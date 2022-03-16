@@ -7,7 +7,7 @@ import * as State from '../State'
 import * as WorkExperience from '../WorkExperience'
 import * as Fetch from './Fetch'
 import * as Profile from '../Profile'
-import * as Quotes from '../Quotes'
+import * as Quotes from '../Header'
 import * as Education from '../Education'
 import * as Blog from '../Blog'
 import { AllTexts } from './AllTexts'
@@ -180,7 +180,11 @@ export function createApplicationState(): UseBoundStore<ApplicationState, StoreA
   const monthNames = State.getMonthNames(defaultLanguage)
 
   const defaultState: ApplicationState = {
-    ambient: { username: "Your username", language: defaultLanguage, initializing: 0 },
+    ambient: { 
+      username: "Your username", 
+      printMode: false,
+      language: defaultLanguage, 
+      initializing: 0 },
     component: {
       workExperience: WorkExperience.defaultProps,
       profile: Profile.defaultProps,

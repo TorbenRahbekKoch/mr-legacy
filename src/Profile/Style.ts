@@ -8,4 +8,8 @@ export const Profile = styled.div`
   @media screen and (max-width: 600px) {
     font-size: 1.2em;
   }
+
+  @media print {
+    font-size: 1em;
+  }
 `

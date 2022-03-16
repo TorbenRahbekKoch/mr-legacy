@@ -1,52 +1,26 @@
-import styled from 'styled-components'
+import * as Style from './Style'
 
-const MenuBar = styled.div`
-  left: 0px;
-  min-width: 50%;  
-  background-color: darkblue;  
-  border-radius: 5px;
-  margin-top: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-align: left;
-`
+export interface Props {
+}
 
-const StyledMenuItem = styled.a`
-  min-width: 100px;
-  background-color: #5050AB;
-  border-radius: 5px;
-  color: 	antiquewhite ;
-  text-decoration: none;
-  font-family: courier;
-  font-weight: 100;
-  font-size: 1.5em;
-  margin-left: 5px;
-  margin-right: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-  text-transform: uppercase;
-  @media screen and (max-width: 600px) {
-    font-size: 1.2em;
-  }
-  cursor: pointer;  
-`
-
-interface Props {
+interface ItemProps {
   title: string
   path: string
   rightAlign ?: boolean
 }
 
-function MenuItem({title, path, rightAlign}: Props) {
-  return (<StyledMenuItem href={path} {...rightAlign}>{title}</StyledMenuItem>)
+function MenuItem({title, path, rightAlign}: ItemProps) {
+  return (<Style.MenuItem href={path} {...rightAlign}>{title}</Style.MenuItem>)
 }
 
 export function Menu() {
   return (
-    <MenuBar>
+    <>
+    <Style.MenuBar>
       <MenuItem title="CV" path="/cv"/>
       <MenuItem title="blog" path="/blogs"/>
       {/* <MenuItem title="english" path="" rightAlign={true}/> */}
-    </MenuBar>
+    </Style.MenuBar>
+    </>
   )
 }

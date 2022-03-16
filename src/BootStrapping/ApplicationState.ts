@@ -1,14 +1,14 @@
 import { StateData } from '../State/State'
 import * as WorkExperience from '../WorkExperience'
 import * as Profile from '../Profile'
-import * as Quote from '../Quotes'
+import * as Quote from '../Header'
 import * as Education from '../Education'
 import * as Blog from '../Blog'
 import { AllTexts } from './AllTexts'
-import { BlogEntries } from './Dto'
 
 /// Application specific definitions
 export interface AmbientState {
+  printMode: boolean
   username: string
   language: string
   initializing : number
