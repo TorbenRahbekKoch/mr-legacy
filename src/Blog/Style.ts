@@ -8,6 +8,8 @@ export const Overview = styled.div`
 export const Article = styled.article`
   .article {
     margin-top: 20px;
+    margin-left: 5%;
+    width: 80%;
     text-align: left;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,6 +19,7 @@ export const Article = styled.article`
       font-size: 1.1em;
   };
   h1, h2, h3, h5, h6 {
+    margin-left: -5%;
     font-family: 'Courier New', Courier, monospace;
     word-wrap: break-word;
     @media screen and (max-width:600px) {
@@ -24,11 +27,10 @@ export const Article = styled.article`
     }
   };
   h1, h2, h3, ul, pre, p {
-    margin-left: 0%;
     text-align: left;
   };
   p, pre {
-    width: 90%;
+    width: 80%;
     @media screen and (max-width: 100px) {
       width: 70%;
     }
@@ -49,4 +51,8 @@ export const BlogArticleLink = styled.a`
 export const LinkTitle = styled.span`
   font-size: 2em;
   display: block;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.5em;
+  }
 `

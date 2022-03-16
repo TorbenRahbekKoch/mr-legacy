@@ -4,16 +4,16 @@
             "url" : "/blogs/about-this-site",
             "title": "About this site",
             "dir": "about-this-site",
-			"teaser": "Basics of how the site is made...",
+			"teaser": "Basics of how the site was created",
             "date": "2022-03-13",
 			"categories": ["programming"]
         },
         {
             "url" : "/blogs/monolith-to-microservices",
             "title": "Monolith to microservices - a review",
-            "teaser": "Mr. Microservice did it again - read all about it here...",
+            "teaser": "Mr. Microservice did it again - read all about it here!",
             "dir": "monolith-to-microservices",
-            "date": null,
+            "date": "2022-03-22",
 			"categories": ["review"]
         }
     ]

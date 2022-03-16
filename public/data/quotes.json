@@ -55,6 +55,26 @@
         "quote": "It turns out not knowing what you're doing and doing it anyway can have some pretty disastrous implications",
         "author": "Sam Newman",
         "languages": ["en","dk"]
+    },{
+        "quote": "It's a good idea not to make a bad situation any worse",
+        "author": "Sam Newman",
+        "languages": ["en","dk"]
+    },{
+        "quote": "Distributed Transactions - Just Say No",
+        "author": "Sam Newman",
+        "languages": ["en","dk"]
+    },{
+        "quote": "We replaced out monolith with micro services so that every outage could be more like a murder mystery",
+        "author": "@Honest_update (twitter)",
+        "languages": ["en","dk"]
+    },{
+        "quote": "...making it hard to change a service contract is better than constantly breaking consumers",
+        "author": "Sam Newman",
+        "languages": ["en","dk"]
+    },{
+        "quote": "Microservices are definitely not for everyone",
+        "author": "Sam Newman",
+        "languages": ["en","dk"]
     }
     ]
 }
