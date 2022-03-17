@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const MugShot = styled.picture`
   position: absolute;
 
@@ -24,8 +23,8 @@ export const MugShot = styled.picture`
   @media print {
     display: none;
   }
-
 `
+
 export const Header = styled.h1`
   margin-top: 10px;
   font-family: courier;  
@@ -37,20 +36,20 @@ export const Header = styled.h1`
     display: none;
   }
 `
+
 export const PrintImage = styled.picture`
   position: absolute;
 
   @media screen {
     display: none;
   }
-  
+
   @media print {
     display: inline;
     left: 10%;
     top: 15px;
   }  
 `
-
 
 export const PrintHeader = styled(Header)`
   text-align: right;
@@ -69,6 +68,7 @@ export const ContactInformation = styled.p`
     display: none;
   }
 `
+
 export const PrintContactInformation = styled(ContactInformation)`
   @media print {
     display: block;
@@ -78,11 +78,12 @@ export const PrintContactInformation = styled(ContactInformation)`
   }
 `
 
-
 export const Quote = styled.div`
   left: 10%;
-  width: 80%;
+  width: 90%;
   font-size: 1em;
+  min-height: 50px;
+  text-align: left;
 
   @media print {
     display: none;
