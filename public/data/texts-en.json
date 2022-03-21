@@ -1,0 +1,15 @@
+{
+    "period": "Period",
+    "project": "Project",
+    "description": "Description",
+    "technologies": "Technologies",
+    "company": "Company",
+    "jobDescription": "Job description",
+    "now" : "Now",
+    "workExperience" : "Work experience",
+    "education": "Education",
+    "time": "Date",
+    "course": "Course",
+    "location": "Location", 
+    "length": "Length (days)"
+}

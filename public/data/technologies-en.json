@@ -1,0 +1,460 @@
+{
+    "technologies": [
+        {
+            "id": "vs",
+            "name": "Visual Studio",
+            "description": "IDE/Udviklingsværktøj fra Microsoft",
+            "links": []
+        },{
+            "id": "vscode",
+            "name": "Visual Studio Code",
+            "description": "Cross-platform kodeeditor fra Microsoft",
+            "links": []
+        },{
+            "id": "oracle",
+            "name": "Oracle",
+            "description": "Database",
+            "links": []
+        },{
+            "id": "mssql",
+            "name": "Microsoft SQL Server",
+            "description": "Database fra Microsoft",
+            "links": []
+        },{
+            "id": "msaccess2",
+            "name": "Microsoft Access 2",
+            "description": "Database fra Microsoft",
+            "links": []
+        },{
+            "id": "mssql65",
+            "name": "Microsoft SQL Server 6.5",
+            "description": "Database fra Microsoft",
+            "links": []
+        },{
+            "id": "mssql7",
+            "name": "Microsoft SQL Server 7",
+            "description": "Database fra Microsoft",
+            "links": []
+        },{
+            "id": "mssql2005",
+            "name": "Microsoft SQL Server 2005",
+            "description": "Database fra Microsoft",
+            "links": []
+        },{
+            "id": "mssql2008",
+            "name": "Microsoft SQL Server 2008",
+            "description": "Database fra Microsoft",
+            "links": []
+        },{
+            "id": "mssql2008r2",
+            "name": "Microsoft SQL Server 2008R2",
+            "description": "Database fra Microsoft",
+            "links": []
+        },{
+            "id": "tsql",
+            "name": "TSQL",
+            "description": "Transact SQL",
+            "links": []
+        },{
+            "id": "netstandard2",
+            "name": ".NET Standard 2.0",
+            "description": "Formel specification af API'er tilgængelige på flere .NET implementationer",
+            "links": ["https://docs.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0"]
+        },{
+            "id": "nuget",
+            "name": "Nuget",
+            "description": "Fremstilling af nuget-pakker",
+            "links": ["https://docs.microsoft.com/en-us/nuget/"]
+        },{
+            "id": "odata",
+            "name": "OData",
+            "description": "Dataudvekslingsprotokollen OData",
+            "links": ["https://www.odata.org/", "https://docs.microsoft.com/en-us/odata/"]
+        },{
+            "id": "aspnetcore",
+            "name": "ASP.NET Core",
+            "description": "Webudviklingsframework",
+            "links": ["https://docs.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-6.0"]
+        },{
+            "id": "aspnet",
+            "name": "ASP.NET",
+            "description": "Webudviklingsframework",
+            "links": []
+        },{
+            "id": "netcore3",
+            "name": ".NET Core 3",
+            "description": "Cross-platform .NET framework",
+            "links": []
+        },{
+            "id": "netcore21",
+            "name": ".NET Core 2.1",
+            "description": "Cross-platform .NET framework",
+            "links": []
+        },{
+            "id": "net4",
+            "name": ".NET Framework 4",
+            "description": "Windows .NET framework",
+            "links": []
+        },{
+            "id": "net45",
+            "name": ".NET Framework 4.5",
+            "description": "Windows .NET framework",
+            "links": []
+        },{
+            "id": "rest",
+            "name": "REST",
+            "description": "Brug og design af REST-sites",
+            "links": []
+        },{
+            "id": "soap",
+            "name": "SOAP",
+            "description": "Simple Object Access Protocol",
+            "links": []
+        },{
+            "id": "com",
+            "name": "COM",
+            "description": "Component Object Model - binary interface standard for software components",
+            "links": []
+        },{
+            "id": "activex",
+            "name": "ActiveX",
+            "description": "Component Object Model - binary interface standard for software components",
+            "links": []
+        },{
+            "id": "wsh",
+            "name": "Windows Script Host",
+            "description": "",
+            "links": ["https://en.wikipedia.org/wiki/Windows_Script_Host"]
+        },{
+            "id": "odbc",
+            "name": "ODBC",
+            "description": "Open Database Connectivity",
+            "links": []
+        },{
+            "id": "mapi",
+            "name": "MAPI",
+            "description": "Mail Application Programmers Interface - WIN32 API",
+            "links": []
+        },{
+            "id": "webapi",
+            "name": "Web Api",
+            "description": "",
+            "links": []
+        },{
+            "id": "webapi2",
+            "name": "Web Api 2",
+            "description": "",
+            "links": []
+        },{
+            "id": "msmq",
+            "name": "MSMQ",
+            "description": "Microsoft Message Queue",
+            "links": []
+        },{
+            "id": "wcf",
+            "name": "WCF",
+            "description": "Windows Communication Foundation - SOAP-framework",
+            "links": []
+        },{
+            "id": "wpf",
+            "name": "WPF",
+            "description": "Windows Presentation Foundation - XAML-baseret UI-framework",
+            "links": []
+        },{
+            "id": "wf",
+            "name": "Workflow Foundation",
+            "description": "Workflow Foundation",
+            "links": []
+        },{
+            "id": "ef",
+            "name": "Entity Framework",
+            "description": "Data Access Entity mapping",
+            "links": []
+        },{
+            "id": "nsb",
+            "name": "NServicebus",
+            "description": "Particular Software NServicebus",
+            "links": ["https://particular.net/nservicebus"]
+        },{
+            "id": "reactts",
+            "name": "React TS",
+            "description": "React med TypeScript",
+            "links": ["https://www.typescriptlang.org/docs/handbook/react.html", "https://reactjs.org/"]
+        },{
+            "id": "docker",
+            "name": "Docker",
+            "description": "Container-orchestration",
+            "links": ["https://www.docker.com"]
+        },{
+            "id": "kubernetes",
+            "name": "Kubernetes",
+            "description": "Container-miljø",
+            "links": []
+        },{
+            "id": "typescript",
+            "name": "TypeScript",
+            "description": "JavaScript med typer",
+            "links": ["https://www.typescriptlang.org/"]
+        },{
+            "id": "js",
+            "name": "JavaScript",
+            "description": "",
+            "links": []
+        },{
+            "id": "qt",
+            "name": "Trolltech QT",
+            "description": "",
+            "links": []
+        },{
+            "id": "qsa",
+            "name": "Trolltech QSA",
+            "description": "Scripting engine",
+            "links": []
+        },{
+            "id": "crm",
+            "name": "Microsoft Dynamics CRM",
+            "description": "",
+            "links": []
+        },{
+            "id": "ts",
+            "name": "Teamshare",
+            "description": "",
+            "links": []
+        },{
+            "id": "visualc++6",
+            "name": "Microsoft Visual C++ 6",
+            "description": "",
+            "links": []
+        },{
+            "id": "visualc++2003",
+            "name": "Microsoft Visual C++ 2003",
+            "description": "",
+            "links": []
+        },{
+            "id": "visualc++2005",
+            "name": "Microsoft Visual C++ 2005",
+            "description": "",
+            "links": []
+        },{
+            "id": "vs08",
+            "name": "Visual Studio 2008",
+            "description": "",
+            "links": []
+        },{
+            "id": "vs10",
+            "name": "Visual Studio 2010",
+            "description": "",
+            "links": []
+        },{
+            "id": "vs12",
+            "name": "Visual Studio 2012",
+            "description": "",
+            "links": []
+        },{
+            "id": "vs13",
+            "name": "Visual Studio 2013",
+            "description": "",
+            "links": []
+        },{
+            "id": "vs15",
+            "name": "Visual Studio 2015",
+            "description": "",
+            "links": []
+        },{
+            "id": "c++builder2006",
+            "name": "Borland C++ Builder 2006",
+            "description": "",
+            "links": []
+        },{
+            "id": "borlandpascal",
+            "name": "Borland Pascal",
+            "description": "",
+            "links": []
+        },{
+            "id": "turbovision",
+            "name": "Turbo Vision",
+            "description": "",
+            "links": []
+        },{
+            "id": "delphi1",
+            "name": "Borland Dephi 1",
+            "description": "",
+            "links": []
+        },{
+            "id": "delphi4",
+            "name": "Borland Dephi 4",
+            "description": "",
+            "links": []
+        },{
+            "id": "delphi5",
+            "name": "Borland Dephi 5",
+            "description": "",
+            "links": []
+        },{
+            "id": "delphi6",
+            "name": "Borland Dephi 6",
+            "description": "",
+            "links": []
+        },{
+            "id": "umbraco",
+            "name": "Umbraco",
+            "description": "Open source CMS",
+            "links": ["https://umbraco.com/"]
+        },{
+            "id": "net",
+            "name": ".NET Framework",
+            "description": "",
+            "links": []
+        },{
+            "id": "css",
+            "name": "CSS",
+            "description": "Cascading Style Sheets",
+            "links": []
+        },{
+            "id": "dom",
+            "name": "DOM",
+            "description": "Document Object Model",
+            "links": []
+        },{
+            "id": "dhtml",
+            "name": "Dynamic HTML",
+            "description": "",
+            "links": []
+        },{
+            "id": "xml",
+            "name": "XML",
+            "description": "",
+            "links": []
+        },{
+            "id": "rds",
+            "name": "Remote Data Services",
+            "description": "",
+            "links": []
+        },{
+            "id": "asp",
+            "name": "Active Server Pages",
+            "description": "",
+            "links": []
+        },{
+            "id": "xslt",
+            "name": "XSLT",
+            "description": "XSL Transformations",
+            "links": []
+        },{
+            "id": "xsl",
+            "name": "XSL",
+            "description": "Extensible Stylesheet Language",
+            "links": []
+        },{
+            "id": "xpath",
+            "name": "XPath",
+            "description": "XML Path Language",
+            "links": []
+        },{
+            "id": "angularjs",
+            "name": "AngularJS",
+            "description": "",
+            "links": []
+        },{
+            "id": "windowsnt",
+            "name": "Microsoft Windows NT",
+            "description": "",
+            "links": []
+        },{
+            "id": "windows2000",
+            "name": "Microsoft Windows 2000",
+            "description": "",
+            "links": []
+        },{
+            "id": "windows2003",
+            "name": "Microsoft Windows 2003",
+            "description": "",
+            "links": []
+        },{
+            "id": "windowsxp",
+            "name": "Microsoft Windows XP",
+            "description": "",
+            "links": []
+        },{
+            "id": "windowsvista",
+            "name": "Microsoft Windows Vista",
+            "description": "",
+            "links": []
+        },{
+            "id": "octopus",
+            "name": "Octopus",
+            "description": "Deployment værktøj",
+            "links": []
+        },{
+            "id": "teamcity",
+            "name": "TeamCity",
+            "description": "Build system",
+            "links": []
+        },{
+            "id": "subversion",
+            "name": "Subversion",
+            "description": "Versionsstyringssystem",
+            "links": []
+        },{
+            "id": "fogbugz",
+            "name": "Fogbugz",
+            "description": "Issue tracking",
+            "links": []
+        },{
+            "id": "fckeditor",
+            "name": "FCK Editor",
+            "description": "Browser based Wysiwyg-editor",
+            "links": []
+        },{
+            "id": "smartclient",
+            "name": "SmartClient",
+            "description": "JavaScript baseret UI-framework",
+            "links": []
+        },{
+            "id": "asposewords",
+            "name": "Aspose.Words",
+            "description": "Library til at håndtere Word-dokumenter",
+            "links": []
+        },{
+            "id": "lasernetv6",
+            "name": "Lasernet v6",
+            "description": "Output management system",
+            "links": []
+        },{
+            "id": "visualbuild",
+            "name": "Kinook Visual Build",
+            "description": "Build system",
+            "links": []
+        },{
+            "id": "setupfactory",
+            "name": "Indigo Rose Setup Factory",
+            "description": "Bygning af installationspakker",
+            "links": []
+        },{
+            "id": "symstore",
+            "name": "Symstore",
+            "description": "Håndtering af debug info (pdb-filer)",
+            "links": []
+        },{
+            "id": "c++",
+            "name": "C++",
+            "description": "",
+            "links": []
+        },{
+            "id": "c#",
+            "name": "C#",
+            "description": "",
+            "links": []
+        },{
+            "id": "j#",
+            "name": "J#",
+            "description": "",
+            "links": []
+        },{
+            "id": "ddd",
+            "name": "Domain Driven Design",
+            "description": "",
+            "links": []
+        }
+    ]
+}

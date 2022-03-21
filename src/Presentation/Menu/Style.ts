@@ -8,7 +8,7 @@ export const MenuBar = styled.div`
   margin-top: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
-  text-align: left;
+  text-align: left;  
   
   @media print {
     display: none;
@@ -33,4 +33,5 @@ export const MenuItem = styled.a`
     font-size: 1.2em;
   }
   cursor: pointer;  
+  float: ${(props: any) => props.rightAlign === true ? "right" : "none"};
 `

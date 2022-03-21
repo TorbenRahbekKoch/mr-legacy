@@ -42,8 +42,6 @@ export const MainTitle = styled.h1`
 `
 
 export const PrintImage = styled.picture`
-  /* position: absolute; */
-
   @media screen {
     display: none;
   }
