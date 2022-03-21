@@ -24,11 +24,11 @@ export const Article = styled.article`
     }
   };
   h1, h2, h3, ul, pre, p {
-    margin-left: 10%;
+    margin-left: 0%;
     text-align: left;
   };
   p, pre {
-    width: 80%;
+    width: 90%;
     @media screen and (max-width: 100px) {
       width: 70%;
     }

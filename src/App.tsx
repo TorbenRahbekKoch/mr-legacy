@@ -14,13 +14,11 @@ import * as WorkExperience from './WorkExperience'
 const StyledApp = styled.div`  
   font-family: Luminary;
   text-align: center;
+  margin-left: 5%;
   background-color: snow;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: top;
-  /*font-size: calc(10px + 2vmin);*/
   color: midnightblue;
 `
 
@@ -64,13 +62,6 @@ function App() {
   if (initialization < 5)
     return null
 
-  // const menuProps = {
-  //   setPrintMode : () => { useStore.setState(prevState => {
-  //     return produce(prevState, draft => {
-  //       draft.ambient.printMode = true
-  //     })
-  //   })}
-  // }
   return (
     <StyledApp>
       <Header.Header {...quotes}/>

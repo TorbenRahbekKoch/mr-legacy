@@ -27,7 +27,7 @@ export function Quote({ ...props }: Props) {
   const [quote, setQuote] = useState<QuoteData | null>(() => getNextQuote())
 
   const setCurrentQuote = useCallback(() => {
-    setQuote(getNextQuote)
+    setQuote(getNextQuote) 
   }, [getNextQuote])
 
   useInterval(

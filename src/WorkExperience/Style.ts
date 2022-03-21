@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Div = styled.div`
   overflow: auto;
   width: 80%;
-  margin-left: 10%;
+  margin-left: 0%;
   margin-bottom: 10px;
   margin-top: 10px;
 `

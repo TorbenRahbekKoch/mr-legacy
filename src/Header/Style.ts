@@ -1,36 +1,40 @@
 import styled from 'styled-components';
 
+export const Header = styled.div`
+  vertical-align: top;
+  text-align: left;
+`
+
+export const HeaderDetails = styled.div`
+  width: 60%;
+  margin-right: 5px;
+  padding-left: 50px;
+  display: inline-block;
+  vertical-align: top;
+`
+
 export const MugShot = styled.picture`
-  position: absolute;
-
-  @media screen and (min-width: 1000px) {
-    left: 10%;
-    top: 15px;    
-
-  }
-  @media screen and (max-width: 1000px) {
-    left: 20%;
-    top: 10px;
-    margin-bottom: -72px;
-  }
-
-  @media screen and (max-width: 600px) {
-    left: 5%;
-    top: 10px;
-    margin-bottom: -72px;
-  }
+  display: inline-block;
 
   @media print {
     display: none;
   }
 `
 
-export const Header = styled.h1`
-  margin-top: 10px;
+export const MainTitle = styled.h1`
+  margin-top: 0px;
   font-family: courier;  
   font-size: 2.5em;
   font-weight: bold;
-  padding-left: 72px;
+  vertical-align: top;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 1.8em;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.5em;
+  }
 
   @media print {
     display: none;
@@ -38,24 +42,24 @@ export const Header = styled.h1`
 `
 
 export const PrintImage = styled.picture`
-  position: absolute;
+  /* position: absolute; */
 
   @media screen {
     display: none;
   }
 
   @media print {
-    display: inline;
-    left: 10%;
+    display: inline-block;
+    left: 0%;
     top: 15px;
   }  
 `
 
-export const PrintHeader = styled(Header)`
-  text-align: right;
+export const PrintMainTitle = styled(MainTitle)`
 
   @media print {
-    display: block;
+    display: unset;
+    font-size: 2em; 
   }
 
   @media screen {
@@ -79,11 +83,14 @@ export const PrintContactInformation = styled(ContactInformation)`
 `
 
 export const Quote = styled.div`
-  left: 10%;
-  width: 90%;
   font-size: 1em;
   min-height: 50px;
   text-align: left;
+  vertical-align: top;
+
+  @media screen and (max-width: 600px) {
+    margin-left: -120px;
+  }
 
   @media print {
     display: none;
