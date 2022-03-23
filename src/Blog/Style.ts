@@ -9,9 +9,8 @@ export const Article = styled.article`
   .article {
     margin-top: 20px;
     margin-left: 5%;
-    width: 80%;
     text-align: left;
-    width: 100%;
+    width: 95%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     line-height: 1.3em;
@@ -54,7 +53,7 @@ export const Article = styled.article`
 
 export const BlogArticleLink = styled.a`
   text-decoration: none;
-  
+
   :link {
     text-decoration: none;
   }
