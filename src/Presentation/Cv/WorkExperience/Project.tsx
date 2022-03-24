@@ -1,5 +1,5 @@
 import ReactMarkDown from 'react-markdown'
-import { useStore } from '../BootStrapping'
+import { useStore } from '../../../Infrastructure/BootStrapping'
 import * as Style from './Style'
 import { ItemHeader as ProjectHeader, ItemTable as ProjectTable, ItemText as ProjectText } from './Style'
 import { formatPeriod, Period } from './Period'

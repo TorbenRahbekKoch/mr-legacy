@@ -53,7 +53,7 @@ When getting to the actual proces of chipping away the monolith Newman works thr
 
 Sam Newman, of course, does not just mention this pattern and then leaves the work to you (well, the actual work he leaves to you, he's not stupid!). Oh no, the treasure chest is opened and examples and experiences from his long line of duty in the trences are pulled out. To clarify how thorough he is: 20 pages are devoted to cover just this pattern.
 
-He continues with slew of patterns very adept for slicing away on the monolith
+He continues with a slew of patterns very adept for slicing away on the monolith
 and therefore very good for actually implementing the Strangler Fig. Some are to be used inside the monolith itself, where possible, others outside it.
 
 **UI Composition:** Covers how to use the UI to control e.g. which services to call for

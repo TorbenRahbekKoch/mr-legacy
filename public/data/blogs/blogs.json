@@ -6,7 +6,8 @@
             "dir": "about-this-site",
 			"teaser": "Basics of how the site was created",
             "date": "2022-03-13",
-			"categories": ["programming"]
+			"categories": ["programming"],
+            "rating": null
         },
         {
             "url" : "/blogs/monolith-to-microservices",
@@ -14,7 +15,8 @@
             "teaser": "Mr. Microservice did it again - read all about it here!",
             "dir": "monolith-to-microservices",
             "date": "2022-03-22",
-			"categories": ["review"]
+			"categories": ["review"],
+            "rating": 4
         }
     ]
 }

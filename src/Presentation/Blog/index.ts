@@ -1,4 +1,4 @@
-export { Overview, FilteredOverview } from './Overview'
+export { Selector, Overview, FilteredOverview } from './Overview'
 export type { Props } from './Overview'
 export type { Props as BlogEntry } from './EntryTitle'
 export { EntryTitle } from './EntryTitle'

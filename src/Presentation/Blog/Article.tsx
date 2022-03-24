@@ -3,6 +3,7 @@ import ReactMarkDown from 'react-markdown'
 import * as Style from './Style'
 
 export interface Props {
+  url: string
   retrieveArticle: (url: string, articleReceived: (text: string) => void) => void
 }
 

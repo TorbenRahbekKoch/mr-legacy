@@ -4,9 +4,11 @@ export interface Props {
   url: string
   title : string
   teaser: string
-  dir: string
+  // The directory, within blogs, which hold the article and images. Can be used to
+  // store data in a directory which is different from the url. Probably not going to be used?
+  dir: string 
   date?: Date
-  categories: string[]
+  categories: string[] 
 }
 
 export function EntryTitle(props: Props) {

@@ -1,6 +1,6 @@
 import { Suspense, useCallback, useState } from 'react'
 import * as Style from './Style'
-import { useInterval } from '../Infrastructure/UseInterval/UseInterval'
+import { useInterval } from '../../Infrastructure/UseInterval/UseInterval'
 
 export interface QuoteData {
   quote: string
@@ -27,11 +27,11 @@ export function Quote({ ...props }: Props) {
   const [quote, setQuote] = useState<QuoteData | null>(() => getNextQuote())
 
   const setCurrentQuote = useCallback(() => {
-    setQuote(getNextQuote) 
+    setQuote(getNextQuote)
   }, [getNextQuote])
 
   useInterval(
-    20000, 
+    20000,
     setCurrentQuote
   )
 
@@ -45,11 +45,10 @@ export function Quote({ ...props }: Props) {
 
   return (
     <Suspense fallback={<></>}>
-    <Style.Quote>
-      <Style.QuoteText>{quote.quote}</Style.QuoteText>
-      <Style.Author> ({quote.author})</Style.Author>
-    </Style.Quote>
-
+      <Style.Quote>
+        <Style.QuoteText>{quote.quote}</Style.QuoteText>
+        <Style.Author> ({quote.author})</Style.Author>
+      </Style.Quote>
     </Suspense>
   )
 }

@@ -1,9 +1,9 @@
-import { StateData } from '../State/State'
-import * as WorkExperience from '../WorkExperience'
-import * as Profile from '../Profile'
-import * as Quote from '../Header'
-import * as Education from '../Education'
-import * as Blog from '../Blog'
+import { StateData } from '../../Library/State/State'
+import * as WorkExperience from '../../Presentation/Cv/WorkExperience'
+import * as Profile from '../../Presentation/Cv/Profile'
+import * as Quote from '../../Presentation/Header'
+import * as Education from '../../Presentation/Cv/Education'
+import * as Blog from '../../Presentation/Blog'
 import { AllTexts } from './AllTexts'
 
 /// Application specific definitions

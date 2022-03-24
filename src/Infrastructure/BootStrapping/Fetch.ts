@@ -1,5 +1,7 @@
 import * as Dto from './Dto'
 
+// This 
+
 export type DataReceived = (data: any) => void;
 
 async function fetchJson(url: string, dataReceived: (data: any) => void) {

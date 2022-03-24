@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export type DefaultRoute = (() => JSX.Element) | null
+export type DefaultRoute = ((location: Location) => JSX.Element) | null
 
 export class Router {
   constructor(routes?: Route[], defaultRoute?: DefaultRoute) {
@@ -31,11 +31,11 @@ export class Router {
     if (rule !== undefined) {
       // TODO: Extract eventual parameters from url and query string and
       // give them as parameters to component() here:
-      return rule.component()
+      return rule.component(location)
     }
     else {
       if (Router.defaultRoute != null) {
-        return Router.defaultRoute()
+        return Router.defaultRoute(location)
       }
       else {
         throw new RouterMatchError()
@@ -50,11 +50,11 @@ export class Router {
 
 interface Route {
   tryMatch: (location: Location) => boolean
-  component: () => JSX.Element
+  component: (location: Location) => JSX.Element
 }
 
 export class MatchRoute implements Route {
-  constructor(text: string, element: () => JSX.Element) {
+  constructor(text: string, element: (location: Location) => JSX.Element) {
     this.text = text
     this.component = element
   }
@@ -63,7 +63,7 @@ export class MatchRoute implements Route {
     return (location.toString().indexOf(this.text) >= 0)
   }
 
-  component: () => JSX.Element;
+  component: (location: Location) => JSX.Element;
   text: string
 }
 

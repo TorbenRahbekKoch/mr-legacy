@@ -3,13 +3,14 @@ import { setAutoFreeze } from 'immer';
 import { unstable_batchedUpdates } from 'react-dom'
 import create, { UseBoundStore, StoreApi } from 'zustand'
 import { ApplicationState } from './ApplicationState'
-import * as State from '../State'
-import * as WorkExperience from '../WorkExperience'
+import * as State from '../../Library/State'
+import * as WorkExperience from '../../Presentation/Cv/WorkExperience'
 import * as Fetch from './Fetch'
-import * as Profile from '../Profile'
-import * as Quotes from '../Header'
-import * as Education from '../Education'
-import * as Blog from '../Blog'
+import * as Profile from '../../Presentation/Cv/Profile'
+import * as Quotes from '../../Presentation/Header'
+import * as Education from '../../Presentation/Cv/Education'
+import * as Blog from '../../Presentation/Blog'
+import { fetchArticle } from './Fetch'
 import { AllTexts } from './AllTexts'
 
 const defaultLanguage = 'dk'
@@ -168,7 +169,7 @@ function fetchData(language: string) {
     
     useStore.setState(prevState => {
       return produce(prevState, draft => {
-        draft.component.blogs = { blogEntries: blogEntries }        
+        draft.component.blogs.blogEntries = blogEntries
       })
     })
   })
@@ -190,7 +191,10 @@ export function createApplicationState(): UseBoundStore<ApplicationState, StoreA
       profile: Profile.defaultProps,
       quotes: Quotes.defaultProps,
       education: Education.defaultProps,
-      blogs: Blog.defaultProps
+      blogs: {
+        retrieveArticle: fetchArticle,
+        ...Blog.defaultProps
+      }
     },
     i8n: { monthNames: monthNames },
   }

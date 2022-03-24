@@ -1,4 +1,4 @@
-import * as Education from '../Education'
+import * as Education from '../../Presentation/Cv/Education'
 
 export interface EducationDto {
   formal : Education.FormalEducation[]
