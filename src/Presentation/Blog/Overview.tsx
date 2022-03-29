@@ -8,8 +8,10 @@ export interface Props {
   location?: string;
 }
 
-export const defaultProps = {
-  blogEntries: []
+export const defaultProps: Props = {
+  blogEntries: [],
+  retrieveArticle: (url: string, received: (text:string) => void) => {},
+  location: undefined
 }
 
 export function Selector({...props}: Props) {

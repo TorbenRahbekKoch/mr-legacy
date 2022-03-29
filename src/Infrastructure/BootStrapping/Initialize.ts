@@ -192,8 +192,8 @@ export function createApplicationState(): UseBoundStore<ApplicationState, StoreA
       quotes: Quotes.defaultProps,
       education: Education.defaultProps,
       blogs: {
+        ...Blog.defaultProps,
         retrieveArticle: fetchArticle,
-        ...Blog.defaultProps
       }
     },
     i8n: { monthNames: monthNames },
