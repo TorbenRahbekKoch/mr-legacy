@@ -1,25 +1,24 @@
-import { useState } from 'react'
 import ReactMarkDown from 'react-markdown'
 import * as Style from './Style'
 
 export interface Props {
-  url: string
-  retrieveArticle: (url: string, articleReceived: (text: string) => void) => void
+  date?: Date
+  article: string
 }
 
-export function Article({ ...props }: Props) {
-  const [article, setArticle] = useState("")
-  const [isFetching, setIsFetching] = useState(false)
+export function Article({ article, date }: Props) {
+  // const [article, setArticle] = useState("")
+  // const [isFetching, setIsFetching] = useState(false)
 
-  if (!isFetching) {
-    const path = window.location.pathname
-    const lastSlashPos = path.lastIndexOf('/')
-    const articleUrl = path.substring(lastSlashPos + 1)
+  // if (!isFetching) {
+  //   const path = window.location.pathname
+  //   const lastSlashPos = path.lastIndexOf('/')
+  //   const articleUrl = path.substring(lastSlashPos + 1)
 
-    setIsFetching(true)
-    props.retrieveArticle(articleUrl, article => setArticle(article))
-    return null;
-  }
+  //   setIsFetching(true)
+  //   props.retrieveArticle(articleUrl, article => setArticle(article))
+  //   return null;
+  // }
 
   return (
     <Style.Article className='article'>

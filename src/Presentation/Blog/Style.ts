@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
-export const Overview = styled.div`
+export const ArticleList = styled.div`
   margin-top: 20px;
   text-align: left;
   width: 80%;
+  display:inline-block
 `
 export const Article = styled.article`
   .article {

@@ -38,23 +38,15 @@ function App() {
     [profile, education, workExperience]
   )
 
-  const blogSelector = useCallback(
-    (location: Location) => <Blog.Selector location={location.pathname} {...blogs} />,
+  const blogController = useCallback(
+    (location: Location) => <Blog.Controller {...blogs} location={location.pathname} />,
     [blogs]
   )
-
-  // const articleProps = useMemo(() => ({
-  //   retrieveArticle: fetchArticle
-  // } as Blog.ArticleProps), [])
-
-  // const blogArticle = useCallback(
-  //   () => <Blog.Article {...articleProps} />, [articleProps]
-  // )
 
   const router = useRouter([
     new MatchRoute("cv", cv),
     // new MatchRoute("/blogs/", blogArticle),
-    new MatchRoute("blog", blogSelector),
+    new MatchRoute("blogs", blogController),
   ], cv
   )
 

@@ -166,7 +166,7 @@ function fetchData(language: string) {
         categories: blog.categories
       } as Blog.BlogEntry
     })
-    
+
     useStore.setState(prevState => {
       return produce(prevState, draft => {
         draft.component.blogs.blogEntries = blogEntries
