@@ -21,7 +21,7 @@ export interface Texts {
   monthNames: string[]
 }
 
-export function Company({...props}: Props) {
+export function Company(props: Props) {
   const texts = props.texts
   const description = `**${props.name}**  \n\n${props.description}`
   return (

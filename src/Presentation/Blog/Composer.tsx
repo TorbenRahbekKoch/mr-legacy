@@ -1,6 +1,6 @@
-import * as Article  from './Article'
-import { FilteredArticleList } from "./FilteredArticleList";
-import { Props as EntryTitleProps } from './EntryTitle'
+import * as Article  from './Articles/Article'
+import { FilteredArticleList } from "./Articles/FilteredArticleList";
+import { Props as EntryTitleProps } from './Articles/Title'
 import { CategoryList, SelectionChanged } from './Categories/CategoryList';
 
 export enum PropType  {

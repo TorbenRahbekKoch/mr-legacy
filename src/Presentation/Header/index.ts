@@ -1,3 +1,4 @@
-export type { Props } from './Header'
-export { Header, defaultProps } from './Header'
+export type { Props } from './Controller'
+export { Controller, defaultProps } from './Controller'
 export type { QuoteData } from './Quote'
+export type { Repository } from './Repository'

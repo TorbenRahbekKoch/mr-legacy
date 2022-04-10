@@ -1,5 +1,5 @@
 import * as ArticleList from './ArticleList';
-import { Props as EntryTitleProps } from './EntryTitle'
+import { Props as EntryTitleProps } from './Title'
 
 export interface Props {
   blogEntries: EntryTitleProps[]

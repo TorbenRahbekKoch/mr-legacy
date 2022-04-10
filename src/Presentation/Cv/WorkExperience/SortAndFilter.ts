@@ -8,12 +8,11 @@ export interface WorkExperienceCompany {
   projects: Project[]
 }
 
-
 export function buildWorkExperienceList(companies: Company[], projects: Project[]) {
   const companyMap = new Map<string, WorkExperienceCompany>()
 
   companies.forEach(company => {
-    var workExperienceCompany: WorkExperienceCompany = {
+    const workExperienceCompany: WorkExperienceCompany = {
       company: company,
       childCompanies: [],
       projects: []
@@ -23,8 +22,8 @@ export function buildWorkExperienceList(companies: Company[], projects: Project[
 
   companies.forEach(company => {
     if (company.parentId != null) {
-      var parentCompany = companyMap.get(company.parentId)
-      var childCompany = companyMap.get(company.id)
+      const parentCompany = companyMap.get(company.parentId)
+      const childCompany = companyMap.get(company.id)
       if (childCompany != null) {
         parentCompany?.childCompanies.push(childCompany)
       }
@@ -32,7 +31,7 @@ export function buildWorkExperienceList(companies: Company[], projects: Project[
   });
 
   projects.forEach(project => {
-    var parentCompany = companyMap.get(project.companyId)
+    const parentCompany = companyMap.get(project.companyId)
     if (parentCompany != null) {
       parentCompany.projects.push(project)
     }

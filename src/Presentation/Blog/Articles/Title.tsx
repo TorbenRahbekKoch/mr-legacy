@@ -11,7 +11,7 @@ export interface Props {
   categories: string[] 
 }
 
-export function EntryTitle(props: Props) {
+export function Title(props: Props) {
   const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: 'numeric'}
   
   return (

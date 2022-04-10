@@ -10,7 +10,7 @@ it('should append to empty selection on select', async () => {
     selection = newSelection
   }
 
-  var props: CategoryList.Props = {
+  const props: CategoryList.Props = {
     allCategories: ["Category 1", "Category 2", "Category 3"],
     selectedCategories:[],
     selectionChanged: selectionChanged
@@ -18,8 +18,8 @@ it('should append to empty selection on select', async () => {
 
   render(<CategoryList.CategoryList {...props}/>)
 
-  var event = userEvent.setup()
-  var checkbox = screen.getByLabelText("Category 1")
+  const event = userEvent.setup()
+  const checkbox = screen.getByLabelText("Category 1")
 
   await event.click(checkbox)
 
@@ -35,7 +35,7 @@ it('should append to not-empty selection on select', async () => {
     selection = newSelection
   }
 
-  var props: CategoryList.Props = {
+  const props: CategoryList.Props = {
     allCategories: ["Category 1", "Category 2", "Category 3"],
     selectedCategories:["Category 2"],
     selectionChanged: selectionChanged
@@ -43,8 +43,8 @@ it('should append to not-empty selection on select', async () => {
 
   render(<CategoryList.CategoryList {...props}/>)
 
-  var event = userEvent.setup()
-  var checkbox = screen.getByLabelText("Category 1")
+  const event = userEvent.setup()
+  const checkbox = screen.getByLabelText("Category 1")
 
   await event.click(checkbox)
 

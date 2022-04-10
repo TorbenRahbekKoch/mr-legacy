@@ -6,7 +6,6 @@ import * as Project from "./Project"
 export interface Props {
   projects: Project.Props[]
   companies: Company.Props[]
-  technologyLookup: Project.Technology[]
   texts: Texts
 }
 
@@ -35,8 +34,7 @@ export const defaultProps = {
     now: "",
     workExperience: "",
     monthNames: []
-  },
-  technologyLookup: []
+  }
 }
 
 export function List({...props} :Props) {
@@ -47,44 +45,37 @@ export function List({...props} :Props) {
     return null;
   }
 
+  const companyTexts = {
+    period: props.texts.period,
+    company: props.texts.company,
+    jobDescription: props.texts.jobDescription,
+    now: props.texts.now,
+    monthNames: props.texts.monthNames  
+  }
+
+  const projectTexts ={
+    period: props.texts.period,
+    project: props.texts.project,
+    description: props.texts.description,
+    technologies: props.texts.technologies,
+    now: props.texts.now,
+    monthNames: props.texts.monthNames 
+  }
+
   const companies = buildWorkExperienceList(props.companies, projects)
   const elements: any[] = []
 
-  const companyTexts: Company.Texts = {
-    company : texts.company,
-    jobDescription : texts.jobDescription,
-    monthNames : texts.monthNames,
-    now : texts.now,
-    period : texts.period
-  }
-
-  const projectTexts: Project.Texts = {
-    period: texts.period,
-    project: texts.project,
-    description: texts.description,
-    technologies: texts.technologies,
-    now: texts.now,
-    monthNames: texts.monthNames
-  }
-
   companies.forEach(company => {
-    company.company.texts = companyTexts
-
-    elements.push(<Company.Company {...company.company} key={company.company.id} />)
-    company.projects.forEach(project => {
-      project.texts = projectTexts
-      project.technologyLookup = props.technologyLookup
-      elements.push(<Project.Project {...project} key={project.id} />)
+    elements.push(<Company.Company {...company.company} key={company.company.id} texts={companyTexts}/>)
+    company.projects.forEach(project => {      
+      elements.push(<Project.Project {...project} key={project.id} texts={projectTexts}/>)
     })
 
 
     company.childCompanies.forEach(company => {
-      company.company.texts = companyTexts;
-      elements.push(<Company.Company {...company.company} key={company.company.id} />)
+      elements.push(<Company.Company {...company.company} key={company.company.id} texts={companyTexts}/>)
       company.projects.forEach(project => {
-        project.texts = projectTexts
-        project.technologyLookup = props.technologyLookup
-        elements.push(<Project.Project {...project} key={project.id} />)
+        elements.push(<Project.Project {...project} key={project.id} texts={projectTexts}/>)
       })
     })
   })

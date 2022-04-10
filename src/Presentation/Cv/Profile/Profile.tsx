@@ -11,7 +11,7 @@ export const defaultProps = {
   birthDate: new Date()
 }
 
-export function Profile({ ...props }: Props) {
+export function Profile(props: Props) {
   if (props?.profile == null || props?.birthDate == null)
     return null
 

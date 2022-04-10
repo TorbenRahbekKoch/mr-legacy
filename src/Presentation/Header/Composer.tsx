@@ -1,15 +1,13 @@
+import { QuoteData } from './Quote'
+import { TimedQuote } from './TimedQuote'
 import * as Style from './Style'
-import { Quote, QuoteData } from './Quote'
 
 export interface Props {
   quotes: QuoteData[]
+  quoteIntervalInSeconds: number
 }
 
-export const defaultProps = {
-  quotes: []
-}
-
-export function Header({ ...props }: Props) {
+export function Composer(props: Props) {
   return (
     <Style.Header>
       <Style.MugShot>
@@ -24,7 +22,7 @@ export function Header({ ...props }: Props) {
         <Style.PrintMainTitle>Torben Koch Pløen</Style.PrintMainTitle>
         <Style.ContactInformation>aka Torben Koch Pløen, +45 2482 1824, torben at kochploeen.dk</Style.ContactInformation>
         <Style.PrintContactInformation>+45 2482 1824, torben@kochploeen.dk</Style.PrintContactInformation>
-        <Quote {...props} />
+        <TimedQuote quotes={props.quotes}  intervalInSeconds={props.quoteIntervalInSeconds}/>
       </Style.HeaderDetails>
     </Style.Header>
   )

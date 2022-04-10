@@ -4,22 +4,23 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^14.0.4",
     "@types/jest": "^27.4.1",
-    "@types/node": "^17.0.18",
-    "@types/react": "^17.0.39",
-    "@types/react-dom": "^17.0.11",
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
     "immer": "^9.0.12",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-markdown": "^8.0.0",
+    "react-markdown": "^8.0.2",
     "react-scripts": "5.0.0",
-    "styled-components": "^5.3.3",
-    "typescript": "^4.5.5",
+    "rehype-highlight": "^5.0.2",
+    "styled-components": "^5.3.5",
+    "typescript": "^4.6.3",
     "web-vitals": "^2.1.4",
-    "zustand": "^3.7.0"
+    "zustand": "^3.7.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -46,12 +47,12 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.22",
-    "ts-jest": "^27.1.3"
+    "@types/styled-components": "^5.1.24",
+    "ts-jest": "^27.1.4"
   },
   "jest": {
     "transformIgnorePatterns": [
-      "<rootDir>/node_modules/(?!(react-markdown|vfile|vfile-message|jest-runtime|unist.*|unified|bail|is-plain-obj|trough|remark.*|mdast.*|micromark.*|decode.*|character-entities|property-information|hast-util-whitespace|space-separated-tokens|comma-separated-tokens)/)"
+      "<rootDir>/node_modules/(?!(react-markdown|vfile|vfile-message|jest-runtime|unist.*|unified|bail|is-plain-obj|trough|remark.*|mdast.*|micromark.*|decode.*|character-entities|property-information|hast.*|space-separated-tokens|comma-separated-tokens|rehype.*|lowlight|fault)/)"
     ],
     "transform": {
       "^.+\\.ts?$": "ts-jest",

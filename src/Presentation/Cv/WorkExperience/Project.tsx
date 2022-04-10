@@ -1,5 +1,4 @@
 import ReactMarkDown from 'react-markdown'
-import { useStore } from '../../../Infrastructure/BootStrapping'
 import * as Style from './Style'
 import { ItemHeader as ProjectHeader, ItemTable as ProjectTable, ItemText as ProjectText } from './Style'
 import { formatPeriod, Period } from './Period'
@@ -29,33 +28,21 @@ export interface Props {
   companyId: string
   id: string
   period: Period
-  dk: ProjectDescription
-  en: ProjectDescription
+  project: ProjectDescription
   technologies: string[]
-  technologyLookup: Technology[]
   texts: Texts
 }
 
 export function Project(props: Props) {
   const technologies = props.technologies
     ?.reduce((prev, current) => {
-      const tryFindTech = props.technologyLookup
-        .find(tech => tech.id === current)
-      const actual = tryFindTech != null
-        ? tryFindTech.name
-        : current
       if (prev === "")
-        return actual
+        return current
       else
-        return `${prev}, ${actual}`
+        return `${prev}, ${current}`
     }, "")
+    
   const texts = props.texts
-
-  const language = useStore(state => state.ambient.language)
-  const project: ProjectDescription =
-    (language === 'en'
-      ? props.en
-      : props.dk)
 
   return (
     <Style.Div>
@@ -70,11 +57,11 @@ export function Project(props: Props) {
           </tr>
           <tr>
             <ProjectHeader>{texts.project}</ProjectHeader>
-            <ProjectText>{project.project}</ProjectText>
+            <ProjectText>{props.project.project}</ProjectText>
           </tr>
           <tr>
             <ProjectHeader>{texts.description}</ProjectHeader>
-            <ProjectText><ReactMarkDown>{project.description}</ReactMarkDown>
+            <ProjectText><ReactMarkDown>{props.project.description}</ReactMarkDown>
             </ProjectText>
           </tr>
           <tr>

@@ -19,9 +19,7 @@ function isSelected(category: string, selectedCategories: string[]) {
 export function CategoryList({ allCategories, selectedCategories, ...props }: Props) {
 
   function categorySelected(category: string) {
-    const newSelection = selectedCategories
-      .map(c => c);
-    newSelection.push(category)
+    const newSelection = [...selectedCategories, category]
     props.selectionChanged(newSelection)
   }
 

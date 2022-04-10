@@ -2,79 +2,128 @@
     "quotes": [{
         "quote": "Det ville jo være smart, så det kan man ikke",
         "author": "Mr. Legacy",
-        "languages": ["dk"]
+        "languages": ["dk"],
+        "source": ""
+    },{
+        "quote": "That would be smart, so you can't",
+        "author": "Mr. Legacy",
+        "languages": ["en", "dk"],
+        "source": ""
     },{
         "quote": "Computere er noget lort",
         "author": "Mr. Legacy",
-        "languages": ["dk"]
+        "languages": ["dk"],
+        "source": ""
+    },{
+        "quote": "Computers suck",
+        "author": "Mr. Legacy",
+        "languages": ["dk", "en"],
+        "source": ""
     },{
         "quote": "With decoupling comes flexibility, complexity and responsibility",
         "author": "Mr. Legacy",
-        "languages": ["dk","en"]
+        "languages": ["dk","en"],
+        "source": ""
     },{
         "quote": "The state of a microservice should be null",
         "author": "Mr. Legacy",
-        "languages": ["dk","en"]
+        "languages": ["dk","en"],
+        "source": ""
     },{
         "quote": "Size does not matter",
         "author": "Mr. Legacy",
-        "languages": ["dk","en"]
+        "languages": ["dk","en"],
+        "source": ""
     },{
         "quote": "Green fields are green only until someone takes a crap in said field",
         "author": "Mr. Legacy",
-        "languages": ["dk","en"]
+        "languages": ["dk","en"],
+        "source": ""
     },{
         "quote": "Det tager (mindst) 3 forsøg at generalisere",
         "author": "Mr. Legacy",
-        "languages": ["dk"]
+        "languages": ["dk"],
+        "source": ""
     },{
         "quote": "Esoterisk",
         "author": "Mr. Legacy",
-        "languages": ["dk"]
+        "languages": ["dk"],
+        "source": ""
     },{
         "quote": "Doing microservices just because everyone else is doing it is a terrible idea",
         "author": "Sam Newman",
-        "languages": ["en","dk"]
+        "languages": ["en","dk"],
+        "source": ""
     },{
         "quote": "If you do a big-bang rewrite, the only thing you're guaranteed of is a big bang",
         "author": "Martin Fowler",
-        "languages": ["en","dk"]
+        "languages": ["en","dk"],
+        "source": ""
     },{
         "quote": "Copy the questions, not the answers",
         "author": "Jessica Joy Kerr",
-        "languages": ["en","dk"]
+        "languages": ["en","dk"],
+        "source": ""
     },{
         "quote": "Just because software is deployed into a given environment doesn't mean it's actually being used by customers",
         "author": "Sam Newman",
-        "languages": ["en","dk"]
+        "languages": ["en","dk"],
+        "source": ""
     },{
         "quote": "Smart endpoints, dumb pipes",
         "author": "Sam Newman",
-        "languages": ["en","dk"]
+        "languages": ["en","dk"],
+        "source": ""
     },{
         "quote": "It turns out not knowing what you're doing and doing it anyway can have some pretty disastrous implications",
         "author": "Sam Newman",
-        "languages": ["en","dk"]
+        "languages": ["en","dk"],
+        "source": ""
     },{
         "quote": "It's a good idea not to make a bad situation any worse",
         "author": "Sam Newman",
-        "languages": ["en","dk"]
+        "languages": ["en","dk"],
+        "source": ""
     },{
         "quote": "Distributed Transactions - Just Say No",
         "author": "Sam Newman",
-        "languages": ["en","dk"]
+        "languages": ["en","dk"],
+        "source": ""
     },{
         "quote": "We replaced out monolith with micro services so that every outage could be more like a murder mystery",
         "author": "@Honest_update (twitter)",
-        "languages": ["en","dk"]
+        "languages": ["en","dk"],
+        "source": ""
     },{
         "quote": "...making it hard to change a service contract is better than constantly breaking consumers",
         "author": "Sam Newman",
-        "languages": ["en","dk"]
+        "languages": ["en","dk"],
+        "source": ""
     },{
         "quote": "Microservices are definitely not for everyone",
         "author": "Sam Newman",
-        "languages": ["en","dk"]
+        "languages": ["en","dk"],
+        "source": ""
+    },{
+        "quote": "Users don't care about Microservices or the cloud; they care about outcomes",
+        "author": "Vaughn Vernon",
+        "languages": ["en","dk"],
+        "source": "Strategic Monoliths and Microservices"
+    },{
+        "quote": "You can't look at the competition and say you're going to do it better. You have to look at the competition and say you're going to do it differently",
+        "author": "Steve Jobs",
+        "languages": ["en","dk"],
+        "source": ""
+    },{
+        "quote": "Some men see things as they are and ask why. Others dream things that never were and ask why not",
+        "author": "George Bernard Shaw",
+        "languages": ["en","dk"],
+        "source": ""
+    },{
+        "quote": "It's not the Monolith that's the problem - it's the mud",
+        "author": "Vaughn Vernon",
+        "languages": ["en","dk"],
+        "source": "Strategic Monoliths and Microservices"
     }
     ]
 }

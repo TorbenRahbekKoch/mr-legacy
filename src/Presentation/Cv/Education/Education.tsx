@@ -31,7 +31,7 @@ export interface Props {
   texts: Texts
 }
 
-export function Education({ ...props }: Props) {
+export function Education(props: Props) {
   const texts = props.texts
   const formalTexts: Formal.Texts = {
     education: texts.education,

@@ -7,14 +7,14 @@ export type DataReceived = (data: any) => void;
 async function fetchJson(url: string, dataReceived: (data: any) => void) {
   const response = await fetch(url)
   const json = await response.json()
-  dataReceived(json)  
+  dataReceived(json)
 }
 
 export async function fetchTexts(language: string, dataReceived: DataReceived) {
   fetchJson(`/data/texts-${language}.json`, dataReceived)
 }
 
-export async function fetchProjects(dataReceived: DataReceived){
+export async function fetchProjects(dataReceived: (data: Dto.Projects) => void) {
   fetchJson('/data/projects.json', dataReceived)
 }
 
@@ -36,7 +36,7 @@ export async function fetchTechnologies(language: string, dataReceived: (data: D
   fetchJson(`/data/technologies-${language}.json`, dataReceived)
 }
 
-export async function fetchCompanies(dataReceived: DataReceived) {
+export async function fetchCompanies(dataReceived: (data: Dto.Companies) => void) {
   fetchJson('/data/companies.json', dataReceived)
 }
 
@@ -44,7 +44,7 @@ export async function fetchBlogs(dataReceived: (data: Dto.BlogEntries) => void) 
   fetchJson('/data/blogs/blogs.json', dataReceived)
 }
 
-export async function fetchArticle(url: string, dataReceived: (article: string) => void){
+export async function fetchArticle(url: string, dataReceived: (article: string) => void) {
   const response = await fetch(`/data/blogs/${url}/entry.md`)
   const text = await response.text()
   dataReceived(text)

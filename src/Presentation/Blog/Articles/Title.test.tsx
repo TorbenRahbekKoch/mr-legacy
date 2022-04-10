@@ -1,5 +1,5 @@
 import {render, screen} from '@testing-library/react'
-import * as Blog from '.'
+import { Title } from './Title'
 
 it('should render the url', () => {
     const blogEntry = {
@@ -11,7 +11,7 @@ it('should render the url', () => {
       categories: ["story time"]
     }
 
-    render(<Blog.EntryTitle {...blogEntry}/>)
+    render(<Title {...blogEntry}/>)
     expect(screen.getByRole('link'))
       .toHaveAttribute('href', blogEntry.url)
 })
