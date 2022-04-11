@@ -41,7 +41,7 @@ function MenuItem({title, path, rightAlign, onClick}: ItemProps) {
 
 export function Menu({...props}: Props) {
   const [languageLabel, newLanguage] = 
-    props.currentLanguage == "dk"
+    props.currentLanguage === "dk"
     ? [props.texts.english, "en"]
     : [props.texts.danish, "dk"]
 
