@@ -1,5 +1,7 @@
 # About this site
 
+*This article will updated as my endeavours brings enlightment.*
+
 I started this site for two reasons: I wanted a place to have my CV readily available and
 having it be fairly easy to update.
 

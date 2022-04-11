@@ -40,7 +40,7 @@ should be sure it is worth it.
 And if you finally, after thorough deliberation, decide to set sail and go look for the dragon's treasure this book will more than fullfill the quest for gold and gems.
 
 Changing a monolith to microservices is hard core
-refactoring and it brings a little tear to the eye that Sam Newman mentions "Working effectively with legacy code" by Michael C. Feathers.
+refactoring and it brings a little happy tear to the eye that Sam Newman mentions "Working effectively with legacy code" by Michael C. Feathers.
 
 Feathers has the concept of *seams* where you can
 safely (more or less) surgically separate parts

@@ -6,17 +6,35 @@
             "dir": "about-this-site",
 			"teaser": "Basics of how the site was created",
             "date": "2022-03-13",
-			"categories": ["programming"],
-            "rating": null
-        },
-        {
+			"categories": ["programming"]
+        },{
             "url" : "/blogs/monolith-to-microservices",
             "title": "Monolith to microservices - a review",
             "teaser": "Mr. Microservice did it again - read all about it here!",
             "dir": "monolith-to-microservices",
             "date": "2022-03-22",
-			"categories": ["review"],
-            "rating": 4
+			"categories": ["review"]
+        },{
+            "url" : "/blogs/strategic-monoliths-and-microservices",
+            "title": "Strategic Monoliths and Microservices - a review",
+            "teaser": "Vaughn Vernon and Tomasz Jaskula have written an impressive architectural addition to The Addison-Wesley Signature Series",
+            "dir": "strategic-monoliths-and-microservices",
+            "date": "2022-03-28",
+			"categories": ["architecture", "review"]
+        },{
+            "url" : "/blogs/the-architecture-of-a-react-application",
+            "title": "The Architecture of a React Application",
+            "teaser": "Where to put what and why and how not to have a store",
+            "dir": "the-architecture-of-a-react-application",
+            "date": "2022-03-28",
+			"categories": ["architecture", "programming", "react"]
+        },{
+            "url" : "/blogs/decoupling-components",
+            "title": "Decoupling components",
+            "teaser": "Coupling and cohesion is more than just fancy talk",
+            "dir": "decoupling-components",
+            "date": "2022-03-28",
+			"categories": ["architecture", "programming"]
         }
     ]
 }
