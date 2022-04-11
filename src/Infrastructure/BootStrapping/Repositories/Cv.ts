@@ -28,13 +28,12 @@ export class Cv implements Repository {
     }
     else {
       Fetch.fetchTechnologies(
-        this.language,
         technologyData => {
           const technologies = technologyData.technologies
             .map(t => ({
               id: t.id,
               name: t.name,
-              description: t.description,
+              description: this.language ==="en" ? t.en : t.dk,
               links: t.links
             }) as Technology)
           this.technologies = technologies

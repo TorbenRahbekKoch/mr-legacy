@@ -1,14 +1,14 @@
 {
     "formal": [{
-        "education": "Datalogi",
-        "location" : "DAIMI, Datalogisk afdeling i Matematisk Institut, Århus Universitet",
-        "description" : "Speciale: CSCW (Computer Supported Cooperative Work)(med Lotus Notes) og IT-indflydelse på organisationer. ",
+        "education": "Master’s degree in Computer Science",
+        "location" : "Computer Science Department, University of Aarhus",
+        "description" : "Thesis subject: CSCW (Computer Supported Coorperative Work) (using Lotus Notes) og IT impact on organizations",
         "when": "1990-97"
     },
     {
-        "education": "Engelsk filologi",
-        "location": "Humanistisk fakultet, Århus Universitet",
-        "description": "Sidefag i engelsk",
+        "education": "Minor subject: English Philology",
+        "location": "English Department, University of Aarhus",
+        "description": "",
         "when": "1995-97"
     },
     {
@@ -18,9 +18,9 @@
         "when": "1986-89"
     }],
     "courses": [{
-        "course": "Persondataforordningen",
-        "location": "København",
-        "description": "Overordnet gennemgang af GDPR",
+        "course": "GDPR - EU Privay Law",
+        "location": " Copenhagen",
+        "description": "",
         "when": { "year": 2018, "month": 4},
         "length": 1
     },{
@@ -39,7 +39,7 @@
     },
     {
         "course": "SQL Server Saturday #275",
-        "location": "København",
+        "location": " Copenhagen",
         "description": "",
         "when": { "year": 2015, "month": 3},
         "length": 1
@@ -47,13 +47,13 @@
     {
         "course": "Xamarin University",
         "location": "Online",
-        "description": "Deltog i en del online-kurser i Xamarin for at snuse lidt til mobiludvikling",
+        "description": "Participated in several online courses in Xamarin to get my feet wet in mobile development.Deltog i en del online-kurser i Xamarin for at snuse lidt til mobiludvikling",
         "when": { "year": 2015, "month": 7},
         "length": 5
     },
     {
         "course": "Warm Crocodile Developer Conference",
-        "location": "København",
+        "location": " Copenhagen",
         "description": "",
         "when": { "year": 2014, "month": 1},
         "length": 2
@@ -88,35 +88,35 @@
     },
     {
         "course": "NoSql Search Roadshow",
-        "location": "Trifork, København",
+        "location": "Trifork,  Copenhagen",
         "description": "",
         "when": { "year": 2013, "month": 4},
         "length": 1
     },
     {
         "course": "Sql Server Saturday #196",
-        "location": "København",
+        "location": " Copenhagen",
         "description": "",
         "when": { "year": 2013, "month": 4},
         "length": 1
     },
     {
         "course": "CQRS/Domain Driven Design",
-        "location": "København",
+        "location": " Copenhagen",
         "description": "Vaughn Vernon",
         "when": { "year": 2013, "month": 4},
         "length": 5
     },
     {
         "course": "Specification by Example",
-        "location": "København",
+        "location": " Copenhagen",
         "description": "Gojko Adzic",
         "when": { "year": 2013, "month": 2},
         "length": 2
     },
     {
         "course": "Warm Crocodile Developer Conference",
-        "location": "København",
+        "location": " Copenhagen",
         "description": "",
         "when": { "year": 2013, "month": 1},
         "length": 2
@@ -137,7 +137,7 @@
     },
     {
         "course": "Agile Estimating and Planning",
-        "location": "København",
+        "location": " Copenhagen",
         "description": "Mike Cohn",
         "when": { "year": 2010, "month": 12},
         "length": 1

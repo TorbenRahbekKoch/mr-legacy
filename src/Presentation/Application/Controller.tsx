@@ -10,7 +10,7 @@ import * as Fetch from '../../Infrastructure/BootStrapping'
 
 export function Controller() {
   const [texts, setTexts] = useState<AllTexts>()
-  const [language, ] = useState("dk")
+  const [language, setLanguage] = useState("dk")
 
   useEffect(
     () => {Fetch.fetchTexts(language, setTexts)},
@@ -61,6 +61,12 @@ export function Controller() {
     [texts, monthNames]
   )
 
+  const menuTexts = useMemo(() => ({
+    danish: "Dansk",
+    english: "English"
+    }),
+    []
+  )
   const blogController = useCallback(
     (location: Location) => {
       return <Blog.Controller repository={blogRepository} location={location.pathname} />
@@ -87,7 +93,14 @@ export function Controller() {
   }
 
   return (
-    <Composer blogController={blogController} cvController={cvController} headerController={headerController} />
+    <Composer 
+      blogController={blogController} 
+      cvController={cvController} 
+      headerController={headerController} 
+      texts={menuTexts}
+      currentLanguage={language}
+      requestLanguageChange={setLanguage}
+      />
   );
 
 }

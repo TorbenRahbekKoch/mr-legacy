@@ -1,5 +1,5 @@
-{age} år gammel datalogi-uddannet (i 1997) systemudvikler, arkitekt og designer med baggrund i Microsoft-
-platformen og fokus på backend-systemer. Udover diverse esoteriske universitetssprog (f.eks. Miranda,
+{age} år gammel datalogi-uddannet (i 1997) systemudvikler, arkitekt og designer med baggrund i 
+Microsoft-platformen og fokus på backend-systemer. Udover diverse esoteriske universitetssprog (f.eks. Miranda,
 Trine, Beta) er der gennem tiden stiftet bekendtskab med Pascal, C++, TSQL, PL-SQL, C#, F#, Java, JavaScript, TypeScript.
 
 Værktøjsporteføljen er lige så vokset og til tider udskiftet gennem årene: Delphi, Borland C++

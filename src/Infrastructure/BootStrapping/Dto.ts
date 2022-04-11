@@ -1,8 +1,8 @@
 import * as Education from '../../Presentation/Cv/Education'
 
 export interface EducationDto {
-  formal : Education.FormalEducation[]
-  courses : Education.Course[]
+  formal: Education.FormalEducation[]
+  courses: Education.Course[]
 }
 
 export interface SingleQuote {
@@ -12,13 +12,14 @@ export interface SingleQuote {
 }
 
 export interface QuoteDto {
-  quotes : SingleQuote[]
+  quotes: SingleQuote[]
 }
 
 export interface TechnologyDto {
-  id : string
-  name : string
-  description: string
+  id: string
+  name: string
+  dk: string
+  en: string
   links: string[]
 }
 
@@ -28,7 +29,7 @@ export interface TechnologiesDto {
 
 export interface BlogEntry {
   url: string
-  title : string
+  title: string
   teaser: string
   dir: string
   date: string
@@ -40,13 +41,13 @@ export interface BlogEntries {
 }
 
 export interface PeriodPoint {
-  month : number
-  year : number
+  month: number
+  year: number
 }
 
 export interface Period {
-  start : PeriodPoint
-  end ?: PeriodPoint
+  start: PeriodPoint
+  end?: PeriodPoint
 }
 
 export interface ProjectDescription {

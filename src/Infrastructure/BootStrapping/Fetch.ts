@@ -32,8 +32,8 @@ export async function fetchQuotes(dataReceived: (data: Dto.QuoteDto) => void) {
   fetchJson(`/data/quotes.json`, dataReceived)
 }
 
-export async function fetchTechnologies(language: string, dataReceived: (data: Dto.TechnologiesDto) => void) {
-  fetchJson(`/data/technologies-${language}.json`, dataReceived)
+export async function fetchTechnologies(dataReceived: (data: Dto.TechnologiesDto) => void) {
+  fetchJson(`/data/technologies.json`, dataReceived)
 }
 
 export async function fetchCompanies(dataReceived: (data: Dto.Companies) => void) {

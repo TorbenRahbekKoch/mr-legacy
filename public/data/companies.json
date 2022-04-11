@@ -16,8 +16,8 @@
                 "jobDescription": "Systemudvikling"
             },
             "en": {
-                "description": "",
-                "jobDescription": ""
+                "description": "Independent consultant",
+                "jobDescription": "System development"
             }
         },
         {
@@ -39,8 +39,8 @@
                 "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design, datakonvertering, fejlretning, debugging"
             },
             "en": {
-                "description": "",
-                "jobDescription": ""
+                "description": "Independent consultant",
+                "jobDescription": "System design, system development, architect, documentation, database design, data conversion, debugging, test, analysis, release management"
             }
         },
         {
@@ -62,8 +62,8 @@
                 "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design"
             },
             "en": {
-                "description": "",
-                "jobDescription": ""
+                "description": "Independent consultant",
+                "jobDescription": "System design, system development, architect, documentation, database design"
             }
         },
         {
@@ -85,8 +85,8 @@
                 "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design"
             },
             "en": {
-                "description": "",
-                "jobDescription": ""
+                "description": "Independent consultant",
+                "jobDescription": "System design, system development, architect, documentation, database design"
             }
         },
         {
@@ -108,8 +108,8 @@
                 "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design"
             },
             "en": {
-                "description": "",
-                "jobDescription": ""
+                "description": "Independent consultant",
+                "jobDescription": "System design, system development, architect, documentation, database design"
             }
         },
         {
@@ -131,8 +131,8 @@
                 "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design, datakonvertering"
             },
             "en": {
-                "description": "",
-                "jobDescription": ""
+                "description": "Independent consultant",
+                "jobDescription": "System design, system development, architect, documentation, database design, data conversion"
             }
         },
         {
@@ -154,8 +154,8 @@
                 "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design, datakonvertering"
             },
             "en": {
-                "description": "",
-                "jobDescription": ""
+                "description": "Independent consultant",
+                "jobDescription": "System design, system development, architect, documentation, database design, data conversion"
             }
         },
         {
@@ -178,7 +178,7 @@
             },
             "en": {
                 "description": "",
-                "jobDescription": ""
+                "jobDescription": "System design, System development, Arkitekt, Documentation, Database Design,OOD, OOP, Programming, Release Manager, user interface development, Data conversion, debugging, implementation, OOA, Performance Tuning, Technical Writer, TDD, teaching"
             }
         },
         {
@@ -197,11 +197,11 @@
             },
             "dk": {
                 "description": "Afdelingen for printerløsninger, som blev købt ud og blev til EFS Technology.  \nAfdelingen for loyalitetskort (XSS).  \n\nFastansættelse",
-                "jobDescription": ""
+                "jobDescription": "Systemdesign, dokumentation, implementation"
             },
             "en": {
-                "description": "",
-                "jobDescription": ""
+                "description": "Department for print solutions. This department was bought out and became EFS Technology and does therefore not exist anymore.  \nI also worked for the Loyalty Card department.  \n\nPermanent employement",
+                "jobDescription": "System design, documentation, implementation"
             }
         },
         {
@@ -223,7 +223,7 @@
                 "jobDescription": ""
             },
             "en": {
-                "description": "",
+                "description": "SIM-card, plast cards, VISA.  \\Changed name to XPonCard",
                 "jobDescription": ""
             }
         },
@@ -246,7 +246,7 @@
                 "jobDescription": ""
             },
             "en": {
-                "description": "",
+                "description": "Independent consultant",
                 "jobDescription": ""
             }
         },
@@ -269,7 +269,7 @@
                 "jobDescription": ""
             },
             "en": {
-                "description": "",
+                "description": "Permanently employed consultant",
                 "jobDescription": ""
             }
         },
@@ -289,10 +289,10 @@
             },
             "dk": {
                 "description": "Produktion og salg af netværksudstyr.  \n\nFastansættelse",
-                "jobDescription": ""
+                "jobDescription": "Fastansættelse"
             },
             "en": {
-                "description": "",
+                "description": "Production and sales of network equipment.  \n\nPermanent employement",
                 "jobDescription": ""
             }
         },
@@ -315,7 +315,7 @@
                 "jobDescription": ""
             },
             "en": {
-                "description": "",
+                "description": "Independent consultant",
                 "jobDescription": ""
             }
         },
@@ -335,11 +335,11 @@
             },
             "dk": {
                 "description": "Selvstændig konsulent",
-                "jobDescription": ""
+                "jobDescription": "Systemudvikler"
             },
             "en": {
-                "description": "",
-                "jobDescription": ""
+                "description": "Independent consultant",
+                "jobDescription": "System developer"
             }
         },
         {
@@ -357,12 +357,12 @@
                 }
             },
             "dk": {
-                "description": "Undervisning af 14-15årige skoleelever i \"datalære\".",
-                "jobDescription": ""
+                "description": "Undervisning af 8. og 9. klasseelever i brugen af computere.",
+                "jobDescription": "Underviser"
             },
             "en": {
-                "description": "",
-                "jobDescription": ""
+                "description": "(The municipal youth school of Galten, Denmark)  \n\nTeaching 8th and 9th grade students about the use of computers.",
+                "jobDescription": "Teacher"
             }
         }
     ]
