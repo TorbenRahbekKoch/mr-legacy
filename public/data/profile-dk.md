@@ -16,7 +16,7 @@ systemdokumentation i readme-filer til wiki-systemer med diagrammer i Visio og l
 værktøjer.
 
 I min seneste opgave hos IDA har jeg opnået stor erfaring i remote arbejde, dels da Corona ramte og
-dels da vi flyttede til Sønderjylland, så især de sidste 1år og 3måneder hos IDA var 100% remote. 
+dels da vi flyttede til Sønderjylland, så især de sidste 1 år og 3 måneder hos IDA var 100% remote. 
 Med Teams er en kollega jo aldrig længere end en besked eller et opkald væk. 
 
 Den agile tankegang med små skridt og hyppig feedback på både produkt, proces og personer er spændende og lærerig.
@@ -26,8 +26,8 @@ Med mine mange år inden for softwarearkitektur og udviklingsarkitektur, drift o
 vidende, engageret og effektiv. Sammen med en vis portion stædighed driver det mig frem mod en 
 god løsning.
 
-Mr. Legacy er ikke (alene) et udtryk for min alder, men lige så meget et udtryk for min evne (og 
-lyst) til at arbejde med og rydde op i gammel kode. Kode med en historie.
+Mr. Legacy er ikke (alene) et udtryk for min alder, men lige så meget et udtryk for min evne (og især
+lyst) til at arbejde med, rydde op i og levetidsforlænge gammel kode. Kode med en historie.
 
 Jeg er en venlig og omgængelig person, veludstyret med humor, selvironi og en professionel og 
 pragmatisk indstilling til mit fag. Jeg nyder at øse ud af min (esoteriske) viden, og jeg betragter det 
