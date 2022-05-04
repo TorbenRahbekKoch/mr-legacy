@@ -19,22 +19,29 @@
             "title": "Strategic Monoliths and Microservices - a review",
             "teaser": "Vaughn Vernon and Tomasz Jaskula have written an impressive architectural addition to The Addison-Wesley Signature Series",
             "dir": "strategic-monoliths-and-microservices",
-            "date": "2022-03-28",
+            "date": null,
 			"categories": ["architecture", "review"]
         },{
             "url" : "/blogs/the-architecture-of-a-react-application",
             "title": "The Architecture of a React Application",
             "teaser": "Where to put what and why and how not to have a store",
             "dir": "the-architecture-of-a-react-application",
-            "date": "2022-03-28",
+            "date": null,
 			"categories": ["architecture", "programming", "react"]
         },{
             "url" : "/blogs/decoupling-components",
             "title": "Decoupling components",
             "teaser": "Coupling and cohesion is more than just fancy talk",
             "dir": "decoupling-components",
-            "date": "2022-03-28",
+            "date": null,
 			"categories": ["architecture", "programming"]
+        },{
+            "url" : "/blogs/no-state-management-library",
+            "title": "No, you don't need a state management library",
+            "teaser": "Seriously, you don't.",
+            "dir": "no-state-management",
+            "date": "2022-05-04",
+			"categories": ["architecture", "programming", "react"]
         }
     ]
 }

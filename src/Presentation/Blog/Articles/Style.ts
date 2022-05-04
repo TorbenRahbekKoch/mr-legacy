@@ -22,7 +22,7 @@ export const Article = styled.article`
       width: 90%;
   };
 
-  h1, h2, h3, h5, h6 {
+  h1, h2, h3, h4, h5, h6 {
     margin-left: -5%;
     font-family: 'Courier New', Courier, monospace;
     word-wrap: break-word;
@@ -36,6 +36,31 @@ export const Article = styled.article`
   h1, h2, h3, ul, pre, p {
     text-align: left;
   };
+
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  h3 {
+    font-size: 1.0em;
+  }
+
+  h4 {
+    font-size: 0.9em;
+  }
+
+  h5 {
+    font-size: 0.8em;
+  }
+
+  h6 {
+    font-size: 0.7em;
+  }  
 
   p, pre {
     width: 80%;
@@ -111,3 +136,7 @@ export const LinkTitle = styled.span`
     font-size: 1.5em;
   }
 `
+
+export const BlogEntry = styled.div`
+  text-align: left;
+`;

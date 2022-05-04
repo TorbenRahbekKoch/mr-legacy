@@ -15,7 +15,7 @@ create a folder named `Presentation` (I'm not entirely
 satisfied with this name, but currently it is my best bet)
 within which you create an `Application` folder.
 
-In this folder you now create files (generally use .jsx 
+In this folder you now create files (generally use .jsx
 instead of .tsx if using JavaScript):
 
 - Controller.tsx
@@ -66,7 +66,7 @@ ReactDOM.render(
 ````
 
 Note: `import * as Application` is made
-possible by (and makes sense because of) 
+possible by (and makes sense because of)
 using `index.ts` to export from the
 `Application` directory. This is a way to
 *namespace* imports making naming easier.
@@ -94,4 +94,3 @@ that should most likely be put in `Composer.tsx`.
 
 You are now ready to actually start developing your
 React Application.
-
