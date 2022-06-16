@@ -71,11 +71,32 @@
             "links": []
         },
         {
+            "id": "sqlite",
+            "name": "SQLite",
+            "dk": "Lille, embedded database",
+            "en": "Small, embedded database",
+            "links": ["https://www.sqlite.org/index.html"]
+        },
+        {
+            "id": "neo4j",
+            "name": "Neo4j",
+            "dk": "Grafdatabase",
+            "en": "Graph database",
+            "links": ["https://neo4j.com/"]
+        },
+        {
             "id": "tsql",
             "name": "TSQL",
             "dk": "Transact SQL",
             "en": "Transact SQL",
             "links": []
+        },
+        {
+            "id": "cypher",
+            "name": "Cypher",
+            "dk": "Forespørgselssprog til Neo4j",
+            "en": "Query language for Neo4j",
+            "links": ["https://neo4j.com/developer/cypher/"]
         },
         {
             "id": "netstandard2",

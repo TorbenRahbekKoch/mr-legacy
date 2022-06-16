@@ -6,13 +6,42 @@
       "period": {
         "start": {
           "year": 2022,
+          "month": 4
+        },
+        "end": null
+      },
+      "dk": {
+        "project": "Quizzing Cousins website",
+        "description": "Quiz website (https://quizzingcousins.com) bygget på data fra wikidata.org. Sitet er en React/TypeScript frontend med en ASP.NET Core backend. Databasen er en Sqlite.  \nData trækkes ud og lægges i en lokal Neo4j, hvorfra der med Cypher kan udtrækkes data til spørgsmål."
+      },
+      "en": {
+        "project": "Mr. Legacy web site",
+        "description": "CV and blog-site developed with React and TypeScript for e.g. researching organizing code in front end applications: https://www.mrlegacy.dk"
+      },
+      "technologies": [
+        "vs",
+        "vscode",
+        "reactts",
+        "typescript",
+        "aspnetcore",
+        "neo4j",
+        "cypher",
+        "sqlite"
+      ]
+    },
+    {
+      "companyId": "SP",
+      "id": "mrlegacy",
+      "period": {
+        "start": {
+          "year": 2022,
           "month": 3
         },
         "end": null
       },
       "dk": {
         "project": "Mr. Legacy web site",
-        "description": "CV og blog-site udviklet med React og TypeScript: https://www.mrlegacy.dk"
+        "description": "CV og blog-site udviklet med React og TypeScript: https://mrlegacy.dk"
       },
       "en": {
         "project": "Mr. Legacy web site",
