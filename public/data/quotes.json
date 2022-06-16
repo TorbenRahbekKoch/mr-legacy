@@ -124,6 +124,76 @@
         "author": "Vaughn Vernon",
         "languages": ["en","dk"],
         "source": "Strategic Monoliths and Microservices"
+    },{
+        "quote": "The act of describing a program in unambiguous detail and the act of programming are one and the same",
+        "author": "Kevlin Henney",
+        "languages": ["en","dk"],
+        "source": "https://twitter.com/KevlinHenney/status/3361631527"
+    },{
+        "quote": "A checklist helps you focus on the hard parts of your task by taking your mind of trivial things",
+        "author": "Mark Seeman",
+        "languages": ["en","dk"],
+        "source": "Code that fits in your head"
+    },{
+        "quote": "Providing technical expertise includes *not* confusing stakeholders with details they can't make sense of or use",
+        "author": "Mark Seeman",
+        "languages": ["en","dk"],
+        "source": "Code that fits in your head"
+    },{
+        "quote": "The benefit of treaing warnings as errors is that you add an *institutional* quality gate",
+        "author": "Mark Seeman",
+        "languages": ["en","dk"],
+        "source": "Code that fits in your head"
+    },{
+        "quote": "The software exists to support the organisation in some way or other",
+        "author": "Mark Seeman",
+        "languages": ["en","dk"],
+        "source": "Code that fits in your head"
+    },{
+        "quote": "Documentation should prioritise explaining *why* a decision was made, rather than *what* was decided",
+        "author": "Mark Seeman",
+        "languages": ["en","dk"],
+        "source": "Code that fits in your head"
+    },{
+        "quote": "The goal is not to write code fast. The goal is sustainable software",
+        "author": "Mark Seeman",
+        "languages": ["en","dk"],
+        "source": "Code that fits in your head"
+    },{
+        "quote": "The Red Green Refactor process is one of the most scientific methodologies of software engineering that I can think of",
+        "author": "Mark Seeman",
+        "languages": ["en","dk"],
+        "source": "Code that fits in your head"
+    },{
+        "quote": "...*encapsulation* should guarantee that an object can never be in an invalid state",
+        "author": "Mark Seeman",
+        "languages": ["en","dk"],
+        "source": "Code that fits in your head"
+    },{
+        "quote": "Checklists will improve outcomes with not increase in skill",
+        "author": "Atul Gawande",
+        "languages": ["en","dk"],
+        "source": "The Checklist Manifesto: How to Get Things Right"
+    },{
+        "quote": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand",
+        "author": "Martin Fowler",
+        "languages": ["en","dk"],
+        "source": "Refactoring: Improving the Design of Existing Code"
+    },{
+        "quote": "Code isn't an asset; it's a liability",
+        "author": "Tim Ottinger",
+        "languages": ["en","dk"],
+        "source": ""
+    },{
+        "quote": "Man kan godt håbe, der opstår magi. Man skal bare ikke regne med det",
+        "author": "Daniel Frost",
+        "languages": ["dk"],
+        "source": "https://www.linkedin.com/posts/daniel-frost-dk_de-saas-l%C3%B8sninger-jeg-har-v%C3%A6ret-gladest-for-activity-6929512872569905153-AuqM"
+    },{
+        "quote": "...mudslide-meets-shantytown systems",
+        "author": "Vaughn Vernon",
+        "languages": ["en","dk"],
+        "source": "https://www.linkedin.com/feed/update/urn:li:activity:6920811480011407360?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A6920811480011407360%2C6920976231333060608%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A6920811480011407360%2C6921050322396172288%29"
     }
     ]
 }
