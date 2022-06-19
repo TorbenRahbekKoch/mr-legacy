@@ -1,6 +1,6 @@
-{age} år gammel datalogi-uddannet (i 1997) systemudvikler, arkitekt og designer med baggrund i 
-Microsoft-platformen og fokus på backend-systemer. Udover diverse esoteriske universitetssprog er
-der gennem tiden stiftet bekendtskab med Pascal, C++, TSQL, PL-SQL, Java, F#, C#, JavaScript, 
+{age} år gammel datalogi-uddannet full stack generalist, systemudvikler, arkitekt og 
+systemdesigner med fokus på C#, .NET, React og TypeScript. Udover diverse esoteriske universitetssprog er
+der gennem tiden stiftet bekendtskab med Pascal, C++, TSQL, PL-SQL, Java, F#, C#, JavaScript,
 TypeScript.
 
 Værktøjsporteføljen er lige så vokset og til tider udskiftet gennem årene og inkluderer blandt andet: 

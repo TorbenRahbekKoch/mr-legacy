@@ -1,5 +1,5 @@
-{age} year old senior system developer, architect and designer on the Microsoft-platform with the
-primary focus on backend/server systems. 25 years of professional experience since 1997 with a
+{age} year old senior full stack generalist, system developer, architect and designer 
+focusing on C#, .NET, React and TypeScript. 25 years of professional experience since 1997 with a
 Master of Computer Science degree from Aarhus University in the back pocket.
 
 I have seen my share of programming languages: Pascal, C++, C#, F#, JavaScript, TypeScript,
