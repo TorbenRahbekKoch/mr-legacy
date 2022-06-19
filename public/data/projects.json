@@ -12,11 +12,11 @@
       },
       "dk": {
         "project": "Quizzing Cousins website",
-        "description": "Quiz website (https://quizzingcousins.com) bygget på data fra wikidata.org. Sitet er en React/TypeScript frontend med en ASP.NET Core backend. Databasen er en Sqlite.  \nData trækkes ud og lægges i en lokal Neo4j, hvorfra der med Cypher kan udtrækkes data til spørgsmål."
+        "description": "Quiz website (https://quizzingcousins.com) bygget på data fra wikidata.org. Sitet er en React/TypeScript frontend med en ASP.NET Core backend. Databasen er en Sqlite.  \nData hentes som JSON, filtreres og importeres ind i en lokal Neo4j, hvorfra der med Cypher kan udtrækkes data til spørgsmål."
       },
       "en": {
-        "project": "Mr. Legacy web site",
-        "description": "CV and blog-site developed with React and TypeScript for e.g. researching organizing code in front end applications: https://www.mrlegacy.dk"
+        "project": "Quizzing Cousins website",
+        "description": "Quiz website (https://quizzingcousins.com) built on data from wikidata.org. The site is a React/TypeScript front with an ASP.NET Core backend. The database is SQLite.  \nData is downloaded as JSON, filtered and imported into Neo4j, from where Cypher is used for selecting data for questions."
       },
       "technologies": [
         "vs",
