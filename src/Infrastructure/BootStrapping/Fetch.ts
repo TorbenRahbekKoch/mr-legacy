@@ -14,6 +14,12 @@ export async function fetchTexts(language: string, dataReceived: DataReceived) {
   fetchJson(`/data/texts-${language}.json`, dataReceived)
 }
 
+export async function fetchServices(language: string, dataReceived: DataReceived) {
+  const response = await fetch(`/data/services-${language}.md`)
+  const text = await response.text()
+  dataReceived(text)
+}
+
 export async function fetchProjects(dataReceived: (data: Dto.Projects) => void) {
   fetchJson('/data/projects.json', dataReceived)
 }

@@ -52,6 +52,7 @@ export function Menu({...props}: Props) {
   return (
     <>
     <Style.MenuBar>
+      <MenuItem title="Ydelser" path="/services"/>
       <MenuItem title="CV" path="/cv"/>
       <MenuItem title="blog" path="/blogs"/>
       <span style={{float:"right"}}>

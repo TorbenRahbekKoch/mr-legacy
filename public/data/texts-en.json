@@ -11,5 +11,6 @@
     "time": "Date",
     "course": "Course",
     "location": "Location", 
-    "length": "Length (days)"
+    "length": "Length (days)",
+    "services": "Services"
 }

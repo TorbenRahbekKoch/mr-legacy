@@ -1,15 +1,17 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useRouter, MatchRoute } from '../../Infrastructure/Routing'
 import * as State from '../../Library/State'
 import * as Blog from '../Blog'
 import * as Cv from '../Cv'
 import * as Header from '../Header'
 import * as Repository from '../../Infrastructure/BootStrapping/Repositories'
+import * as Services from '../Services'
 import { Composer } from './Composer'
-import { AllTexts } from '../../Infrastructure/BootStrapping/AllTexts'
+import { AllTexts, defaultTexts } from '../../Infrastructure/BootStrapping/AllTexts'
 import * as Fetch from '../../Infrastructure/BootStrapping'
 
 export function Controller() {
-  const [texts, setTexts] = useState<AllTexts>()
+  const [texts, setTexts] = useState<AllTexts>(defaultTexts)
   const [language, setLanguage] = useState("dk")
 
   useEffect(
@@ -30,6 +32,11 @@ export function Controller() {
   const blogRepository = useMemo(
     () => new Repository.Blog(),
     []
+  )
+
+  const servicesRepository = useMemo(
+    () => new Repository.Services(language),
+    [language]
   )
 
   const monthNames = useMemo(() => {
@@ -63,9 +70,10 @@ export function Controller() {
 
   const menuTexts = useMemo(() => ({
     danish: "Dansk",
-    english: "English"
+    english: "English",
+    services: texts.services
     }),
-    []
+    [texts.services]
   )
   const blogController = useCallback(
     (location: Location) => {
@@ -88,14 +96,32 @@ export function Controller() {
     [headerRepository]
   )
 
+  const servicesController = useCallback(
+    () => {
+      return <Services.Controller repository={servicesRepository}/>      
+    },
+    [servicesRepository]
+  )
+
+  const router = useRouter([
+    new MatchRoute("services", location => servicesController()),
+    new MatchRoute("cv", (location) => cvController()),
+    new MatchRoute("blogs", (location) => blogController(location)),
+  ],
+  )
+
+  router.setDefaultRoute(() => {
+    return (servicesController())
+  })
+
+
   if (texts == null) {
     return null
   }
 
   return (
     <Composer 
-      blogController={blogController} 
-      cvController={cvController} 
+      router={router}
       headerController={headerController} 
       texts={menuTexts}
       currentLanguage={language}

@@ -12,4 +12,22 @@ export interface AllTexts {
   location: string
   time: string
   course: string
+  services: string
+}
+
+export const defaultTexts = {
+  period: "",
+  project: "",
+  description: "",
+  technologies: "",
+  company: "",
+  jobDescription: "",
+  now: "",
+  workExperience: "",
+  education: "",
+  length: "",
+  location: "",
+  time: "",
+  course: "",
+  services: "",
 }

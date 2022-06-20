@@ -11,5 +11,6 @@
     "time": "Tidspunkt",
     "course": "Kursus",
     "location": "Sted", 
-    "length": "Varighed (dage)"
+    "length": "Varighed (dage)",
+    "services": "Ydelser"
 }
