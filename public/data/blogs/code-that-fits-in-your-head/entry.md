@@ -153,7 +153,7 @@ This is not about [Somebody else's problem](https://en.wikipedia.org/wiki/Somebo
 *composition* and *decomposition* and keeping code free of unexpected
 side effects and, of course, *Code that fits in your head*.
 
-There ire some musings on predictability and [Pure functions](https://en.wikipedia.org/wiki/Pure_function) which I absolutely agree with. This also, again, touches
+There are some musings on predictability and [Pure functions](https://en.wikipedia.org/wiki/Pure_function) which I absolutely agree with. This also, again, touches
 on the subject of CQS and on the inherent flaws in
 [OO - Object oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) when it comes to purity and side effects.
 
@@ -170,7 +170,7 @@ qoute of the chapter:
 > *Log all impure actions, but no more*
 
 There is, naturally, no need to log input and results of pure functions, since
-you have tests covering those.
+you have tests covering those. You have? Don't you?
 
 *Chapter 14 - Rythm:*
 
@@ -205,8 +205,9 @@ Download the code and take a look.
 
 **Conclusion:**
 
-This is not a great book. It does contain a some gems and take-aways here and there
-but it is way too long for what it *does* contain. The target audience is not clear; at some times the book seems to be for rookies, at other times it contains more advanced stuff, but really doesn't go into much depth about it.
+This is not a great book. It does contain some gems and take-aways here and there
+but it is way too long for the goodies it *does* contain. The target audience is not
+crystal clear; at some times the book seems to be for rookies, at other times it contains more advanced stuff, but really doesn't go into much depth about it.
 
 Seeman *is* without doubt an adept writer but my view is that the book should have been much shorter. Seeman could have written a book that fits in your head.
 
