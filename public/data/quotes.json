@@ -165,12 +165,22 @@
         "languages": ["en","dk"],
         "source": "Code that fits in your head"
     },{
+        "quote": "Log all impure actions, but no more",
+        "author": "Mark Seeman",
+        "languages": ["en","dk"],
+        "source": "Code that fits in your head"
+    },{
+        "quote": "Meetings don't scale; documentation does",
+        "author": "Mark Seeman",
+        "languages": ["en","dk"],
+        "source": "Code that fits in your head"
+    },{
         "quote": "...*encapsulation* should guarantee that an object can never be in an invalid state",
         "author": "Mark Seeman",
         "languages": ["en","dk"],
         "source": "Code that fits in your head"
     },{
-        "quote": "Checklists will improve outcomes with not increase in skill",
+        "quote": "Checklists will improve outcomes with no increase in skill",
         "author": "Atul Gawande",
         "languages": ["en","dk"],
         "source": "The Checklist Manifesto: How to Get Things Right"
@@ -194,6 +204,11 @@
         "author": "Vaughn Vernon",
         "languages": ["en","dk"],
         "source": "https://www.linkedin.com/feed/update/urn:li:activity:6920811480011407360?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A6920811480011407360%2C6920976231333060608%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A6920811480011407360%2C6921050322396172288%29"
+    },{
+        "quote": "Alt kan ske i Jylland",
+        "author": "Morten Brandenburg Mortensen",
+        "languages": ["dk"],
+        "source": ""
     }
     ]
 }

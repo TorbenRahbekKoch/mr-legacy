@@ -42,6 +42,13 @@
             "dir": "no-state-management",
             "date": "2022-05-04",
 			"categories": ["architecture", "programming", "react"]
+        },{
+            "url" : "/blogs/code-that-fits-in-your-head",
+            "title": "Code that fits in your head - a review",
+            "teaser": "About keeping code sized to your not so big head",
+            "dir": "code-that-fits-in-your-head",
+            "date": "2022-07-27",
+			"categories": ["architecture", "programming", "review"]
         }
     ]
 }
