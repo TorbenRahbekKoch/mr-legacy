@@ -5,6 +5,10 @@ Rating: ⍟⍟◯◯◯
 [Mark Seeman](https://blog.ploeh.dk/) wrote a book [Code that fits in your head](https://blog.ploeh.dk/2021/06/14/new-book-code-that-fits-in-your-head/). Mark is a very skilled, knowledgeable and prolific writer, which can clearly
 be seen in his blog, which has massive (over)loads of articles.
 
+A technical note about the print book: It is a Robert C. Martin series, so I had
+expected a higher quality. The paper is thin enough to actually see the previous
+or following page through, which makes for a smudgy look.
+
 ## Who is it for?
 
 This is most definitely for developers/programmers. Mark himself in the book states
@@ -54,7 +58,7 @@ it up with valid arguments).
 
 *Chapter 6 - Triangulation* starts out with some insights
 on legacy code and the implications of it being hard to
-navigate in end therefore also hard to change.
+navigate in and therefore also hard to change.
 
 He leaves it to [Michael Feathers](https://www.goodreads.com/book/show/44919.Working_Effectively_with_Legacy_Code)
 to help us getting out of that mess and instead concentrates on helping
@@ -110,7 +114,7 @@ Coupled with the advice from previous chapters on small commits he
 introduces [Feature flags](https://martinfowler.com/articles/feature-toggles.html)
 and supplements with a surprisingly thorough coverage and usage of
 the [Strangler pattern](https://martinfowler.com/bliki/StranglerFigApplication.html)
-following the rule
+following the good rule
 
 > For any significant change, don't make it in-place; make it side-by-side.
 
