@@ -50,6 +50,11 @@
         "languages": ["dk"],
         "source": ""
     },{
+        "quote": "When the shit hits the fan it's good to have a plan",
+        "author": "Mr. Legacy",
+        "languages": ["dk", "en"],
+        "source": ""
+    },{
         "quote": "Doing microservices just because everyone else is doing it is a terrible idea",
         "author": "Sam Newman",
         "languages": ["en","dk"],
@@ -204,6 +209,11 @@
         "author": "Vaughn Vernon",
         "languages": ["en","dk"],
         "source": "https://www.linkedin.com/feed/update/urn:li:activity:6920811480011407360?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A6920811480011407360%2C6920976231333060608%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A6920811480011407360%2C6921050322396172288%29"
+    },{
+        "quote": "Scrum should also have a burnout chart",
+        "author": "Vaughn Vernon",
+        "languages": ["en","dk"],
+        "source": "https://www.linkedin.com/posts/vaughnvernon_conversation-activity-6956353587463544832-kp-2"
     },{
         "quote": "Alt kan ske i Jylland",
         "author": "Morten Brandenburg Mortensen",
