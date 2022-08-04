@@ -1,6 +1,13 @@
 {
     "blogEntries": [
         {
+            "url" : "/blogs/mr-legacy",
+            "title": "Mr. Legacy",
+            "dir": "mr-legacy",
+			"teaser": "How did I end up being Mr. Legacy? Stay tuned while the mystery is unravelled!",
+            "date": "2021-09-28",
+			"categories": ["architecture", "passion", "programming"]
+        },{
             "url" : "/blogs/fixing-your-scrum",
             "title": "Fixing your scrum - a review",
             "dir": "fixing-your-scrum",
