@@ -1,6 +1,13 @@
 {
     "blogEntries": [
         {
+            "url" : "/blogs/fixing-your-scrum",
+            "title": "Fixing your scrum - a review",
+            "dir": "fixing-your-scrum",
+			"teaser": "Practical Solutions to Common Scrum Problems - by Ryan Ripley and Todd Miller",
+            "date": "2021-11-03",
+			"categories": ["review"]
+        },{
             "url" : "/blogs/about-this-site",
             "title": "About this site",
             "dir": "about-this-site",
