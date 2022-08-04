@@ -62,6 +62,20 @@ export const Article = styled.article`
     font-size: 0.7em;
   }  
 
+  blockquote {
+    font-family:Open Sans;
+    font-style:italic;
+    font-size: 1.2em;
+    width: 80%;
+    line-height: 1.2;
+    padding-top:1px;
+    padding-bottom:1px;
+    padding-left: 15px;
+    margin-right: auto;
+    border-left:8px solid #5050AB;
+    background:#ededed;
+  }
+
   p, pre {
     width: 80%;
 
@@ -119,6 +133,7 @@ export const Article = styled.article`
     color: grey;
   }
 }`
+
 
 
 export const BlogArticleLink = styled.a`
