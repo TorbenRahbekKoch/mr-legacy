@@ -4,6 +4,7 @@ import * as Style from './Style'
 export interface Texts {
   danish: string
   english: string
+  services: string
 }
 
 export interface Props {
@@ -52,7 +53,7 @@ export function Menu({...props}: Props) {
   return (
     <>
     <Style.MenuBar>
-      <MenuItem title="Ydelser" path="/services"/>
+      <MenuItem title={props.texts.services} path="/services"/>
       <MenuItem title="CV" path="/cv"/>
       <MenuItem title="blog" path="/blogs"/>
       <span style={{float:"right"}}>

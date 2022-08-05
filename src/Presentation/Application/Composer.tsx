@@ -20,7 +20,8 @@ export function Composer(props: Props) {
 
   const menuTexts = {
     danish:  props.texts.danish,
-    english: props.texts.english
+    english: props.texts.english,
+    services: props.texts.services
   }
 
   return (
