@@ -14,7 +14,7 @@ export class Header implements Repository {
 
       const applicableQuotes = quotes.quotes
         .filter(quote => quote.languages.find(value => value === this.language) != null)
-        .map(quote => ({ quote: quote.quote, author: quote.author } as QuoteData))
+        .map(quote => ({ quote: quote.quote, author: quote.author, source:quote.source } as QuoteData))
 
       quotesReceived(applicableQuotes)
     })

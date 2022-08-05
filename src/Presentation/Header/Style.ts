@@ -95,11 +95,14 @@ export const Quote = styled.div`
   }
 `
 
-export const QuoteText = styled.span`
-  font-style: italic;
-`
+export const QuoteSource = styled.span``
 
-export const Author = styled.span`
+export const QuoteText = styled.div`
   font-style: italic;
-  font-size: smaller;
+
+  strong {
+    font-style: italic;
+    font-weight: normal;
+    font-size: smaller;
+  }
 `

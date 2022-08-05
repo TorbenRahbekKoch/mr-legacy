@@ -8,6 +8,7 @@ export interface EducationDto {
 export interface SingleQuote {
   quote: string
   author: string
+  source: string
   languages: string[]
 }
 
