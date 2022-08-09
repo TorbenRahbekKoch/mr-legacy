@@ -24,7 +24,7 @@ of the application resided. Which is weird, because it is actually quite obvious
 If you are using [create-react-app](https://create-react-app.dev/) to create the application
 you'll have a very obvious entry point: `App.tsx`. It will per default look something like this:
 
-````json
+````typescript
 function App() {
   return (
     <div className="App">
