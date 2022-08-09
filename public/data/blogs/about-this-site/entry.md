@@ -60,7 +60,7 @@ the mark down.
 Well, there's some work ahead of me here. I am *trying* to test a few components
 here and there with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), but I can't say that I have more than just dipped my feet.
 
-**NOTE** I did encounter some issues with Jest when running tests. Sometimes `yarn run` complains about
+**NOTE** I did encounter some issues with Jest when running tests. Sometimes `yarn test` complains about
 an unexpected token in a file in `node_modules`. The 
 unexpected token is typically `export`.
 
