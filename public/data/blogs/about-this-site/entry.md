@@ -33,22 +33,26 @@ I simply created the site with [create-react-app](https://create-react-app.dev/)
 yarn create react-app mr-legacy --template typescript
 ````
 
-which introduces about 870 (yes, seriously!) packages in the *node_modules* subdirectory...
+which introduces about 800 (yes, seriously!) packages in the *node_modules* subdirectory...
 
-This even initializes a git repository! The code for entire site is available
-on [github](https://github.com/TorbenRahbekKoch/mr-legacy/) - yup, there is some
+This command line even initializes a git repository for you! The code for entire site is
+available on [github](https://github.com/TorbenRahbekKoch/mr-legacy/) - yup, there is some
 confusion about my name, but as it happened I got married and chose her last name.
 Changing the account name on github seems to be a daunting and dangerous task.
 
 ## Interesting components and packages
 
-Aside from the slew of packages introduced with create-react-app I have added
+Aside from  the slew of packages introduced with create-react-app I have added
 a few interesting packages, too:
 
 - [Styled Components](https://styled-components.com/)
 - [ReactMarkdown](https://github.com/remarkjs/react-markdown)
-- [Zustand](https://github.com/pmndrs/zustand)
-- [Immer](https://github.com/immerjs/immer)
+- [Remark-gfm](https://github.com/remarkjs/remark-gfm)
+- ~~[Zustand](https://github.com/pmndrs/zustand)~~
+- ~~[Immer](https://github.com/immerjs/immer)~~
+
+I have removed Immer and Zustand since [I've stopped using a state store](https://mrlegacy.dk/blogs/no-state-management-library). *Remark-gfm* allows for the use of various Github flavours in
+the mark down.
 
 ## Testing
 
@@ -61,10 +65,12 @@ The site is hosted as an Azure Static Web App - see <https://websitebeaver.com/d
 for how to make this work. It is surprisingly easy. Just by following that guide you have
 a CI/CD-pipeline in no time.
 
-## Now, what's with that 90s www?
+## ~~Now, what's with that 90s www?~~
 
-Yeah, I'm not proud of it. It is combination of the DNS provider not supporting
-root-level/apex CNAME/ALIAS and me using the above hosting, which needs a CNAME
-pointing at it.
+I got around to solving it! I did it by moving the DNS to Azure, which has some
+built in support for doing exactly that - showing the site with and without
+the dreaded *www*.
 
-I probably will  get around to solving that later!
+~~Yeah, I'm not proud of it. It is combination of the DNS provider not supporting root-level/apex CNAME/ALIAS and me using the above hosting, which needs a CNAME pointing at it.~~ 
+
+~~I probably will  get around to solving that later!~~ 

@@ -111,9 +111,9 @@ export function Controller() {
   )
 
   const router = useRouter([
+    new MatchRoute("blogs", (location) => blogController(location)),
     new MatchRoute("services", location => servicesController()),
     new MatchRoute("cv", (location) => cvController()),
-    new MatchRoute("blogs", (location) => blogController(location)),
   ],
   )
 

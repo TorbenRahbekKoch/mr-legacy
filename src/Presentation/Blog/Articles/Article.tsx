@@ -1,6 +1,6 @@
 import ReactMarkDown from 'react-markdown'
 import * as Style from './Style'
-import rehypeHighlight from 'rehype-highlight'
+import remarkGfm from 'remark-gfm'
 
 export interface Props {
   date?: Date
@@ -13,7 +13,7 @@ export function Article({ article, date }: Props) {
     <Style.BlogEntry>
     <span>{published}</span>
     <Style.Article className='article'>
-      <ReactMarkDown className='article' rehypePlugins={[rehypeHighlight]}>
+      <ReactMarkDown className='article' rehypePlugins={[remarkGfm]}>
         {article}
       </ReactMarkDown>
     </Style.Article>
