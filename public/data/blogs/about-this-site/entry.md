@@ -47,7 +47,8 @@ a few interesting packages, too:
 
 - [Styled Components](https://styled-components.com/)
 - [ReactMarkdown](https://github.com/remarkjs/react-markdown)
-- [Remark-gfm](https://github.com/remarkjs/remark-gfm)
+- [RemarkGfm](https://github.com/remarkjs/remark-gfm)
+- [RehypeHighlight](https://github.com/rehypejs/rehype-highlight)
 - ~~[Zustand](https://github.com/pmndrs/zustand)~~
 - ~~[Immer](https://github.com/immerjs/immer)~~
 
