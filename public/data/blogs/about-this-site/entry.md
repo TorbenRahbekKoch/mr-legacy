@@ -59,6 +59,35 @@ the mark down.
 Well, there's some work ahead of me here. I am *trying* to test a few components
 here and there with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), but I can't say that I have more than just dipped my feet.
 
+**NOTE** I did encounter some issues with Jest when running tests. Sometimes `yarn run` complains about
+an unexpected token in a file in `node_modules`. The 
+unexpected token is typically `export`.
+
+This is because `node_modules` is ignored and
+not compiled by whatever magic happens behind
+the scene. An
+
+To enable these you add a configuration section to
+`package.json``. Weird place, but I haven't figured
+out where else to put it.
+
+```` json
+  "jest": {
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/(?!(react-markdown|vfile|vfile-message|jest-runtime|unist.*|unified|bail|is-plain-obj|trough|remark.*|mdast.*|micromark.*|decode.*|character-entities|property-information|hast.*|space-separated-tokens|comma-separated-tokens|rehype.*|lowlight|fault|ccount)/)"
+    ],
+    "transform": {
+      "^.+\\.ts?$": "ts-jest",
+      "^.+\\.(js|jsx)$": "babel-jest"
+    }
+  }
+````
+
+Whenever Jest complains about a file you add it here.
+This does, however, cause Jest to run slower.
+
+You need to restart Jest (`yarn test`) to have it pick up the changes.
+
 ## Hosting
 
 The site is hosted as an Azure Static Web App - see <https://websitebeaver.com/deploy-create-react-app-to-azure-static-web-apps>
