@@ -12,5 +12,8 @@
     "course": "Course",
     "location": "Location", 
     "length": "Length (days)",
-    "services": "Services"
+    "services": "Services",
+    "source" : "Source",
+    "twitterSource": "Twitter",
+    "linkedinSource": "LinkedIn"
 }

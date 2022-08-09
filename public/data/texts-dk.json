@@ -12,5 +12,8 @@
     "course": "Kursus",
     "location": "Sted", 
     "length": "Varighed (dage)",
-    "services": "Ydelser"
+    "services": "Ydelser",
+    "source": "Kilde",
+    "twitterSource": "Twitter",
+    "linkedinSource": "LinkedIn"
 }

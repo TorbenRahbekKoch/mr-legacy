@@ -17,7 +17,7 @@
     },{
         "quote": "Computers suck",
         "author": "Mr. Legacy",
-        "languages": ["dk", "en"],
+        "languages": ["en"],
         "source": ""
     },{
         "quote": "With decoupling comes flexibility, complexity and responsibility",
@@ -217,6 +217,11 @@
     },{
         "quote": "Alt kan ske i Jylland",
         "author": "Morten Brandenburg Mortensen",
+        "languages": ["dk"],
+        "source": ""
+    },{
+        "quote": "Big design up front is dumb but doing no design up front is even dumber",
+        "author": "Dave Thomas",
         "languages": ["dk"],
         "source": ""
     }

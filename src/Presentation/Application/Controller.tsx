@@ -75,6 +75,13 @@ export function Controller() {
     }),
     [texts.services]
   )
+
+  const headerTexts = useMemo(() => ({
+    source: texts.source,
+    twitterSource: texts.twitterSource,
+    linkedinSource: texts.linkedinSource
+  }),[texts])
+
   const blogController = useCallback(
     (location: Location) => {
       return <Blog.Controller repository={blogRepository} location={location.pathname} />
@@ -91,9 +98,9 @@ export function Controller() {
 
   const headerController = useCallback(
     () => {
-      return <Header.Controller repository={headerRepository} />
+      return <Header.Controller repository={headerRepository} texts={headerTexts}/>
     },
-    [headerRepository]
+    [headerRepository, headerTexts]
   )
 
   const servicesController = useCallback(
