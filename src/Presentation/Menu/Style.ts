@@ -15,7 +15,11 @@ export const MenuBar = styled.div`
   }
 `
 
-export const MenuItem = styled.a`
+export type MenuItemProps = {
+  rightAlign: boolean
+}
+
+export const MenuItem = styled.a<MenuItemProps>`
   min-width: 100px;
   background-color: #5050AB;
   border-radius: 5px;

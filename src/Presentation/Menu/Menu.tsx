@@ -37,7 +37,7 @@ function MenuItem({title, path, rightAlign, onClick}: ItemProps) {
       onClick()
     } 
 
-  return (<Style.MenuItem href={path} onClick={localClick} {...rightAlign}>{title}</Style.MenuItem>)
+  return (<Style.MenuItem href={path} onClick={localClick} rightAlign={rightAlign ?? false}>{title}</Style.MenuItem>)
 }
 
 export function Menu({...props}: Props) {
