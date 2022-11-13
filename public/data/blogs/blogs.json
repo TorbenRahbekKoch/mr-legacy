@@ -63,6 +63,13 @@
             "dir": "code-that-fits-in-your-head",
             "date": "2022-07-21",
 			"categories": ["architecture", "programming", "review"]
+        },{
+            "url" : "/blogs/no-interface",
+            "title": "No, you don't (always) need an interface",
+            "teaser": "Interface segregation segregates understandability",
+            "dir": "no-interface",
+            "date": "2022-11-13",
+			"categories": ["architecture", "programming"]
         }
     ]
 }

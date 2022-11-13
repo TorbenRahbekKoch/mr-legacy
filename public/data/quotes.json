@@ -224,6 +224,16 @@
         "author": "Dave Thomas",
         "languages": ["dk"],
         "source": ""
+    },{
+        "quote": "\"Real self organization\" is a requirement for an agile organization",
+        "author": "Allen Holub",
+        "languages": ["dk", "en"],
+        "source": "https://www.linkedin.com/feed/update/urn:li:activity:6954462541137788928?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A6954462541137788928%2C6954463617463275520%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A6954462541137788928%2C6954464210214944768%29"
+    },{
+        "quote": "SOLID is a set of rules that apply in a specific context, and since they don't specify the context, the assumption is that they apply everywhere",
+        "author": "Dan North ",
+        "languages": ["dk", "en"],
+        "source": "https://dannorth.net/2022/02/10/cupid-for-joyful-coding/"
     }
     ]
 }
