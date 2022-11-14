@@ -167,6 +167,9 @@ claim that a domain aggregate must be implemented by one class instead of possib
 that the module oriented way would mean simpler code
 due to generally smaller classes. It _is_ called a Domain _Model_, you know ;)
 
+And again: If you are using functional principles there is no such
+thing as anemic.
+
 ## Further reading
 
 [Dan North takes a serious stab at SOLID](https://dannorth.net/2021/03/16/cupid-the-back-story/#why-every-single-element-of-solid-is-wrong)
