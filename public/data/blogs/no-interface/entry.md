@@ -1,6 +1,6 @@
 # No, you don't (always) need an interface
 
-Interface segregation is a solid (pun definitely) principle, but it is just that:
+Interface segregation is a solid (pun definitely intended) principle, but it is just that:
 _A principle._
 
 It basically means that a client (some code) should not depend on something it doesn't need.
