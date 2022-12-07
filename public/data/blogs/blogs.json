@@ -70,6 +70,13 @@
             "dir": "no-interface",
             "date": "2022-11-13",
 			"categories": ["architecture", "programming"]
+        },{
+            "url" : "/blogs/code-encounters-of-the-legacy-kind",
+            "title": "Code encounters of the legacy kind",
+            "teaser": "Legacies are stacking up for you to encounter",
+            "dir": "code-encounters",
+            "date": "2022-12-07",
+			"categories": ["architecture", "programming"]
         }
     ]
 }

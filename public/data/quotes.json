@@ -231,9 +231,29 @@
         "source": "https://www.linkedin.com/feed/update/urn:li:activity:6954462541137788928?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A6954462541137788928%2C6954463617463275520%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A6954462541137788928%2C6954464210214944768%29"
     },{
         "quote": "SOLID is a set of rules that apply in a specific context, and since they don't specify the context, the assumption is that they apply everywhere",
-        "author": "Dan North ",
+        "author": "Dan North",
         "languages": ["dk", "en"],
         "source": "https://dannorth.net/2022/02/10/cupid-for-joyful-coding/"
+    },{
+        "quote": "APIs are forever",
+        "author": "James Higginbotham",
+        "languages": ["dk", "en"],
+        "source": "Principles of Web API Design"
+    },{
+        "quote": "Resources Are Not Data Models",
+        "author": "James Higginbotham",
+        "languages": ["dk", "en"],
+        "source": "Principles of Web API Design"
+    },{
+        "quote": "Resources Are Not Object or Domain Models",
+        "author": "James Higginbotham",
+        "languages": ["dk", "en"],
+        "source": "Principles of Web API Design"
+    },{
+        "quote": "Total unification of the domain model for a large system will not be feasible or cost-effective",
+        "author": "Eric Evans",
+        "languages": ["dk", "en"],
+        "source": "Domain-Driven Design"
     }
     ]
 }
