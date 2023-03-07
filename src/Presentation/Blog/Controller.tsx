@@ -47,11 +47,21 @@ export function Controller({...props}: Props) {
 
     const allCategories = Array.from(new Set(categories))
 
+    const sortedBlogEntries = blogEntries
+      .sort((blogEntry1, blogEntry2) => 
+          {
+            if (blogEntry1?.date == null)
+              return 1
+            if (blogEntry2?.date == null)  
+              return -1
+            return blogEntry1?.date < blogEntry2?.date
+            ? 1
+            : -1})
     const composerProps: Composer.ArticleListProps = {
       kind: Composer.PropType.ArticleList,
       allCategories: allCategories,
       selectedCategories: categorySelection,
-      blogEntries: blogEntries,
+      blogEntries: sortedBlogEntries,
       selectionChanged: setCategorySelection
     }
     return <Composer.Composer {...composerProps}/>

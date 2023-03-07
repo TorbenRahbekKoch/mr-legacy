@@ -77,6 +77,13 @@
             "dir": "code-encounters",
             "date": "2022-12-07",
 			"categories": ["architecture", "programming"]
+        },{
+            "url" : "/blogs/how-am-i-doing-my-reviews",
+            "title": "How am I doing my book reviews?",
+            "teaser": "Wondering about those ⍟⍟, aren't you?",
+            "dir": "how-am-i-doing-my-reviews",
+            "date": "2023-03-07",
+			"categories": ["review"]
         }
     ]
 }
