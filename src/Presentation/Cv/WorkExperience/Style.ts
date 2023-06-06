@@ -12,8 +12,6 @@ export const Table = styled.table`
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
-  
-
 `
 
 export const Td = styled.td`
@@ -30,11 +28,14 @@ export const TitleTd = styled(Td)`
 `
 
 export const TitleCol = styled.col`
-  width: 25%;
+  width: calc(25vh - ${(props:any) => props.indent*10}px);
+  /*background-color: ${(props:any) => props.indent < 3 ? "red" : "pink"};*/
 `
 
 export const CompanyTable = styled(Table)`
-  background-color: ${(props: any) => props.parentId == null ? "papayawhip" : "beige"};
+  margin-left: ${(props:any) => props.indent*10}px;
+  width: calc(100% - ${(props:any) => props.indent*10}px);
+  background-color: ${(props: any) => props.indent === 0 ? "papayawhip" : "beige"};
 `
 
 export const CompanyHeader = styled(TitleTd)`
@@ -46,12 +47,14 @@ export const ItemText = styled(Td)`
 
 export const ItemTable = styled(Table)`
   background-color: whitesmoke;
-
+  margin-left: ${(props:any) => props.indent*10}px;
+  width: calc(100% - ${(props:any) => props.indent*10}px);
   @media print {
     break-inside: avoid;
   }
 `
 
 export const ItemHeader = styled(TitleTd)`
+  width: calc(25vh - ${(props:any) => props.indent*10}px);
 `
 

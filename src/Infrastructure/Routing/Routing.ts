@@ -73,7 +73,7 @@ export class RouterMatchError extends Error {
 }
 
 export function useRouter(rules?: Route[], defaultRoute ?: DefaultRoute): Router {
-  const [router] = useState(() => new Router(rules, defaultRoute))
+  const [router] = useState(new Router(rules, defaultRoute))
   return router;
 }
 

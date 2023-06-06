@@ -1,5 +1,5 @@
 {age} år gammel datalogi-uddannet full stack generalist, systemudvikler, arkitekt og 
-systemdesigner med fokus på C#, .NET, React og TypeScript. Udover diverse esoteriske universitetssprog er
+systemdesigner med fokus på C#, .NET, React, Angular og TypeScript. Udover diverse esoteriske universitetssprog er
 der gennem tiden stiftet bekendtskab med Pascal, C++, TSQL, PL-SQL, Java, F#, C#, JavaScript,
 TypeScript.
 
@@ -15,7 +15,7 @@ meningsfuld navngivning af metoder, klasser, parametre, gennem fornuftige kodeko
 systemdokumentation i readme-filer til wiki-systemer med diagrammer i Visio og lignende 
 værktøjer.
 
-I min seneste opgave hos IDA har jeg opnået stor erfaring i remote arbejde, dels da Corona ramte og
+I min opgave hos IDA har jeg opnået stor erfaring i remote arbejde, dels da Corona ramte og
 dels da vi flyttede til Sønderjylland, så især de sidste 1 år og 3 måneder hos IDA var 100% remote. 
 Med Teams er en kollega jo aldrig længere end en besked eller et opkald væk. 
 

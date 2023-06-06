@@ -1,5 +1,5 @@
 {age} year old full stack generalist, system developer, architect and designer 
-focusing on C#, .NET, React and TypeScript. 25 years of professional experience since 1997 with a
+focusing on C#, .NET, React, Angular and TypeScript. 25 years of professional experience since 1997 with a
 Master of Computer Science degree from Aarhus University in the back pocket.
 
 I have seen my share of programming languages: Pascal, C++, C#, F#, JavaScript, TypeScript,
@@ -16,9 +16,9 @@ naming of methods, classes and parameters through sensible code comments and sys
 documentation in readme-files to fully fledged wiki-systems with diagrams in Visio and similar 
 tools.
 
-I am fully capable of remote work (and like it) and have experienced it to the fullest in my 
-assignment at IDA, partly due to covid-19 and partly due to a move cross country, so more than a 
-year has been fully remote. With tools like Teams a colleague is never further than a message or a 
+I am fully capable of remote work (and like it) and have experienced it to the fullest in my
+assignment at IDA, partly due to covid-19 and partly due to a move cross country, so more than a
+year has been fully remote. With tools like Teams a colleague is never further than a message or a
 call away.
 
 The agile way of working with small steps and frequent feedback on product, process and people is 

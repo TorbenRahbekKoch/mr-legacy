@@ -24,11 +24,16 @@ export interface Texts {
 export function Company(props: Props) {
   const texts = props.texts
   const description = `**${props.name}**  \n\n${props.description}`
+
+  const styleProps = {
+    indent: props.parentId == null ? 0 : 3
+  } as any
+
   return (
     <Style.Div>
-      <CompanyTable {...props}>
+      <CompanyTable {...styleProps}>
         <colgroup>
-          <Style.TitleCol></Style.TitleCol> 
+          <Style.TitleCol {...styleProps}></Style.TitleCol> 
         </colgroup>
         <tbody>
           <tr>

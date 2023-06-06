@@ -75,7 +75,7 @@ export function List({...props} :Props) {
     company.childCompanies.forEach(company => {
       elements.push(<Company.Company {...company.company} key={company.company.id} texts={companyTexts}/>)
       company.projects.forEach(project => {
-        elements.push(<Project.Project {...project} key={project.id} texts={projectTexts}/>)
+        elements.push(<Project.Project {...{...project, hasParentCompany: true}} key={project.id} texts={projectTexts}/>)
       })
     })
   })

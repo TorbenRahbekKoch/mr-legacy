@@ -21,6 +21,25 @@
             }
         },
         {
+            "id": "TECHSOFT",
+            "parentId": "SP",
+            "name": "Techsoft A/S",
+            "period": {
+                "start": {
+                    "year": 2022,
+                    "month": 9
+                },
+                "end":  null
+            },
+            "dk": {
+                "description": "Selvstændig konsulent",
+                "jobDescription": "Systemdesign, systemudvikling, arkitekt, dokumentation, database design, datakonvertering, fejlretning, debugging"
+            },
+            "en": {
+                "description": "Independent consultant",
+                "jobDescription": "System design, system development, architect, documentation, database design, data conversion, debugging, test, analysis, release management"
+            }
+        },{
             "id": "IDA",
             "parentId": "SP",
             "name": "Ingeniørforeningen, IDA",

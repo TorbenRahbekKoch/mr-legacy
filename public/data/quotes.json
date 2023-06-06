@@ -55,6 +55,11 @@
         "languages": ["dk", "en"],
         "source": ""
     },{
+        "quote": "A microservice is an api to a bounded context",
+        "author": "Mr. Legacy",
+        "languages": ["dk", "en"],
+        "source": ""
+    },{
         "quote": "Doing microservices just because everyone else is doing it is a terrible idea",
         "author": "Sam Newman",
         "languages": ["en","dk"],
@@ -253,7 +258,79 @@
         "quote": "Total unification of the domain model for a large system will not be feasible or cost-effective",
         "author": "Eric Evans",
         "languages": ["dk", "en"],
-        "source": "Domain-Driven Design"
+        "source": "Domain-Driven Design"    
+    },{
+        "quote": "Software architecture is about the important stuff. Whatever that is.",
+        "author": "Ralph Johnson",
+        "languages": ["dk", "en"],
+        "source": "https://www.oreilly.com/library/view/software-architects-handbook/9781788624060/70f73094-77a1-44f5-85d7-d36f393bc906.xhtml"    
+    },{
+        "quote": "...all architectures are a product of their context",
+        "author": "Mark Richards, Neal Ford",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
+    },{
+        "quote": "Unknown unknowns are the nemesis of software systems",
+        "author": "Mark Richards, Neal Ford",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
+    },{
+        "quote": "All architectures become iterative because of unknown unknowns. Agile just recognizes this and does it sooner",
+        "author": "Mark Richards, Neal Ford",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
+    },{
+        "quote": "Everything in software architecture is a trade-off",
+        "author": "Mark Richards, Neal Ford",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
+    },{
+        "quote": "If an architect thinks they have discovered something that isn't a trade-off, more likely the just haven't identified the trade-off yet",
+        "author": "Mark Richards, Neal Ford",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
+    },{
+        "quote": "Why is more important than how",
+        "author": "Mark Richards, Neal Ford",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
+    },{
+        "quote": "All architectures become iterative because of unknown unknowns. Agile just recognizes this and does it sooner",
+        "author": "Mark Richards, Neal Ford",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
     }
-    ]
+    ,{
+        "quote": "Architecture is the stuff you can't Google",
+        "author": "Mark Richards",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
+    },{
+        "quote": "There are not right or wrong answers in architecture - only trade-offs",
+        "author": "Neal Ford",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
+    },{
+        "quote": "There are no wrong answers in architecture - only expensive ones",
+        "author": "Neal Ford",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
+    },{
+        "quote": "Any list of architecture characteristics will necessarily be an incomplete list",
+        "author": "Mark Richards, Neal Ford",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
+    },{
+        "quote": "Never shoot for the *best* architecture, but rather the *least worst* architecture",
+        "author": "Mark Richards, Neal Ford",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
+    },{
+        "quote": "...exponential growth isn't kind to architectural decisions",
+        "author": "Martin Fowler",
+        "languages": ["dk", "en"],
+        "source": "https://www.martinfowler.com/bliki/SacrificialArchitecture.html"
+    }
+
+]
 }

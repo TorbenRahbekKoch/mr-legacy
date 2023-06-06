@@ -1,6 +1,32 @@
 {
-  "projects": [
+  "projects": [    
     {
+      "companyId": "TECHSOFT",
+      "id": "kaonline",
+      "period": {
+        "start": {
+          "year": 2022,
+          "month": 9
+        },
+        "end": null
+      },
+      "dk": {
+        "project": "Angular applikation",
+        "description": "Sammen med flere kollegaer fra Techsoft opgraderedes en ca. 35000 linjers Angular 1.6 applikation til Angular 16 og backend fra ca. 35000 linjer ASP.NET til ASP.NET 7"
+      },
+      "en": {
+        "project": "Angular application",
+        "description": "With several colleagues from Techsoft a 35000 lines Angular 1.6 application was upgraded to Angular 16. Correspondingly the about 35000 lines of ASP.NET backend was upgraded to ASP.NET 7"
+      },
+      "technologies": [
+        "angular",
+        "typescript",
+        "c#",
+        "vs",
+        "vscode",
+        "net7"
+      ]
+    },{
       "companyId": "SP",
       "id": "quizzingcousins",
       "period": {

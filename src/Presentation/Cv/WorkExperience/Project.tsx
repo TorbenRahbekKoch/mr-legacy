@@ -25,6 +25,7 @@ export interface Technology {
 }
 
 export interface Props {
+  hasParentCompany: boolean
   companyId: string
   id: string
   period: Period
@@ -44,11 +45,18 @@ export function Project(props: Props) {
     
   const texts = props.texts
 
+  const tableProps = {
+    indent: props.hasParentCompany ? 6 : 3
+  }
+  const styleProps = {
+    indent: props.hasParentCompany ? 6 : 3
+  } as any
+
   return (
     <Style.Div>
-      <ProjectTable>
+      <ProjectTable {...tableProps}>
         <colgroup>
-          <Style.TitleCol></Style.TitleCol>
+          <Style.TitleCol {...styleProps}></Style.TitleCol>
         </colgroup>
         <tbody>
           <tr>

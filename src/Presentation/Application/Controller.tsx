@@ -91,7 +91,7 @@ export function Controller() {
 
   const cvController = useCallback(
     () => {
-      return <Cv.Controller repository={cvRepository} birthDate={new Date(1970, 8, 30)} texts={cvTexts} />
+      return <Cv.Controller repository={cvRepository} birthDate={new Date(1970, 6, 30)} texts={cvTexts} />
     },
     [cvTexts, cvRepository]
   )

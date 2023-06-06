@@ -534,6 +534,13 @@
             "links": []
         },
         {
+            "id": "angular",
+            "name": "Angular",
+            "dk": "",
+            "en": "",
+            "links": []
+        },
+        {
             "id": "angularjs",
             "name": "AngularJS",
             "dk": "",
