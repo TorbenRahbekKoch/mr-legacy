@@ -51,7 +51,6 @@ export function buildWorkExperienceList(companies: Company[], projects: Project[
     if (company.company.parentId == null) {
       companyList.push(company)
     }
-
   })
 
   return companyList;

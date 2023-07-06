@@ -171,6 +171,13 @@
             "links": []
         },
         {
+            "id": "net7",
+            "name": ".NET 7",
+            "dk": "Windows .NET framework",
+            "en": "Windows .NET framework",
+            "links": []
+        },
+        {
             "id": "rest",
             "name": "REST",
             "dk": "Brug og design af REST-sites",

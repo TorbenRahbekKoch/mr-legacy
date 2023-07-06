@@ -326,11 +326,15 @@
         "languages": ["dk", "en"],
         "source": "The fundamentals of software architecture"
     },{
+        "quote": "The bounded context concept recognizes that each entity works best within a localized context",
+        "author": "Mark Richards, Neal Ford",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
+    },{
         "quote": "...exponential growth isn't kind to architectural decisions",
         "author": "Martin Fowler",
         "languages": ["dk", "en"],
         "source": "https://www.martinfowler.com/bliki/SacrificialArchitecture.html"
     }
-
 ]
 }
