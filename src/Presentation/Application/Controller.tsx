@@ -79,7 +79,8 @@ export function Controller() {
   const headerTexts = useMemo(() => ({
     source: texts.source,
     twitterSource: texts.twitterSource,
-    linkedinSource: texts.linkedinSource
+    linkedinSource: texts.linkedinSource,
+    oreillySource: texts.oreillySource
   }),[texts])
 
   const blogController = useCallback(
