@@ -68,7 +68,7 @@ They kept on walking. The air was chilly but he wasn’t cold. A few minutes lat
 
 “But, ehm?”, he asked with a firm conviction.
 
-“I don’t know”, she answered, “and the path doesn’t always lead somewhere strange. Sometimes it just leads into a row of houses. But it's still amazingly fascinating.” He had to agree.
+“I don’t know”, she answered, “and the path doesn’t always lead somewhere strange. Sometimes it just leads into a row of houses. But it's still amazingly fascinating.” He had to agree. Obviously.
 
 They sat for a while, enjoying the silence and the tantalising (he thought) company of each other.
 
