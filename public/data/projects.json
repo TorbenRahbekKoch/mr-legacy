@@ -8,7 +8,10 @@
           "year": 2022,
           "month": 9
         },
-        "end": null
+        "end": {
+          "year": 2023,
+          "month": 9
+        }
       },
       "dk": {
         "project": "Angular applikation",
