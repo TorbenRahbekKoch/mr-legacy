@@ -91,6 +91,20 @@
             "dir": "stranger-magic",
             "date": "2023-07-06",
 			"categories": ["fiction"]
+        },{
+            "url" : "/blogs/preacting-to-the-testing-choir",
+            "title": "Preacting to the testing choir",
+            "teaser": "(Almost) just like React, but with a P. And with tests.",
+            "dir": "preacting-to-the-testing-choir",
+            "date": "2023-10-10",
+			"categories": ["programming", "web"]
+        },{
+            "url" : "/blogs/fundamentals-of-software-architecture",
+            "title": "Fundamentals of Software Architecture",
+            "teaser": "Fundaments are important. Architecture simply won't stand on thin air",
+            "dir": "fundamentals-of-software-architecture",
+            "date": "",
+			"categories": ["architecture", "review"]
         }
     ]
 }
