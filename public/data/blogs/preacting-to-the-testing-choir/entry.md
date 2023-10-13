@@ -138,3 +138,5 @@ Now you can run your tests, with the above command!
 
 The entire projects is available on [GitHub](https://github.com/TorbenRahbekKoch/preact-with-testing).
 
+I have - by the way - had absolutely no success with testing [Styled Components](https://styled-components.com/).
+If you have, please let me know!
