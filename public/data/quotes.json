@@ -346,7 +346,27 @@
         "languages": ["dk", "en"],
         "source": "The fundamentals of software architecture"
     },{
-        "quote": "The main issue with asynchronous communications is error handling",
+        "quote": "The main issue with asynchronous communication is error handling",
+        "author": "Mark Richards, Neal Ford",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
+    },{
+        "quote": "The negative trade-off of reuse is coupling",
+        "author": "Mark Richards, Neal Ford",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
+    },{
+        "quote": "Iteration is the only way to ensure good service design",
+        "author": "Mark Richards, Neal Ford",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
+    },{
+        "quote": "Don't do transactions in microservices - fix granularity instead",
+        "author": "Mark Richards, Neal Ford",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
+    },{
+        "quote": "Providing the business value when justifying decisions is vitally important for any architecture decision",
         "author": "Mark Richards, Neal Ford",
         "languages": ["dk", "en"],
         "source": "The fundamentals of software architecture"
