@@ -119,7 +119,7 @@ describe('Some test this is!', () => {
     test('Are we closing in on something?', () => {
         expect(1 + 2).toBe(3)
     }),
-l
+
     test('Do we dare?', async () => {
         await render(<App></App>)
 
