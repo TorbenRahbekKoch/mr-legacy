@@ -370,6 +370,11 @@
         "author": "Mark Richards, Neal Ford",
         "languages": ["dk", "en"],
         "source": "The fundamentals of software architecture"
+    },{
+        "quote": "Developers are drawn to complexity like moths to a flame - frequently with the same result",
+        "author": "Neal Ford",
+        "languages": ["dk", "en"],
+        "source": "The fundamentals of software architecture"
     }
 ]
 }
