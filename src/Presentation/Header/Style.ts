@@ -6,7 +6,7 @@ export const Header = styled.div`
 `
 
 export const HeaderDetails = styled.div`
-  width: 60%;
+  width: 80%;
   margin-right: 5px;
   padding-left: 50px;
   display: inline-block;

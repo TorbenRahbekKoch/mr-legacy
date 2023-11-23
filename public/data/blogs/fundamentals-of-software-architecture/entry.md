@@ -556,7 +556,7 @@ check whether you paid attention during the book. Nice touch!
 
 ## Conclusion
 
-I most definitely think that the books lives up to the *Fundamentals* as
+I most definitely think that the book lives up to the *Fundamentals* as
 well as the *Engineering* parts of the title. It is a 360 view of 
 software architecture and the landscape making up that architecture.
 

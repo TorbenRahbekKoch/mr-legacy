@@ -100,10 +100,17 @@
 			"categories": ["programming", "web"]
         },{
             "url" : "/blogs/fundamentals-of-software-architecture",
-            "title": "Fundamentals of Software Architecture",
+            "title": "Fundamentals of Software Architecture - a review",
             "teaser": "Fundaments are important. Architecture simply won't stand on thin air",
             "dir": "fundamentals-of-software-architecture",
             "date": "2023-11-12",
+			"categories": ["architecture", "review"]
+        },{
+            "url" : "/blogs/tidy-first",
+            "title": "Tidy First? - a review",
+            "teaser": "There is a first time for everything, just know when that is",
+            "dir": "tidy-first",
+            "date": "2023-11-23",
 			"categories": ["architecture", "review"]
         }
     ]

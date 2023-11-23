@@ -375,6 +375,16 @@
         "author": "Neal Ford",
         "languages": ["dk", "en"],
         "source": "The fundamentals of software architecture"
+    },{
+        "quote": "Software design is an exercise in human relationships",
+        "author": "Kent Beck",
+        "languages": ["dk", "en"],
+        "source": "Tidy First?"
+    },{
+        "quote": "Coupling drives the cost of software",
+        "author": "Kent Beck",
+        "languages": ["dk", "en"],
+        "source": "Tidy First?"
     }
 ]
 }

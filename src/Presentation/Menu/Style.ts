@@ -28,10 +28,12 @@ export const MenuItem = styled.a<MenuItemProps>`
   font-family: courier;
   font-weight: 100;
   font-size: 1.5em;
+  margin-top: 5px;
   margin-left: 5px;
   margin-right: 10px;
   padding-left: 5px;
   padding-right: 5px;
+  padding-top: 5px;
   text-transform: uppercase;
   @media screen and (max-width: 600px) {
     font-size: 1.2em;
