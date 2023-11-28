@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import * as Style from './Style';
 
 export interface Props {
@@ -8,20 +9,29 @@ export interface Props {
 }
 
 export function Category({ category, ...props }: Props) {
+  const [selected, setSelected] = useState(false)
 
-  function onChange(e: React.ChangeEvent<HTMLInputElement>) {
-    if (e.target.checked) {
-      props.categorySelected(category)
+  function onClick(e: React.MouseEvent<HTMLButtonElement>) {
+    e.preventDefault()
+    console.log("Category selected: ", category, selected)
+    if (selected) {
+      props.categoryDeselected(category)
+      setSelected(false)
     }
     else {
-      props.categoryDeselected(category)
+      props.categorySelected(category)
+      setSelected(true)
     }
   }
 
+  const categoryStyleProps = {
+    selected: selected
+  } 
   return (
-    <Style.Category>
-      <input type="checkbox" checked={props.selected} onChange={(e) => onChange(e)} id={category} />
-      <label htmlFor={category}>{category}</label>
+    <Style.Category {...categoryStyleProps}>
+      <button type="button" onClick={(e) => onClick(e)} id={category}>
+        <label htmlFor={category}>{category}</label>
+      </button>
     </Style.Category>
   );
 }

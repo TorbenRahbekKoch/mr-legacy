@@ -27,13 +27,14 @@ export type Props =  ArticleProps | ArticleListProps
 export function Composer(props: Props) {
   if (props.kind === PropType.ArticleList) {
     return (<>
-      <FilteredArticleList 
-        activeCategories={props.selectedCategories} 
-        blogEntries={props.blogEntries }/>
       <CategoryList 
         allCategories={props.allCategories} 
         selectedCategories={props.selectedCategories} 
         selectionChanged={props.selectionChanged}/>
+    
+      <FilteredArticleList 
+        activeCategories={props.selectedCategories} 
+        blogEntries={props.blogEntries }/>
     </>)
   }
   else {

@@ -29,10 +29,8 @@ export function CategoryList({ allCategories, selectedCategories, ...props }: Pr
     props.selectionChanged(newSelection)
   }
 
-  return (<>
-    <Style.CategoryList>
-      <h2>Categories</h2>
-      <ul>
+  return (
+      <Style.CategoryList>
         {
           allCategories.map(
             c => <Category 
@@ -42,8 +40,6 @@ export function CategoryList({ allCategories, selectedCategories, ...props }: Pr
             categoryDeselected={categoryDeselected} 
             categorySelected={categorySelected}/>)
         }
-      </ul>
-    </Style.CategoryList>
-  </>
+      </Style.CategoryList>
   )
 }
