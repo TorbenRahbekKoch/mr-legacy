@@ -1,0 +1,45 @@
+# Stranger Magic - Part 2
+
+[Part 1](/blogs/stranger-magic)
+
+It was as usual way too early but he woke up nonetheless. “What a strange dream”, he thought. He lay in the bed for a while wondering what actually had happened. Having an unusually hard time remembering the events of the night before he eventually gave up and thought "What a truly remarkable wonderfully strangely magic dream". It was one of those dreams you dream of in other dreams still not being sure of whether they were real or one of the amazing adventures that happens on the mysterious streets the mind seem to travel on at times.
+
+He got out of bed, nearly stumbling. Something seemed to be wrong with his knees. He frowned and carefully walked a wobbly walk to the bathroom. He felt as if he was drunk but he was not. It was more like walking through an inexplicable haze of tangible weirdness. He had never done drugs but he was quite certain that this was how it must feel. He was, of course, entirely wrong.
+
+He went to the bathroom and started the usual chance game of getting the water temperature right and keeping it there. He always sort of lost it but the desired outcome, which of course was to be relatively clean, was still more or less obtained so he figured he was ahead on technical points. The game started with him turning the hot water tap, anxiously waiting for the water to, well, warm up and actually start to let some water through and then wait a little while for it to be actual hot water. Before it at a seemingly random time got too hot to be near (this had taken some burns to figure out) he had to turn the cold water tap and jump into the shower cabin at that exact time where it let enough cold water through to battle the immense heat from the warm water and before the throughput got so big that it would spray all over the bathroom.
+
+Once in the shower it was an ongoing battle against pipes, taps and valves (and other to him unknown plumbing related things) heating up and cooling down and thereby influencing the water throughput and again the temperature. It was a good day if the neighbours chose to only do the dishes and not at the same time started washing their clothes or maybe even showered.
+
+Freak accidents like pushing his butt against one of the taps and thereby wildly shifting the temperature to either scolding or freezing would of course happen on a fairly regular basis when his focus was on something entirely not bath related and his reaction time as a result of this was maximized.
+
+This morning George was rather preoccupied, his brain and knees still was not in full agreement on the whole business of walking and staying up right, so naturally more scaldings and freezings occurred, all in all prolonging the bath quite a bit without improving the end result much.
+
+After the shower he wobbled himself dry with a towel, which probably was in the beginning of living its own life when he was away from the apartment. But he did not notice, just as he did not notice missing break fast and the bus on his way to work.
+——
+
+The day on the job did not live up to its full potential, even though it never did have much potential to begin with. George had a job which, when you looked at what he did for as long as you could before falling asleep, seemed very easy. His day apparently mostly consisted of sitting and staring into a screen. To be fair, though, he also did - at times - write a lot of cryptic stuff on the keyboard and the cryptic stuff then showed up on the screen. It was, of course, also possible to vary the job by clicking a mouse or even standing up. It did occur to him that this might be beneficial to his health, but since his knees still did not had their previous performance level restored this was definitely not the day to start that wild, crazy-eyed experiment.
+
+He texted his friend, asking why he cancelled the night before, but after a while all he got was a “Sorry”. Well, he hoped he was. But he really wanted to tell him about that strange dream, or what he at least thought was a strange dream.  
+
+It had haunted him all day, making him loosing his concentration, making his written cryptic stuff cryptic even to him self. When it was about time to leave work his phone beeped. He stopped, puzzled. It was a beep he had not heard from his phone before. Curiously he almost avoided dropping it on the floor. His face went white when he looked at the text on the screen: “Hi, it's Jennifer. See you...”
+
+He didn’t dare pick up the phone, mostly because his hands were shaking so much that they were more difficult to control than his knees and picking up the phone would in all likelihood result in a more fatal crash. He carefully opened the notification with a shaking finger. It really was a message from Jennifer. It hadn’t been a dream, after all? Or was he still dreaming? His knees signaled their inability to hold him upright and he sat down on the floor. He looked at the phone as if it was a beast from a different world. Not exactly scary, but still weird enough to warrant some skepticism. 
+
+He read the entire message: “Hi, it’s Jennifer. See you tonight at my place? It's Riverside Drive 1640, fourth floor, second door on the right. 6pm. Please be on time, so I can plan dinner <3”.
+
+He looked at the time and panicked. 32 minutes to 6pm and he had no idea where Riverside Drive was let alone how to get there. He hurriedly looked it up, which mostly just added to his confusion, but he thought he had the general direction. In what seem a rather intricate stunt but rather was pure luck the phone was delivered by his shaking fingers to his pocket with no further accidents. He then - surprisingly - got up and silly-ran out the door. His luck was in! A taxi was parked right outside. He quickly and most definitely not elegantly threw himself inside and asked the driver to take him to Riverside Drive. The driver smiled knowingly at him: "Certainly, sir, I can take you close, but you have to walk the rest of the way.". George nodded eagerly. The clock was ticking. Loudly, it seemed. 
+
+Then he finally figured out that replying to the message would be a wise and proper and possibly even decent thing to do. Nervously he entered several versions of: “I’m on my way, looking forward to see you again, last night was amazing, might be a bit late” but ended up dropping it on the floor in the car, roaming around for it and finally picking it up just when the driver shared the fact that they had arrived. 
+
+He got out, tried to get his phone to show him the way, but it seemed unable to exactly pinpoint the location. He looked around, confused, while the cab left, leaving him all alone and wondered why the driver hadn't complained about not being paid. 
+
+Then he spotted a lonely figured heading past him and quietly shouted: “Excuse me”. The stranger stopped and looked at him: “Yesssss?”, it more or less hissed at him. At least it sounded as hissing to him - George secretly wondered whether this was a relative to Gollum. “Do you happen to know where Riverside Drive is?”, he asked. The stranger looked at him, again: “Yessss!", then pointed: “Ssssecond ssssstreet on ze right, then firsssst sssstreet on ze left, you can’t misssss it”. The stranger sort of ssssmiled at him and continued down the street. George looked at him for a while then heard the clock ticking, panicked and followed the directions. And sure enough, Riverside Drive it was, a brand new sign with lights on it. Absolutely couldn’t missss it, he grinned.  
+ 
+He looked at the time: 6:05. “Bugger”, he thought and started looking for number 1640, the numbers 1638 and 1642, and 1641 for that matter all came easily. He looked into the port between 1638 and 1642 and saw a small green arrow flashing. "Could it be this easy?”, he wondered and followed the direction of the arrow. He almost stumbled into an older woman who he asked: “Is this the way to number 1640?”. She ssssmiled at him and answered: “Oh yessss, dear, thissss is ze right way, ze door issss right over zere”, she pointed. He thanked her, headed for the door while wondering how many foreign people with strange accents where wandering around in this part of the town. 
+
+The door was open, inside he went and found the elevator, which was also
+open and out of order. The stairs seemed in working condition, though, and he boldly went up. Some minutes and quite a few exasperating breaths later he was finally able to knock on the door with just the name “Jennifer” on it. 
+
+She instantly opened the door. "You're late", she said, looking flustered and almost out of breath. Still she managed to smile in that way that made his knees look desperately around for a chair. "Come on in", she continued, "please come in". He went through the door, hot red in the face, feeling like he was sweating profusely, because he was, but still, she wrapped her arms around and kissed him. Much to his surprise - and probably to the surprise of physics, as well - he stopped sweating and felt at ease. Even his knees manned up and took part in the challenge and kept him upright.
+
+A truly magical evening had begun.

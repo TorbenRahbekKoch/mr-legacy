@@ -36,7 +36,7 @@ export const MenuItem = styled.a<MenuItemProps>`
   padding-top: 5px;
   text-transform: uppercase;
   @media screen and (max-width: 600px) {
-    font-size: 1.2em;
+    font-size: 1.0em;
   }
   cursor: pointer;  
   float: ${(props: any) => props.rightAlign === true ? "right" : "none"};

@@ -87,7 +87,7 @@ export const Quote = styled.div`
   vertical-align: top;
 
   @media screen and (max-width: 600px) {
-    margin-left: -120px;
+    margin-left: -20px;
   }
 
   @media print {

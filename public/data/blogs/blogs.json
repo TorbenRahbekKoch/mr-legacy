@@ -92,6 +92,13 @@
             "date": "2023-07-06",
 			"categories": ["fiction"]
         },{
+            "url" : "/blogs/stranger-magic-2",
+            "title": "Stranger Magic - Part 2",
+            "teaser": "Was it all a dream? Will George meet the girl of his dreams again?",
+            "dir": "stranger-magic",
+            "date": "2023-11-28",
+			"categories": ["fiction"]
+        },{
             "url" : "/blogs/preacting-to-the-testing-choir",
             "title": "Preacting to the testing choir",
             "teaser": "(Almost) just like React, but with a P. And with tests.",

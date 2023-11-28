@@ -95,3 +95,5 @@ A few minutes later she lifted her head, “I’m really sorry”, she said, “
 Sad, and in a strange way relieved, he silently took her hand and got up. 
 
 They walked along the path in unnatural silence, reached the end of the path, the start of the real world and the silence retreated, paving the way for the normal sounds of the city. “I will see you again”, she kissed. He nodded in silence, watching her walk away and then turned his back on his possibly most exciting adventure ever. 
+
+[Part 2](/blogs/stranger-magic-2)
