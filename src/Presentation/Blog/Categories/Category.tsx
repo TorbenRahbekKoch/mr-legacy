@@ -13,7 +13,6 @@ export function Category({ category, ...props }: Props) {
 
   function onClick(e: React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault()
-    console.log("Category selected: ", category, selected)
     if (selected) {
       props.categoryDeselected(category)
       setSelected(false)
