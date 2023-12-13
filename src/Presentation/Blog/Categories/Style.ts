@@ -12,14 +12,14 @@ export const CategoryList = styled.div`
 export type CategoryProps = {
   selected: boolean
 }
-export const Category = styled.div`
 
+export const Category = styled.div`
+  
   button {
-    background-color: ${(props: any) => props.selected === true ? "darkgray" : "none"};
+    background-color: ${(props: any) => props.selected ? "darkgrey" : "none"};
   }
 
-  label {
-    background: none;
+  label {    
     border: none;
     padding: 5px;
     font-family: courier;

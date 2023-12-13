@@ -1,8 +1,12 @@
-import { render, screen } from '@testing-library/react'
+import { cleanup, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import * as Category from './Category'
 
-it('should be initially deselected', () => {
+describe("Category", () => {
+
+})
+
+it('should be initially deselected', async () => {
 
   const props: Category.Props = {
     category: "Amazing",
@@ -11,15 +15,17 @@ it('should be initially deselected', () => {
     categoryDeselected: (c) => { }
   }
 
-  render(<Category.Category {...props} />)
+  await render(<Category.Category {...props} />)
 
-  const checkbox = screen.getByRole("checkbox")
+  const button = screen.getByRole("button")
 
-  expect((checkbox as HTMLInputElement).checked)
-    .toBeFalsy()
+  expect(button.style.backgroundColor)
+    .toBe("darkgrey")
+
+  cleanup();    
 })
 
-it('should be initially selected', () => {
+it('should be initially selected', async () => {
 
   const props: Category.Props = {
     category: "Amazing",
@@ -28,19 +34,21 @@ it('should be initially selected', () => {
     categoryDeselected: (c) => { }
   }
 
-  render(<Category.Category {...props} />)
+  await render(<Category.Category {...props} />)
 
-  const checkbox = screen.getByRole("checkbox")
+  const button = screen.getByRole("button")
 
-  expect((checkbox as HTMLInputElement).checked)
-    .toBeTruthy()
+  expect(button.style.backgroundColor)
+    .toBe("darkgrey")
+
+  cleanup();
 })
 
 it('should be selected on click', async () => {
 
   const category = "Amazing"
 
-  let categorySelected : string = ""
+  let categorySelected: string = ""
 
   const props: Category.Props = {
     category: category,
@@ -51,35 +59,39 @@ it('should be selected on click', async () => {
 
   render(<Category.Category {...props} />)
 
-  const checkbox = screen.getByRole("checkbox")
+  const button = screen.getByRole("button")
 
   const event = userEvent.setup()
-  await event.click(checkbox)
+  await event.click(button)
 
   expect(categorySelected)
     .toBe(category)
+
+  cleanup()
 })
 
 it('should be deselected on click', async () => {
 
   const category = "Amazing"
 
-  let categoryDeselected : string = ""
+  let categoryDeselected: string = ""
 
   const props: Category.Props = {
     category: category,
     selected: true,
-    categorySelected: (c) => {  },
+    categorySelected: (c) => { },
     categoryDeselected: (c) => { categoryDeselected = c }
   }
 
-  render(<Category.Category {...props} />)
+  await render(<Category.Category {...props} />)
 
-  const checkbox = screen.getByRole("checkbox")
+  const button = screen.getByRole("button")
 
   const event = userEvent.setup()
-  await event.click(checkbox)
+  await event.click(button)
 
   expect(categoryDeselected)
     .toBe(category)
+
+  cleanup()
 })

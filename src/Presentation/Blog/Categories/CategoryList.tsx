@@ -9,7 +9,6 @@ export interface Props {
   selectionChanged: SelectionChanged
 }
 
-
 function isSelected(category: string, selectedCategories: string[]) {
   return selectedCategories.some(
     c => c === category

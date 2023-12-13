@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import * as Style from './Style';
 
 export interface Props {
@@ -9,23 +8,21 @@ export interface Props {
 }
 
 export function Category({ category, ...props }: Props) {
-  const [selected, setSelected] = useState(false)
 
   function onClick(e: React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault()
-    if (selected) {
-      props.categoryDeselected(category)
-      setSelected(false)
+    if (props.selected) {
+      props.categoryDeselected(category)     
     }
     else {
       props.categorySelected(category)
-      setSelected(true)
     }
   }
 
   const categoryStyleProps = {
-    selected: selected
+    selected: props.selected
   } 
+  
   return (
     <Style.Category {...categoryStyleProps}>
       <button type="button" onClick={(e) => onClick(e)} id={category}>

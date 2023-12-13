@@ -45,7 +45,7 @@ export function Controller({...props}: Props) {
     const categories = blogEntries
       .flatMap(be => be.categories)
 
-    const allCategories = Array.from(new Set(categories))
+    const allCategories = Array.from(new Set(categories)).sort()
 
     const sortedBlogEntries = blogEntries
       .sort((blogEntry1, blogEntry2) => 

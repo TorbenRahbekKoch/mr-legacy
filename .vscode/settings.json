@@ -8,5 +8,5 @@
         "editor.tabSize": 2,
         "editor.maxTokenizationLineLength": 2500
     },
-    "typescript.tsdk": "node_modules\\typescript\\lib"
+    "typescript.tsdk": "node_modules/typescript/lib"
 }
