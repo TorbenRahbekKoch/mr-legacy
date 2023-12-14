@@ -7,7 +7,7 @@ export interface Props {
   repository : Repository
 }
 
-export function Controller(props: Props) {
+export function ServicesController(props: Props) {
   const [services, setServices] = useState("")
 
   useEffect(() => {

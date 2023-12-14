@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import * as Composer  from "./Composer"
+import * as Composer  from "./Blog.composer"
 import { Props as EntryTitleProps } from './Articles/Title'
 import { Repository } from "./Repository";
 
@@ -17,8 +17,8 @@ export const defaultProps: Props = {
 }
 
 // It could be interesting to convert the controller to a hook
-// that is then used by Composer
-export function Controller({...props}: Props) {
+// that is then used by BlogComposer
+export function BlogController({...props}: Props) {
   const [article, setArticle] = useState("")
   const [blogEntries, setBlogEntries] = useState<EntryTitleProps[]>([])
   const [categorySelection, setCategorySelection] = useState<string[]>([])
@@ -64,7 +64,7 @@ export function Controller({...props}: Props) {
       blogEntries: sortedBlogEntries,
       selectionChanged: setCategorySelection
     }
-    return <Composer.Composer {...composerProps}/>
+    return <Composer.BlogComposer {...composerProps}/>
   }
   else {
 
@@ -80,6 +80,6 @@ export function Controller({...props}: Props) {
       article: article
     }
 
-    return <Composer.Composer {...composerProps }/>
+    return <Composer.BlogComposer {...composerProps }/>
   }
 }

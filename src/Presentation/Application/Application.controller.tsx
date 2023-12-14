@@ -1,16 +1,16 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useRouter, MatchRoute } from '../../Infrastructure/Routing'
 import * as State from '../../Library/State'
-import * as Blog from '../Blog'
+import { BlogController } from '../Blog'
 import * as Cv from '../Cv'
 import * as Header from '../Header'
 import * as Repository from '../../Infrastructure/BootStrapping/Repositories'
-import * as Services from '../Services'
-import { Composer } from './Composer'
+import { ApplicationComposer } from './Application.composer'
 import { AllTexts, defaultTexts } from '../../Infrastructure/BootStrapping/AllTexts'
 import * as Fetch from '../../Infrastructure/BootStrapping'
+import { ServicesController } from '../Services'
 
-export function Controller() {
+export function ApplicationController() {
   const [texts, setTexts] = useState<AllTexts>(defaultTexts)
   const [language, setLanguage] = useState("dk")
 
@@ -85,7 +85,7 @@ export function Controller() {
 
   const blogController = useCallback(
     (location: Location) => {
-      return <Blog.Controller repository={blogRepository} location={location.pathname} />
+      return <BlogController repository={blogRepository} location={location.pathname} />
     },
     [blogRepository]
   )
@@ -99,14 +99,14 @@ export function Controller() {
 
   const headerController = useCallback(
     () => {
-      return <Header.Controller repository={headerRepository} texts={headerTexts}/>
+      return <Header.HeaderController repository={headerRepository} texts={headerTexts}/>
     },
     [headerRepository, headerTexts]
   )
 
   const servicesController = useCallback(
     () => {
-      return <Services.Controller repository={servicesRepository}/>      
+      return <ServicesController repository={servicesRepository}/>      
     },
     [servicesRepository]
   )
@@ -128,7 +128,7 @@ export function Controller() {
   }
 
   return (
-    <Composer 
+    <ApplicationComposer 
       router={router}
       headerController={headerController} 
       texts={menuTexts}

@@ -8,7 +8,7 @@ export interface Props {
   texts: Quote.Texts
 }
 
-export function Composer(props: Props) {
+export function HeaderComposer(props: Props) {
   return (
     <Style.Header>
       <Style.MugShot>

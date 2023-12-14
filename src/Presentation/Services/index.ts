@@ -1,1 +1,1 @@
-export { Controller }from "./Controller";
+export { ServicesController }from "./Services.controller";

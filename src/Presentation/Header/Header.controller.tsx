@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import * as Quote from './Quote'
 import { Repository } from './Repository'
-import { Composer } from './Composer'
+import { HeaderComposer } from './Header.composer'
 
 export interface Props {
   repository: Repository
@@ -21,7 +21,7 @@ export const defaultProps = {
   }
 }
 
-export function Controller(props: Props) {
+export function HeaderController(props: Props) {
   const [quotes, setQuotes] = useState<Quote.QuoteData[]>([])
   
   useEffect(() => {
@@ -32,6 +32,6 @@ export function Controller(props: Props) {
   }, [props.repository])
 
   return (
-    <Composer quotes={quotes} texts={props.texts} quoteIntervalInSeconds={20} />
+    <HeaderComposer quotes={quotes} texts={props.texts} quoteIntervalInSeconds={20} />
   )
 }

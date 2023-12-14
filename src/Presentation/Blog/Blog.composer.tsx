@@ -24,7 +24,7 @@ export interface ArticleListProps {
 
 export type Props =  ArticleProps | ArticleListProps 
 
-export function Composer(props: Props) {
+export function BlogComposer(props: Props) {
   if (props.kind === PropType.ArticleList) {
     return (<>
       <CategoryList 

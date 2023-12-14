@@ -1,1 +1,1 @@
-export { Controller } from './Controller'
+export { ApplicationController } from './Application.controller'

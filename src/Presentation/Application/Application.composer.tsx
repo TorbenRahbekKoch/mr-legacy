@@ -16,7 +16,7 @@ export interface Props {
   texts: Texts
 }
 
-export function Composer(props: Props) {
+export function ApplicationComposer(props: Props) {
 
   const menuTexts = {
     danish:  props.texts.danish,
