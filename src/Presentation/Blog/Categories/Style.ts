@@ -16,7 +16,7 @@ export type CategoryProps = {
 export const Category = styled.div`
   
   button {
-    background-color: ${(props: any) => props.selected ? "darkgrey" : "none"};
+    background-color: ${(props: CategoryProps) => props.selected ? "darkgrey" : "none"};
   }
 
   label {    

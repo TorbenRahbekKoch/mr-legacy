@@ -25,7 +25,7 @@ export function Category({ category, ...props }: Props) {
   
   return (
     <Style.Category {...categoryStyleProps}>
-      <button type="button" onClick={(e) => onClick(e)} id={category}>
+      <button type="button" onClick={onClick} id={category}>
         <label htmlFor={category}>{category}</label>
       </button>
     </Style.Category>
