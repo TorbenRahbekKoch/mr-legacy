@@ -73,7 +73,7 @@
         "quote": "Copy the questions, not the answers",
         "author": "Jessica Joy Kerr",
         "languages": ["en","dk"],
-        "source": ""
+        "source": "https://twitter.com/jessitron/status/1000347112331149312"
     },{
         "quote": "Just because software is deployed into a given environment doesn't mean it's actually being used by customers",
         "author": "Sam Newman",
@@ -385,6 +385,31 @@
         "author": "Kent Beck",
         "languages": ["dk", "en"],
         "source": "Tidy First?"
+    },{
+        "quote": "The goal is the commitment",
+        "author": "Andrea L",
+        "languages": ["dk", "en"],
+        "source": "https://www.linkedin.com/feed/update/urn:li:activity:7150653272897359872?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7150653272897359872%2C7150753260688048128%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7150653272897359872%2C7150758701316931587%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287150753260688048128%2Curn%3Ali%3Aactivity%3A7150653272897359872%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287150758701316931587%2Curn%3Ali%3Aactivity%3A7150653272897359872%29"
+    },{
+        "quote": "SAFe tames flow by slowing it to the point of stasis. Not a good outcome, I think",
+        "author": "Allen Holub",
+        "languages": ["dk", "en"],
+        "source": "https://www.linkedin.com/feed/update/urn:li:activity:7150355191299481600?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7150355191299481600%2C7150571328113098752%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287150571328113098752%2Curn%3Ali%3Aactivity%3A7150355191299481600%29"
+    },{
+        "quote": "We need to put the team first, advocating for restricting their cognitive loads",
+        "author": "Matthew Skelton, Manuel Pais",
+        "languages": ["dk", "en"],
+        "source": "Team Topologies"
+    },{
+        "quote": "The fundamental means of delivery is the team",
+        "author": "Matthew Skelton, Manuel Pais",
+        "languages": ["dk", "en"],
+        "source": "Team Topologies"
+    },{
+        "quote": "Collaboration is expensive",
+        "author": "Matthew Skelton, Manuel Pais",
+        "languages": ["dk", "en"],
+        "source": "Team Topologies"
     }
 ]
 }

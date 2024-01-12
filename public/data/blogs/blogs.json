@@ -119,6 +119,20 @@
             "dir": "tidy-first",
             "date": "2023-11-23",
 			"categories": ["architecture", "review"]
+        },{
+            "url" : "/blogs/the-wolverine-testing-saga",
+            "title": "The Wolverine testing saga",
+            "teaser": "What to do when testing the queue?",
+            "dir": "the-wolverine-testing-saga",
+            "date": null,
+			"categories": ["architecture", "review"]
+        },{
+            "url" : "/blogs/team-topologies",
+            "title": "Team Topologies - a review",
+            "teaser": "What the frack is a topology?",
+            "dir": "team-topologies",
+            "date": "2024-01-11",
+			"categories": ["organization", "architecture", "review"]
         }
     ]
 }
