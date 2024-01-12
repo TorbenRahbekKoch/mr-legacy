@@ -3,8 +3,10 @@
 
 ![Cover of Team Topologies?](https://learning.oreilly.com/covers/urn:orm:book:9781098157234/400w/ "Team Topologies")
 
-
 [Rating: ⍟⍟⍟⍟◯](/blogs/how-am-i-doing-my-reviews)
+
+[Team Topologies](https://learning.oreilly.com/library/view/team-topologies/9781098157234/) is an enticing read about team structures written
+by [Matthew Skelton and Manuel Pais](https://teamtopologies.com/people).
 
 ## What the frack is a topology (What is it about)?
 
