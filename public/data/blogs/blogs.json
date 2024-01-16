@@ -133,6 +133,13 @@
             "dir": "team-topologies",
             "date": "2024-01-11",
 			"categories": ["organization", "architecture", "review"]
+        },{
+            "url" : "/blogs/ddd-concepts",
+            "title": "Domain-Driven Design - Concepts",
+            "teaser": "Getting a bit graphical with those concepts",
+            "dir": "team-topologies",
+            "date": "2013-04-13",
+			"categories": ["architecture"]
         }
     ]
 }
