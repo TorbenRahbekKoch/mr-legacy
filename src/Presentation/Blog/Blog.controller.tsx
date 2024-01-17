@@ -11,8 +11,8 @@ export interface Props {
 export const defaultProps: Props = {
   location: undefined,
   repository : {
-    getAllBlogEntries: (entries) => {},
-    getArticle: (url, article) => {}
+    getAllBlogEntries: (_) => {},
+    getArticle: (_, __) => {}
   }
 }
 

@@ -1,9 +1,10 @@
+import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { BlogController, Props  } from './Blog.controller'
 
 const  articleText = "Article without much text"
 
-function retrieveArticle(url: string, articleReceived: (text: string) => void) {
+function retrieveArticle(_url: string, articleReceived: (text: string) => void) {
   articleReceived(articleText)
 }
 

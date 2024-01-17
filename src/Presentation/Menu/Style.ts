@@ -16,7 +16,7 @@ export const MenuBar = styled.div`
 `
 
 export type MenuItemProps = {
-  rightAlign: boolean
+  rightalign: boolean
 }
 
 export const MenuItem = styled.a<MenuItemProps>`

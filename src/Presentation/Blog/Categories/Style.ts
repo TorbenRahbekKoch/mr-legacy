@@ -13,22 +13,18 @@ export type CategoryProps = {
   selected: boolean
 }
 
-export const Category = styled.div`
+export const Category = styled.button<{ selected?: boolean; }>`
   
-  button {
-    background-color: ${(props: CategoryProps) => props.selected ? "darkgrey" : "none"};
-  }
-
-  label {    
-    border: none;
-    padding: 5px;
-    font-family: courier;
-    cursor: pointer;
-    display: inline-block;
-    
-    :first-letter {
-      text-transform: capitalize;
-    };
-  }
+  background-color: ${(props) => props.selected ? 'darkgrey' : 'none'};
+        
+  padding: 5px;
+  font-family: courier;
+  cursor: grab;
+  display: inline-block;
+  
+  &:first-letter {
+    text-transform: capitalize;
+  };
+  
 `
 

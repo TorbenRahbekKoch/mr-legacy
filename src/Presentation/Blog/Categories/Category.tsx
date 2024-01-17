@@ -20,14 +20,14 @@ export function Category({ category, ...props }: Props) {
   }
 
   const categoryStyleProps = {
-    selected: props.selected
+    selected: props.selected,
+    onClick: onClick,
+    id: category
   } 
   
   return (
     <Style.Category {...categoryStyleProps}>
-      <button type="button" onClick={onClick} id={category}>
-        <label htmlFor={category}>{category}</label>
-      </button>
+        <span>{category}</span>
     </Style.Category>
   );
 }

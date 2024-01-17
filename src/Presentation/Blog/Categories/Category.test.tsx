@@ -1,21 +1,28 @@
 import { cleanup, render, screen } from '@testing-library/react'
+import { afterEach, beforeAll, describe, expect, it } from 'vitest'
 import userEvent from '@testing-library/user-event'
 import * as Category from './Category'
 
+
 describe("Category", () => {
+
+
+  afterEach(async () => {
+    await cleanup()
+  })
 
   it('should be initially deselected', async () => {
 
     const props: Category.Props = {
       category: "Amazing",
       selected: false,
-      categorySelected: (c) => { },
-      categoryDeselected: (c) => { }
+      categorySelected: (_) => { },
+      categoryDeselected: (_) => { }
     }
   
     await render(<Category.Category {...props} />)
   
-    const button = screen.getByRole("button")
+    const button = await screen.getByRole("button")
   
     expect(button)
       .toHaveStyle('background-color: ButtonFace')
@@ -28,16 +35,16 @@ describe("Category", () => {
     const props: Category.Props = {
       category: "Amazing",
       selected: true,
-      categorySelected: (c) => { },
-      categoryDeselected: (c) => { }
+      categorySelected: (_) => { },
+      categoryDeselected: (_) => { }
     }
   
     await render(<Category.Category {...props} />)
   
-    const button = screen.getByRole("button")
+    const button = await screen.getByRole("button")
   
     expect(button)
-    .toHaveStyle('background-color: darkgrey')
+      .toHaveStyle('background-color: rgb(169, 169, 169)')
   
     cleanup();
   })
@@ -52,7 +59,7 @@ describe("Category", () => {
       category: category,
       selected: false,
       categorySelected: (c) => { categorySelected = c },
-      categoryDeselected: (c) => { }
+      categoryDeselected: (_) => { }
     }
   
     render(<Category.Category {...props} />)
@@ -77,7 +84,7 @@ describe("Category", () => {
     const props: Category.Props = {
       category: category,
       selected: true,
-      categorySelected: (c) => { },
+      categorySelected: (_) => { },
       categoryDeselected: (c) => { categoryDeselected = c }
     }
   

@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# Mr. Legacy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Creating the application
 
-## Available Scripts
+As [previously described](https://mrlegacy.dk/blogs/about-this-site) the 
+site is a React application, created with `create-react-app`, which
+is [now dead](https://dev.to/ag2byte/create-react-app-is-officially-dead-h7o).
 
-In the project directory, you can run:
+Apart from it being dead there were several issues with it. Underneath an
+obscene (and obscure) amount of hidden layers ran webpack 4 (I think). This has since
+been superseeded by version 5. On top of that (that is still deep, deep down)
+there was a lot of other stuff with intricate version dependencies, which made
+it near impossible to update e.g. TypeScript to newer versions.
 
-### `yarn start`
+I took a deep breath and re-created the application using Vite instead
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+````
+npm create vite@latest
+````
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Then choosing `React` - with TypeScript. 
 
-### `yarn test`
+Updating all packages and adding a slew of testing packages:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+````
+    "@testing-library/jest-dom": "^6.2.0",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.11",
+    "ts-jest": "^29.1.1",
+    "vitest": "^1.2.0"
+    "jsdom": "^23.2.0",
+    
+    "vite-tsconfig-paths": "^4.3.1"
+````
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# React + TypeScript + Vite
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Currently, two official plugins are available:
 
-### `yarn eject`
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Expanding the ESLint configuration
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Configure the top-level `parserOptions` property like this:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list

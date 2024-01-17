@@ -1,8 +1,14 @@
-import { render, screen } from '@testing-library/react'
+import { afterEach, describe, expect, it } from 'vitest'
+import { cleanup, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import * as CategoryList from './CategoryList'
 
 describe("CategoryList", () => {
+
+  afterEach(() => {
+    cleanup()
+  })
+
   it('should append to empty selection on select', async () => {
 
     let selection: string[] = []
@@ -20,7 +26,7 @@ describe("CategoryList", () => {
     render(<CategoryList.CategoryList {...props}/>)
   
     const event = userEvent.setup()
-    const checkbox = screen.getByLabelText("Category 1")
+    const checkbox = screen.getByText("Category 1")
   
     await event.click(checkbox)
   
@@ -45,7 +51,7 @@ describe("CategoryList", () => {
     render(<CategoryList.CategoryList {...props}/>)
   
     const event = userEvent.setup()
-    const checkbox = screen.getByLabelText("Category 1")
+    const checkbox = screen.getByText("Category 1")
   
     await event.click(checkbox)
   
