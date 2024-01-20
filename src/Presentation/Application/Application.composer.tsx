@@ -2,6 +2,7 @@ import { Router } from '../../Infrastructure/Routing'
 import * as Style from './Style'
 import * as Menu from '../Menu'
 
+
 export interface Texts {
   danish: string
   english: string
@@ -25,7 +26,7 @@ export function ApplicationComposer(props: Props) {
   }
 
   return (
-    <Style.Application>
+    <Style.Application id="application">
       { props.headerController() }
       <Menu.Menu currentLanguage={props.currentLanguage} requestLanguageChange={props.requestLanguageChange} texts={menuTexts}/>
       {props.router.execute(window.location)}

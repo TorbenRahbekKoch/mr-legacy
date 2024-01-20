@@ -3,22 +3,37 @@ import styled from 'styled-components';
 export const Header = styled.div`
   vertical-align: top;
   text-align: left;
+  position: relative;  
 `
 
-export const HeaderDetails = styled.div`
-  width: 80%;
-  margin-right: 5px;
-  padding-left: 50px;
-  display: inline-block;
-  vertical-align: top;
+export const Banner = styled.div`  
+  position: relative;
 `
 
-export const MugShot = styled.picture`
-  display: inline-block;
+export const BannerPicture = styled.picture`  
+  width: 100%;  
 
+  img {
+    width: 100%;
+  }
+`
+
+export const MugShot = styled.picture`  
+  position: absolute;
+
+  left: 0;  
+  bottom: 1px;
+  
   @media print {
     display: none;
   }
+`
+
+export const HeaderDetails = styled.div`
+  margin-right: 5px;
+  padding-left: 50px;
+  
+  vertical-align: top;
 `
 
 export const MainTitle = styled.h1`
