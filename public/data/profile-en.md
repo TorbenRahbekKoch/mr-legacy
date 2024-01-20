@@ -32,7 +32,7 @@ the best solution.
 The Mr. Legacy nick name is not just an expression of my age, as much as it is an expression for 
 my ability and desire to work with old code. Code with a history.
 
-I am kind person with a sense of humor and irony and on top of that with a professional and 
+I am a kind person with a sense of humor and irony and on top of that with a professional and 
 pragmatic approach to my trade. My work place I consider a place where my primary function is to 
 do a job in close cooperation with my colleagues in an informal atmosphere with room for humor 
 and personal interests.
