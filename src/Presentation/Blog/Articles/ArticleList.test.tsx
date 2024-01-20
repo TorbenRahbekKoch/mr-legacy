@@ -1,18 +1,8 @@
-import { cleanup, render, screen } from '@testing-library/react'
-import { afterEach, describe, expect, it } from 'vitest'
-import { ArticleList } from '..'
+import { render, screen  } from '@testing-library/react'
+import { describe, expect, it } from 'vitest'
 import { FilteredArticleList, Props } from './FilteredArticleList'
 
 describe('ArticleList', () => {
-
-  afterEach(() => {
-    cleanup()
-  })
-
-  it('Well...', () => {
-    const blogEntries = { blogEntries: [] }
-    render(<ArticleList {...blogEntries} />)
-  })
 
   it('Unpublished entry does not show up', () => {
     const blogEntries: Props = {

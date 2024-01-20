@@ -1,16 +1,11 @@
-import { cleanup, render, screen } from '@testing-library/react'
-import { afterEach, describe, expect, it } from 'vitest'
+import { render, screen } from '@testing-library/react'
+import { describe, expect, it } from 'vitest'
 import userEvent from '@testing-library/user-event'
 import * as Category from './Category'
 
 
 describe("Category", () => {
-
-
-  afterEach(async () => {
-    await cleanup()
-  })
-
+  
   it('should be initially deselected', async () => {
 
     const props: Category.Props = {
@@ -25,9 +20,7 @@ describe("Category", () => {
     const button = await screen.getByRole("button")
   
     expect(button)
-      .toHaveStyle('background-color: ButtonFace')
-  
-    cleanup();    
+      .toHaveStyle('background-color: ButtonFace')  
   })  
 
   it('should be initially selected', async () => {
@@ -45,8 +38,6 @@ describe("Category", () => {
   
     expect(button)
       .toHaveStyle('background-color: rgb(169, 169, 169)')
-  
-    cleanup();
   })
 
   it('should be selected on click', async () => {
@@ -71,8 +62,6 @@ describe("Category", () => {
   
     expect(categorySelected)
       .toBe(category)
-  
-    cleanup()
   })
   
   it('should be deselected on click', async () => {
@@ -97,7 +86,5 @@ describe("Category", () => {
   
     expect(categoryDeselected)
       .toBe(category)
-  
-    cleanup()
   })  
 })
