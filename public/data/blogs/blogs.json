@@ -142,7 +142,7 @@
 			"categories": ["architecture"]
         },{
             "url" : "/blogs/webpack-to-vite",
-            "title": "Moving from Webpack to Vite",
+            "title": "Migrating from Webpack to Vite",
             "teaser": "Packing up Webpack for Vite",
             "dir": "webpack-to-vite",
             "date": "2024-01-20",
