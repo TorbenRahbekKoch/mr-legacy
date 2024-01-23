@@ -8,8 +8,9 @@ export function Banner() {
                 <img src="/images/linkedin-banner.png"/>
             </Style.BannerPicture>
             <Style.MugShot>
-                <source srcSet="/images/linkedin-profile-picture.png" media="(min-width: 1000px)" />
-                <img src="/images/linkedin-profile-picture-small.png" alt="Mr. Legacy" />
+            <source srcSet="/images/linkedin-profile-picture.png" media="(min-width: 1000px)" />
+            <source srcSet="/images/linkedin-profile-picture-small.png" media="(min-width: 450px)" />
+                <img src="/images/linkedin-profile-picture-xsmall.png" alt="Mr. Legacy" />
             </Style.MugShot>
             <Style.PrintImage>
                 <img src="/images/printshot.png" alt="Mr. Legacy" />
