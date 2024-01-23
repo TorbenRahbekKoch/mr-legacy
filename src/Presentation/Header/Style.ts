@@ -23,7 +23,13 @@ export const MugShot = styled.picture`
 
   left: 0;  
   bottom: 1px;
+
   
+  
+  img {
+    border-radius: 0 10% 0 0;
+    object-fit: cover;
+  }
   @media print {
     display: none;
   }
