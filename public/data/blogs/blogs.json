@@ -122,9 +122,9 @@
         },{
             "url" : "/blogs/the-wolverine-testing-saga",
             "title": "The Wolverine testing saga",
-            "teaser": "What to do when testing the queue?",
+            "teaser": "Getting to the core of queues to marvel at",
             "dir": "the-wolverine-testing-saga",
-            "date": null,
+            "date": "2024-02-02",
 			"categories": ["architecture", "review"]
         },{
             "url" : "/blogs/team-topologies",
