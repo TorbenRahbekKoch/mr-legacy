@@ -16,6 +16,8 @@ the structure. So *Team Topologies* basically means *Team Structures*.
 
 I guess... ;)
 
+In essence the book lays the foundation for a [ubiquitious language](https://martinfowler.com/bliki/UbiquitousLanguage.html) for team structures.
+
 ## Who is it for?
 
 Well, anyone who have an interest in team structures, obviously.
@@ -33,7 +35,7 @@ chart from SAP-data I see many problems with organizational charts, but it is no
 The world of agile does not fit well in the static world those charts depict, and neither
 does the communication structures in an organization.
 
-In this chapter the concept of *Team Topologies* is introduces along with four fundamental team types:
+In this chapter the concept of *Team Topologies* is introduced along with four fundamental team types:
 
 - Stream-aligned
 - Platform
@@ -383,6 +385,6 @@ The message it sends, though, is important. The sub-title for the book is
 *Organizing business and technology teams for fast flow", which offhand
 sounds like a one-sided business advantage, but the advantage is also
 for the teams; and therefore also the team members who will basically
-have a better job. 
+have a better job.
 
 I give it 4 stars.
