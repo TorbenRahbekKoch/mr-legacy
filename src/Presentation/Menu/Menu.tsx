@@ -28,7 +28,7 @@ interface ItemProps {
   rightalign ?: boolean
 }
 
-function MenuItem({title, path, rightalign, onClick}: ItemProps) {
+function MenuItem({title, path, onClick}: ItemProps) {
   const localClick: React.MouseEventHandler | undefined= 
     onClick == null 
     ? undefined
@@ -37,7 +37,7 @@ function MenuItem({title, path, rightalign, onClick}: ItemProps) {
       onClick()
     } 
 
-  return (<Style.MenuItem href={path} onClick={localClick} rightalign={rightalign ?? false}>{title}</Style.MenuItem>)
+  return (<Style.MenuItem href={path} onClick={localClick} >{title}</Style.MenuItem>)
 }
 
 export function Menu({...props}: Props) {

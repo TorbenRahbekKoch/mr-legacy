@@ -16,7 +16,7 @@ export const MenuBar = styled.div`
 `
 
 export type MenuItemProps = {
-  rightalign: boolean
+  rightAlign?: boolean
 }
 
 export const MenuItem = styled.a<MenuItemProps>`
@@ -43,5 +43,5 @@ export const MenuItem = styled.a<MenuItemProps>`
     margin-right: 2px;
   }
   cursor: pointer;  
-  float: ${(props: any) => props.rightAlign === true ? "right" : "none"};
+  float: ${(props: any) => (props.rightAlign === true ? "right" : "none")};
 `
