@@ -147,6 +147,13 @@
             "dir": "webpack-to-vite",
             "date": "2024-01-20",
 			"categories": ["programming"]
+        } ,{
+            "url" : "/blogs/legacy-of-the-great-wall",
+            "title": "Legacy of the great wall",
+            "teaser": "This wall does not tumble down on its own!",
+            "dir": "legacy-of-the-great-wall",
+            "date": "2024-02-19",
+			"categories": ["programming"]
         }
     ]
 }
