@@ -9,7 +9,10 @@ export interface Props {
 }
 
 export function Article({ article, date }: Props) {  
-  const published = "Published: " + (date != null ? `${date.getFullYear()}/${date.getMonth()+1}/${date.getDate()}` : "")
+  const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: 'numeric'}
+  const dateFormatted = date?.toLocaleDateString(undefined, options)
+  const published = "Published: " + (dateFormatted)
+  
   return (
     <Style.BlogEntry>
     <span>{published}</span>
