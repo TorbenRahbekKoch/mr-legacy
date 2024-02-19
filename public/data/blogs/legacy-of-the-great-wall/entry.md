@@ -18,7 +18,7 @@ to start: The other end. And, of course, occasionally distracting me with
 a ball. An important task for a dog!
 
 Looking for seams and fracture planes is an obvious way to 
-explore the software, ehm - wall, to (t)ease the it apart.
+explore the software, ehm - wall, to (t)ease it apart.
 
 I've also heard that it is like eating an elephant (which
 nowadays might be considered wildly politically incorrect): One bite
