@@ -415,6 +415,16 @@
         "author": "Matthew Skelton, Manuel Pais",
         "languages": ["dk", "en"],
         "source": "Team Topologies"
+    },{
+        "quote": "For architects, every problem is a snowflake",
+        "author": "Neal Ford, Mark Richards, Parmod Adalage, Zhamak Dehghani",
+        "languages": ["dk", "en"],
+        "source": "Software Architecture: The Hard Parts"
+    },{
+        "quote": "Data is a precious thing and will last longer than the systems themselves",
+        "author": "Tim Berners-Lee",
+        "languages": ["dk", "en"],
+        "source": ""
     }
 ]
 }
