@@ -160,7 +160,14 @@
             "teaser": "The quest of the F# Dressed Man",
             "dir": "",
             "date": "2014-03-07",
-			"categories": ["programming"]
+			"categories": ["programming", "passion"]
+        },{
+            "url" : "/blogs/a-passionate-dream",
+            "title": "A Passionate Dream",
+            "teaser": "One is allowed to dream!",
+            "dir": "",
+            "date": "2012-05-09",
+			"categories": ["programming", "passion"]
         }
     ]
 }
