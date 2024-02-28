@@ -168,6 +168,34 @@
             "dir": "",
             "date": "2012-05-09",
 			"categories": ["programming", "passion"]
+        },{
+            "url" : "/blogs/error-handling-the-easy-way",
+            "title": "Error handling - The easy way",
+            "teaser": "Getting those errors to behave",
+            "dir": "",
+            "date": "2013-11-04",
+			"categories": ["programming", "architecture"]
+        },{
+            "url" : "/blogs/error-handling-keeping-it-easy",
+            "title": "Error handling - Keeping it easy",
+            "teaser": "In the domain of errors",
+            "dir": "",
+            "date": "2014-03-05",
+			"categories": ["programming", "architecture"]
+        },{
+            "url" : "/blogs/error-handling-as-easy-as-sliding-in-soap",
+            "title": "Error handling - As easy as sliding in SOAP",
+            "teaser": "Keeping that error handling clean!",
+            "dir": "",
+            "date": "2014-03-06",
+			"categories": ["programming", "architecture"]
+        },{
+            "url" : "/blogs/error-handling-now-on-to-the-rest",
+            "title": "Error handling - Now on to the REST",
+            "teaser": "REST assured that your errors are handled!",
+            "dir": "",
+            "date": "2014-03-10",
+			"categories": ["programming", "architecture"]
         }
     ]
 }

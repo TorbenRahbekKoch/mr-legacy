@@ -23,6 +23,10 @@ export const Article = styled.article`
       width: 90%;
   };
 
+  img {
+    max-width: 100%;
+  }
+  
   h1, h2, h3, h4, h5, h6 {
     margin-left: -5%;
     font-family: 'Courier New', Courier, monospace;
