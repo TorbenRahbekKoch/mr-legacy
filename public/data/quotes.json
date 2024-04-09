@@ -205,11 +205,6 @@
         "languages": ["en","dk"],
         "source": ""
     },{
-        "quote": "Man kan godt håbe, der opstår magi. Man skal bare ikke regne med det",
-        "author": "Daniel Frost",
-        "languages": ["dk"],
-        "source": "https://www.linkedin.com/posts/daniel-frost-dk_de-saas-l%C3%B8sninger-jeg-har-v%C3%A6ret-gladest-for-activity-6929512872569905153-AuqM"
-    },{
         "quote": "...mudslide-meets-shantytown systems",
         "author": "Vaughn Vernon",
         "languages": ["en","dk"],
@@ -417,6 +412,16 @@
         "source": "Team Topologies"
     },{
         "quote": "For architects, every problem is a snowflake",
+        "author": "Neal Ford, Mark Richards, Parmod Adalage, Zhamak Dehghani",
+        "languages": ["dk", "en"],
+        "source": "Software Architecture: The Hard Parts"
+    },{
+        "quote": "Architects shouldn't break a system into smaller parts unless clear business drivers exist",
+        "author": "Neal Ford, Mark Richards, Parmod Adalage, Zhamak Dehghani",
+        "languages": ["dk", "en"],
+        "source": "Software Architecture: The Hard Parts"
+    },{
+        "quote": "Note that architectural modularity does not always have to translate to a distributed architecture",
         "author": "Neal Ford, Mark Richards, Parmod Adalage, Zhamak Dehghani",
         "languages": ["dk", "en"],
         "source": "Software Architecture: The Hard Parts"
