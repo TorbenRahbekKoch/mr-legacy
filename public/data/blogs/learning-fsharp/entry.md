@@ -43,7 +43,7 @@ The functional milieu seems to be - in some respects - a very mathematically ori
 This is, of course, overstated a bit, but the 
 [write once, read many](https://retrocomputing.stackexchange.com/questions/15724/who-are-we-quoting-when-we-note-that-code-is-written-once-but-read-many-times) mantra still have a long way to go in the functional milieu and the general elitist attitude will work against adopting functional languages, since the average programmer will simply look at it and say: It's too hard. And to make a programming language main stream it has to be adopted by the average programmer.
 
-How am I going about it?
+## How am I going about it?
 
 I have been wanting to get into F# for a few years, now. It started to get serious, when I in 2013 attended the Skillsmatter Fast Track to F# with Tomas Petricek and Phil Trelford. I then went to New York to attend the F# Tutorials, which I also plan to attend in 2014.
 

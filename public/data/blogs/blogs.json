@@ -196,6 +196,13 @@
             "dir": "",
             "date": "2014-03-10",
 			"categories": ["programming", "architecture"]
+        },{
+            "url" : "/blogs/fsharp-making-illegal-states-unrepresentable",
+            "title": "F#: Making illegal states unrepresentable",
+            "teaser": "Representing states F-sharply",
+            "dir": "",
+            "date": "2017-08-20",
+			"categories": ["programming", "architecture"]
         }
     ]
 }
