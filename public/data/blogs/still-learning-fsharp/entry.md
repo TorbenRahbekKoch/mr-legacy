@@ -11,7 +11,7 @@ And
 
 It is now about two years since I gave up on F#.
 
-In the *Learning F#* post I had 5 issues with learning a new programming language, 
+In the *Learning F#* post I listed 5 issues with learning a new programming language, 
 in this case F#. 
 
 ## 1. The libraries and frameworks available
@@ -30,6 +30,9 @@ The fact that Microsoft does all of its .NET development in C# does
 not help F# in any way. Both languages can call each other, but it
 ain't pretty.
 
+Learning a new language outside the .NET ecosystem would be far
+more difficult, since the libraries would be quite different.
+
 ## 2. The eco-system, IDE, tools etc.
 
 Where the F# compiler with continuously compiling and correspondingly updating
@@ -47,7 +50,7 @@ of programming languages, where especially F# and C# previously was
 hard to do outside Visual Studio. 
 
 Also Microsoft has served us .NET Core/5/6/7/8/... and embraces
-open source to a high degree (probably where it most serves their business model)
+open source to a high degree (probably where it most serves their business model, but still...)
 all in all leading to the experience of working with the code
 being very similar for C# and F#. 
 
@@ -55,7 +58,7 @@ being very similar for C# and F#.
 
 The paradigm is, of course, still vastly different from object oriented, but
 C# has gotten even more functional constructs and syntactic sugar
-making C# code more dense, one of the main talking points of F#.
+making C# code possibly more dense, one of the main talking points of F#.
 
 I don't find in general, though, that dense code is naturally more
 readable - that is the same as saying that text with a 
