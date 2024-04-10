@@ -14,7 +14,7 @@ He intended to throw her his most charming smile, which more became a face combi
 
 “Ehm, yes, I did, didn’t I”, he replied very cleverly. He sort of smiled to her, gave her his hand and said, with a voice that very well could have been helium-induced, “Well, ehm, I’m charmed and ehm, George to meet you.”
 
-She returned his handshake with both hands, holding his hand in a warm and surprisingly firm grasp, “Well, hello charmed, I’m Jennifer”. She tilted her head, letting the hair hang lose, making him utter an exasperated sigh. “So George, what brings you to this rather dull place?”.
+She returned his handshake with both hands, holding his hand in a warm and surprisingly firm grasp, “Well, hello charmed, I’m Jennifer”. She tilted her head, letting the hair hang loose, making him utter an exasperated sigh. “So George, what brings you to this rather dull place?”.
 
 “Ehm, I was actually supposed to meet a friend, but he cancelled on me half an hour ago”, he croaked.
 
