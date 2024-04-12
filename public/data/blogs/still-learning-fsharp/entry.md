@@ -1,6 +1,6 @@
 # Still learning F#?
 
-TDLR: No.
+TLDR: No.
 
 The longer story...
 
