@@ -220,10 +220,17 @@
         },{
             "url" : "/blogs/variable-scope-in-wf4",
             "title": "Understanding Variable Scope in Workflow Foundation 4",
-            "teaser": "Variable are founded on some weird scopes",
+            "teaser": "Variables are founded on some weird scopes",
             "dir": "",
             "date": "2012-06-12",
 			"categories": ["programming", "architecture"]
+        },{
+            "url" : "/blogs/wcf-logging-configuration",
+            "title": "WCF Logging Configuration",
+            "teaser": "Configuration foundation",
+            "dir": "",
+            "date": "2012-09-29",
+			"categories": ["programming"]
         }
     ]
 }
