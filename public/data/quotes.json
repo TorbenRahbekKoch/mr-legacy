@@ -426,6 +426,16 @@
         "languages": ["dk", "en"],
         "source": "Software Architecture: The Hard Parts"
     },{
+        "quote": "An architect can never reduce semantic coupling via implementation, but they can make it worse",
+        "author": "Neal Ford, Mark Richards, Parmod Adalage, Zhamak Dehghani",
+        "languages": ["dk", "en"],
+        "source": "Software Architecture: The Hard Parts"
+    },{
+        "quote": "Coordination is one of the primary forces that create complexity for architects when determining how to best communicate between microservices",
+        "author": "Neal Ford, Mark Richards, Parmod Adalage, Zhamak Dehghani",
+        "languages": ["dk", "en"],
+        "source": "Software Architecture: The Hard Parts"
+    },{
         "quote": "Data is a precious thing and will last longer than the systems themselves",
         "author": "Tim Berners-Lee",
         "languages": ["dk", "en"],
