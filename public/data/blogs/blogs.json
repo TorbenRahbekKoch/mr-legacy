@@ -231,6 +231,13 @@
             "dir": "",
             "date": "2012-09-29",
 			"categories": ["programming"]
+        },{
+            "url" : "/blogs/testable-time",
+            "title": "Testable Time",
+            "teaser": "Did it stand the test of time?",
+            "dir": "",
+            "date": "2013-04-22",
+			"categories": ["programming"]
         }
     ]
 }
