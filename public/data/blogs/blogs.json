@@ -238,6 +238,13 @@
             "dir": "",
             "date": "2013-04-22",
 			"categories": ["programming"]
+        },{
+            "url" : "/blogs/serialization-in-one-line",
+            "title": "Serialization in one line",
+            "teaser": "A series (of one) of one liners!",
+            "dir": "",
+            "date": "2013-07-11",
+			"categories": ["programming"]
         }
     ]
 }
