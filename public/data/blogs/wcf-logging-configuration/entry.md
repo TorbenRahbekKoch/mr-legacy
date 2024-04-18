@@ -1,6 +1,6 @@
 # WCF Logging Configuration
 
-*This blog post was [originally posted on my company website](https://softwarepassion.eu/understanding-variable-scope-in-workflow-foundation-4/)*, which is why the publish date
+*This blog post was [originally posted on my company website](https://softwarepassion.eu/wcf-logging-configuration/)*, which is why the publish date
 is before this website was created ;)
 
 It is here reposted as it was with possibly a few additions, highlights, clarifications and corrections of typos. Is it really worth moving here? Probably not, but just for the
