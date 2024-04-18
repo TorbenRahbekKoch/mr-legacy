@@ -84,7 +84,7 @@ also this C# has now. Even with a dense syntax (that is: `record`).
 F# has a bad habit (in my oppinion) of using operator overloading - especially
 in computation expressions e.g. `async` and `task`, which is a 
 powerful construct but also makes you need quite a lot of context
-when reading then code. That denseness comes with a cost of high
+when reading the code. That denseness comes with a cost of high
 cognitive load.
 
 ## 4. Structuring the code
