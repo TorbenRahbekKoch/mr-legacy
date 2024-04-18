@@ -245,6 +245,13 @@
             "dir": "",
             "date": "2013-07-11",
 			"categories": ["programming"]
+        },{
+            "url" : "/blogs/thoughts-on-usability",
+            "title": "Thoughts on usability",
+            "teaser": "Don't make me think",
+            "dir": "",
+            "date": "2013-07-12",
+			"categories": ["passion"]
         }
     ]
 }
