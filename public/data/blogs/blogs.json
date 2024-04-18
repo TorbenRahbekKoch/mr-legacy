@@ -252,6 +252,13 @@
             "dir": "",
             "date": "2013-07-12",
 			"categories": ["passion"]
+        },{
+            "url" : "/blogs/specifying-business-rules-by-example",
+            "title": "Specifying Business Rules by Example",
+            "teaser": "Those examples have no business specified!",
+            "dir": "",
+            "date": "2013-07-23",
+			"categories": ["architecture","passion"]
         }
     ]
 }
