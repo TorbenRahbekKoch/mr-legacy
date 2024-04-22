@@ -259,6 +259,13 @@
             "dir": "",
             "date": "2013-07-23",
 			"categories": ["architecture","passion"]
+        },{
+            "url" : "/blogs/software-architecture-the-hard-parts",
+            "title": "Software Architecture: The Hard Parts - a review",
+            "teaser": "Software really has hard parts - it's all about trade-offs",
+            "dir": "",
+            "date": "2024-04-12",
+			"categories": ["architecture", "review"]
         }
     ]
 }
