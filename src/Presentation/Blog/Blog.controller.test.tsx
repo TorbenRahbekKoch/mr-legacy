@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { BlogController, Props  } from './Blog.controller'
+import { Props as TitleProps } from './Articles/Title'
 
 const  articleText = "Article without much text"
 
@@ -29,11 +30,12 @@ describe("BlogController", () => {
       .toBeDefined()
   })
   
-  it('should show article when path is given', () => {
+  it('should show article when path is given', async () => {
   
-    const retrieveBlogEntries = () => [
+    const retrieveBlogEntries = (retrieved:(entries: TitleProps[]) => void) => {      
+      retrieved([
       { url: "/blogs/article", title: "Article", teaser: "", dir: "", date: undefined, categories: []}
-    ]
+    ])}
     
     const repository = {
       getAllBlogEntries: retrieveBlogEntries,
@@ -45,9 +47,10 @@ describe("BlogController", () => {
       location : "/blogs/article"
     }
   
-    render(<BlogController {...props} />)
-    expect(screen.queryByText(articleText))
-      .toBeDefined()
+    await render(<BlogController {...props} />)
+    //const result = await screen.getByText(articleText)    
+
+    expect(await screen.getByText(articleText)).toBeInTheDocument()
   })
 })
 

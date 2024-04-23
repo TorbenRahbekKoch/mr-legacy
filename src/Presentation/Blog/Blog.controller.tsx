@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import * as Composer  from "./Blog.composer"
 import { Props as EntryTitleProps } from './Articles/Title'
 import { Repository } from "./Repository";
+import { NotFound } from "../NotFound/NotFound.controller";
 
 export interface Props {
   location?: string;  
@@ -21,11 +22,13 @@ export const defaultProps: Props = {
 export function BlogController({...props}: Props) {
   const [article, setArticle] = useState("")
   const [blogEntries, setBlogEntries] = useState<EntryTitleProps[]>([])
+  const [ready, setReady] = useState(false)
   const [categorySelection, setCategorySelection] = useState<string[]>([])
-  
+
   useEffect(() => {
     props.repository.getAllBlogEntries(blogEntries => {
       setBlogEntries(blogEntries)
+      setReady(true)
     })
 
     if (props.location !== "/blogs") {
@@ -37,7 +40,11 @@ export function BlogController({...props}: Props) {
         setArticle(article)
       })
     }
-  },[props.location, props.repository])
+  },[props.location, props.repository, ready])
+
+  if (!ready) {
+    return null
+  }
 
   // TODO: Fix this url check hack, somehow... 
   if (props.location === "/blogs") { 
@@ -72,7 +79,7 @@ export function BlogController({...props}: Props) {
       .find(be => be.url === props.location)
 
     if (currentBlogEntry == null)
-      return null;
+      return <NotFound/>      
 
     const composerProps: Composer.ArticleProps = {
       kind: Composer.PropType.Article,

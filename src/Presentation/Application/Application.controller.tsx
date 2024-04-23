@@ -9,6 +9,8 @@ import { ApplicationComposer } from './Application.composer'
 import { AllTexts, defaultTexts } from '../../Infrastructure/BootStrapping/AllTexts'
 import * as Fetch from '../../Infrastructure/BootStrapping'
 import { ServicesController } from '../Services'
+import { SoftwarePassionController } from '../SoftwarePassion/SoftwarePassion.controller'
+import { NotFound } from '../NotFound/NotFound.controller'
 
 export function ApplicationController() {
   const [texts, setTexts] = useState<AllTexts>(defaultTexts)
@@ -111,16 +113,33 @@ export function ApplicationController() {
     [servicesRepository]
   )
 
+  const softwarePassionController = useCallback(
+    (location: Location) =>  {
+      return <SoftwarePassionController blogRepository={blogRepository} path={location.pathname}/>
+    },
+    [blogRepository]
+  )
+
+  const defaultRoute = useCallback(
+    () => {
+      return <NotFound></NotFound>
+    },
+    []
+  )
+
   const router = useRouter([
     new MatchRoute("blogs", location => blogController(location)),
     new MatchRoute("services", _ => servicesController()),
     new MatchRoute("cv", _ => cvController()),
+    new MatchRoute("software-passion", location => softwarePassionController(location)),
+    new MatchRoute("/", _ => servicesController())
   ],
+    defaultRoute
   )
 
-  router.setDefaultRoute(() => {
-    return (servicesController())
-  })
+  // router.setDefaultRoute(() => {
+  //   return (servicesController())
+  // })
 
 
   if (texts == null) {
