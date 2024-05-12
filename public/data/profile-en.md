@@ -1,7 +1,7 @@
 ## Resume
 
 Seasoned, passionate, pragmatic, versatile full stack generalist, system developer, architect and
-designer focusing on C##, .NET, React, Angular and TypeScript. 25+ years of professional
+designer focusing on C#, .NET, React, Angular and TypeScript. 25+ years of professional
 experience since 1997 with a Master of Computer Science from Aarhus University in the back
 pocket.
 
@@ -22,7 +22,7 @@ pocket.
 
 ## Technologies
 
-- C##, F##, C++, .NET, ASP.NET
+- C#, F#, C++, .NET, ASP.NET
 - JavaScript, TypeScript
 - React, Angular
 - Git
