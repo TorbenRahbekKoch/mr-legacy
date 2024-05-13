@@ -11,6 +11,7 @@ import * as Fetch from '../../Infrastructure/BootStrapping'
 import { ServicesController } from '../Services'
 import { SoftwarePassionController } from '../SoftwarePassion/SoftwarePassion.controller'
 import { NotFound } from '../NotFound/NotFound.controller'
+import { InfoPageController } from '../InfoPage/InfoPage.controller'
 
 export function ApplicationController() {
   const [texts, setTexts] = useState<AllTexts>(defaultTexts)
@@ -39,6 +40,11 @@ export function ApplicationController() {
   const servicesRepository = useMemo(
     () => new Repository.Services(language),
     [language]
+  )
+
+  const infoPageRepository = useMemo(
+    () => new Repository.InfoPage(),
+    []
   )
 
   const monthNames = useMemo(() => {
@@ -120,6 +126,13 @@ export function ApplicationController() {
     [blogRepository]
   )
 
+  const infoPageController = useCallback(
+    (location: Location) => {      
+      return <InfoPageController path={location.pathname} repository={infoPageRepository}></InfoPageController>
+    },
+    [infoPageRepository]
+  )
+
   const defaultRoute = useCallback(
     () => {
       return <NotFound></NotFound>
@@ -132,6 +145,7 @@ export function ApplicationController() {
     new MatchRoute("services", _ => servicesController()),
     new MatchRoute("cv", _ => cvController()),
     new MatchRoute("software-passion", location => softwarePassionController(location)),
+    new MatchRoute("pages", location => infoPageController(location)),
     new MatchRoute("/", _ => servicesController())
   ],
     defaultRoute

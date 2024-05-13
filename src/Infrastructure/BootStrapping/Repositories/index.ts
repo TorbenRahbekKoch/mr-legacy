@@ -1,4 +1,5 @@
 export { Header } from './Header'
 export { Blog } from './Blog'
 export { Cv } from './Cv'
+export { InfoPage } from './InfoPage'
 export { Services } from './Services'

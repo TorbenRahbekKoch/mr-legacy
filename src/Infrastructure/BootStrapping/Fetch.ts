@@ -55,3 +55,9 @@ export async function fetchArticle(url: string, dataReceived: (article: string) 
   const text = await response.text()
   dataReceived(text)
 }
+
+export async function fetchInfoPageContent(infoPageName: string, dataReceived: (content: string) => void) {
+  const response = await fetch(`/data/info-pages/${infoPageName}/page.md`)
+  const text = await response.text()
+  dataReceived(text)
+}
