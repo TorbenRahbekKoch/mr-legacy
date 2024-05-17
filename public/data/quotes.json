@@ -440,6 +440,16 @@
         "author": "Tim Berners-Lee",
         "languages": ["dk", "en"],
         "source": ""
+    },{
+        "quote": "An organization's capabilities are made up of its unique combination of people, skills, technologies, processes, and shared mindsets",
+        "author": "David Anderson, Mark McCann, Michael O'Reilly",
+        "languages": ["dk", "en"],
+        "source": "The Value Flywheel Effect"
+    },{
+        "quote": "A lack of criticism is a dangerous place to be",
+        "author": "David Anderson, Mark McCann, Michael O'Reilly",
+        "languages": ["dk", "en"],
+        "source": "The Value Flywheel Effect"
     }
 ]
 }

@@ -266,6 +266,20 @@
             "dir": "",
             "date": "2024-04-12",
 			"categories": ["architecture", "review"]
+        },{
+            "url" : "/blogs/versioning-in-an-event-sourced-system",
+            "title": "Versioning in an Event Sourced System - a review",
+            "teaser": "Use The Event Source, but be aware of versioning!",
+            "dir": "",
+            "date": "2024-05-17",
+			"categories": ["architecture", "review"]
+        },{
+            "url" : "/blogs/the-value-flywheel-effect",
+            "title": "The Value Flywheel Effect - a review",
+            "teaser": "Stop having the value flying all over the place",
+            "dir": "",
+            "date": "",
+			"categories": ["architecture", "review"]
         }
     ]
 }
