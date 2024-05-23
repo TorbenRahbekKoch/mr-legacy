@@ -1,5 +1,7 @@
 # How am I doing my reviews?
 
+[See also my reading list](/pages/reading-list)
+
 This is written as an answer to the hitherto never asked question: _How am I doing my reviews?_
 
 Firstly I usually read the first few chapters to get an idea of
