@@ -128,7 +128,7 @@ chapter is called *Purpose and Vision*) to
 figure out a *purpose*.
 
 In Phase 2 mapping can be used to asses whether
-you can the people and capability to act on your
+you have the people and capability to act on your
 purpose.
 
 Now we have purpose and situational awareness Phase 3 
