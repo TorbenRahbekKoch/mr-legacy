@@ -42,4 +42,11 @@ In no particular order
 
 # (Some of the) books I've read
 
+1. [Code that Fits in Your Head (Mark Seeman)](/blogs/code-that-fits-in-your-head)
+1. [Elemental Design Patterns (Jason McC. Smith)](/blogs/elemental-design-patterns)
+1. [Fixing Your Scrum (Ryan Ripley, Todd Miller)](/blogs/fixing-your-scrum)
+1. [Fundamentals of Software Architecture (Neal Ford, Mark Richards)](/blogs/fundamentals-of-software-architecture)
+1. [Software Architecture: The hard parts (Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani)](/blogs/software-architecture-the-hard-parts)
+1. [Team Topologies (Matthew Skelton, Manuel Pais)](/blogs/team-topologies)
 1. [The Value Flywheel Effect (David Anderson, Mark McCann, Michael O'Reilly)](/blogs/the-value-flywheel-effect)
+1. [Versioning in an Event Sourced System (Greg Young)](/blogs/versioning-in-an-event-sourced-system)
