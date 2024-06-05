@@ -890,4 +890,10 @@ the place. No clear red thread, even though there *must* have
 been a *clarity of purpose* to begin with ;)
 
 Ignoring the above, though, it *is* a good book with
-an important message. Go read it!
+an important message. I praise myself on being 
+pragmatic, which definitely has its uses, but this
+book was nevertheless an eye-opener for me. It should
+be clear that you should have - if possible - someone
+else to take care of your supporting domains, leaving
+your core domain to yourself. It is now clear to me.
+
