@@ -604,7 +604,8 @@ organizations.*
 
 *The next best action* has two key goals: 
 1. Make an immediate impact and reduce friction
-for the development team. 2. Introduce the concept
+for the development team. 
+2. Introduce the concept
 that there will many *next best actions* to come.
 
 The team should map the tech stack by starting
