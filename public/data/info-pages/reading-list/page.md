@@ -30,7 +30,6 @@ probably a particular order)
 1. Remote Team Interactions Workbook (Matthew Skelton, Manuel Pais)
 1. Residues: Time, Uncertainty, and Change in Software Architecture (Barry O'Reilly)
 1. Software Architecture Metrics (Christian Ciceri, Dave Farley, Neal Ford, Carola Lilienthal, et. al.)
-
 1. Software Estimation Without Guessing (George Dinwiddie)
 1. Sooner, Safer, Happier (Jon Smart, Mysles Ogilvie, Simon Rohrer, Zsolt Berend)
 1. The Accidental CIO (Scott Millett)
