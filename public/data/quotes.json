@@ -455,6 +455,26 @@
         "author": "David Anderson, Mark McCann, Michael O'Reilly",
         "languages": ["dk", "en"],
         "source": "The Value Flywheel Effect"
+    },{
+        "quote": "One easy way to accelerate the pace of innovation is to avoid building software that you don't need to build",
+        "author": "John Gilbert",
+        "languages": ["dk", "en"],
+        "source": "Software Architecture Patterns for Serverless Systems"
+    },{
+        "quote": "Sooner or later a given cloud provider will experience a news-worthy regional disruption",
+        "author": "John Gilbert",
+        "languages": ["dk", "en"],
+        "source": "Software Architecture Patterns for Serverless Systems"
+    },{
+        "quote": "Doing security right is hard",
+        "author": "John Gilbert",
+        "languages": ["dk", "en"],
+        "source": "Software Architecture Patterns for Serverless Systems"
+    },{
+        "quote": "Observability helps us fail forward fast",
+        "author": "John Gilbert",
+        "languages": ["dk", "en"],
+        "source": "Software Architecture Patterns for Serverless Systems"
     }
 ]
 }

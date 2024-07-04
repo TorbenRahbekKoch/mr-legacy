@@ -1,7 +1,7 @@
 # (Some of the) books I'd like to read
 
-In no particular order
-
+In no particular order (well, alphabetical is
+probably a particular order)
 
 1. A Philosophy of Sofware Design (John Ousterhout)
 1. A Scrum Book (Jeff Sutherland, James O. Coplien)
@@ -35,8 +35,10 @@ In no particular order
 1. Sooner, Safer, Happier (Jon Smart, Mysles Ogilvie, Simon Rohrer, Zsolt Berend)
 1. The Accidental CIO (Scott Millett)
 1. The Fearless Organization (Amy C. Edmondson)
+1. The Healthy Programmer (Joe Kutner)
 1. The Innovators Dilemma (Clayton Christensen)
 1. The Software Architect Elevator (Gregor Hohpe)
+1. User Story Mapping (Jeff Patton, Peter Economy)
 1. Wild West to Agile (Jim Highsmith)
 1. Wiring the Winning Organization (Gene Kim, Steven J. Spear)
 
