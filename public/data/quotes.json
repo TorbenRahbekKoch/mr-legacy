@@ -475,6 +475,26 @@
         "author": "John Gilbert",
         "languages": ["dk", "en"],
         "source": "Software Architecture Patterns for Serverless Systems"
+    },{
+        "quote": "All production software systems are a combination of decisions built up over time",
+        "author": "Ted Young, Austin Parker",
+        "languages": ["dk", "en"],
+        "source": "Learning OpenTelemetry"
+    },{
+        "quote": "Monitoring is a passive action. Observability is an active practice",
+        "author": "Ted Young, Austin Parker",
+        "languages": ["dk", "en"],
+        "source": "Learning OpenTelemetry"
+    },{
+        "quote": "Creating telemetry isn't free; there's some overhead",
+        "author": "Ted Young, Austin Parker",
+        "languages": ["dk", "en"],
+        "source": "Learning OpenTelemetry"
+    },{
+        "quote": "The problem of Scrum is that you often end up with a high focus on delivery while ignoring discovery and cool down",
+        "author": "Alexander Miertsch",
+        "languages": ["dk", "en"],
+        "source": "https://www.linkedin.com/posts/alexander-miertsch-prooph-board_shapeup-activity-7224307808026923008-fWAC"
     }
 ]
 }

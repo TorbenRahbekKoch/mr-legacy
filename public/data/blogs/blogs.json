@@ -288,6 +288,13 @@
             "date": "2024-07-04",
 			"categories": ["architecture", "review"]            
         },{
+            "url" : "/blogs/learning-opentelemetry",
+            "title": "Learning OpenTelemetry - a review",
+            "teaser": "Observe where you are going!",
+            "dir": "",
+            "date": "2024-08-02",
+			"categories": ["architecture", "review"]
+        },{
             "url" : "/blogs/event-modeling-working-open-space-2024",
             "title": "Event Modeling Workshop and Open Space in Berlin 2024",
             "teaser": "Events dressing up as models",
