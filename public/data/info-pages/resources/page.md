@@ -4,7 +4,9 @@ This will be my invaluable link collection. For now all links will be here,
 but I guess that over time I will create separate documents for the
 different main subjects.
 
-[See also my reading list](/pages/reading-list)
+This will keep to be a work in progress.
+
+See also [my reading list](/pages/reading-list)
 
 ## DevOps
 
