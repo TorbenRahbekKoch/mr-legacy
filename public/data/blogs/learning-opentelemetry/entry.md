@@ -497,7 +497,9 @@ than 2800 contributors.
 The organizational structure is complex and necessary
 because OpenTelemetry is a very large project.
 
-# Conclusion
+---
+
+## Conclusion
 
 API, exemplars, agents, signals, metrics, spans, SDK, collectors,
 context, traces, attributes, resources, propagators,

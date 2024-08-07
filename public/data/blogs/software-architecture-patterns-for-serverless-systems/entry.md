@@ -9,7 +9,7 @@
 ## Who is it for?
 
 Someone like me, who wasn't exactly sure what this
-*serverless*-thingy is about.
+_serverless_-thingy is about.
 
 An architect who needs input on how to move into the
 cloud or on how to best utilize the cloud.
@@ -25,28 +25,29 @@ actual implementation will wary.
 
 ![Any cloud provider](/data/blogs/software-architecture-patterns-for-serverless-systems/clouds.jpg)
 
-Fun fact: The word *serverless* occurs 221 times in the
-book. 
+Fun fact: The word _serverless_ occurs 221 times in the
+book.
 
---- 
+---
+
 # The review
 
 ## 1. Architecting for Innovation
 
 An introductory chapter laying the land of the book.
 
-*Our architecture must enable change* to be able to
+_Our architecture must enable change_ to be able to
 innovate (fast enough).
 
-*Lead time* must be brought down by e.g. mitigating risk,
+_Lead time_ must be brought down by e.g. mitigating risk,
 leaving the detailed, technical decisions to the
-team, better software development life cycle 
-methodologies (e.g. true agile), automate deployments, 
+team, better software development life cycle
+methodologies (e.g. true agile), automate deployments,
 improved software architecture, improved testing,
 reducing inter-team dependencies and communication.
 
-The author walks us through a bit of integration 
-history of how various, otherwise autonomous, 
+The author walks us through a bit of integration
+history of how various, otherwise autonomous,
 systems were kept in sync. This is of course
 a lead up to the architecture proposed by
 said author:
@@ -54,44 +55,44 @@ said author:
 At first look it is a bit over the top, but I will
 let the rest of the 700 pages (!) determine that.
 
-One of the aims of the architecture is to 
-*limit the blast radius of honest mistakes*. A
-fine goal. 
+One of the aims of the architecture is to
+_limit the blast radius of honest mistakes_. A
+fine goal.
 
 First of all all services are autonomous, owning
 all the resources it needs to work when other
 services does not. Services are grouped into
 subsystems and services consist of functions.
 
-There are three types of autonomous services: 
+There are three types of autonomous services:
 Backend for Frontend (BFF),
 External Service Gateway (ESG), and Control Service.
 
 The autonomous services are loosely connected through
-an *event hub*. Between the hub and the services
-we place *bulkheads* - corresponding to 
-Anti-corruption layers in Domain-Driven Design. 
-The bulk heads *buffers outgoing changes* and
-*caches incoming data*.
+an _event hub_. Between the hub and the services
+we place _bulkheads_ - corresponding to
+Anti-corruption layers in Domain-Driven Design.
+The bulk heads _buffers outgoing changes_ and
+_caches incoming data_.
 
 A series of services will implement the
-*Command, Publish, Consume, Query (CPCQ) flow*.
+_Command, Publish, Consume, Query (CPCQ) flow_.
 
-*Intra-service* communication is synchronous
+_Intra-service_ communication is synchronous
 communication within a service
-whereas *inter-service* communication is
+whereas _inter-service_ communication is
 asynchronous (through the event hub).
 
-Using an *event-first* strategy and spicing
-it up with *idempotence* and *order-tolerance*
+Using an _event-first_ strategy and spicing
+it up with _idempotence_ and _order-tolerance_
 will give severely resilient systems.
 
-I look forward to how especially *order-tolerance*
+I look forward to how especially _order-tolerance_
 is handled, but I suspect it will be part of the
-*caches incoming data*, which will allow for 
+_caches incoming data_, which will allow for
 reordering of non-sequential events.
 
-*Serverless is self-service*. I get the gist
+_Serverless is self-service_. I get the gist
 of the claim, but strictly speaking; setting
 up your own server is self-service, too. But if
 you - in both situations - are starting
@@ -100,7 +101,7 @@ more to know, before setting up your own
 server in comparison to simply procuring
 the needed services in a serverless environment.
 
-*Observability* is (one) key to moving fast. When
+_Observability_ is (one) key to moving fast. When
 experimenting you have to have metrics to determine
 the outcome of the experiment.
 
@@ -109,27 +110,27 @@ the outcome of the experiment.
 This feels like another introductory chapter ;)
 
 Boundaries exist at multiple levels: subsystem, service,
-and function levels. 
+and function levels.
 
 The author will use DDD, SOLID and Hexagonal Architecture and
 apply them differently on the subsystem level (macro architecture),
 the service level (micro architecture), and the
 function level (nano architecture).
 
-We are then walked through a short DDD-intro: 
+We are then walked through a short DDD-intro:
 Bounded context, Domain aggregate, and Domain event.
 
-The SOLID principles are listed: Single Responsibility, 
+The SOLID principles are listed: Single Responsibility,
 Open-Closed, Liskov Substitution, Interface Segregation,
 Dependency Inversion.
 
 This book actually does a fair job explaining the
 principles, better than Robert Martin himself.
 
-Under Interface Segregation *internal domain events*
-and *external domain events* are mentioned. 
-They are used for *intra-subsystem communication* and
-*inter-subsystem communication*, respectively.
+Under Interface Segregation _internal domain events_
+and _external domain events_ are mentioned.
+They are used for _intra-subsystem communication_ and
+_inter-subsystem communication_, respectively.
 
 Dependency Inversion is used in an domain event-first way
 here. Using domain events as contracts the services
@@ -142,39 +143,39 @@ such as Event Modeling or Domain Storytelling.
 
 We also need to define the subsystems, services and functions;
 our boundaries. Subsystems may be found by looking
-at *actors*, since a subsystem should be responsible
-to only one actor. *Business capability* is another
-method of discovery. *Data life cycle* - that is, who
+at _actors_, since a subsystem should be responsible
+to only one actor. _Business capability_ is another
+method of discovery. _Data life cycle_ - that is, who
 is using the data throughout the system - is yet
-another way. *Legacy systems* are a natural subsystem
+another way. _Legacy systems_ are a natural subsystem
 (although they obviously may be responsible to several actors).
 
 **Creating subsystem bulkheads**
 
-There are various ways to create bulkheads. 
+There are various ways to create bulkheads.
 Cloud accounts are a natural bulkhead, which
 should be leveraged as much as possible.
 
 If each subsystem runs under a different account
 it also eases monitoring ad observability.
 
-*Within* a subsystem the services will communicate
-using *internal domain events*. These will be
-easier to change than the *external domain events*
+_Within_ a subsystem the services will communicate
+using _internal domain events_. These will be
+easier to change than the _external domain events_
 which function as a contract and therefore should
 be changed rarely and only with great care.
 
 Using the terminology from hexagonal architecture
-the *external domain events* represent the *ports*, which
-are implemented using the *External Service Gateway pattern*
-using *ingress* and *egress* gateways. 
+the _external domain events_ represent the _ports_, which
+are implemented using the _External Service Gateway pattern_
+using _ingress_ and _egress_ gateways.
 
 **Dissecting an autonomous subsystem**
 
-*Each autonomous subsystem is responsible to a single
-primary user or a single cohesive group of users*. 
+_Each autonomous subsystem is responsible to a single
+primary user or a single cohesive group of users_.
 
-The UI will be implemented as a micro frontend (to 
+The UI will be implemented as a micro frontend (to
 be covered in a later chapter).
 
 Each subsystem will have its own event hub to use
@@ -188,7 +189,7 @@ functionality (materialized views) which sounds very much like
 event projections. The External Service Gateway
 have some of those, too.
 
-The Control Service is used to orchestrate 
+The Control Service is used to orchestrate
 business processes and sounds very much like
 a saga pattern.
 
@@ -202,39 +203,39 @@ can be deployed independently, which will reduce
 coupling. I guess that which event hub to use is then mostly
 a configuration matter.
 
-Also each service has its own CI/CD pipeline. 
+Also each service has its own CI/CD pipeline.
 
 A service comes with a set of cloud resources called
-a *stack*, which is declaratively defined (probably within some
+a _stack_, which is declaratively defined (probably within some
 predefined limits). The deployment manager then compares current
 stack with the new stack and makes necessary changes.
 
 Each service will own its data using a database
-that best fits its needs. 
+that best fits its needs.
 
 It may be a bit unclear what the difference is
-between a service and a subsystem. The *bulkheads*
-are part of the subsystem (a cross-cutting concern), but 
+between a service and a subsystem. The _bulkheads_
+are part of the subsystem (a cross-cutting concern), but
 must still be deployed
 somehow. I hope the book clears that up later.
 
-There's some more confusion around the 
+There's some more confusion around the
 micro/nano/hexagonal stuff, which I also hope is
-explained later in the book. 
+explained later in the book.
 
 ## 3. Taming the Presentation Tier
 
 It's a wild beast - it sure needs taming, first
-by looking at the pendulum of the UI: 
+by looking at the pendulum of the UI:
 client-side versus server-side rendering or
 build-time versus runtime rendering, web versus
 mobile, online versus offline.
 
 Since the author already has hinted at the preference
 for micro frontends it is no surprise that this
-chapter goes down that road. The vehicle of 
+chapter goes down that road. The vehicle of
 transportation is e.g. [Jamstack](https://jamstack.org/) -
-let's jam (JavaScript, API, Markup) some UI ;) 
+let's jam (JavaScript, API, Markup) some UI ;)
 
 Just as we want to break up the backend into
 manageble pieces, the same applies to the frontend.
@@ -249,7 +250,7 @@ The UI may be different depending on device
 type, user type, by version.
 
 We are walked through a nice, thorough example of how
-to use jamstack with micro frontends. 
+to use jamstack with micro frontends.
 
 How to interact between various micro frontends are
 covered, as well, although it is pointed out that
@@ -259,7 +260,7 @@ The example is extended to cover offline
 scenarios (PWA - Progressive Web Apps) using
 service workers.
 
-Doing live updates with websockets or live 
+Doing live updates with websockets or live
 polling is an obvious case to cover, too.
 
 ## 4. Trusting Facts and Eventual Consistency
@@ -268,68 +269,68 @@ This a long and fairly technical chapter, describing
 a lot of the technical implementation details.
 
 In this chapter you have to be walking in a straight
-line; keeping track of services, functions, subsystems, 
+line; keeping track of services, functions, subsystems,
 events, queues, busses, streams, event lakes and what have you; and
 what talks to what when and how is quite a sobreity test.
 
-*Staged Event-Driven Architecture (SEDA)* is a way
+_Staged Event-Driven Architecture (SEDA)_ is a way
 to divide a process into stages, each with an
-input queue. *SEDA* is used at the *service level* where
-the *event hub* provides the queues (streams).
+input queue. _SEDA_ is used at the _service level_ where
+the _event hub_ provides the queues (streams).
 
-At *function level* we have a *stream processor function*
-which uses asynchronous non-blocking I/O. 
+At _function level_ we have a _stream processor function_
+which uses asynchronous non-blocking I/O.
 
-In *SEDA* each stage should to a comparable amount of work. 
+In _SEDA_ each stage should to a comparable amount of work.
 Also, each stage must perform an atomic unit of work. That is:
 update exactly one resource.
 
-In an eventually consistent system *transparency* is vital. 
+In an eventually consistent system _transparency_ is vital.
 The user must know whether data is stale and by how much.
 
 A stage produces an event when it completes an atomic
-unit of work. That event makes the completion *a fact*. 
-*Facts are the lifeblood of an eventually consistent
-system*. These facts are stored indefinitely (as it
-is in *fact* event sourcing),
+unit of work. That event makes the completion _a fact_.
+_Facts are the lifeblood of an eventually consistent
+system_. These facts are stored indefinitely (as it
+is in _fact_ event sourcing),
 
 A system is designed by carefully having stages
 reacting to and producing new events.
 
-The *CAP theorem* is brought online (hehe) because
+The _CAP theorem_ is brought online (hehe) because
 users favor availability. The prefer to keep working
 and having the system work everything out by itself.
 Being offline can be a partition, and being offline
-poses quite a challenge if you want to use e.g. 
+poses quite a challenge if you want to use e.g.
 a leasing system for avoiding concurrent edits.
 
 To lessen the problems with concurrent edits it is
 important that stream processors are order tolerant
-and idempotent (covered in a later chapter). 
+and idempotent (covered in a later chapter).
 
 Queues and stream processors are a natural fit
-for parallelism and 
-[Little's Law](https://en.wikipedia.org/wiki/Little%27s_law) 
+for parallelism and
+[Little's Law](https://en.wikipedia.org/wiki/Little%27s_law)
 can be used to help figuring out the necessary
 amount of parallel processors. Ordering naturally seems
 more complicated with parallel processors.
 
 Each autonomous subsystem has one event hub (note that
-this most likely corresponds to Azure Event Grid). 
+this most likely corresponds to Azure Event Grid).
 
-Each event producer (aka upstream service) simply publishes events on *the bus* which is then
-connected to *the event hub*, which has a ruleset for
+Each event producer (aka upstream service) simply publishes events on _the bus_ which is then
+connected to _the event hub_, which has a ruleset for
 routing events to specific consumers via channels. The event bus decouples
 the producers from the specifics of the event hub.
 Consumers (aka downstream services) consume (naturally)
 events from the hub through a specific channel.
 
-It is understood that the bus is considered a 
+It is understood that the bus is considered a
 highly available service. AWS EventBridge and
 Azure Event Grid fits this bill.
 
-We need an *event envelope* to wrap around the
-*domain events* which af the lifeblood of an 
+We need an _event envelope_ to wrap around the
+_domain events_ which af the lifeblood of an
 event-first system. There is a fine example of how
 one may look.
 
@@ -337,47 +338,47 @@ It may be quite beneficial to have both internal
 and external event types. Internal events are for
 inside the subsystem and external for between subsystems.
 
-In a section about *Routing and channel topology* various
+In a section about _Routing and channel topology_ various
 considerations about event size, event count, fault events
 and capacity limits are discussed.
 
 When discussing the event sourcing pattern it is a
-relief that the author admits that it may make a 
-system more complex. But on the other hand it 
+relief that the author admits that it may make a
+system more complex. But on the other hand it
 results in a system flexible enough to be worth
-the hazzle. It is noteworthy that *event sourcing
+the hazzle. It is noteworthy that _event sourcing
 is a key mechanism to create an architecture than enables
 change because it allows us to change the system
-by adding services without modifying others*.
+by adding services without modifying others_.
 
-Now let's go fishing in the *event lake*, which together
+Now let's go fishing in the _event lake_, which together
 with the event hub is at the heart of every autonomous
 subsystem. Into the lake is poured every event sent
 through the hub and it is stored forever, which of course
 sets high expectations to the durability of the lake.
 
-Over time events can be migrated to a slower storage 
-through e.g. *Closing the Books pattern*. It is also
+Over time events can be migrated to a slower storage
+through e.g. _Closing the Books pattern_. It is also
 advisable to replicate the lake into other regions
 and even into other accounts, so there is a possibility
 for disaster recovery.
 
-Maintaining a lake *per subsystem* helps limiting
+Maintaining a lake _per subsystem_ helps limiting
 access since only the subsystem account can access it.
-Using something called *envelope encryption* (covered
+Using something called _envelope encryption_ (covered
 in a later chapter) sensitive data can be controlled.
 
-When *replaying events* (to e.g. seed a new service or
+When _replaying events_ (to e.g. seed a new service or
 to repair a broken service) it is of utmost importance
 that it is now broadcast through the event hub. It should
 be sent directly to a specific listener function.
 
-*Event streams* (or channels) is a source of events and
+_Event streams_ (or channels) is a source of events and
 they act like a temporal event store for downstream
 consumers.
 
 When reacting to an event (stream) it is necessary
-to write the new calculated data to *exactly one* data store.
+to write the new calculated data to _exactly one_ data store.
 And the
 bus is in this regard a data store. The reason is
 that we do not have distributed transactions. So if
@@ -389,38 +390,38 @@ because the bus can for all purposes be considered
 a trustworthy partner.
 
 When consuming events it is preferably to consume
-them as a stream (where you get a batch of events, instead 
+them as a stream (where you get a batch of events, instead
 just one at a time). This allows for e.g. reordering
-events, when they are out of order. Consuming them 
+events, when they are out of order. Consuming them
 in this stream processing way is an example of
-function-level *Staged Event-Driven Architecture (SEDA)*.
+function-level _Staged Event-Driven Architecture (SEDA)_.
 
-There is talk of *Unit of work*, where we inside
+There is talk of _Unit of work_, where we inside
 a function record e.g. how
 much of a batch we have processed. There are fine
 examples on how to do this in the book.
 
-One way of handling failures is to simple *map* the 
+One way of handling failures is to simple _map_ the
 failure to an event, which includes the original event
 and failure information and publish that to the bus.
 We then have a failure handler, which can notify us
 e.g. through dash boards, email, what have you. Quite
 elegant.
 
-*SEDA* and *Little's Law* are mentioned again when
+_SEDA_ and _Little's Law_ are mentioned again when
 discussing throughput in a stream processor.
 
 The chapter rounds of with a discussion of pipelines,
 multiplexing, sharding, batching and grouping.
 
-All in all a quite technical chapter with a lot of 
+All in all a quite technical chapter with a lot of
 insights on how to manage and consume event streams.
 
 ## 5. Turning the Cloud into the Database
 
 Data is heavy! The more data a system has, the harder
 it may be to change, complexity gravitates towards
-data. 
+data.
 
 Again this is a very technical chapter and rather
 long.
@@ -428,7 +429,7 @@ long.
 After talking about some of the traditional ways to
 store data (typically a relational database) the author
 moves on to talk more about the data life cycle (create,
-use, analyze, archive). Note, that there is no *delete*. 
+use, analyze, archive). Note, that there is no _delete_.
 This is event sourcing where data generally aren't deleted.
 
 A Backend for Frontend-pattern is implemented for
@@ -436,22 +437,22 @@ each actor, domain aggregate and life cycle phase
 combination. This sounds a lot and without having
 actually done a similar exercise, it feels mind blowing.
 
-Data is *created* in the system in various ways. Some is 
+Data is _created_ in the system in various ways. Some is
 entered manually by a user, some enters from other
-systems. In the *create phase* it is important to use
+systems. In the _create phase_ it is important to use
 datastores and data formats optimized for writing. Streams
-are good candidates - this is the *stream-first* variation
+are good candidates - this is the _stream-first_ variation
 of Event Sourcing. If we write it to a database
-it is essential that the database provides a 
-*Change Data Capture (CDC)* feature. This is the 
-*database-first* variation of Event Sourcing.
+it is essential that the database provides a
+_Change Data Capture (CDC)_ feature. This is the
+_database-first_ variation of Event Sourcing.
 
 It can be beneficial to look at the rate at which
 we create data. This makes it possible to distinguish
-betwen *slow* and *fast* data.
+betwen _slow_ and _fast_ data.
 
-In the *use phase* we have downstream services which
-*use* the data created upstream. The actors who
+In the _use phase_ we have downstream services which
+_use_ the data created upstream. The actors who
 create and the actors who use data usually have different
 requirements. The downstream services can create
 materialized views with prejoins.
@@ -459,11 +460,11 @@ materialized views with prejoins.
 Key-value stores, search engines and object storage
 are tooted as a great for these kinds of data.
 
-In the *analyze phase* we have services analyzing
+In the _analyze phase_ we have services analyzing
 the data coming in from upstream services. It is
 here we produce insights and data for dash boards.
 
-The *archive phase* is where we, yes, archive
+The _archive phase_ is where we, yes, archive
 data because we don't have an operational need
 for them anymore. An interesting concept is here
 that archiving is simply a downstream service
@@ -474,13 +475,13 @@ at will.
 
 All this data understandably raises the concern
 of storage space (and costs), wherefore the author
-looks at the amount of (automatic) data duplication 
+looks at the amount of (automatic) data duplication
 inside a traditional relational database.
 
 The CQRS pattern is laid on the table and and it is
 discussed how to improve it, e.g. by using
-*system wide CQRS*. It is rather unclear what
-*system wide* means in this context. Is it a
+_system wide CQRS_. It is rather unclear what
+_system wide_ means in this context. Is it a
 subsystem or multiple subsystems?
 
 CQRS dictates that
@@ -492,48 +493,48 @@ Because we have live archiving we can use
 the TTL (Time To Live) feature of the cloud
 database to automatically delete old, unused data.
 
-Because *exactly-once* delivery of messages is
+Because _exactly-once_ delivery of messages is
 unrealistic we must implement idempotence and
 on top of that; order tolerance, because
 events may arrive out of order.
 
-We need *deterministic identifiers* to ensure
+We need _deterministic identifiers_ to ensure
 idempotence and then generally use
 an UPSERT to enter data into the database.
 
-*Inverse optimistic locking* uses an *oplock* 
-field (very similar to the ETAG in HTML) to check whether 
+_Inverse optimistic locking_ uses an _oplock_
+field (very similar to the ETAG in HTML) to check whether
 the current database entity
 is of a newer version than the one we
 are holding. If our event is out of date we simply
 drop it.
 
-By using a *micro event store* and adding another
+By using a _micro event store_ and adding another
 stream processor we can effectively combine events
-from several sources. 
+from several sources.
 
 To optimize the materialized views for optimal
-performace the *single table design technique* is 
+performace the _single table design technique_ is
 used. Here we "abuse" that schemaless tables basically
 can have any type of record in each row and all
-the records with one common *partition key*
+the records with one common _partition key_
 corresponds to an aggregate root. Then we
 can read all the records for that key in one
 request.
 
-Some examples of *single table design* 
+Some examples of _single table design_
 shows the force of the technique.
 
-A deeper explanation of *Change Data Capture (CDC)*
+A deeper explanation of _Change Data Capture (CDC)_
 follows and how it can be used to do
 database-first event sourcing. The CDC is in
 essence a stream processor that we don't have
 to implement ourselves.
 
-Deletes are handled using *soft delete* and
-*ttl*.
+Deletes are handled using _soft delete_ and
+_ttl_.
 
-*Latching* is a technique used when having
+_Latching_ is a technique used when having
 two versions of the same service to avoid
 having infinite loops in the event streams.
 
@@ -543,10 +544,10 @@ Everybody needs a a best friend, even if
 you're just a facade.
 
 Again, there's some confusion about what
-a "system" is. 
+a "system" is.
 
 BFFs are there support end users. And one BFF service
-is responsible for one user activity. And *activity* is
+is responsible for one user activity. And _activity_ is
 here quite vague, but it generally corresponds to having
 one BFF service for each micro-app or mobile application.
 
@@ -560,52 +561,52 @@ no idea whether this is true, but choose to be sceptical.
 Just as any other service in our "system" a BFF is
 an autonomous service with its own datastore.
 
-*The all-important job of a BFF service is to provide
+_The all-important job of a BFF service is to provide
 a human actor with the ability to execute a specific set
-of queries and/or commands*.
+of queries and/or commands_.
 
 This job is fulfilled by using query and command functions
 in the best Function-as-a-Service style.
 
-Also *listener* and *trigger* functions are used to 
+Also _listener_ and _trigger_ functions are used to
 consume and produce events.
 
 For each actual business oriented function we
-also have a *handler* and a *connector* function
+also have a _handler_ and a _connector_ function
 which abstracts the environment in which we run.
 
-The business function then works with a *Model* - a
-small slice of the domain model. 
+The business function then works with a _Model_ - a
+small slice of the domain model.
 
 There is a fine discussion about when to use
-REST and GraphQL. 
+REST and GraphQL.
 
 There are - of course - several kinds of BFF Services:
 
 CRUD BFF, List-of-values (Lov) BFF, Task BFF,
-Search BFF, Action BFF, Dashboard BFF, 
+Search BFF, Action BFF, Dashboard BFF,
 Reporting BFF, Archive BFF.
 
 ## 7. Bridging Intersystem Gaps
 
 Well, sometimes there's a legacy to be
-fullfilled. We need to talk to other 
+fullfilled. We need to talk to other
 systems, some of which may be out of (our)
 control.
 
-Here at the macro level the *External Service Gateway (ESG) Pattern* will with the aid of ports and adapters
+Here at the macro level the _External Service Gateway (ESG) Pattern_ will with the aid of ports and adapters
 help us out.
 
-The *Domain Events* can be considered
-*ports* and the ESG services themselves
-are the *adapters*
+The _Domain Events_ can be considered
+_ports_ and the ESG services themselves
+are the _adapters_
 
 Each ESG adapts one single external system and
 is a separately deployable automonous service which
 also have its own repository.
 
 An ESG functions as a bulkhead and can
-use e.g. *circuit breaker* to avoid
+use e.g. _circuit breaker_ to avoid
 overpowering the external system and to
 protect itself.
 
@@ -617,7 +618,7 @@ sync/async?
 
 It is up to the ESG to shield the rest of the
 system (the entire set of subsystems) from all that,
-and the ESG is most likely in itself a separate subsystem, in 
+and the ESG is most likely in itself a separate subsystem, in
 practice mimicking (parts of) the external system.
 
 When integrating with other systems at the same cloud
@@ -642,109 +643,109 @@ is the choice here.
 In the situation where you would want other systems
 to take on the burden of integrating with your system
 you can create an API, for other systems to call you
-and a *Service Provider Interface (SPI)*
+and a _Service Provider Interface (SPI)_
 to allow for notifying other systems.
 
 The calls can be both events and commands and the
 notifications can be webhooks and simple queries.
 For queries it may be advantageous to use
-graphql. 
+graphql.
 
 Integrations still need to account for idempotence, and
 enriching data, e.g. a customer when given only a customer id
 is also often necessary.
 
-The *latching* technique previously mentioned
+The _latching_ technique previously mentioned
 may also be applicable here.
 
-*Slow data* may be refreshed on a scheduled basis, whereas
-*fast data* should be closer to real time.
+_Slow data_ may be refreshed on a scheduled basis, whereas
+_fast data_ should be closer to real time.
 
 ## 8. Reacting to Events with More Events
 
 As if one was not, but no worry, all is under
 control!
 
-This chapter turns the attention to *control services*
-which work as *mediators* between BFFs and ESGs and contains
+This chapter turns the attention to _control services_
+which work as _mediators_ between BFFs and ESGs and contains
 the rules and business logic of the organization.
 
-*Control services* react to events by producing more events
-by using a continuous *action-event-reaction loop*. 
+_Control services_ react to events by producing more events
+by using a continuous _action-event-reaction loop_.
 
-The events produced are *higher-order facts* infered from
-the consumed *lower-order facts*.
+The events produced are _higher-order facts_ infered from
+the consumed _lower-order facts_.
 
-A *listener* function *collects*, *correlates*, and
-*collates* events in a micro events store to ensure
+A _listener_ function _collects_, _correlates_, and
+_collates_ events in a micro events store to ensure
 idempotence, order tolerance and correlation.
 
 From there the
-*trigger* function *evaluates* rules against the
-collected and collated events. Proper higher-order events 
-are then emitted. 
+_trigger_ function _evaluates_ rules against the
+collected and collated events. Proper higher-order events
+are then emitted.
 
-The *collect* part decides what events to collect. 
-Then *correlate* - by using a micro event store* correlates
-multiple events, e.g. with a *single table design*.
+The _collect_ part decides what events to collect.
+Then _correlate_ - by using a micro event store* correlates
+multiple events, e.g. with a *single table design\*.
 
-*Collate* uses the micro events store to ensure
+_Collate_ uses the micro events store to ensure
 order tolerance. It is important to have identifiers
-that enables us to know in which order events was 
+that enables us to know in which order events was
 generated. A UUID version v1 is a good candidate.
 
-The trigger function will *evaluate* each time a
+The trigger function will _evaluate_ each time a
 event is inserted into the micro events store. There
 are naturally many ways to evaluate the events and
-eventually (see what I did there?) *emit* a new
-*higher order* event.
+eventually (see what I did there?) _emit_ a new
+_higher order_ event.
 
-Remember to use the *time to live (ttl)* of the
+Remember to use the _time to live (ttl)_ of the
 database to remove events from the micro events
 store when they are no longer needed.
 
-*Orchestrating business processes* - that is;
+_Orchestrating business processes_ - that is;
 managing a long-lived flow of activities, ensuring
 the execution in a specific sequence can be done
-with to general approaches: *choreagraphy* and 
-*orchestration*. 
+with to general approaches: _choreagraphy_ and
+_orchestration_.
 
-Basic processes can be modelled with *choreagraphy*
+Basic processes can be modelled with _choreagraphy_
 but there limits which are quickly reached after which
-*orchestration* steps on stage. That role is played
-by a *control service*, which orchestrates the proces
-by - as usual - reacting to events by producing 
+_orchestration_ steps on stage. That role is played
+by a _control service_, which orchestrates the proces
+by - as usual - reacting to events by producing
 new - orchestrating - events.
 
 It is important to understand that this is the only
 thing the process service does. A workflow starts
-with an *entry* event, e.g. because a user clicks
-a button, which makes the BFF send an *entry event*, which
+with an _entry_ event, e.g. because a user clicks
+a button, which makes the BFF send an _entry event_, which
 triggers the workflow in the process service.
 
-The process service then sends orchestration events 
+The process service then sends orchestration events
 and it couldn't care less who responds to them. A flow
-stops when someone sends the *exit event*.
+stops when someone sends the _exit event_.
 
-*Fan-out* and *forks and joins* are examples of 
-*parallel execution*.
+_Fan-out_ and _forks and joins_ are examples of
+_parallel execution_.
 
-*Sagas* can be implemented by using
-*compensating transactions* and *abort events*. A
+_Sagas_ can be implemented by using
+_compensating transactions_ and _abort events_. A
 compensating transactions is definitely not the
-same as a *rollback*. The previous events still
-exist. 
+same as a _rollback_. The previous events still
+exist.
 
-And *abort event* is emitted from a boundary
+And _abort event_ is emitted from a boundary
 service (BFF and ESG) when it is unable
-to complete its work. 
+to complete its work.
 
 A saga can be modelled with either choreagraphy or
 orchestration, but as soon as the sagas is more
 complicated than trivial one should choose
 orchestration.
 
-*Event-sourcing snapshots* are useful when it gets
+_Event-sourcing snapshots_ are useful when it gets
 too expensive to recalcuate the aggregates/state
 from events over and over again. This is of course
 a very real concern in stateless, serverless functions.
@@ -752,63 +753,63 @@ a very real concern in stateless, serverless functions.
 A BFF service is free to do this, of course, since
 it materializes its own views. But if you have a lot
 of BFFs this may turn out to be all in all too
-costly. 
+costly.
 
-It is possible to use *control services* to collect
-events and then emit *higher-order snapshot* events.
+It is possible to use _control services_ to collect
+events and then emit _higher-order snapshot_ events.
 BFFs can then use these to materialize views.
 
 As it has already been established distributed
 transations doesn't scale well, wherefore we have
 been forced to look in other directions, especially
-*eventual consistency*.
+_eventual consistency_.
 
-To make *eventual consistency* easier Pat Helland
+To make _eventual consistency_ easier Pat Helland
 in his paper [Building on Quicksand](http://arxiv.org/pdf/0909.1788)
-describes *ACID 2.0*: Associative, Commutative,
+describes _ACID 2.0_: Associative, Commutative,
 Idempotent, Distributed.
 
 If events fulfill these properties (with especially
 distributed as an obvious one) it makes calculating
-the current state (and thereby snapshots) much easier, 
+the current state (and thereby snapshots) much easier,
 since ordering of the events doesn't matter.
 
-*More complex event processing* happens when we
-handle more events for each decision made. 
-*Decision tables* are an effective tool for
+_More complex event processing_ happens when we
+handle more events for each decision made.
+_Decision tables_ are an effective tool for
 figuring how to handle multiple events.
 
 It may be difficult to know when "you're done", if
-an exit event never shows up. *Expired* events
+an exit event never shows up. _Expired_ events
 can help you here.
 
 ## 9. Running in Multiple Regions
 
-*Sooner or later a given cloud provider
-will experience a news-worthy regional disruption*.
+_Sooner or later a given cloud provider
+will experience a news-worthy regional disruption_.
 
 This is why you may want to have your system
 running in multiple regions using either
-*primary/hot-secondary* or *active/active*
+_primary/hot-secondary_ or _active/active_
 topology.
 
 Since we build our UI as offline-first
 we are already somewhat prepared for a disruption.
 
-Eventual consistency may turn into *protracted*
+Eventual consistency may turn into _protracted_
 eventual consistency.
 
 A regional failover should be automatic and for
 this to happen we need to check the regional
-health. The *regional health check service* is
+health. The _regional health check service_ is
 run in each region checks availability of all
 the cloud services we use, to give us a picture
-of the general health. It also periodically sends 
-*tracer events* through various services. If it
+of the general health. It also periodically sends
+_tracer events_ through various services. If it
 haven't heard anything from the previous tracer
 when pinged again it returns 5xx error.
 
-Regional routing and CDNs are essential to 
+Regional routing and CDNs are essential to
 smooth failovers. CDNs are especially used
 for html/css/etc. for the BFFs.
 
@@ -817,7 +818,7 @@ for the apis (and bffs), which can be interpolated
 to a global dns name.
 
 One way to keep both (or more) regions
-in sync (eventually): Using a *global bus* with
+in sync (eventually): Using a _global bus_ with
 automatic health check that decides which way
 events flow.
 
@@ -831,9 +832,9 @@ in each additional region.
 Furthermore it is recommended to replicate not
 at the bus level but at the datastore level.
 
-*Change event replication is much more straightforward
-than domain event replication*. A *change event* is the
-event emitted by the datastore's CDC (Change Data Capture) 
+_Change event replication is much more straightforward
+than domain event replication_. A _change event_ is the
+event emitted by the datastore's CDC (Change Data Capture)
 streams.
 
 Many cloud datastores such as DynamoDB, S3, Azure Cosmos DB
@@ -849,40 +850,40 @@ to replicate.
 
 When an actual region fails it is time for a failover.
 
-For *queries* it is preferred to return stale data
-over no data. The application *must* be transparent
+For _queries_ it is preferred to return stale data
+over no data. The application _must_ be transparent
 about the age of the data and the state of the system.
-A caching strategy called *stale-while-revalidate* is
+A caching strategy called _stale-while-revalidate_ is
 a key technique for a smooth user experience during
 a failover.
 
-A user issues *commands* and when a region fails 
+A user issues _commands_ and when a region fails
 the API will give a 5xx or maybe even timeout.
-It is necessary to update the local cache of the 
+It is necessary to update the local cache of the
 data in the browser (probably means necessitates
 duplicating some business logic) and mark it
-as *pending* and being transparent to the user
+as _pending_ and being transparent to the user
 about this.
 
-A *trigger* flow of a service can fail in many
+A _trigger_ flow of a service can fail in many
 ways and there is nothing much we can do
-other than relying on the protracted 
+other than relying on the protracted
 eventual consistency which we have worked
 so hard to ensure.
 
-Also *listeners* may fail and here, too, there
+Also _listeners_ may fail and here, too, there
 is not much to do about it.
 
-Another interesting aspect is *external systems*
-which may not even have multi-regional setups. And 
+Another interesting aspect is _external systems_
+which may not even have multi-regional setups. And
 if they do it may be problematic if the external
-system is not *order tolerant*.
+system is not _order tolerant_.
 
-*Cron jobs* are still needed and are 
+_Cron jobs_ are still needed and are
 implemented using control services. We have to
 be sure that we don't execute them in all regions, since
 that would lead to duplicate work. One region
-should serve as the *primary* and the results should
+should serve as the _primary_ and the results should
 be replicated to the other regions.
 
 ## 10. Securing Autonomous Subsystems in Depth
@@ -898,7 +899,7 @@ of by the provider.
 Security is built around accounts which have
 to be secured. One important aspect here is
 to not manually configure anything: Use
-automation: use *accounts-as-code*. 
+automation: use _accounts-as-code_.
 
 It should be going without saying that
 the production environment and non-production
@@ -907,18 +908,18 @@ environment does NOT share accounts.
 We need some standard roles (and permissions), e.g.
 Super user, Power User and Read-only.
 
-MFA (Multi-factor authentication) is mandatory. 
+MFA (Multi-factor authentication) is mandatory.
 Access keys for developers should, of course, not be shared, should not be put into source control, should be rotated
 periodically and should require MFA, as well.
 
-*Securing CD/CD pipelines* is as a starting point
+_Securing CD/CD pipelines_ is as a starting point
 done by limiting the permissions of the pipeline.
 There are probably differences on how the pipelines
 of the various providers work, but AWS have a very neat
-security feature: An account can *assume* a role, which
+security feature: An account can _assume_ a role, which
 means that the account itself doesn't need any permissions
 apart from being able to login. When the account needs
-to do something specific it *assumes* a role (if allowed) 
+to do something specific it _assumes_ a role (if allowed)
 which has the needed permissions. So it is to no use for
 an attacker to compromise the account since the various
 role names has to be known, too.
@@ -932,14 +933,14 @@ the general patterns of security absolutely applies to
 other providers, which of course also have e.g. firewalls
 and CDNs.
 
-When *securing the perimeter* it is adviced to
+When _securing the perimeter_ it is adviced to
 look at [OWASP](https://owasp.org/www-project-top-ten/).
 
-*Web Application Firewall* (or similar) should 
-be configured to avoid e.g. SQL Injection, 
+_Web Application Firewall_ (or similar) should
+be configured to avoid e.g. SQL Injection,
 cross-site scripting (XSS). All calls to a BFF or
 ESG should be encrypted, since we are commonly
-passing along a JWT bearer token. 
+passing along a JWT bearer token.
 
 In AWS, the serverless services require HTTPS. CDNs
 doesn't require it but should be configured to have it.
@@ -955,26 +956,26 @@ others don't.
 User roles can be used to do conditional rendering
 in the UI and likewise to protect routes.
 
-A BFF service should *always* verify the 
+A BFF service should _always_ verify the
 JWT token received. The cloud provider might
 have infrastructure in place to do that.
 
-*Securing access to individual data records* can
-be a challenge, but should be taken *very* serious.
-Serverless systems are *very* often multi-tenant, so
+_Securing access to individual data records_ can
+be a challenge, but should be taken _very_ serious.
+Serverless systems are _very_ often multi-tenant, so
 querying data for the wrong user is an easy trap to
 fall in.
 
-As always use the *least privilege* principle.
+As always use the _least privilege_ principle.
 
-When storing data it should be encrypted at 
-the application level using e.g. 
-*envelope encyrption*.
+When storing data it should be encrypted at
+the application level using e.g.
+_envelope encyrption_.
 
-*Deleting data according to GDPR* can be done
-using *crypto-shredding* where we basically
-encrypt a data key with a *subject-specific* key.
-When the *subject* is deleted we simply delete
+_Deleting data according to GDPR_ can be done
+using _crypto-shredding_ where we basically
+encrypt a data key with a _subject-specific_ key.
+When the _subject_ is deleted we simply delete
 the corresponding key. The data key can now not
 be decrypted.
 
@@ -991,47 +992,47 @@ audience.
 
 It is of course very neat with all the fancy
 architectural traits of our system but they
-are up to no good if we cannot deploy our 
+are up to no good if we cannot deploy our
 code, safely, without interrupting anything for
 our users; we need zero downtime deployments.
 
-*Continuous discovery* allows us to perform
+_Continuous discovery_ allows us to perform
 experiments to discover the right solution.
 We need regression tests to experiment, so
 we can make sure that the experiment does not
 break anything else.
 
-*Continuous testing* include static analysis,
+_Continuous testing_ include static analysis,
 unit testing, integration testing, contract
 testing, end-to-end testing, smoke testing
 (synthetics), and anomaly detection.
 
-No matter how much we test we are surely 
-going to mess up at some time, so *risk
-mitigation* is essential.
+No matter how much we test we are surely
+going to mess up at some time, so _risk
+mitigation_ is essential.
 
-Deploying only small changes and *decoupling
-deployment from release* helps a lot. Using
-*feature flags* (in various disguises) lets
+Deploying only small changes and _decoupling
+deployment from release_ helps a lot. Using
+_feature flags_ (in various disguises) lets
 us deploy code that stays dormant until we
 explicitly enable it by flipping a feature
 flag, of which there are several types e.g.: natural,
-keystone, artifical, 
+keystone, artifical,
 
-Having strict *observability* allows us
-to *fail forward fast* when we do mess up.
+Having strict _observability_ allows us
+to _fail forward fast_ when we do mess up.
 
 To achieve zero-downtime deployments we need
-to apply *The Robustness principle*, also
+to apply _The Robustness principle_, also
 known as [Postel's Law](https://en.wikipedia.org/wiki/Robustness_principle) together with
-leapfrogging deployments (and a considerable 
+leapfrogging deployments (and a considerable
 amount of governance - the so-called planning).
 
 From here on the author moves in to the
 terrain of planning using concepts such as
 story mapping, story planning and task roadmaps.
 
-He describes a development workflow with creating a 
+He describes a development workflow with creating a
 branch, pull request, merge to master, canary
 deployment, feature flipping to help ensure
 that we don't break other stuff while working
@@ -1039,8 +1040,8 @@ on a feature.
 
 The canary deployment and feature flipping
 are essential tools in the experiment. When
-we feel safe we haven't broken anything we 
-can then do a *general availability* release, 
+we feel safe we haven't broken anything we
+can then do a _general availability_ release,
 where the feature is enabled for all users.
 
 The CI/CD pipelines should naturally
@@ -1052,14 +1053,14 @@ with a testing honeycomb where the focus
 is integration testing. Since our entire
 architecture is built around sensiblwe
 decoupling principles the integration testing
-is done using *contract testing*, where VCR-tools 
+is done using _contract testing_, where VCR-tools
 (yes, it IS Video Cassette Recorder) are used
 to record one end of the conversations and mock
 tools then replay this. We can then ensure that
 we don't make obvious breaking changes to a contract.
 
-End to end testing is implemented by 
-*transitive end-to-end testing*, where
+End to end testing is implemented by
+_transitive end-to-end testing_, where
 we test a selected "series" of services.
 This is clearly not put together without serious
 effort and has some maintenance overhead where
@@ -1067,18 +1068,18 @@ the services included should be carefully
 considered. High-risk (costly when down) would
 be among the most desirable to test.
 
-A process for implementing *regional canary deployments*
+A process for implementing _regional canary deployments_
 is discussed and the chapter is rounded of with
-a description of *synthetics" where we 
+a description of \*synthetics" where we
 continuously (scheduled) smoke-test our system
-with synthetic data. 
+with synthetic data.
 
 ## 12. Optimizing Observability
 
 There's no need to go anywhere if we cannot see
 where we are going, so let's Dashboard the heck out of it...
 
-![Dashboard](/data/blogs/software-architecture-patterns-for-serverless-systems/dashboard.jpg) 
+![Dashboard](/data/blogs/software-architecture-patterns-for-serverless-systems/dashboard.jpg)
 
 With serverless we don't need to worry about monitoring
 infrastructure, the provider does that. This allows us to
@@ -1096,107 +1097,108 @@ makes sure to do exactly that.
 We can break down that cost by subsystem/service/function etc. to
 be aware of where valuable optimizations might be applicable.
 
-Cloud cost can be divided into *expected*, *unexpected (hidden)*,
-and *governance*. There seems to be some empiri that they
+Cloud cost can be divided into _expected_, _unexpected (hidden)_,
+and _governance_. There seems to be some empiri that they
 often account for about one third each.
 
-*Governance* covers things such as auditing, backups, and
+_Governance_ covers things such as auditing, backups, and
 observability.
 
-*Unexpected* is logging, encruption, replication, data tranfers,
+_Unexpected_ is logging, encruption, replication, data tranfers,
 and what have you.
 
-*Expected* includes cloud services, e.g. functions, messaging,
-and datastores. 
+_Expected_ includes cloud services, e.g. functions, messaging,
+and datastores.
 
-It is also an important observation that the 
-*Total Cost of Ownership (TCO)* of serverless-first tends
+It is also an important observation that the
+_Total Cost of Ownership (TCO)_ of serverless-first tends
 to be lower than non-serverless especially because costs
 in non-prod environments scale to zero when not in use.
 
 We also have a lot of observability that allows us to spot
 possibilities for optimization.
 
-All this attention to cost is called *FinOps*. Mr. Wardley
-had 
+All this attention to cost is called _FinOps_. Mr. Wardley
+had
 [some initial thoughts](https://www.linkedin.com/pulse/why-fuss-serverless-simon-wardley/)
 about that in 2016.
 
-[It is recommended](https://www.datadoghq.com/blog/monitoring-101-collecting-data/) 
-grouping observability data into *work metrics*, 
-*resource metrics*, and *system events*.
+[It is recommended](https://www.datadoghq.com/blog/monitoring-101-collecting-data/)
+grouping observability data into _work metrics_,
+_resource metrics_, and _system events_.
 
-*Resource metrics* describe how our services use resources
-(obviously), such as CPU, memory, datastores, streams, 
-and so on. 
+_Resource metrics_ describe how our services use resources
+(obviously), such as CPU, memory, datastores, streams,
+and so on.
 
 [The USE method](https://www.brendangregg.com/usemethod.html)
-divides these into *Utilization*, *Saturation*, and *Errors*.
+divides these into _Utilization_, _Saturation_, and _Errors_.
 
-*Utilization* is worth monitoring, so we know when we
+_Utilization_ is worth monitoring, so we know when we
 are getting close to the capacity limits of given resources.
 This could be something like concurrent function invocations.
 
-*Saturation* is when we exceed some capacity limits and
+_Saturation_ is when we exceed some capacity limits and
 throttling sets in.
 
-*Errors* can be grouped into *retriable* and *non-retriable*.
+_Errors_ can be grouped into _retriable_ and _non-retriable_.
 
 We clearly don't want to watch the monitoring all day long,
 so we need to have the system watching it for us.
 
-When the system spots something of interest (well, something *we*
-deemed interesting) it records a *system event*. Some system
+When the system spots something of interest (well, something _we_
+deemed interesting) it records a _system event_. Some system
 events - or possibly a stream of them - may warrant that the
-team responsible should be alerted. But be weary of 
-*alert fatigue*.
+team responsible should be alerted. But be weary of
+_alert fatigue_.
 
-*[The RED Method](https://grafana.com/files/grafanacon_eu_2018/Tom_Wilkie_GrafanaCon_EU_2018.pdf)* recommends monitoring
-metrics for *rate*, *error*, and *duration* for each service.
+_[The RED Method](https://grafana.com/files/grafanacon_eu_2018/Tom_Wilkie_GrafanaCon_EU_2018.pdf)_ recommends monitoring
+metrics for _rate_, _error_, and _duration_ for each service.
 
 Using some kind af machine learning will make it possible to
-look into *anomaly detection*, to make the system figure
+look into _anomaly detection_, to make the system figure
 out what may be interesting.
 
 We now have a well-founded basis for knowing what the system
 is doing, but what are the users doing?
 
-*Real User Monitoring (RUM)* is easy to add to a web application
+_Real User Monitoring (RUM)_ is easy to add to a web application
 and allows us to see e.g. page view counts, page times, etc.
 
-It is, though, also very valuable to have *synthetic users*
+It is, though, also very valuable to have _synthetic users_
 which massage the system (via a browser) on a scheduled
 basis. These users take a lot of work to setup, so be sure
 to focus the work on important parts of the system.
 
-Having all these data allows us to *tune continuously* looking
+Having all these data allows us to _tune continuously_ looking
 at e.g. function memory allocation, cold starts, timeouts
 and retries, and cache-control. All ways to improve performance,
 user satisfaction and costs.
 
 ## 13. Don't Delay, Start Experimentation.
 
-We want to see that *ExperimentationStarted event* on the bus!
+We want to see that _ExperimentationStarted event_ on the bus!
 
-The chapter is basically a (verys short) summary of the book
+The chapter is basically a (very short) summary of the book
 together with some valuable advice on how to get started.
 
 Look at the development as product-oriented, instead of
-project-oriented. 
+project-oriented.
 
 Look into the right tools for the job, e.g.
 since JavaScript/TypeScript is good for the frontend it
 seems obvious to continue that into the BFF (node also
 has very short startup times, so cold starts are not a problem).
 
-Use the right datastore for the job, well, for the data. 
+Use the right datastore for the job, well, for the data.
 
 The chapter rounds off with a few paragraphs on how to best use more than one provider.
 
 ---
+
 # Conclusions
 
-It is fascinating how *fairly* easy it is to do 
+It is fascinating how _fairly_ easy it is to do
 serverless with AWS. By easy I am refering
 to how little code (yaml/JavaScript) it takes
 to accomplish some rather complicated tasks. The
@@ -1210,15 +1212,15 @@ not a lot. There are two main reasons:
 Reason 1: The author has a tendency to - especially further on
 in the book - to say "here is a piece of code that
 does this and that" and then lists some yaml or
-JavaScript, which you have no idea what does 
+JavaScript, which you have no idea what does
 if you happen to not be an expert in AWS. This
 seems unnecessary and honestly a bit lazy. He
-does have, though, an 
+does have, though, an
 [extensive repository](https://github.com/jgilbert01/templates)
 with all the code samples (still mostly AWS specific, though).
 
 The author also assumes, obviously, that you
-*all* your services are JavaScript running on node. That may
+_all_ your services are JavaScript running on node. That may
 not be the case.
 
 Reason 2: The book is simply too long (680 pages). It is a hard
@@ -1227,7 +1229,7 @@ read, because it is so long. If the book was 150-200 pages shorter I would proba
 That said: The book has immense amounts of
 invaluable concepts, principles and guides on how to
 develop in a serverless environment. Coupled
-with guides and documentation from *your*
+with guides and documentation from _your_
 favorite provider this book definitely helps
-you set sail safely in those perilous 
+you set sail safely in those perilous
 skies.
