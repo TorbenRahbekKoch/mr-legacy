@@ -28,6 +28,10 @@ See also [my reading list](/pages/reading-list)
 
 > A three-part article combining Domain-Driven Design, Event Sourcing, and Vertical Slicing. An interesting read!
 
+[The Goeleven-Miertsch-Andersen Maturity Model](https://medium.com/@ZaradarTR/understanding-event-driven-architecture-64265ae1f8e0)
+
+[Yves Goeleven on Event Modeling](https://www.linkedin.com/posts/goeleven_i-use-event-modeling-to-visualize-business-activity-7211684669354819585-xJgV)
+
 ## Event Modeling
 
 [Adam Dymitruk: Event Modeling](https://eventmodeling.org/)

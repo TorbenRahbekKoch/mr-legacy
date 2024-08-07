@@ -295,12 +295,12 @@
             "date": "2024-08-02",
 			"categories": ["architecture", "review"]
         },{
-            "url" : "/blogs/event-modeling-working-open-space-2024",
+            "url" : "/blogs/event-modeling-open-space-2024",
             "title": "Event Modeling Workshop and Open Space in Berlin 2024",
             "teaser": "Events dressing up as models",
             "dir": "",
-            "date": null,
-			"categories": ["architecture", "design"]            
+            "date": "2024-08-07",
+			"categories": ["conference"]            
         },{
             "url" : "/blogs/creating-software-with-modern-diagramming-techniques",
             "title": "Creating Software With Modern Diagramming Techniques",
