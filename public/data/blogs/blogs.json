@@ -299,8 +299,15 @@
             "title": "Event Modeling Workshop and Open Space in Berlin 2024",
             "teaser": "Events dressing up as models",
             "dir": "",
-            "date": "",
+            "date": null,
 			"categories": ["architecture", "design"]            
-        }        
+        },{
+            "url" : "/blogs/creating-software-with-modern-diagramming-techniques",
+            "title": "Creating Software With Modern Diagramming Techniques",
+            "teaser": "It's more about mythical sea creatures than about creating software",
+            "dir": "",
+            "date": "2024-08-07",
+			"categories": ["review"]            
+        }
     ]
 }
