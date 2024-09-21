@@ -160,7 +160,7 @@ lingering in how teams interacted (or not) across the delivery chain._
 
 _Teams should evolve and morph over time._
 
-_The success of different types of teams does nlt depend solely on team
+_The success of different types of teams does not depend solely on team
 members's skills and experience; it also depends on
 (perhaps most importantly) the surrounding environment, teams, and
 interactions._
