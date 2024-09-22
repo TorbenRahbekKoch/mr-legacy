@@ -87,7 +87,7 @@ that _Team assignments are the first draft of the architecture_.
 
 Allan Kelly's quote: _...someone who claims to be an
 Architect needs both technical and social skills..._ is in
-alignment with _[Fundamentals of Software Architecture_](https://fundamentalsofsoftwarearchitecture.com/) which also
+alignment with _[Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)_, which also
 lists the social skills necessary for a Software Architect.
 
 Teams should not communicate unnecessarily and steps should
@@ -236,11 +236,11 @@ npm package, or simply as part of the repository or something else entirely depe
 A **Platform Team** enables _stream-aligned teams to deliver
 work with substantial autonomy_.
 
-The stream-aligned teams
+_The stream-aligned teams_
 are the "customers" of the platform team. Some suggest that you
 have an internal pricing system to avoid everyone expecting
 full service on all levels because different teams need
-different service levels and to
+different service levels.
 
 A platform - in large organizations - can be big enough to warrant
 several teams building (and running) it. We are then talking of
@@ -381,7 +381,7 @@ without losing anything, it repeats itself at times. Especially chapter
 _Next Steps_ in the Conclusion just seems weird.
 
 The message it sends, though, is important. The sub-title for the book is
-\*Organizing business and technology teams for fast flow", which offhand
+_Organizing business and technology teams for fast flow_, which offhand
 sounds like a one-sided business advantage, but the advantage is also
 for the teams; and therefore also the team members who will basically
 have a better job.
