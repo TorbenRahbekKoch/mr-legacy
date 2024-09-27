@@ -308,6 +308,13 @@
             "dir": "",
             "date": "2024-08-07",
 			"categories": ["review"]            
+        },{
+            "url" : "/blogs/shape-up",
+            "title": "Shape Up - a review",
+            "teaser": "Getting your software development process into shape without running in circles",
+            "dir": "",
+            "date": "2024-09-27",
+			"categories": ["review"]            
         }
     ]
 }

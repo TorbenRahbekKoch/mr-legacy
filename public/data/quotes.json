@@ -495,6 +495,26 @@
         "author": "Alexander Miertsch",
         "languages": ["dk", "en"],
         "source": "https://www.linkedin.com/posts/alexander-miertsch-prooph-board_shapeup-activity-7224307808026923008-fWAC"
+    },{
+        "quote": "Deploying to a VM doesn't make it cloud",
+        "author": "Mr. Legacy",
+        "languages": ["dk", "en"],
+        "source": ""
+    },{
+        "quote": "Code needs to be boring to be maintainable",
+        "author": "Alexander Miertsch",
+        "languages": ["dk", "en"],
+        "source": "https://www.linkedin.com/posts/alexander-miertsch-prooph-board_im-used-to-estimating-my-work-im-doing-activity-7232321727110787072-2aEO"
+    },{
+        "quote": "People need to feel the deadline looming in order to make trade-offs",
+        "author": "Ryan Singer",
+        "languages": ["dk", "en"],
+        "source": "Shape Up"
+    },{
+        "quote": "Shipping on time means shipping something imperfect",
+        "author": "Ryan Singer",
+        "languages": ["dk", "en"],
+        "source": "Shape Up"
     }
 ]
 }
