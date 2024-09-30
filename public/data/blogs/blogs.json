@@ -315,6 +315,13 @@
             "dir": "",
             "date": "2024-09-27",
 			"categories": ["review"]            
+        },{
+            "url" : "/blogs/architecture-modernization",
+            "title": "Architecture Modernization",
+            "teaser": "A modern architecture is not just nice to have",
+            "dir": "",
+            "date": "2024-09-30",
+			"categories": ["review"]            
         }
     ]
 }
