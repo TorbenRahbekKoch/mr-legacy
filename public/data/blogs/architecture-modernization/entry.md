@@ -6,7 +6,7 @@ Full title: Shape Up: Stop Running in Circles and Ship Work that Matters
 
 [Rating: ⍟⍟⍟◯◯](/blogs/how-am-i-doing-my-reviews)
 
-![Book cover](/data/blogs/shape-up/book-cover.webp)
+![Book cover](/data/blogs/architecture-modernization/architecture-modernization.jpeg)
 
 I'm reading [the O'Reilly edition](https://learning.oreilly.com/library/view/architecture-modernization/9781633438156/).
 
@@ -15,6 +15,8 @@ It is written by Nick Tune and Jean-Georges Perrin.
 Forewords by Matthew Skelton and Xin Yao.
 
 See also [my reading list](/pages/reading-list) and [resources](/pages/resources)
+
+I'm uploading this review as I go along :)
 
 # Who is it for?
 
@@ -56,3 +58,35 @@ _If your organization lacks expertise in technical practices, addressing this pr
 before going too far with modernization._
 
 ## 3. Business objectives
+
+An entire chapter devoted to answering the "Why?".
+
+Justifying an architecture modernization is of course necessary, since that modernization
+is not free. But neither is letting things slide.
+
+There may be several reasons for wanting to do an architecture modernization and there
+are several sections in the chapter dealing with those:
+
+- Falling behind faster-moving competitors
+- Architecture stifling business growth
+- Pursuing an exit strategy
+- Growth by acquisition
+- Poor UX holding the company back
+- Inefficient internal tooling and processes
+- Improving hiring and retention
+
+An architecture modernization may help (or even be necesssary) the company to grow
+no matter which of many growth strategies are used:
+
+- Product development
+- Market penetration
+- Market development
+- Diversification
+
+Clarity of purpose can be obtained by finding the North Star of the company: "The
+metric that best captures the core value that your product delivers to customers".
+There may be several north stars in the company; different products, projects, divisions
+may work with different north stars.
+
+In general a fine chapter helping to find the areas of the architecture that is in most
+dire need of modernization.
