@@ -1,10 +1,8 @@
 # Architecture modernization - a review
 
-Full title: Shape Up: Stop Running in Circles and Ship Work that Matters
-
 **Rating**
 
-[Rating: ⍟⍟⍟◯◯](/blogs/how-am-i-doing-my-reviews)
+[Rating: ?](/blogs/how-am-i-doing-my-reviews)
 
 ![Book cover](/data/blogs/architecture-modernization/architecture-modernization.jpeg)
 
@@ -20,7 +18,11 @@ I'm uploading this review as I go along :)
 
 # Who is it for?
 
+I'll get to that.
+
 # What is it about?
+
+I'll get to that, too.
 
 ---
 
@@ -90,3 +92,38 @@ may work with different north stars.
 
 In general a fine chapter helping to find the areas of the architecture that is in most
 dire need of modernization.
+
+## 4. Listening and mapping tours
+
+_Starting modernization by listening_ seems like sound advice. Techies (me, myself and I included)
+have a tendency to look towards the technical aspects first. But the needs of the customers and
+hence the needs of the businuess should dictate how to proceed with a modernization effort, it
+at all.
+
+Therefore you need to listen to people, all kinds of people on all levels who may have differing views
+on what are the actual needs.
+
+It may be a good idea to establish an architecture modernization enabling team (AMET), who
+are in charge of listening and mapping.
+
+The chapter generally covers various aspects of who to choose, how to ask and listen, using
+various techniques such as Impact Mapping, Business Model Canvas, Product Vision Board,
+and Risk Storming.
+
+Architectural diagrams are necessary for Risk Storming. Using the C4 model is considered
+a standard approach.
+
+When talking to people you can choose between highly controlled discussions and totally
+unstrucured, ad-hoc discussions - or anything in between. Various type of questions are
+considered, too, such as _Choose an emotion_, _Worst possible_, Devil's advocate\_.
+
+Questionnaries/surveys are an effective tool for eliciting responses from many people and
+can help choose who to talk to directly.
+
+With interviews and surveys "done" you can start conducting workshops. One particular useful
+technique in workshops is _Troika Consulting_ form _Liberating Structures_.
+
+Other useful methods include _The design squiqqle_ and _The double diamond_.
+
+Two excellent examples from real life give some insight into how you can plan actual
+workshops.
