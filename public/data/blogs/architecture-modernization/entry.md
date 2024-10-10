@@ -127,3 +127,41 @@ Other useful methods include _The design squiqqle_ and _The double diamond_.
 
 Two excellent examples from real life give some insight into how you can plan actual
 workshops.
+
+## 5. Wardley Mapping
+
+A book with more about
+[Wardley Mapping](https://learnwardleymapping.com/)! What's not to like!
+
+Seriously, I've only scratched the surface of Wardley Mapping but it seems so immensely
+useful. It seems that our dear Simon Wardley has been productive and also came up with
+_the Strategy Cycle_, which has five steps: purpose, landscape, climate and leadership.
+My (fairly uneducated) guess is that _purpose_ somewhat corresponds to
+_clarity of purpose_ from [The Value Flywheel Effect](/blogs/the-value-flywheel-effect).
+
+When doing the listening tour talked about in chapter 4 it is obvious to ask the
+participants about what they believe the organization's purpose is.
+
+The _landscape_ includes _the whole competitive business landscape, including competitors_.
+
+The _climate_ is what is outside your control, but still changes your _landscape_.
+
+_Doctrine_ is about how the organization operates.
+
+And lastly _leadership_ is about intentional, strategic actions, like expanding into
+new markets.
+
+When creating a Wardley Map you can get help starting out using _Ben Mosior's Wardley
+Mapping Canvas_.
+
+I'm probably not the only one struggling with the _evolution axis_ of a Wardley Map, so
+the book goes in to some detail here. Very nice.
+
+When talking about the _climatic forces_ it is essential to understand that
+_all components evolve_ from _genesis_ to _commodity_ or die trying.
+
+Some components may evolve because other components evolve. Think of all the components
+that have evolved because electricity evolved into a commodity.
+
+Accelerators and de-accelerators are about knowingly speeding up and slowing down
+the evolving of certain components.
