@@ -238,7 +238,7 @@ transportation is e.g. [Jamstack](https://jamstack.org/) -
 let's jam (JavaScript, API, Markup) some UI ;)
 
 Just as we want to break up the backend into
-manageble pieces, the same applies to the frontend.
+managable pieces, the same applies to the frontend.
 
 Each subsystem will have its own main entry point
 providing access to all the features. The features

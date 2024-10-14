@@ -165,3 +165,68 @@ that have evolved because electricity evolved into a commodity.
 
 Accelerators and de-accelerators are about knowingly speeding up and slowing down
 the evolving of certain components.
+
+It is interesting to be made aware of much Wardley Mapping _actually_ covers.
+
+## 6. Product Taxonomy
+
+_An important part of architecture modernization is building a vision of the modernized
+architecture._
+
+Yes! If you don't know where you are going how would you know to get there?
+
+To make the conversation about the future architecture easier you can use a
+_product taxonomy_: a set of architecture building blocks driven by the products and customers
+and the business itself. It is therefore, often, business specific.
+
+An essential building block is _independent value streams_; the key to achieving
+fast flow. What those streams entail hinges on what business outcomes you want
+to optimize for. Independent value streams should be aligned to a business
+subdomain.
+
+Domains can organized into scope 1, 2, and 3 domain, depending on the complexity of
+the size and complexity of the products which can of course vary quite a bit. From one-man
+products to multiple-team products.
+
+_Platforms_ are mostly of two types: _Domain platforms_; offering common services
+across subdomains. _Internal development platforms_; helping teams build and support
+their products.
+
+When designing a taxonomy is it recommended to start with the easier parts, just to
+get, well, started.
+
+EventStorming and Wardley Mapping can be among the techniques used for discovering
+the domains and corresponding boundaries. You may expect the doamins to develop
+and change over time, so update and publish the taxonomies regularly.
+
+You should definitely avoid making critical taxonomy decisions based on a
+superficial high-level understanding.
+
+It is not uncommon for you taxonomy vision to not align with the current software
+and team boundaries. This will also point to unnecessary coupling between teams.
+
+You may even be in a situation where some part of the taxonomy is not owned by
+anyone wherefore you may need to form a new team, which takes time.
+
+Teams may lack sufficient skill to carry out the modernization envisioned by the
+taxonomy.
+
+When modernizing a product the time could be ideal for also redesigning the UX,
+automating previously manual business steps and workflows, and so on.
+
+In very large organizations, we have macrolevel (scope 3 and above) constraints which
+can effect thousands of people and changes therefore will be very risky. It may be
+that there are wildly different products which never will have anything to do with
+each other or they may be part of a huge suite, where users will expect similar UX.
+
+What is a product actually? There are all kinds of differing and clashing definitions
+but the book prefers the definition by Melissa Perri: "A repeatable solution that can
+be offered to a market that solves a want or need (job to be done)".
+
+When a product exists as e.g. a web app, Android app, an iPhone app these are called
+_variants_ and not different products.
+
+A _user journey_ may cover multiple products and product variants and is therefore
+not part of the product.
+
+The chapter ends with a comparison between _product mode_ and _project mode_.
