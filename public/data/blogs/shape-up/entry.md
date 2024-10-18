@@ -396,9 +396,9 @@ difficult to get the uninterrupted time needed for a cycle.
 
 A few options for how to start are suggested:
 
-A. One six-week experiment
-B. Start with shaping
-C. Start with cycles.
+- One six-week experiment
+- Start with shaping
+- Start with cycles
 
 And a very important point: **Fix shipping first**. If you can't
 ship at will then it doesn't matter that you can write code at will.
