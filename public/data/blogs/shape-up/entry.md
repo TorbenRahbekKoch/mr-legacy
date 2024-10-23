@@ -188,7 +188,7 @@ The six-week cycle probably came about after some experimentation. It is long
 enough to get some actual work done, and short enough that your are painfully
 aware of the deadline in the horizon.
 
-And interesting twist is the _cool-down_ period. It is not sex-week cycles
+And interesting twist is the _cool-down_ period. It is not six-week cycles
 back to back. Instead there are two weeks between cycles allowing the teams
 to take a breather, do some clean-up, fix bugs, or just explore new ideas. This
 is the teams's own time to do what they want.
@@ -430,3 +430,6 @@ compared to the marathon of Scrum sprints.
 
 It is a fairly short read: 176 pages in total. Had I not been so confused
 about _appetite_ I might have given it 4 stars, but 3 is the choice here.
+
+EDIT: It seems _appetite_ can mean _something you want_, which does make
+it make sense. I still think they should have gone with another word.
