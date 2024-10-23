@@ -230,3 +230,40 @@ A _user journey_ may cover multiple products and product variants and is therefo
 not part of the product.
 
 The chapter ends with a comparison between _product mode_ and _project mode_.
+
+## 7. Big picture EventStorming
+
+A storm is brewing! A storm of events.
+
+_EventStorming is designed around the idea of maximizing attendee participation and diversity._
+
+And probably also around the idea of discovery, the discovery of especially _domain events_, which
+are _something that happens in the domain_.
+
+Apart from having a short introduction to the mechanics of EventStorming the chapter also has
+advice on how to facilitate a session of EventStorming. And the Big Picture is exactly what it
+says: About getting and overview of the entire domain without getting to nasty with details.
+
+EventStorming is also very good at highlighting incorrect assumptions, because it is a team
+of very diverse people, with different view points on all parts of the business. An
+EventStorming session is a _space where valuable conversations and learning take place_.
+
+When planning a session scope and purpose are the first elements to consider, simply to avoid
+trying to cover too much.
+
+A physical session requires a lot of wall space. 8 meters are recommended as the minimum. A virtual
+session obviously does not suffer from the same restraints.
+
+The session itself concists of e.g. Event Discovery, Event Sorting, a lot of
+(sometimes heated) discussions. As the facilitator it is your job (among others) to keep
+good order and discipline, making sure the session progresses as planned.
+
+Some things to look out for in the discussions are _Users dropping out of a flow or funnel_,
+_User frustration_, _Unreliable technology_, _Missing and disputed knowledge_,
+_Process ineffeciencies and bottlenecks_. These may lead to opportunities, so watch
+out for those, too.
+
+There are som tips and tricks for the facilitator, such as _Don't model, tell a story_,
+_Qualify events with the same name_, _Avoiding bikeshedding_, and lots of others.
+
+The summary at the end is excellent, which can be said for every chapter so far.
