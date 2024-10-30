@@ -14,7 +14,7 @@ Forewords by Matthew Skelton and Xin Yao.
 
 See also [my reading list](/pages/reading-list) and [resources](/pages/resources)
 
-I'm uploading this review as I go along :)
+I'm uploading this review as I go along - hold on tight, there's 17 chapters:)
 
 # Who is it for?
 
@@ -267,3 +267,44 @@ There are som tips and tricks for the facilitator, such as _Don't model, tell a 
 _Qualify events with the same name_, _Avoiding bikeshedding_, and lots of others.
 
 The summary at the end is excellent, which can be said for every chapter so far.
+
+The second edition of the book will probably have a chapter about
+[Event Modeling](https://eventmodeling.org/), too.
+
+## 8. Product and domain modernization
+
+When doing a modernization it makes sense to take a thorough look at the product,
+the features, the user experience, the whole ting, actually. There's probably
+a lot you don't need, that doesn't work well and so on. The chapter is about
+avoiding _the mistake of rebuilding the old system, with all its flaws, using
+new technology and framework._
+
+It comes as no surprise that the slew of techniques presented is probably the
+same as if you were developing a brand new product.
+
+You should involve the right people, such as _User researcher_, _Product designer_,
+_Subject matter expert_ and so on.
+
+Normally you'd look at the cost-benefit of modernizing but it can be quite fruitful
+to look into what it will cost _not_ to modernize. That may be an eye opener. A good
+question to ask is _"What is likely to happen if nothing changes and things continue
+as they are?"_
+
+If you have any metrics or are able to add metrics to the existing system that can
+be very valuable for getting knowledge of how it is used. And especially what parts
+of it is never or hardly ever used.
+
+You could also spend time with actual users! They are very useful when you want
+to do _continuous discovery_. A co-creation mindset also needs access to the users.
+
+And interesting question in the (continous) discovery is e.g.
+_"What have you given up asking for?"_. Some questions will be answered with
+_"We've always done it like that"._ People don't like change.
+
+Another variation of EventStorming is presented: _Process modeling EventStorming_,
+again with tips on how to facilitate a session.
+
+_Domain Storytelling_ is yet another workshop technique for discovering more
+insights and oppinions. Where EventStorming will have just one time line with
+events (and stuff) Domain Storytelling will result in what more looks like
+a state diagram (it is not, though).
