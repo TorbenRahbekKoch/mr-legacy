@@ -322,6 +322,13 @@
             "dir": "",
             "date": "2024-10-30",
 			"categories": ["review"]            
+        },{
+            "url" : "/blogs/understanding-eventsourcing",
+            "title": "Understanding Event Sourcing - a review",
+            "teaser": "Understand the events, use the source",
+            "dir": "",
+            "date": "2024-12-03",
+			"categories": ["review"]            
         }
     ]
 }
