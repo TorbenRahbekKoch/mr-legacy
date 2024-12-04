@@ -227,3 +227,53 @@ Given/When/Thens from chapter 3.
 
 There are of course (famous) books dedicated to DDD. We should all read
 them.
+
+### 9. Handling transactions in distributed systems using Sagas
+
+[Sagas or long lived transactions](https://www.cs.cornell.edu/andru/cs711/2002fa/reading/sagas.pdf)
+have been around for a while.
+
+In distributed systems you generally don't have transactions and there are
+primarily two ways of controlling updates to multiple data sources:
+orchestrated and choreagraphed. One creates massive coupling, the other
+one really necessitates knowing what you're doing, since each service
+must be able to handle several up-stream failures. But there is no
+free lunch.
+
+No matter what you do, try to keep it simple. That's one of the best
+advices around.
+
+### 10. Vertical Slicing
+
+_Vertical Slice Architecture_ - most likely coined by
+[Jimmy Bogard](https://www.jimmybogard.com/vertical-slice-architecture/)
+aims to _Minimize coupling between slices, and maximize copuling within a slice_.
+
+This is really just the traditional layered architecture taken to the extremes.
+Each slice is layered, but self-contained. Therefore it is not a problem that the
+slice internally has high coupling.
+
+The chapter defines coupling in this way: "Every time you change one thing, you always have
+to change this other thing."
+
+The code for a slice is most often placed within one directory, keeping things close.
+If the UI is a different tech-stack (e.g. React) that code is often in another project,
+but still the structure should be kept the same.
+
+Event modeling and vertical slice architecture are a perfect match. Every process
+step can essentially be implemented as a vertical slice.
+
+Of course there _can_ be dependencies between slices. But those dependencies
+are clearly defined through an interface.
+
+Having the slices being so independent makes it easy to work on many parts of the
+code base without stepping on any ones toes. It eases onboarding and testing is
+easy using the Given/When/Thens of the event model.
+
+It may give somewhat more code duplication, but rarely is business logic duplicated
+(I guess).
+
+The tooling used should be up to the job. Dependencies (or rather: lack thereof) must
+be enforced by tooling.
+
+## Part II - Modeling the System
