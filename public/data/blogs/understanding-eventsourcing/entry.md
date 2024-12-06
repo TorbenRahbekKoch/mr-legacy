@@ -247,7 +247,7 @@ advices around.
 
 _Vertical Slice Architecture_ - most likely coined by
 [Jimmy Bogard](https://www.jimmybogard.com/vertical-slice-architecture/)
-aims to _Minimize coupling between slices, and maximize copuling within a slice_.
+aims to _Minimize coupling between slices, and maximize coupling within a slice_.
 
 This is really just the traditional layered architecture taken to the extremes.
 Each slice is layered, but self-contained. Therefore it is not a problem that the
@@ -277,3 +277,93 @@ The tooling used should be up to the job. Dependencies (or rather: lack thereof)
 be enforced by tooling.
 
 ## Part II - Modeling the System
+
+### 11. Brainstorming
+
+The "Project Paradox": You need to make a lot of decisions early on in a project,
+which is where you have the least knowledge to base those decisions on.
+
+So how do we solve this? By making it much more clear what it is we want to do
+before actually doing anything that is costly to reverse.
+We may have to model! (Bonus points for where the twisted reference is from!)
+
+Having a rather large group starting out from a list of general requirements we start by collecting events,
+remember the past tense. Then ordering them in a timeline that makes sense.
+
+### 12. Modeling Use Cases with Wireframes
+
+Let's frame the wires with a small group of people. Some think wireframing is
+good, other's don't. I see the value in having something clearly visual for
+those who thrive with visual aids.
+
+### 13. "Given/When/Then" Scenarios
+
+The business has rules. The model has to reflect them. Given/When/Then (GWT) originates
+from behavior-driven development (BDD). Remember Cucumber/Gherkin, anyone? It
+also very much resembles the ideas from
+[Specification by Example](https://gojko.net/books/specification-by-example/).
+
+GWT functions as the systems tests and are defined together with the
+business stake holders.
+
+_Given_ is a list of events, which brings the system into a specific state.
+_When_ always defines a command. _Then_ defines one or more events coming
+from the command execution, or it specifies an error from an intentionally
+invalid state.
+
+You can use a white sticky note to provide additional context for a GWT.
+
+### 14. Use Case: Clear Cart
+
+Where we - using the information completeness check - discover
+that we miss some information and talk about whether
+"aggregateId" is to technical for the business (it probably is), so
+let's call it "cart-id" instead.
+
+Being a developer it is a challenge to talk about read models without
+thinking of tables or generally how they are stored. Interesting as that
+may be, it is not important when modeling. It is, as they say, an
+implementation detail.
+
+### 15. Use Case: Submit Cart
+
+Not much having a cart lying around if you can't send it somewhere.
+When submitting the cart it is very likely that other systems might be
+interested in this. The order system, for instance.
+
+This is very _external events_ come into play. Again it is vital
+to distinguish between internal and external events. Other systems just
+need to know that the cart is submitted with what in it. They don't
+care (and shouldn't) about all the history leading up to the cart being
+submitted.
+
+To create an external event we need a read model with the necessary data,
+an automation processor, which does the translation and a command
+that processes the data and creates the external event. And remember, dear
+developers (me included), the implementation of the processor is not
+important, yet.
+
+When providing GWTs for an automation _Then_ is skipped.
+
+### 16. Use Case: Inventory Changed
+
+Since we are surprisingly not at the center of the world we may have
+to react to external events. They can happen to us via e.g. API call
+or message bus or what have you. This is not interesting when doing
+the modeling.
+
+We need the _translation pattern_ from chapter 3, which is built using
+the external event entering an automation processor, which translates
+the event to an internal event, which may or may not look like the
+external event.
+
+In this particular use case we receive an event from the _Inventory_
+system and therefore also add a swimlane for that system.
+
+This use case also shows us using read model in more than one slice.
+Again, it can be hard to not think about the implementation, but it
+is important not to.
+
+If you are familiar with DDD you'll recognize the translation
+pattern as an
+[anti-corruption layer](https://martinfowler.com/articles/refactoring-external-service.html).
