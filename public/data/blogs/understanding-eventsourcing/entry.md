@@ -367,3 +367,47 @@ is important not to.
 If you are familiar with DDD you'll recognize the translation
 pattern as an
 [anti-corruption layer](https://martinfowler.com/articles/refactoring-external-service.html).
+
+### 17. Use Case: Price Changed
+
+When the price isn't right, it must be changed! The pricing system
+will then send an (external) Price Changed event, which the cart system
+can then react on.
+
+In this Use Case we find out that we have forgotten about "Cart sessions".
+And this is generally something to look out for. _If people in workshops
+are using terms that are not reflected in the model, it is something to
+investigate_.
+
+One new thing that now happens is that the Price Changed event will impact
+a read model which we already have defined. That is not uncommon and nothing
+to worry about. Just update the read model, do an information completeness
+check and you're good to go.
+
+### 18. Structuring an Event Model
+
+Event Models can become fairly big and unwieldy, so it is essential to somehow
+structure them. Martin uses chapters and sub-chapters on top of the model to divide
+them into easily recognizable sections.
+
+Miro boards are very useful for Event Models, and you can of course have multiple
+models on one board. Here you can place a pink sticky note on the left, describing
+the business context for the model.
+
+One question often coming up, especially from developers, is "error handling", here
+called Alternative Flows. How do we model loops and conditions? Since the
+model must read as a timeline from left to right, we don't. Instead we model them
+as GWTs when possible or separate flows when GWTs don't suffice. On e.g. Miro boards
+it is possible to have links to other boards and places on boards.
+
+## Part III - From zero to running software
+
+### 19. Technology Stack
+
+Well, we have defined the system with it's events, screens, queries, translators and
+other automations. And the vertical slicing we have from the model is used as work items,
+so we don't need ticket systems or backlogs.
+
+Now we have to choose the tecnology used for implementing. In the book is used the following:
+Kotlin, Spring Framework, Spring Modulith, Spring Data, Test Containers, JUnit,
+PostgreSQL.
