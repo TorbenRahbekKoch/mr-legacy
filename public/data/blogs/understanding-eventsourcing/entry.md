@@ -411,3 +411,38 @@ so we don't need ticket systems or backlogs.
 Now we have to choose the tecnology used for implementing. In the book is used the following:
 Kotlin, Spring Framework, Spring Modulith, Spring Data, Test Containers, JUnit,
 PostgreSQL.
+
+### 20. Brief introduction to Axon
+
+Axon is a framework for building event sourced application. It has a "real"
+Event Store but can also use e.g. PostgreSQL.
+
+Axon uses the term aggregate to denote a stream. They are basically the same thing. Code
+wise an aggregate is marked using an annotation.
+
+Command handlers can defined inside an aggregate, marked with another annotation. Fairly standard.
+You can define whether a command creates new instances of an aggregate.
+
+Naturally you also need Event Handlers, of which there are several:
+Subscribing Event Processor, Streaming Event Processor. Not surprisingly an event handler
+is also marked with an annotation.
+
+### 21. Implementing the first slice - "Add Item"
+
+Slicing and dicing! Or rather, since we've already sliced, we are just going to dice. I think...
+
+There's a github with the source for the book. Recommend it!
+
+In the book it looks like Martin is implementing it all by hand, but he does admit to
+using code generation a lot. Clever dude!
+
+He presents the code structure, it is in Kotlin, and it of course uses the Vertical
+Slice Architecture.
+
+We start out by implementing the "Add Cart Item" slice, and aggregate, commands and events
+are introduced. Some of it are of course inherent to the Axon framework.
+
+Axon also makes it easy to test the slices. It is interesting to see how aggregate ids
+are initialized. That can sometimes be a puzzle to figure that out.
+
+The rule with maximum three items in the card is implemented by counting _ItemAdded_-events.
