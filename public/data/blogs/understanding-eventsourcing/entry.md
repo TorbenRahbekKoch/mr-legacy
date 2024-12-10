@@ -446,3 +446,31 @@ Axon also makes it easy to test the slices. It is interesting to see how aggrega
 are initialized. That can sometimes be a puzzle to figure that out.
 
 The rule with maximum three items in the card is implemented by counting _ItemAdded_-events.
+
+### 22. Implementing state view slices using Live-Projections
+
+A _Live report_ or _Live projection_ is a query which is calculated from the events
+every time it is requested. This is rarely too slow. If it is you can chose a
+stored projection.
+
+The code in the is highly dependent on the Axon framework but the principles used
+are very simple.
+
+Axon does not provide any help for testing queries, so the has an example of a more
+manual approach using Test Containers. It gets the job done.
+
+### 23. Implementing Remove-Item and Clear-Cart
+
+In here it is stated very clearly that the command handler is not responsible
+for changing the state and attributes of the aggregate. The job of the command
+handler is _to enforce invariants, validate business rules and apply the correct
+events in case all rules apply_.
+
+_The sole purpose of the command handler is to make a decision whether a command can
+be processed by validating the existing state of the system._
+
+_The only purpose of the event-sourcing handler is to evolve the state of the aggregate._
+
+_An aggregate's internals only changes because of events that occured, never because of an action._
+
+Just to make that clear!

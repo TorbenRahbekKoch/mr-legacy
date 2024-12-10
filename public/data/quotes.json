@@ -515,6 +515,22 @@
         "author": "Ryan Singer",
         "languages": ["dk", "en"],
         "source": "Shape Up"
+    },{
+        "quote": "The sole purpose of the command handler is to make a decision whether a command can be processed by validating the existing state of the system",
+        "author": "Martin Dilger",
+        "languages": ["dk", "en"],
+        "source": "Understanding Eventsourcing"
+    },{
+        "quote": "The only purpose of the event-sourcing handler is to evolve the state of the aggregate",
+        "author": "Martin Dilger",
+        "languages": ["dk", "en"],
+        "source": "Understanding Eventsourcing"
+    },{
+        "quote": "An aggregate's internals only changes because of events that occured, never because of an action",
+        "author": "Martin Dilger",
+        "languages": ["dk", "en"],
+        "source": "Understanding Eventsourcing"
     }
+
 ]
 }
