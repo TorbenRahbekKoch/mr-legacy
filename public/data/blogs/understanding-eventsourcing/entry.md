@@ -474,3 +474,39 @@ _The only purpose of the event-sourcing handler is to evolve the state of the ag
 _An aggregate's internals only changes because of events that occured, never because of an action._
 
 Just to make that clear!
+
+### 24. Example Integration with Apache Kafka and Translations
+
+External events are, naturally, modeled as an external event, here using a yellow sticker,
+which is not "official" notation. Maybe it will be?
+
+The command handler is (here) called by Kafka with a command, which is internal to the
+package. It is an implementation detail of the slice. As is the fact that the data
+for the slice comes from Kafka. If you are thinking of
+[Ports and Adapters/Hexagonal Architecture](<https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)>)
+I'd say that a translator slice is a port and adapter in one. As stated before
+it can also be seen as an anti-corruption layer.
+
+### 25. Implementing a database projection for inventories
+
+Yet another translation, but this one is going to end up in a projection, which can be
+seen as a stored view if you are thinking in classic database terms.
+
+By the way: I really like that I can follow along in the code!
+
+A projection should not be normalized or need joins or anything complex if it can
+be avoided. What database you use, how you access it and so on can be decided
+on a slice by slice basis.
+
+The Axon processor type used here is a Tracking-Event-Processor.
+
+There are some thoughts on error handling. And one important aspect here is that
+how you handle errors may very well be a business decision. Some errors might be okay!
+
+You can choose to simply ignore errors. If the error is because the database
+is "down" you can retry. You can move the message to a dead letter queue. Or what have you.
+
+Then it is simple to implement the projection using a standard event handler, which puts
+data into the database. Easy-peasy.
+
+Querying the projection is just as easy as querying any other database.
