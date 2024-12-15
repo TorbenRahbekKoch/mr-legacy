@@ -530,7 +530,16 @@
         "author": "Martin Dilger",
         "languages": ["dk", "en"],
         "source": "Understanding Eventsourcing"
+    },{
+        "quote": "It is perfectly fine for a processor to schedule more than one command",
+        "author": "Martin Dilger",
+        "languages": ["dk", "en"],
+        "source": "Understanding Eventsourcing"
+    },{
+        "quote": "In business, there are no exceptions, only processes",
+        "author": "Martin Dilger",
+        "languages": ["dk", "en"],
+        "source": "Understanding Eventsourcing"
     }
-
 ]
 }

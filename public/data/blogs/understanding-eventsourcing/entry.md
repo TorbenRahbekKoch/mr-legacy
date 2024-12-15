@@ -510,3 +510,73 @@ Then it is simple to implement the projection using a standard event handler, wh
 data into the database. Easy-peasy.
 
 Querying the projection is just as easy as querying any other database.
+
+### 26. Implementing Automations
+
+An automation is something that somehow runs automatically, and does stuff. There! I said it! In case
+you were wondering!
+
+The implementation in this chapter really shows that we repeat the patterns
+over and over. As Martin puts it: "using strategic copy & paste will become one
+of your strongest tools over time". And code generation can be considered
+a kind of copy/paste.
+
+This is a longer chapter, since the automation consists of several slices. But this also
+makes it very clear that the slicing model, the vertical slice architecture, together
+with event sourcing makes is easy to make a decision because it is fairly cheap to
+change it later on. Only that slice is impacted.
+
+There is quite a few code examples in this chapter. Nice.
+
+The automation in the chapter can in some circumstances send multiple commands and it
+is for a start using eventual consistency. In this implementation that eventual
+consistency might cause some missed events. Whether that is okay is - at least partly - a
+business decision. The automation has no actual error handling. Again, it can be a
+business decision whether this is a problem.
+
+There are some suggestions for handling the eventual consistency problem here. One is
+of course to make it immediately consistent by using a (distributed) transaction. This
+solution of course doesn't scale well, but it works.
+
+Another options is to make it into a live model. In this case an in-memory projection
+is suggested. A cache, basically.
+
+### 27. Submitting the Cart
+
+No fun in just carting around. Let's bring order!
+
+An interesting twist here: We should not be able to submit an empty cart. This should obviously
+not be possible from the UI neither. Normally one would do a lot of work to ensure that this
+invariant/business rule is only in one place. But since our slices are so small and
+all the code for it is kept close, there is really no harm in having this rule in both the
+UI and the backend.
+
+We do run into the "Dual Write" problem, since we need to write on e.g. a service bus that
+something happened, and we also need to store an event in the event store. If this is not
+taken care of correctly you'll have some interesting bugs to find.
+
+One classic method for handling this is the "Transactional Outbox"-pattern. Instead of writing
+to two different thingies (e.g. DB and message queue) we write the business entity to the database
+along with a record (in a separate table) and then a separate process takes care of the
+actual sending to the message bus.
+
+It is worth noting here that this only partly solves the problem, as it just postpones the
+Dual Write for later. The separate process must obviously keep track of how far it has gotten
+in the list of events to send, and at the same time actually sending the event.
+
+This underlines the importance of events being idempotent. There is no exactly-once delivery.
+
+If looking at Azure there are several services that offer this pattern out of the box. You
+can write to CosmosDB and having it send a message for you. I'm sure AWS has similar
+offerings.
+
+The receiving service can use a similar pattern: "Transactional Inbox". Here the incoming
+messages are stored in a table instead of being processed directly. This can be used for
+de-duplication of events.
+
+Error handling: Yeah, it happens. Shit breaks. Eror handling is, as have been mentioned
+previously, not just a technical decision. It is also a business decision.
+
+Dead Letter Queues I personally see as the last stop. But they can, of course, be used
+strategically as any other infrastructure service. I do think, though, they can be useful
+if errors are modelled explicitly where DLQs can be part of the technical implementation.
