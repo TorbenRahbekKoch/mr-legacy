@@ -592,7 +592,35 @@ Again I will refer to
 [Greg Young's seminal work on versioning](https://leanpub.com/esversioning) for an extensice
 workout of versioning.
 
-One very essential part of event-sourced systems is the ability to replay events. Do not start
+One very essential part - the holy grail, so to speak - of event-sourced systems is the
+ability to replay events. Do not start
 building a system without having this ability from the get-go!
 
 The framework - Axon - used in the book has an API for that use case.
+
+## Part IV - Implementation Patterns
+
+### 29. What this part is about
+
+Part IV is a pattern catalog. The examples are a simple To Do application.
+
+### 30. Pattern: Database Projected Read Model
+
+We used one previously. It is modeled with a green sticky note.
+A database projected read model is basically a precalculated query.
+
+### 31. Pattern: Live Model
+
+We used one previously. Still modeled with a green sticky note.
+This read model builds projections on the fly directly from
+event streams. It works best from one event stream although you
+can, of course, choose to use several streams, just be aware that
+order can be an issue here, so try to avoid it.
+
+Since you always build the data on-the-fly it is not bothered
+by any eventual consistency issues.
+
+### 32. The (partially) synchronous projection
+
+This is the one where we keep a part of the read model in memory in order to have a
+immediately consistent read model without actually storing it. A query cache.
