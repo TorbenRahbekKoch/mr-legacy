@@ -580,3 +580,19 @@ previously, not just a technical decision. It is also a business decision.
 Dead Letter Queues I personally see as the last stop. But they can, of course, be used
 strategically as any other infrastructure service. I do think, though, they can be useful
 if errors are modelled explicitly where DLQs can be part of the technical implementation.
+
+### 28. Handling breaking changes
+
+Break it, you will. Fix it, you shall.
+
+In an event-sourced system you'll typically intentionally break things by introducing
+a new version of an event.
+
+Again I will refer to
+[Greg Young's seminal work on versioning](https://leanpub.com/esversioning) for an extensice
+workout of versioning.
+
+One very essential part of event-sourced systems is the ability to replay events. Do not start
+building a system without having this ability from the get-go!
+
+The framework - Axon - used in the book has an API for that use case.
