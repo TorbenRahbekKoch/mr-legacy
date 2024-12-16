@@ -2,7 +2,7 @@
 
 **Rating**
 
-[Rating: ?](/blogs/how-am-i-doing-my-reviews)
+[Rating: ⍟⍟⍟⍟◯](/blogs/how-am-i-doing-my-reviews)
 
 ![Book cover](/data/blogs/understanding-eventsourcing/understanding-eventsourcing.png)
 
@@ -18,11 +18,15 @@ I'm uploading this review as I go along - hold on tight, there's many chapters:)
 
 # Who is it for?
 
-I'll get to that.
+Well, I'd say it is for anyone involved in developing software, especially if you are
+involved in designing the software. How you are involved is not that
+important.
 
 # What is it about?
 
-I'll get to that, too.
+Obviously about event modeling and event sourcing. But just as much about a mindshift when
+developing software. Designing and modeling the software as a group effort. Developers, designers,
+business people. You know. The people who know how the processes of the business works.
 
 ---
 
@@ -666,3 +670,41 @@ up for a service: ensuring a valid and unique email address.
 The implementation of the example clearly shows the advantage of having a framework.
 
 ### Part V - The missing chapters
+
+I will update this part as the missing chapters stops being missing.
+
+### 37. Why the missing chapters?
+
+Fair question...
+
+The book itself got huge, and there are still many unanswered questions which for now
+are scattered in blogs and forum. The missing chapters are where this will be brought
+together.
+
+### 38. Handling Metadata
+
+Data about data. Where did it come from. What did it experience along the way.
+
+Combining metadata with logging/monitoring gives a solid foundation for reasoning about
+the system. Especially trace, correlation and causation ids are good metadata to have.
+
+Axon, of course, provides helpful helpers to help with metadata.
+
+# Conclusion
+
+Having read the now seminal work on event modeling and eventsourcing the first time it feels a bit like
+when I first read Lord of the Rings. It took me a while, I felt in good hands, I experienced
+a thrilling adventure and I'm now saying goodbye to good friends. And just as I couldn't remember
+every little detail of Lord of the Rings I cannot remember every little detail of
+event modeling and event sourcing. But now I at least have one place to go to, to look it up.
+
+Is it a perfect book? No, of course not. Could it have used professionel editing? Absolutely.
+Does it need it? No, not really.
+
+It is above 500 pages but in general it is an easy read, and it has pictures! Due to the value
+it offers, and how much such a work is needed, I give it 4 stars.
+
+This book is a must read for anyone involved in developing software. If you haven't read it, get started.
+And when you have finished reading it, read it again.
+
+And spread the word. There IS a better way to develop software!
