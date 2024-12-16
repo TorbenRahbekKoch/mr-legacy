@@ -14,8 +14,6 @@ Forewords by Mr. Eventmodeling Adam Dymitruk and Gabriel N. Schenker.
 
 See also [my reading list](/pages/reading-list) and [resources](/pages/resources)
 
-I'm uploading this review as I go along - hold on tight, there's many chapters:)
-
 # Who is it for?
 
 Well, I'd say it is for anyone involved in developing software, especially if you are
@@ -671,6 +669,8 @@ The implementation of the example clearly shows the advantage of having a framew
 
 ### Part V - The missing chapters
 
+He just won't stop writing! :D
+
 I will update this part as the missing chapters stops being missing.
 
 ### 37. Why the missing chapters?
@@ -689,6 +689,21 @@ Combining metadata with logging/monitoring gives a solid foundation for reasonin
 the system. Especially trace, correlation and causation ids are good metadata to have.
 
 Axon, of course, provides helpful helpers to help with metadata.
+
+### 39. Handling Security
+
+Security, access control, authentication, authorization, identity and access. To
+model or not to model. Basically, if who the user is doesn't affect the flow of data in the system
+then you should probably not model security. That is, if logging in is not a business flow, it
+is likely "just" technical concern.
+
+What you typically will do is to have information about the logged-in user as metadata on commands.
+Again a framework helping you do this is, well, helpful.
+
+Doing this will help you separate domain logic and security concerns (which is a sort of
+infrastructure).
+
+---
 
 # Conclusion
 
