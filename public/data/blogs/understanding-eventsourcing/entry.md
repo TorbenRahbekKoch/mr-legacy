@@ -620,7 +620,49 @@ order can be an issue here, so try to avoid it.
 Since you always build the data on-the-fly it is not bothered
 by any eventual consistency issues.
 
-### 32. The (partially) synchronous projection
+### 32. Pattern: The (partially) synchronous projection
 
 This is the one where we keep a part of the read model in memory in order to have a
 immediately consistent read model without actually storing it. A query cache.
+
+### 33. Pattern: The Logic Read Model
+
+Can you have logic in a read model? Yes, you can. Should you? It depends.
+
+One rule to follow is: no side effects. The data for the calculation should
+be available in the events.
+
+### 34. Pattern: Snapshots
+
+Snapshots can be used to optimize performance when you, for some reason, have
+long event streams, where it becomes too costly to read all of them for every
+request. It can be viewed as a cache of sorts.
+
+Since a snapshot is a technical concern it is not modeled explicitly.
+
+It is better, of course, to limit the length of the stream, e.g. by
+_Closing the books_, making snapshots an exception.
+
+### 35. Pattern: "Processor-TODO-List" - Pattern
+
+Automations for the people! Let's to do it!
+
+The most complex part of event-sourced systems are automations, but _any
+process can be implemented as a series of process steps that are
+conducted in order_.
+
+The to do list (read model) for a processor will be a read model, and this is therefore
+also part of the modeling for it. Typically the processor will issue commands
+that end up sending events that feed into the to do list for a processor. Beware that this
+is also typically eventually consistent with the dragons this may reveal.
+
+How often the processor should look at the to do list is probably a business decision.
+
+### 36. Pattern: The Reservation Pattern
+
+Reserve and execute. A typical use case for this pattern is ticket reservation or when signing
+up for a service: ensuring a valid and unique email address.
+
+The implementation of the example clearly shows the advantage of having a framework.
+
+### Part V - The missing chapters
