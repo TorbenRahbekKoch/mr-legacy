@@ -703,6 +703,15 @@ Again a framework helping you do this is, well, helpful.
 Doing this will help you separate domain logic and security concerns (which is a sort of
 infrastructure).
 
+### 40. GDPR - Handling sensitive Data
+
+GDPR is (partly) about the right to access data and the right to be forgotten.
+
+Event sourcing poses a challenge: How do you delete data when the past is immutable? Well, for
+start you can choose _not_ to store data: data minimalism.
+
+For the data we _need_ to store we can use _Crypto Shedding_ or _Forgettable Payload_.
+
 ---
 
 # Conclusion
@@ -711,7 +720,8 @@ Having read the now seminal work on event modeling and eventsourcing the first t
 when I first read Lord of the Rings. It took me a while, I felt in good hands, I experienced
 a thrilling adventure and I'm now saying goodbye to good friends. And just as I couldn't remember
 every little detail of Lord of the Rings I cannot remember every little detail of
-event modeling and event sourcing. But now I at least have one place to go to, to look it up.
+event modeling and event sourcing. But now I at least have one place to go to,
+one place to look it up.
 
 Is it a perfect book? No, of course not. Could it have used professionel editing? Absolutely.
 Does it need it? No, not really.
