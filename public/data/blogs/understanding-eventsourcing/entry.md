@@ -712,6 +712,41 @@ start you can choose _not_ to store data: data minimalism.
 
 For the data we _need_ to store we can use _Crypto Shedding_ or _Forgettable Payload_.
 
+### 41. Handling the UI
+
+Sometimes you just have to manhandle that UI!
+
+You click a button, moments later the screen is updated and show new and
+possibly exciting information. Other times, you click the button, a spinner
+appears and nothing happens. We all know the woes and throes of
+synchronous communication.
+
+When using asynchronous communication (and by extension eventual consistency)
+you may click the button and have no
+idea on when and if the screen is updated. What to do. What do to.
+
+It is fairly logical. When you don't know when something is ready, you'll have to
+poll for it or get told by it. It is NOT the solution to fall back to immediate
+consistency.
+
+A BFF (Backend For Frontend) _can_ be a solution, but it basically just moves the
+problem and BFFs can themselves turn into massive beasts creating (unnecessary) coupling
+between slices.
+
+When we introduce polling for getting updated data, we need to somehow know, when the data
+has been updated. Event Streams and projections can have ids or a correlation id can be used.
+
+Is is perfectly fine for a command handler to return this id to the client, so the client
+can now what to query for. This is called _fenced_ polling.
+
+Whether the actual polling is done by the client (in cases with web clients, typically)
+or the server is not that important. On the server you can use some kind of reactive
+way, where you basically wait for things to happen without using resources. How to do this
+varies between platforms, of course.
+
+You can also use Server-Sent Events instead of polling. Websockets is also a possibility
+but you seldomn need the two-way communication.
+
 ---
 
 # Conclusion
@@ -732,4 +767,4 @@ it offers, and how much such a work is needed, I give it 4 stars.
 This book is a must read for anyone involved in developing software. If you haven't read it, get started.
 And when you have finished reading it, read it again.
 
-And spread the word. There IS a better way to develop software!
+And spread the word. There IS now a better way to develop software!
