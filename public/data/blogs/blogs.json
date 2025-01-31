@@ -329,6 +329,13 @@
             "dir": "",
             "date": "2024-12-16",
 			"categories": ["review"]            
+        },{
+            "url" : "/blogs/serverless-as-a-game-changer",
+            "title": "Serverless as a Game Changer - a review",
+            "teaser": "Play the game! Serverlessly!",
+            "dir": "",
+            "date": "2025-01-31",
+			"categories": ["review"]            
         }
     ]
 }

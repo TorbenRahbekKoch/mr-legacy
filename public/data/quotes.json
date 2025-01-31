@@ -540,6 +540,11 @@
         "author": "Martin Dilger",
         "languages": ["dk", "en"],
         "source": "Understanding Eventsourcing"
+    },{
+        "quote": "Serverless enables every organization to deliver software as effeciently and effectively as the best software teams in the world",
+        "author": "Joseph Emison",
+        "languages": ["dk", "en"],
+        "source": "Serverless as a Game Changer"
     }
 ]
 }

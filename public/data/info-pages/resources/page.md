@@ -24,6 +24,8 @@ See also [my reading list](/pages/reading-list)
 
 > Oskar is nothing but a gold mine when it comes to Event Sourcing.
 
+https://wolverinefx.net/tutorials/cqrs-with-marten.html
+
 [Vertical Event Sourcing and Domain Driven Design (DDD) in Azure with Cosmos, SQL and DataBricks](https://medium.com/@iocloudsystems/vertical-event-sourcing-and-domain-driven-design-ddd-in-azure-with-cosmos-sql-and-databricks-a8875dba45c5)
 
 > A three-part article combining Domain-Driven Design, Event Sourcing, and Vertical Slicing. An interesting read!
