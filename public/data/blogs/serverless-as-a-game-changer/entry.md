@@ -249,6 +249,60 @@ from your current database at the end of the project. I suggest to read that
 part very carefully. Your data is essential and keeping it under strict control
 is just as essential.
 
+### 10. Training and Continuing Education
+
+It turns out - not surprisingly - that going serverless is not something you just do.
+The cultural shift is important and you need training and continuing education for technical
+as well as nontechnical staff. Jobs and tasks will change.
+
+When servers changed from just physical hardware to virtualization one administrator
+could oversee much more servers. The same happens with serverless. When there is no
+virtual servers to oversee the administrators get their hands free to oversee
+much more. They no longer have to worry about keeping operating systems up to date, etc.
+
+Unless you're an infrastructure company, infrastructure is not your mission. But
+operability, resilience and reliability are more important than ever.
+
+Your vendors will become even closer, working with them will be like working
+with an internal team.
+
+Embrace releases. You should be able to ship at (just about) any time. Shipping
+should be second nature.
+
+Migrate, migrate, migrate. Don't leave too much old crap running.
+
+Ops is everybody's job now.
+
+In serverless architectures, it is rarely necessary to worry about any hardware
+or scaling issues.
+
+The massive complexity of a typical enterprise codebase is not conducive to
+bringing in developers who have not worked with something similar in scope.
+Serverless changes this, making it easier and safer to hire junior developrs.
+
+### 11. Your Serverless Journey
+
+It's not where you are going, it's how you get there.
+
+"When an organization decides that it needs to write custom software to differentiate itself, it should build those applications with Serverless architectures", because "building undifferentiated
+technology takes time, money, and cognitive capacity".
+
+How do you get started with Serverless in startup or a small or medium-size organization? Startups
+are uniquely positioned to use serverless, as they don't have any legacy. They start fresh.
+
+If you happen to be in an "established" organization the book has advice for you, no matter
+what kind of role you have. The most difficuelt part is that a organization like this typically
+existing, and functional, technology. There's no immediate reason to do things very differently,
+so it is much harder sell.
+
+Large enterprises have many teams and systems already running, there's a lot of momentum
+or inertia, which makes it vital to change culture. You need to assess how moving to
+serverless will change the business and make these findings visible to people around you.
+
+## Part IV - Appendixes
+
+### Appendix A - Directory: API Hubs
+
 ---
 
 # Conclusion
