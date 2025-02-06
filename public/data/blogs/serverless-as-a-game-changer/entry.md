@@ -303,6 +303,63 @@ serverless will change the business and make these findings visible to people ar
 
 ### Appendix A - Directory: API Hubs
 
+First a (sort of) definition of what an API Hub is.
+
+Then a walk-through of some API Hubs out there along with pros and cons:
+
+- AWS AppSync/Amplify
+- Google Firebase
+- Fauna/(Netlify or Vercel)/Auth0
+- Supabase
+
+### Appendix B - Directory: Identity and Access Management
+
+Who are you? What can you do?
+
+- Google Firebase Authentication
+- Auth0
+- Amazon Cognito
+
+### Appendix C - Directory: Databases
+
+Data, data, data - where to put it?
+
+- AWS DynamoDB
+- Google Firebase and Firestore
+- Microsoft Azure Cosmos DB
+- FaunaDB
+- CockroachDB Serverless
+- PlanetScale
+- Neon and Surreal DB
+
+### Appendix D - Directory: Functions
+
+To make it function, you need: functions.
+
+- AWS Lambda
+- Google Functions
+- Azure Functions
+- Netlify Functions
+- Vercel Functions
+- Cloudflare Workers
+
+### Appendix E - Directory: Managed Services
+
+Don't do what managed services can do for you.
+
+- Algolia (search index)
+- Cloudinary (image and video hosting and manipulation)
+- Segment (event bus for user events)
+- Customer.io (campaign tool, triggered by e.g Segmen)
+- Lob (physical-mail gateway)
+- Smarty (physical address resolution and correction)
+- DocRaptor (Generates PDFs from HTML and CSS)
+- Prismic (headless CMS)
+- Flatfile (importing various files, e.g. Excel)
+- QuotaGuard (HTTPS proxy)
+- Basis Theory (Tokenization service)
+- Upstash (running containers as serverless)
+
 ---
 
 # Conclusion
