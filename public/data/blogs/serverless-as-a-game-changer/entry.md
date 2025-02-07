@@ -202,7 +202,7 @@ content in the job. The sense of making a difference is important.
 
 It's easy to get nowhere, but less fun.
 
-It is of course not just about technique, but very much also about people and culture.
+It is of course not just about tech, but very much also about people and culture.
 Software development _is_ a socio-technical exercise. Getting buy-in from the entire
 organization is important. It is very important to optimize for _maintainability_ and
 enable a _high velocity of future changes_. This can mean buy over build, using existing
@@ -350,7 +350,7 @@ Don't do what managed services can do for you.
 - Algolia (search index)
 - Cloudinary (image and video hosting and manipulation)
 - Segment (event bus for user events)
-- Customer.io (campaign tool, triggered by e.g Segmen)
+- Customer.io (campaign tool, triggered by e.g Segment)
 - Lob (physical-mail gateway)
 - Smarty (physical address resolution and correction)
 - DocRaptor (Generates PDFs from HTML and CSS)
@@ -363,3 +363,17 @@ Don't do what managed services can do for you.
 ---
 
 # Conclusion
+
+There's no doubt that Joseph Emison is enthusiastic about serverless. And why shouldn't he
+be? He built an entire, successful business by using serverless and he let's us in
+on some of the "secrets" behind the success.
+
+There's even good, general advice on moving your not-serverless organization to a serverless
+world. It's all about culture.
+
+It is a nice and short book, right to the point. I don't think it is filled with revelations
+as such, possibly unless you are totally new to the serverless mindset, but it is filled
+with nice quotes, which can help you convincing your organization.
+
+All in all I think the book deserves 4 stars, because it is concise and it gets the
+message across.
