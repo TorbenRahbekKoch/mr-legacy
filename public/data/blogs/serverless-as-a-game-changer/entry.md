@@ -16,7 +16,7 @@ Foreword by Vaugn Vernon - it is his Signature Series, after all!
 
 See also [my reading list](/pages/reading-list) and [resources](/pages/resources)
 
-I'm publishing the review as I go along.
+I'm publishing the review as I go along.  
 
 # Who is it for?
 

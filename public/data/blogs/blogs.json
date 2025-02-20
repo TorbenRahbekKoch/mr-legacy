@@ -336,6 +336,13 @@
             "dir": "",
             "date": "2025-01-31",
 			"categories": ["review"]            
+        },{
+            "url" : "/blogs/accelerate",
+            "title": "Accelerate - a review",
+            "teaser": "Going faster IS better!",
+            "dir": "",
+            "date": "2025-02-11",
+			"categories": ["review"]            
         }
     ]
 }
