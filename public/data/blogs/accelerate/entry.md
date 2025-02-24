@@ -91,3 +91,59 @@ _organizations with better information flow function more effectively_.
 
 This fits with the findings in Google:
 _who is on a team matters less than how the team members interact, structure their work, and view their contributions_.
+
+### Chapter 4 - Technical Practices
+
+I'd never thought enough about to notice, but Extreme Programming (XP)
+\*prescribes a number of technical practices such as test-driven development
+and continuous integration". This is in stark contrast to Scrum, which emphasizes
+management and team practices.
+
+It sort of makes perfect sense that having the focus on the technical side is
+a good idea when you work with developers. Both because we generally like it and
+because they make it easier and therefore more fun to deliver value.
+
+One technical practice is of course _continuous delivery_, which enables us
+_to get changes of all kinds—features, configuration changes, bug fixes, experiments—into production or into the hands of users safely, quickly, and sustainably._
+
+The five key principles are: _Build quality in_, _Work in small batches_,
+_Computers perform repetitive tasks; people solve problems_,
+_Relentlessly pursue continuous improvement_,
+_Everyone is responsible_.
+
+To do this, we need _Conprehensive configuration management_,
+_Continuous integration (CI)_, _Continuous testing_.
+
+All this entails multiple feedback loops where we can se whether
+we live up to our own quality goals.
+
+_By giving developers the tools to detect problems when they occur, the time and resources to invest in their development, and the authority to fix problems straight away, we create an environment where developers accept responsibility for global outcomes such as quality and stability._
+
+All this brings more joy to work and also less burnout. It also
+ensures higher quality. And to know this we naturally need to be able to
+_measure quality_.
+
+Some indicators are _The (perceived) quality and performce of applications_,
+_The precentage of time spent on rework or unplanned work_,
+_The percentage of time spent working on defects identified by end users_.
+
+Especially unplanned work is a good proxy for quality because it shows
+that we failed _to build quality into our product_.
+
+Version control goes without saying these days, but it needs to contain more
+than "just the code". Also configuration scripts, test scripts, and what have you
+should be in version control.
+
+Having reliable, automated tests is important for a short feedback loop. And
+short feedback loops are essential for minimizing context switches and the
+cognitive load it brings.
+
+Correspondingly long-lived branches should be avoided since they will
+necessarily be costly to integrate and possibly cause more context switches.
+Look towards trunk-based development, which really needs everything else to
+be in place.
+
+Information security should be "shifted less".
+
+It can be difficult to adopt continuous delivery and it may take many
+months to get there.
