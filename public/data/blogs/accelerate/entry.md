@@ -139,11 +139,31 @@ short feedback loops are essential for minimizing context switches and the
 cognitive load it brings.
 
 Correspondingly long-lived branches should be avoided since they will
-necessarily be costly to integrate and possibly cause more context switches.
+likely be costly to integrate and possibly cause more context switches.
 Look towards trunk-based development, which really needs everything else to
 be in place.
 
-Information security should be "shifted less".
+Information security should be "shifted left".
 
 It can be difficult to adopt continuous delivery and it may take many
-months to get there.
+months to get there, but every improvement is an improvement!
+
+### Chapter 5 - Architecture
+
+Cathedrals can be very beautiful, but also very costly to remodel and renovate
+and even though spaghetti may taste very good it _is_ a hazzle to untangle.
+
+Architecture matters!
+
+The keywords here are loose coupling, for both the systems and teams building them.
+More keywords are deployability and testability: It is important to ask the
+question: "How to we test this?" before implementing anything. If there is doubt
+about how to test, there is probably also doubt about what to implement.
+
+Having loosely coupled teams mean that you are able to e.g. _make large-scale
+changes to the design of the system without the permission of somebody outside
+the team_. You can also deploy and release the product without other teams
+being involved. This leans into both Conway's law and
+cross-functional teams, which have the necessary
+skills to design, develop, test, deploy and operate the systems. This is
+also known as a _stream-aligned team_ in _Team Topologies_.
