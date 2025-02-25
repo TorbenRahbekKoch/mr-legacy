@@ -16,6 +16,8 @@ See also [my reading list](/pages/reading-list) and [resources](/pages/resources
 
 I'm uploading this review as I go along - hold on tight, there's 17 chapters:)
 
+I am a bit slow reading this, I find it very hard to get through. Wait for it...!
+
 # Who is it for?
 
 I'll get to that.

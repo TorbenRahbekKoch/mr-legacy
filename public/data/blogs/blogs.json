@@ -343,6 +343,13 @@
             "dir": "",
             "date": "2025-02-11",
 			"categories": ["review"]            
+        },{
+            "url" : "/blogs/principles-of-web-api-design",
+            "title": "Principles of Web API design - a review",
+            "teaser": "Better stick to your principles",
+            "dir": "",
+            "date": "2025-02-25",
+			"categories": ["review"]            
         }
     ]
 }
