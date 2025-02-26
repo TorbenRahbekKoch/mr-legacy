@@ -167,3 +167,45 @@ being involved. This leans into both Conway's law and
 cross-functional teams, which have the necessary
 skills to design, develop, test, deploy and operate the systems. This is
 also known as a _stream-aligned team_ in _Team Topologies_.
+
+### Chapter 6 - Grating InfoSec into the Delivery Lifecycle
+
+Cycle as if your life depends on it! Or rather: Build security in
+as if your life depends on it, because _building security into
+software development not only improves delivery performance but also
+improves security quality._
+
+"Shifting left" on information security means that information security
+experts contribute to the design of applications and test suites, before any code
+has been written. They are part of making _easy-to-consume, preapproved libraries, packages, toolchains, and processes available for developers and IT operations._ thereby
+giving the developers the necessary means to easily build security in.
+
+_High performers were spending 50% less time remediating security issues than low performers._
+
+The _Rugged Manifesto_ is introduced by _Rugged DevOps_.
+
+_Being rugged is everybody's responsibility._
+
+### Chapter 7 - Management Practices for Software
+
+How do you manage software development? (Wannabe) agile seems very popular these
+days. Looking into _Lean_ as introduced by Mary and Tom Poppendieck may
+serve you well.
+
+The researchers looked at _Limiting work in progress (WIP)_,
+_Having visual displays showing key quality and productivity metrics, available for everybody_,
+_Using data from application performance and infrastructure monitoring tools to make
+business decisions on a daily basis_.
+
+These practices increase delivery performance, have a positive impact on team culture
+and performance, decrease burnout, lead to a more generative culture.
+
+Change management is necessary to some degree. We have limited time and resources
+available so we want to make sure that we spend them on valuable stuff.
+
+The research shows that the best performance is obtained when the approval for
+change lies within the team. It makes sense, there is then no wait for external
+parties to figure things out.
+
+Auditing is necessary in some places and generally very useful, so
+_ no changes should be able to be made to production unless they have been committed to version control, validated by the standard build and test process, and then deployed through an automated process triggered through a deployment pipeline_, which gives audibility.
