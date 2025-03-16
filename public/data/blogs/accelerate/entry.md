@@ -22,7 +22,8 @@ Architects, developers, project managers. You know. Software people!
 
 # What is it about?
 
-How to go faster and better.
+How to go faster and better and how to measure whether
+we actually do go faster and better.
 
 ---
 
@@ -209,3 +210,65 @@ parties to figure things out.
 
 Auditing is necessary in some places and generally very useful, so
 _ no changes should be able to be made to production unless they have been committed to version control, validated by the standard build and test process, and then deployed through an automated process triggered through a deployment pipeline_, which gives audibility.
+
+### Chapter 8 - Product Development
+
+Why lean is more mean than agile.
+
+Lean development practices will predict a higher software delivery performance. These
+practices include working in small batches, make flow of work visible, gather and
+implement customer feedback, and team experimentation.
+
+The research shows that it goes both ways. When you have a team with high
+delivery performance it also most like uses lean practices.
+
+### Chapter 9 - Making Work Sustainable
+
+The pain of deployment is real (it is a contributing factor to burnout), but it shouldn't
+be. So we may have to measure!
+
+_teams that implement comprehensive test and deployment automation; use continuous integration, including trunk-based development; shift left on security; effectively manage test data; use loosely coupled architectures; can work independently; and use version control of everything required to reproduce production environments decrease their deployment pain._
+
+Standard DevOps practices will help allievating deployment pain.
+
+Burnout is a severe condition, but again DevOps practices can help prevent and reverse it.
+
+Instead of trying to fix the person and ignore the work environment you should naturally
+try to fix the environment.
+
+Three questions are effective for measuring burnout: Do you feel burned out or exhausted?
+Do you feel indifferent or cynical about your work or do you feel ineffective?
+Is your work having a negative effect on your life?
+
+Some organizational factors correlated with burnout: Organizational culture,
+deployment pain, effectiveness of leaders, organizational investments in DevOps,
+organizational performance.
+
+Also alignment of individual values with organizational values can be used
+to decrease burnout.
+
+### Chapter 10 - Employee satisfaction, identity, and engagement
+
+Satisfied and engaged employees are essential for a high-performing team. So how do
+we measure that?
+
+Net Promoter Score (NPS) in the variant of Employee Net Promoter Score (eNPS)
+is a valuable tool and it shows that employees in high-performing organizations
+are 2,2 times more likely to recommend their organization as a great place to
+work. This also correlates with better business outcomes.
+
+The actual questions asked are: "_Would you recommend your ORGANIZATION as a
+place to work to a friend or a colleague?_" and "_Would you recommend
+your TEAM as a place to work to a friend or colleague?_"
+
+eNPS is significantly correlated with other interesting constructs such
+as whether the organizations collects customer feedback and uses it actively.
+
+The authors then continue on to measure how the employees identify with
+the organizations they work for. Six Likert-type questions, such as "_I talk of this
+organization to my friends as a great company to work for_" help determine
+how strong the identity alignment is. A strong alignment predicts generative,
+performance-oriented culture.
+
+Diversity. Does it matter? It turns out it does! Gender, underrepresented
+minorities and general inclusitivity are important.
