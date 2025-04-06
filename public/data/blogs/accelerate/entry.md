@@ -272,3 +272,46 @@ performance-oriented culture.
 
 Diversity. Does it matter? It turns out it does! Gender, underrepresented
 minorities and general inclusitivity are important.
+
+### Chapter 11 - Leaders and Managers
+
+Potato, potato one should think. But no! Leader and manager is not the same.
+
+It shouldn't really be a surprise but _leadership really does have a
+powerful impact on results_. It is essentail for successful DevOps
+transformations.
+
+The authors looked at five characteristics of transformational leaders:
+_Vision_, _Inspirational communication_, _Intellectual stimulation_,
+_Supportive leadership_, _Personal recognition_.
+
+To measure transformational leadership the authors used survey
+qustions adapted from a couple of guys named Rafferty and Griffin. The
+characteristics covered by those questions are highly correlated with
+software delivery performance.
+
+And now it gets interesting: If the transformational leaders are _also managers_, they
+can have an even bigger role in affecting change, because managers play a
+critical role in connecting the strategic objectives of the business to the work
+their teams do. They also have the means to invest in the working environment, helping
+employees to feel safe and supported.
+
+Investing in DevOps can be done in many ways, some of which are: _Create space and
+opportunities for learning and improving_, _Internal hack days_,
+_Internal DevOps mini-conferences_, _Dedicated time to experiment_.
+
+Also important is _cross-functional collaboration_, which can be cultivated by
+_Building trust with your counterparts on other teams_, Encouraging practitioners to move
+between departments*, \_Actively seeking, encouraging, and rewarding work that
+facilitates collaboration*.
+
+A _climate of learning_ can facilitated by _Creating a training budget and
+advocating for it internally_, _Ensuring that your team has the resources to engage in
+informal learning and the space to explore ideas_, _Making it safe to fail_,
+_Creating opportunities and spaces to share information_, _Encourage sharing
+and innovation by having demo days and forums_.
+
+Tools are important, so _Make sure your team can choose their tools_, _Make
+monitoring a priority_.
+
+## Part Two: The Research
