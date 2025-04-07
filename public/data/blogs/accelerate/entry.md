@@ -315,3 +315,31 @@ Tools are important, so _Make sure your team can choose their tools_, _Make
 monitoring a priority_.
 
 ## Part Two: The Research
+
+### Chapter 12 - The Science Behind This Book
+
+Rigorous primary research. This is what the book is based on primary research.
+
+_Secondary research utilizes data that was collected by someone else._ Primary
+research, on the other hand, is build on new data collected by the research
+team. It can provide not already known information and insights and there is more
+control over the questions.
+
+Research can be qualitative or quantitative, the former being data, which
+isn't in numerical form, like interviews and so on. Quantitative is numerical
+and one way to get answers in numerical form is to Likert-type questions.
+
+Having research in numerical form makes it available for statistical data
+analysis, which exists in six levels: Descriptive, Exploratory,
+Ingerential predictive, Predictive, Causal, Mechanistic where the book
+uses the first three.
+
+The terms _population_ and _sample_ is, respectively, the entire group
+versus the part of the group, you're using for research by, e.g. interviewing.
+
+A little reminder that "correlation doesn't imply causation".
+
+Classification (or clustering) analysis is when you talk about
+e.g. high-, medium- or low-performance software delivery teams.
+
+The authors use _hierarchical clustering_.
