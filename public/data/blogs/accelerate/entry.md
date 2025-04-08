@@ -342,4 +342,33 @@ A little reminder that "correlation doesn't imply causation".
 Classification (or clustering) analysis is when you talk about
 e.g. high-, medium- or low-performance software delivery teams.
 
-The authors use _hierarchical clustering_.
+The authors use _hierarchical clustering_ in the book.
+
+### Chapter 13 - Introduction to Psychometrics
+
+_Bad surveys are all over._
+
+It takes a well-trained survey writer, to not be in risk of creating
+surveys with
+_Leading questions_, _Loaded questions_, _Multiple questions in one_,
+_Unclear language_.
+
+Most single question surveys are weak, although one well-known
+exception is _Net Promoter Score (NPS)_, which use and applicability
+are well-documented. On top of that it has become and industry
+standard and it is therefore easily comparable across teams
+and companies.
+
+A _latent construct_ is a way of measuring something that can't be
+measured directly, such as organizational culture. It is
+measured by measuring its component parts (_manifest variables_) and
+those are measured through survey questions.
+
+_It is important to start with a clear definition and understanding
+of what it is we want to measure_.
+
+When the data have been collected statistical methods verify that the
+measures reflect the underlying concept, weeding out any rogue data. Two
+such methods are _Discriminant validity_ and _Convergent validity_.
+
+_All measures are proxies_.
