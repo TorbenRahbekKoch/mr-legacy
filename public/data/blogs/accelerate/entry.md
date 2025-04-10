@@ -372,3 +372,16 @@ measures reflect the underlying concept, weeding out any rogue data. Two
 such methods are _Discriminant validity_ and _Convergent validity_.
 
 _All measures are proxies_.
+
+### Chapter 14 - Why use a survey
+
+There is listed 5 reasons for using a survey: _They allow you to
+collect and analyze data quickly_,
+_Measuring the full stack with system data is difficult_,
+_Measuring completely with system data is difficult_,
+_You can trust survey data_,
+_Some things can only be measured through surveys_.
+
+Especially the point: _You can trust survey data_ is interesting, because
+a knee-jerk reaction is to say _no_. I guess the entire book is a testament
+to the fact that you can, in fact, trust well-designed surveys.
