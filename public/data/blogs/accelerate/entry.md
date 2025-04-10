@@ -385,3 +385,13 @@ _Some things can only be measured through surveys_.
 Especially the point: _You can trust survey data_ is interesting, because
 a knee-jerk reaction is to say _no_. I guess the entire book is a testament
 to the fact that you can, in fact, trust well-designed surveys.
+
+### Chapter 15 - The data for the project
+
+About some of the premises of the surveys. How the population was selected
+and found. The design of the research is called _a cross-sectional
+data collection_ and lasted four years.
+
+The authors chose users who where relatively familiar with DevOps concepts
+and then used _snowball sampling_ to spread out the survey to relevant
+people.
