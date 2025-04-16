@@ -395,3 +395,77 @@ data collection_ and lasted four years.
 The authors chose users who where relatively familiar with DevOps concepts
 and then used _snowball sampling_ to spread out the survey to relevant
 people.
+
+## Part Three: Transformation
+
+Well, if it were easy, everybody would do it, right?
+
+### Chapter 16 - High-performance leadership and management
+
+A guest chapter by Steve Bell and Karen Whitley Bell.
+
+The chapter describes the digital transformation effort of the financial institution ING Netherlands.
+
+_You have to understand why, not just copy the behaviors_ - or
+_Copy the questions, not the answers_.
+
+Although organizations generally are different and processes should be
+adapter accordingly, people have some common traits which makes
+some general principles applicable, such as cross-functional teams, having
+a learning culture, being allowed to fail, and so on.
+
+It is essential to understand that
+_you can't "implement" culture change_, again: _copy the questions, not the answers_,
+it takes time and (a lot of) practice to change habits and the ways of working which
+likely are deeply entrenched through many years.
+
+### Conclusion
+
+More a summary than a conclusion.
+
+### Appendix A - Capabilities to drive improvement
+
+The research of the authors have revealed 24 key capabilities that drive
+improvement in software delivery performance in a stistically significant
+way. These are divided into five categories.
+
+**Continuous delivery**
+
+1. Use version control for all production artifact s
+2. Automate your deployment process
+3. Implement continuous integration
+4. Use trunk-based development methods
+5. Implement test automation
+6. Support test data management
+7. Shift left on security
+8. Implement continuous delivery
+
+**Architecture capabilities**
+
+9. Use a loosely coupled architecture
+10. Architect for empowered teams
+
+**Product and process capabilities**
+
+11. Gather and implement customer feedback
+12. Make the flow of work visible through the value stream
+13. Work in small batches
+14. Foster and enable team experimentation
+
+**Lean management and monitoring capabilities**
+
+15. Have a lightweight change approval process
+16. Monitor across application and infrastructure to inform business decisions
+17. Check system health proactively
+18. Improve processes and manage work with work-in-progress (WIP) limits
+19. Visualize work to monitor quality and communicate throughout the team
+
+**Cultural capabilities**
+
+20. Support a generative culture
+21. Encourage and support learning
+22. Support and facilitate collaboraton among teams
+23. Provide resources and tools that make work meaningful
+24. Support or embody transformational leadership
+
+### Appendix B - The stats
