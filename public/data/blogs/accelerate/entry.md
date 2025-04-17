@@ -4,7 +4,9 @@ Serverless as a Game Changer: How to Get the Most Out of the Cloud
 
 **Rating**
 
-[Rating: ⍟⍟⍟⍟◯](/blogs/how-am-i-doing-my-reviews)
+[Rating: ⍟⍟⍟⍟⍟](/blogs/how-am-i-doing-my-reviews)
+
+![Accelerate book cover](/data/blogs/accelerate/accelerate.jpeg)
 
 I'm reading [the O'Reilly ebook](https://learning.oreilly.com/library/view/accelerate/9781457191435/).
 
@@ -75,7 +77,7 @@ _the ability to take an experimental approach to product development is highly c
 There is often talk about changing the culture in a company but not often are there
 any actual actions behind the sentiment.
 
-Surprisingly the authors have _discovered that it is possible to influence and improve culture by implementing DevOps practices._ That is, the tools and methods will actually
+Surprisingly (to me, at least) the authors have _discovered that it is possible to influence and improve culture by implementing DevOps practices._ That is, the tools and methods will actually
 change the culture in the company. Who would have thought that:
 \*the way to change culture is not to first change how people think, but instead to start by changing how people behave—what they do."
 
@@ -469,3 +471,90 @@ way. These are divided into five categories.
 24. Support or embody transformational leadership
 
 ### Appendix B - The stats
+
+Correlation and prediction, variables and constructs. This is a summary
+off all the statistics in the book, nicely categorized. I will highlight
+some of the stats.
+
+**Organizational performance:**
+
+_High performers had 50% higher market capitalization growth over three years compared to low performers_
+
+**Software delivery performance**
+
+_There are no trade-offs between improving performance and achieving higher levels of tempo and stability_
+
+**Quality**
+
+_High performers report the lowest amount of manual work across all practices (configuration management, testing, deployments, change approval process) at statistically significant levels_
+
+**Burnout and deployment pain**
+
+_Deployment pain is negatively correlated with software delivery performance and Westrum organizational culture_
+
+**Technical capabilities**
+
+_High performers have the shortest integration times and branch lifetimes, with branch life and integration typically lasting hours or a day_
+
+_High performers spend 50% less time remediating security issues than low performers_
+
+**Architecture capabilities**
+
+_A loosely coupled, well-encapsulated architecture drives IT performance_
+
+**Lean management capabilities**
+
+_Lean management capabilities predict Westrum organizational culture, job satisfaction, software delivery performance, and less burnout_
+
+**Lean product management capabilities**
+
+_The ability to take an experimental approach to product development is highly correlated with the technical practices that contribute to continuous delivery_
+
+**Organizational culture capabilities**
+
+_The more painful code deployments are, the poorer the culture_
+
+**Identity, employee net promoter score (ENPS), and job satisfaction**
+
+_Job satisfaction predicts organizational performance_
+
+**Leadership**
+
+_High-performing teams reported having leaders with the strongest behaviors across all dimensions: vision, inspirational communication, intellectual stimulation, supportive leadership, and personal recognition_
+
+_Low-performing teams reported the lowest levels of all five leadership characteristics_
+
+_Transformational leadership is highly correlated with employee Net Promoter Score (eNPS)_
+
+**Diversity**
+
+_6% Female_
+
+**Other**
+
+_Investment in DevOps was highly correlated to software delivery performance_
+
+### Appendix C - Statistical methods used in our research
+
+A lot of statistical language along the lines of
+
+- Survey preparation
+- Data collection
+- Tests for bias
+- Testing for relationships
+- Tests of the measurement model
+- Tests for relationships (correlation and prediction) and classification
+- Tests for classification
+
+And a lot of other words :)
+
+---
+
+# Conclusion
+
+There is, of course, a lot of the knowledge in this book available from a lot of
+other sources. But the authors here have gone through hoops to make sure that what
+they claim is valid using surveys and statistics.
+
+It is, on top of that, a well-written book. The subject, the hard work, the
+well-writtenness: all-in-all I think this is worth five stars.

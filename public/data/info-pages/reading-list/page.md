@@ -5,7 +5,6 @@ probably a particular order)
 
 1. A Philosophy of Sofware Design (John Ousterhout)
 1. A Scrum Book (Jeff Sutherland, James O. Coplien)
-1. Accelerate (Nicole Forsgren, Jez Humble, Gene Kim)
 1. Adaptive Systems with Domain-Driven Design, Wardley Mapping, and Team Topologies (Susanne Kaiser)
 1. Antifragile: Things that gain from Disorder (Nassim Nicholas Taleb)
 1. Architecture Modernization (Nick Tune, Jean-Georges Perrin)
@@ -59,6 +58,7 @@ probably a particular order)
 
 # (Some of the) books I've read
 
+1. [Accelerate (Nicole Forsgren, Jez Humble, Gene Kim)](/blogs/accelerate)
 1. [Code that Fits in Your Head (Mark Seeman)](/blogs/code-that-fits-in-your-head)
 1. [Creating Software with Modern Diagramming Techniques (Ashley Peacock)](/blogs/creating-software-with-modern-diagramming-techniques)
 1. [Domain Modeling Made Functional (Scott Wlaschin)](https://www.goodreads.com/review/edit/34921689)
