@@ -63,7 +63,7 @@ spent on "producing" something. Well, math (queue theory) tells us how bad an id
 A successful measure should focus on outcomes, global outcomes, so
 teams basically can't compete.
 
-Four measures have been shown to be good for software delivery: delivery lead time
+Four measures have been shown to be good for software delivery: delivery lead time,
 deployment frequency, time to restore service, change fail rate, although only
 the first three can be shown to correlate with delivery performance. But
 _these results demonstrate that there is no tradeoff between improving performance and achieving higher levels of stability and quality_.
