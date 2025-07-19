@@ -1,7 +1,5 @@
 # Accelerate - a review
 
-Serverless as a Game Changer: How to Get the Most Out of the Cloud
-
 **Rating**
 
 [Rating: ⍟⍟⍟⍟⍟](/blogs/how-am-i-doing-my-reviews)
@@ -356,8 +354,8 @@ _Leading questions_, _Loaded questions_, _Multiple questions in one_,
 _Unclear language_.
 
 Most single question surveys are weak, although one well-known
-exception is _Net Promoter Score (NPS)_, which use and applicability
-are well-documented. On top of that it has become and industry
+exception is _Net Promoter Score (NPS)_, of which the use and applicability
+is well-documented. On top of that it has become an industry
 standard and it is therefore easily comparable across teams
 and companies.
 
@@ -428,7 +426,7 @@ More a summary than a conclusion.
 ### Appendix A - Capabilities to drive improvement
 
 The research of the authors have revealed 24 key capabilities that drive
-improvement in software delivery performance in a stistically significant
+improvement in software delivery performance in a stastically significant
 way. These are divided into five categories.
 
 **Continuous delivery**

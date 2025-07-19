@@ -350,6 +350,13 @@
             "dir": "",
             "date": "2025-02-25",
 			"categories": ["review"]            
+        },{
+            "url" : "/blogs/the-phoenix-project",
+            "title": "The Phoenix Project - a review",
+            "teaser": "Rising from the ashes",
+            "dir": "",
+            "date": "2025-07-19",
+			"categories": ["review"]            
         }
     ]
 }

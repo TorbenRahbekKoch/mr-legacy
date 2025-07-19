@@ -550,6 +550,17 @@
         "author": "Matthew Skelton",
         "languages": ["dk", "en"],
         "source": "https://www.linkedin.com/posts/matthewskelton_businessagility-leadership-strategy-activity-7318650632356204544-_Rx7"
+    },{
+        "quote": "Being able to take needless work out of the system is more important than being able to put more work into the system",
+        "author": "Gene Kim",
+        "languages": ["dk", "en"],
+        "source": "The Phoenix Project"
+    },{
+        "quote": "Outcomes are what matter—not the process, not controls, or, for that matter, what work you complete",
+        "author": "Gene Kim",
+        "languages": ["dk", "en"],
+        "source": "The Phoenix Project"
     }
+
 ]
 }
