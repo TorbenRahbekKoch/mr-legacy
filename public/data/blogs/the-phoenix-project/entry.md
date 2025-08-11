@@ -10,6 +10,8 @@ I'm reading [the O'Reilly ebook](https://learning.oreilly.com/library/view/the-p
 
 Written by Gene Kim, Kevin Behr and George Spafford.
 
+## The review
+
 I cannot believe I've postponed reading this for so long. What a riveting read!
 
 Since this more reads like a novel I'm not going to go through this chapter by chapter.

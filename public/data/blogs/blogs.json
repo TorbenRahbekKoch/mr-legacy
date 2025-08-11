@@ -357,6 +357,13 @@
             "dir": "",
             "date": "2025-07-19",
 			"categories": ["review"]            
+        },{
+            "url" : "/blogs/the-unicorn-project",
+            "title": "The Unicorn Project - a review",
+            "teaser": "Stop horsing around",
+            "dir": "",
+            "date": "2025-08-11",
+			"categories": ["review"]            
         }
     ]
 }
