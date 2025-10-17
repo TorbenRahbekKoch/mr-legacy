@@ -134,3 +134,61 @@ Research has shown that adopting the three ways leads to
 superior outcomes for both organizations and people.
 
 The chaper rounds off with a case study from American Airlines.
+
+### 2. The First Way: The Principles of Flow
+
+Fast and smooth flow of work from Development to Operations is
+key to The First Way in order to quickly deliver value to
+customers.
+
+Making work visible, reducing batch sizes, building quality prevents
+defects from being passed downstream.
+
+In software development and IT in general, moving work around is basically just the click of a button. 
+
+Kanban boards, sprint planning boards are good tools for visualizing
+the work and where it may be waiting.
+
+A kanban board should preferable show the entire value stream where
+work is only finished when running in production. It should be a 
+global view allowing for global rather than local optimization.
+
+*Work in Process (WIP)* should be controlled and limited to avoid context switching which is detrimental to performance. 
+
+An interesting observation is that when WIP is limited you may
+find you have nothing to do, because you are waiting on someone else.
+Here it is *so* tempting to start new work, but it turns out that
+it is far better to figure out what the delay is and fix that
+problem. *Stop starting. Start finishing*.
+
+*Reducing batch sizes* makes it - obviously, one should think - far
+easier to manage a piece of work, since it is, obviously, smaller.
+This also limites the potential risk of the work done. It results
+in less WIP, faster lead times, faster detection of errors and less
+rework.
+
+*Reducing the number of handoffs* will make the work queue up 
+in fewer places increasing global wait times. A handoff inevitable
+causes some loss of knowledge and with enough handoffs it'll end up
+not being known what problem the piece of work actually solves making
+e.g. prioritization extra hard. The extra wait times naturally also
+extends the delivery lead time. We reduce the number of handoffs
+by automating many of the steps along the value stream.
+
+*Identifying constraints* is essential to improve work capacity and
+throughput of the value stream. 
+
+We therefore need to continually identify where constraints are and
+make improvements by using *Goldratt's five focusing steps*:
+
+- Identify the constraint
+- Exploit the constraint
+- Subordinate everything else to the constraint
+- Elevate the constraint
+- Repeat
+
+In transformations to DevOps there are often constraints
+in environment creation, code deployment, testing, and 
+architecture. When all the constraints here are broken the
+remaining constraints in the organization are likely to be
+in e.g. product management. 
