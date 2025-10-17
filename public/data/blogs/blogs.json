@@ -364,6 +364,13 @@
             "dir": "",
             "date": "2025-08-11",
 			"categories": ["review"]            
+        },{
+            "url" : "/blogs/the-devops-handbook",
+            "title": "The DevOps Handbook - a review",
+            "teaser": "A handy book to keep, well, in hand",
+            "dir": "",
+            "date": "2025-10-17",
+			"categories": ["review"]            
         }
     ]
 }
