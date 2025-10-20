@@ -159,7 +159,7 @@ An interesting observation is that when WIP is limited you may
 find you have nothing to do, because you are waiting on someone else.
 Here it is *so* tempting to start new work, but it turns out that
 it is far better to figure out what the delay is and fix that
-problem. *Stop starting. Start finishing*.
+problem instead. *Stop starting. Start finishing*.
 
 *Reducing batch sizes* makes it - obviously, one should think - far
 easier to manage a piece of work, since it is, obviously, smaller.
@@ -191,4 +191,108 @@ In transformations to DevOps there are often constraints
 in environment creation, code deployment, testing, and 
 architecture. When all the constraints here are broken the
 remaining constraints in the organization are likely to be
-in e.g. product management. 
+in e.g. product management.
+
+Lean is very keen on eliminating *waste* or *
+hardships and waste in the value stream*. The Poppendiecks
+lists seven types of waste:
+
+*Partially done work*, which is waiting for getting through all
+the goal posts and until then is just sunk cost.
+
+*Extra processes* is any work that does not add value to the
+customer: the final, paying one and any downstream work centers.
+
+*Extra features*, e.g. gold plating. Anything that really isn't
+needed.
+
+*Task switching*, context switching between different projects, 
+meetings and what have you.
+
+*Waiting* obviously delays cycle time having the customer waiting
+longer for value.
+
+*Motion* is the amount of effort to move information from one
+work to another. Also ties in to Conway's law and the Team Topologies
+way of organizing teams so they minimize unnecessary communication.
+
+*Defects* due to e.g. incorrect or missing information causes
+rework and wastes time (and money).
+
+Two more types of waste mentioned by Damon Edwards:
+
+*Nonstandard of manual work*, e.g. manual processes for setting
+up test environments.
+
+*Heroics* where persons and teams must make an almost Herculean
+effort by e.g. creating hundreds of work tickets when doing
+a release.
+
+The chapter ends with an interesting case study for an emergency department where it is
+really highlighted that you need system thinking to get fast flow.
+
+### 3. The Second Way: The Principles of Feedback
+
+Feedback, feedback, feedback, everywhere, all at once!
+
+One characteristic of a *complex system* is that *it defies
+any single person's ability to see the system as a whole and 
+understand how all the pieces fit together*. How does one
+work safely within such a system?
+
+Since another characteristic is that *doing the same twice
+will not predictably or necessarily lead to the same result* so
+that e.g. checklists and best practices simply aren't enough. 
+
+To make it safe(r) to work in complex systems, we need to:
+
+- Manage work so problems are revealed
+- Swarm and solve problems, to create new knowledge
+- Local knowledge is distributed globally in the organization
+- Leaders create leaders with these qualities
+
+Feedback and feedforward loops are essential in discovering
+problems as they occur. There are, according to Elisabeth
+Henrickson, six types of feedback in software development.
+
+- Dev Tests
+- Continuous Integration and Testing
+- Exploratory Testing
+- Acceptance Testing
+- Stakeholder Feedback
+- User Feedback
+
+Those are in increasing order of the time it takes to get that
+specific feedback.
+
+When detecting problems we need to swarm and solve problems and
+put the new knowledge obtained to good use so it doesn't happen
+again. You don't wait with fixing the problem until the next retro,
+where memory has faded. You fix it now so it doesn't spread downstream.
+
+Even though Swarming to solve a local problem distrupts work globally, it enables learning, it prevents loss of critical information. 
+
+Pull the Andon cord!
+
+A short case study of *Excella* introducing the virtual 
+Andon cord explains the usefullness of it in detail.
+
+It is quite interesting that *adding more inspection steps and approval processes actually increases the likelihood of future failures* wherefore we should aim to *Keep pushing Quality Closer to the Source.* 
+
+Some examples of ineffective quality controls are:
+
+- Requiring another team to complete tedious, manual tasks that could easily be automated
+- Requiring approvals from busy people distant from the work
+- Creating documentation which become obsolete shortly after it is written
+- Pushing large batches of work for approval and then waiting for response
+
+One could add pull requests to this list. 
+
+Everyone in the value stream should find and fix problems as part
+of the daily work. 
+
+Everyone's most important customer is, according to Lean, the next
+step downstream. We should strive to optimize our work for them. A 
+local optimization, but still and optimization.
+
+
