@@ -272,7 +272,7 @@ where memory has faded. You fix it now so it doesn't spread downstream.
 
 Even though Swarming to solve a local problem distrupts work globally, it enables learning, it prevents loss of critical information. 
 
-Pull the Andon cord!
+**Pull that Andon cord!**
 
 A short case study of *Excella* introducing the virtual 
 Andon cord explains the usefullness of it in detail.
@@ -293,6 +293,77 @@ of the daily work.
 
 Everyone's most important customer is, according to Lean, the next
 step downstream. We should strive to optimize our work for them. A 
-local optimization, but still and optimization.
+seemingly local-only optimization, but it makes the work of the downstream customer easier, so it is more than a local optimization.
 
+### 4. The Third way: The Principles of Continual Learning and Experimentation
 
+Here we focus on *creating a culture of continual learning and
+experimentation*, because it will *create an inspiring, rewarding
+workplace where we are excited to work and collaborate with
+our peers.*
+
+We can do this by *applying a scientific approach to both process
+improvement and product development*.
+
+The type of organization - or rather the culture of the organization - is a predictor for how good we are at
+e.g. learning and there are three major culture types: *Pathological*, *Bureaucratic* and *Generative* where only the 
+latter is a predictor for high organizational performance.
+
+*Blameless post-mortems (retrospectives)* help build understanding
+and improve prevention and detection of incidents because by 
+*removing blame, you remove fear, by removing feat, you enable
+honesty; and honesty enables prevention*.
+
+**Institutionalize the Improvement of Daily Work**
+
+It's an interesting observation that *in the absence of improvements, processes don’t stay the same—due to chaos and entropy, processes actually degrade over time*, which is
+why that *Even more important than daily work is the improvement of daily work.*
+
+This can be done by e.g. *explicitly reserving time to pay down
+technical debt*.
+
+**Transform Local Discoveries into Global Improvements**
+
+This is about spreading your learnings to other teams.
+
+Examples of this is *making all our blameless post-mortem
+reports searchable by teams trying to solve similar problems*.
+
+**Inject Resilience Patterns into Our Daily Work**
+
+*In the technology value stream, we can introduce the same type of tension into our systems by seeking to always reduce deployment lead times, increase test coverage, decrease test execution times, and even by rearchitecting if necessary to increase developer productivity or increase reliability.*
+
+This is continuous learning on another level. We work on changing
+things all the time, creating a sense of tension, but on a 
+positive level. This should not be thought of as 
+stressful, because it is a deliberate and considered tension. 
+
+*we can introduce the same type of tension into our systems by seeking to always reduce deployment lead times, increase test coverage, decrease test execution times, and even by rearchitecting if necessary to increase developer productivity or increase reliability.*
+
+The Netflix Chaos Monkey is a famous example of actively learning
+how to create resilience.
+
+**Leaders Reinforce a Learning Culture**
+
+*The leader’s role is to create the conditions so their team can discover greatness in their daily work.*
+
+Neither leaders or workers can solve (all) problems alone, so leaders
+can help formulate strategic goals (True North goals). From these
+are derived shorter-term goals, such as *reduce lead time by
+10% within the next two weeks*.
+
+This is then executed like a scientific experiment: State the problem
+to be solved. Formulate a hypothesis why our attempt at solving it
+will actually solve it. How will we test our hypothesis. All these
+will inform the next iteration of solving the problem - or new problems.
+
+A extensive list of coaching questions such as *What was your
+last step and what happened?* and *What is your condition now?*
+will help formulate and execute the experiment.
+
+**Conclusion*
+
+*The Third Way* - fostering a culture of continual learning and
+experimentation is building on the principles of *The first and
+Second Ways*: improving flow and feedback using an iterative 
+approach.
