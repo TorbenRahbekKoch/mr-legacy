@@ -367,3 +367,109 @@ will help formulate and execute the experiment.
 experimentation is building on the principles of *The first and
 Second Ways*: improving flow and feedback using an iterative 
 approach.
+
+## Part II - Where to start
+
+### Part II - Introduction
+
+Where to begin, where to begin...?
+
+It's just as with Agile. You cannot transform the entire
+company in one go. But in opposition to Agile you'll gain
+value simply by starting. And more value by starting right.
+
+### 5. Selecting which value stream to start with
+
+*When we're in trouble, we don't get very many shots.*
+
+Don't select value streams or areas of transformation on 
+a willy-nilly feeling.
+
+**Nordstrom's DevOps Transformation**
+
+A case study of Nordstrom and how their DevOps transformation
+started with their mobile application, which was in a bad state.
+
+A first goal was faster or on-demand releases (hotfixes). One
+means was to eliminate testing as a separate phase of work and
+instead integrate it into everyone's daily work.
+
+It is an interesting case-study with a lot of valuable insight.
+
+**Greenfield vs. Brownfield Services**
+
+Debunking the myth that DevOps is only for greenfield projects.
+Research shows that *the age of the application or even the technology used was not a significant predictor of performance*.
+
+A number of successful DevOps transformations of
+existing systems is listed along with with a case study of
+the US Air Force, which made great use of the 
+[Strangler Fig Pattern](https://martinfowler.com/bliki/StranglerFigApplication.html)
+and
+[Gall's Law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law).
+
+**Consider Both Systems of Record and Systems of Engagement**
+
+In [Bimodal IT](https://www.devx.com/terms/bimodal-it/) we
+have Type 1: *systems of record*, where the organization focuses
+on getting it right, and Type 2: *systems of engagement*, where
+the organization focuses on doing it fast.
+
+Doing DevOps enables collapsing this, since it is now possible
+to *simultaneously deliver higher levels of throughput and 
+reliability*.
+
+When improving brownfield systems, it is important to honour
+[Kent Beck: Make the change easy, then make the easy change](https://tidyfirst.substack.com/p/tidy-first-example) and of course also
+[Make it run, make it right, make it fast](https://tidyfirst.substack.com/p/mastering-programming).
+
+**Start With the Most Sympathetic and Innovative Groups**
+
+All organizations have groups of "let's just continue doing
+what we do. We know how to do that" and some organizations have
+the "Heck yeah, let's try that!" groups. Start with the last. 
+
+And naturally don't start everywhere all at once. Keep it tight.
+
+**Expanding DevOps Across Our Organization**
+
+Note that *we must demonstrate early wins and broadcast our successes*.
+
+This also enables us to discover if we've chosen the wrong
+value stream to begin with. 
+
+According to Dr. Roberto Fernandez the ideal phases for adoption
+are:
+
+1. Find innovators and early adopters
+2. Build critical mass and silent majority
+3. Identify the holdouts
+
+*Leading change requires courage, especially in corporate environments where people are scared and fight you*. This is
+important. People are scared of what they don't understand, so
+make it visible and understandable.
+
+**Case Study: American Airlines' DevOps Journey II**
+
+*By year three, they had realized that DevOps was really a bigger transformation than just a way of working in IT—it was a business transformation.*
+
+I guess this is something a lot of organizations trying to go Agile
+never realizes... ;)
+
+A lot of gold in this case study. 
+
+- Clarity of mission
+- Getting something out (MVP) versus getting something perfect
+- Finishing versus starting (limiting WIP)
+
+*Leaders needed to change their ways of working as well*.
+
+**Case Study: Saving the Economy From Ruin (With a Hyperscale PaaS) at HMRC (2020)**
+
+Trust, culture, tooling, practices.
+
+*The most important aspect of delivering a system at speed is the ability for engineers to ‘just get on with it'*
+
+**Conclusion**
+
+*By carefully choosing where and how to start, we are able to experiment and learn in areas of our organization that create value without jeopardizing the rest of the organization.*

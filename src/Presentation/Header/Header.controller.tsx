@@ -13,6 +13,7 @@ export interface Texts {
   twitterSource: string
   linkedinSource: string
   oreillySource: string
+  youtubeSource: string
 }
 
 export const defaultProps = {

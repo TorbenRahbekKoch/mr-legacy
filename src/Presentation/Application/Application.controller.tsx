@@ -88,7 +88,8 @@ export function ApplicationController() {
     source: texts.source,
     twitterSource: texts.twitterSource,
     linkedinSource: texts.linkedinSource,
-    oreillySource: texts.oreillySource
+    oreillySource: texts.oreillySource,
+    youtubeSource: texts.youtubeSource
   }),[texts])
 
   const blogController = useCallback(

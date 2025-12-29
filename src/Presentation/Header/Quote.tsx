@@ -12,6 +12,7 @@ export interface Texts {
   twitterSource: string
   linkedinSource: string
   oreillySource: string
+  youtubeSource: string
 }
 
 export interface Props {
@@ -37,6 +38,9 @@ export function Quote(props: Props) {
       }
       else if (source.indexOf("oreilly.com") > 0) {
         text = props.texts.oreillySource
+      }
+      else if (source.indexOf("youtube.com") > 0) {
+        text = props.texts.youtubeSource
       }
 
       source = `[${text}](${props.quote.source})`

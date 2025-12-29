@@ -16,7 +16,8 @@ export interface AllTexts {
   source: string
   twitterSource: string
   linkedinSource: string,
-  oreillySource: string
+  oreillySource: string,
+  youtubeSource: string
 }
 
 export const defaultTexts = {
@@ -37,5 +38,6 @@ export const defaultTexts = {
   source: "",
   twitterSource: "",
   linkedinSource: "",
-  oreillySource: ""
+  oreillySource: "",
+  youtubeSource: ""
 }

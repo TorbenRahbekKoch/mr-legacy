@@ -560,6 +560,16 @@
         "author": "Gene Kim",
         "languages": ["dk", "en"],
         "source": "The Phoenix Project"
+    },{
+        "quote": "Culture eats strategy for breakfast",
+        "author": "Peter Drucker",
+        "languages": ["dk", "en"],
+        "source": "https://www.youtube.com/watch?v=AVQG8UtTauc"
+    },{
+        "quote": "The most important aspect of delivering a system at speed is the ability for engineers to ‘just get on with it'",
+        "author": "Matt Hyatt",
+        "languages": ["dk", "en"],
+        "source": "https://www.youtube.com/watch?v=4nMfy53Mxyk"
     }
 
 ]
