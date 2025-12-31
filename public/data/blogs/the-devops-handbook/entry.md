@@ -473,3 +473,49 @@ Trust, culture, tooling, practices.
 **Conclusion**
 
 *By carefully choosing where and how to start, we are able to experiment and learn in areas of our organization that create value without jeopardizing the rest of the organization.*
+
+### 6. Understanding the work in our value stream, making it visible, and expanding it across the organization
+
+Quite a mouthful! 
+
+The understanding begins with a workshop with all major 
+stakeholders mapping out the value stream. My personal pet peeve
+is that Wardley Mapping may deepen the understanding even more.
+
+When we have a fairly thorough overview of the value stream
+we also see where the major problems are and can start
+improving those. Incremental is the way forward.
+
+To avoid the classic "transform in your own time" it is 
+vital to create a dedicated transformation team, where operates
+outside the normal daily operations of the organization.
+
+Measurable goals need to be defined and the planning should, just
+as the work, be iterative, so we can change direction when new
+information is revealed along the way.
+
+**Reserve 20% of Capacity for Non-Functional Requirements and Reducing Technical Debt**
+
+This is so important! *At least 20% of all Development and Operations
+capacity* should be spent on refactoring, automation work, architecture and what is generally known as non-functional
+requirements.
+
+This is highlighted by a case study of LinkedIn, where the technical
+debt was holding everyone back. They stopped delivering new features
+for two months, instead focusing on architecture and automation.
+
+**Increase the Visibility of Work**
+
+To know whether we are making progress, *it’s essential that everyone in the organization knows the current state of work.*
+
+**Use Tools to Reinforce Desired Behavior**
+
+One really interesting observation here is the common backlog
+of work crossing different teams. Especially using a Kanban-board
+helps make work clearly visible.
+
+Tools, such as chat rooms, and other collaboration tools enables
+the various stakeholders in the value stream to keep in touch.
+Just beware that this also can be an interruption which levels up
+the context switch. It's a balance.
+
