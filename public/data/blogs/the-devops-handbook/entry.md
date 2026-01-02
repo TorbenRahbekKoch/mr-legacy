@@ -10,6 +10,8 @@ I'm reading [the O'Reilly ebook](https://learning.oreilly.com/library/view/the-d
 
 Written by Gene Kim, Jez Humble, Patrick Debois, John Willis, Nicole Forsgren.
 
+I'm publishing the review as a read the book.
+
 # The review
 
 Following the successes of [The Phoenix Project](/blogs/the-phoenix-project),
@@ -518,4 +520,68 @@ Tools, such as chat rooms, and other collaboration tools enables
 the various stakeholders in the value stream to keep in touch.
 Just beware that this also can be an interruption which levels up
 the context switch. It's a balance.
+
+### 7. How to design our organization and architecture with Conway's Law in mind
+
+I was not aware that a more simplified version of Conway's Law
+has been coined by Eric S. Raymond: *The organization of the software and the organization of the software team will be congruent; commonly stated as ‘if you have four groups working on a compiler, you’ll get a 4-pass compiler.*
+
+The message is the same: *How we organize our teams has a powerful effect on the software we produce.*
+
+An example of this from Etsy, describes how the idea of decoupling
+something instead creates a tight dependency due to the increased
+coordination needed.
+
+**Organizational Archetypes**
+
+Functional, Matrix, and Market-oriented organizations. 
+
+Functional-oriented organizations often organize teams by
+specialties easily resulting in silos, which do not have the
+full view of the value stream.
+
+Market-oriented teams are - ideally - fully self-contained with
+all the expertise needed for the value stream. Often, though, the
+organization has a combination of functional and market-oriented
+teams. There are simply not enough people to have all the expertise
+in all teams.
+
+What is important, though, is the common view of the value streams, so the functional teams can prioritize on their own. A high-trust
+culture where teams trust each other decreases friction.
+
+It may come as a surprise for many people that Toyota is highly
+organized in a functional way, but *What is decisive is not the form of the organization, but how people act and react.*
+
+Everyone is responsible for quality and therefore testing, automation, operations is everyone's day job.
+
+This also highlights the need for everyone, or at least the 
+majority, to be generalists. 
+
+The organization should encourage this, because 
+*By cross-training and growing engineering skills, generalists can do orders of magnitude more work than their specialist counterparts, and it also improves our overall flow of work by removing queues and wait time.*
+
+Some managers will complain that generalists are more expensive
+(to be honest, I would have thought that specialists are the
+expensive ones), but *the business benefits of enabling faster flow are overwhelming*.
+
+**Fund Not Projects but Services and Products**
+
+It is important to *create stable service teams with ongoing funding to execute their own strategy and road map of initiatives.*
+
+I think it was said in Team Topologies that teams should be stable,
+but not static.
+
+**Create Loosely Coupled Architectures to Enable Developer Productivity and Safety**
+
+Teams should be able to work as independently as possible. This also ties in to Conway's Lay, which encourages to keep team size
+small. 
+
+A small overview of team types in 
+[Team Topologies](/blogs/team-topologies) is given followed
+by a 2015 case study of Target creating an API Team.
+
+**Conclusion**
+
+Since *we can see how architecture and organizational design can dramatically improve our outcome*, we should be deliberate
+about it.
 
