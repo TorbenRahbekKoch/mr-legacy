@@ -10,7 +10,7 @@ I'm reading [the O'Reilly ebook](https://learning.oreilly.com/library/view/the-d
 
 Written by Gene Kim, Jez Humble, Patrick Debois, John Willis, Nicole Forsgren.
 
-I'm publishing the review as a read the book.
+I'm publishing the review as I read the book.
 
 # The review
 
@@ -584,4 +584,74 @@ by a 2015 case study of Target creating an API Team.
 
 Since *we can see how architecture and organizational design can dramatically improve our outcome*, we should be deliberate
 about it.
+
+### 8. How to get great outcomes by integration operations into the daily work of development
+
+They don't skimp on the chapter titles ;)
+
+But: *Our goal is to enable user-oriented outcomes where many small teams can quickly and independently deliver value to customers*,
+but how do we do that?
+
+The case study of Big Fish Games shows one model called *Ops liaison*, where people from
+operations camp out in the various development teams, to help them get into the
+operations mindset, thereby enabling the DevOps mindset.
+
+Three strategies helped shape the DevOps transformation at Big Fish Games:
+
+- Create self-service capabilities
+- Embed Ops Engineers into the service teams
+- Assign Ops liaisons to the service teams
+
+This is a combination of platform team and enabling team from Team Topologies.
+
+**Create Shared Services to Increase Developer Productivity**
+
+The platform team creates the shared services, e.g. getting production-like
+environments, deployment pipelines, and so on.
+
+*Without these self-service Operations platforms, the cloud is just Expensive Hosting 2.0*.
+
+The shared services should be seen as real products with the Dev teams as 
+the customers. *It’s okay for people to be dependent on our tools, but it’s important that they don’t become dependent on us-*
+
+**Embed Ops Engineers into Our Service Teams**
+
+*Pairing Dev and Ops engineers together is an extremely efficient way to cross-train operations knowledge and expertise into a service team*.
+
+**Assign an Ops Liaison to Each Service Team**
+
+*We can get many of the same benefits by assigning a designated liaison for each product team* and
+it allows for supporting more product teams than the embedded ops model.
+
+**Integrate Ops into Dev Rituals**
+
+Whether we are doing standups or push-ups doesn't matter, we want Ops to understand
+the weird creature called a developer and the weird incantations we use. And likewise
+the Devs need to understand the Ops.
+
+**Invite Ops to Our Dev Standups**
+
+Again, this helps solve problems by sharing knowledge.
+
+**Invite Ops to Our Dev Retrospectives**
+
+And let them also share their findings and learnings. 
+*Feedback from Operations helps our product teams better see and understand the downstream impact of decisions they make.*
+
+*We must remind everyone that improvement of daily work is more important than daily work itself*. 
+
+*Without doing this, the productivity of the team will almost certainly grind to a 
+halt under the weight of its own technical and process debt.*
+
+**Make Relevant Ops Work Visible on Shared Kanban Boards**
+
+*Because Operations is part of the product value stream, we should put the Operations work that is relevant to product delivery on the shared kanban board. *
+
+**Case Study: Better Ways of Working at Nationwide Building Society (2020)**
+
+*By moving from functional teams in silos to long-lived, multi-skilled teams, Nationwide has seen throughput improve dramatically, as well as improvements in risk and quality and lower costs.*
+
+*Beyond simply bringing Dev and Ops together, Nationwide brought together teams with all the skills necessary to bring value to market—moving from multiple functional teams to single, multiskilled teams. This illustrates the power of breaking down silos in order to move faster.*
+
+## Part III - The First Way: The Technical Practices of Flow
 
