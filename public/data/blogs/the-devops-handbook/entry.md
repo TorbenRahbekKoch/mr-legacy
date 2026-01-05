@@ -719,6 +719,8 @@ A feature is not DONE before it is running in a production-like environment.
 
 **Conclusion**
 
+*By making production infrastructure easier to rebuild than to repair, we make resolving problems easier and faster, as well as making it easier to expand capacity*.
+
 
 
 
