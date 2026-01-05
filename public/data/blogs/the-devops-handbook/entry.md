@@ -655,3 +655,75 @@ halt under the weight of its own technical and process debt.*
 
 ## Part III - The First Way: The Technical Practices of Flow
 
+### Part III - Introduction
+
+*We need to reduce the risk associated with deploying and releasing changes into production* which will
+be done by implementing *continuous delivery*.
+
+### 9. Create the foundations of our deployment pipeline
+
+It seems that the key is to *ensure that we always use production-like environments at every stage of the value stream*.
+
+**The Enterprise Data Warehouse Story (2009)**
+
+This is really a classic story about everything going wrong and the slowly being made
+right. E.g. getting an environment went from eight weeks to one day.
+
+The use of version control was expanded to include everyone in the value stream
+(*version control is for everyone in our value stream, including QA, Operations, Infosec, as well as developers*) 
+and environments can be created on demand, enabling e.g. developers to run
+production-like environments on the own workstations.
+
+**Create Our Single Repository of Truth for the Entire System**
+
+All production artifacts should be put into version control. This includes at least
+
+- Application code
+- DB Scripts
+- Environment scripts
+- Container scripts
+- Test scripts
+- Release notes
+- Cloud configuration files
+- Infrastructure (network, dns, firewall, etc.) scripts
+- Scripts for setting up build services
+
+We basically need to be able to start from version control and end up with a production
+environment running everything as it should be running. Think disaster recovery.
+
+Note that *the use of version control for all production artifacts was a higher predictor for software delivery performance*.
+
+**Make Infrastructure Easier to Rebuild Than to Repair**
+
+Instead of trying to "fix servers", you fix the script that sets them up and run those scripts, basically
+deploying new (virtual) servers and taking the old ones down.
+
+This is now known as *immutable infrastructure*. Infrastructure is not changed, it is rebuilt. Servers
+are then easily kept up-dated, which is good since *keeping your software current is the best way to secure your codebase.*
+
+**Case Study: How a Hotel Company Ran $30B of Revenue in Containers (2020)**
+
+Containers satisfy three key things: Abstracting infrastructure, specialization, automation.
+
+Even though certificates are no longer a part of the application or managed by developers they
+will be in version control.
+
+Zero trust, small (container) images, sidecars. Since containers are so easy to update
+they play very well with the "rebuild rather than repair" mindset.
+
+**Modify Our Definition of Development “Done” to Include Running in Production-Like Environments**
+
+A feature is not DONE before it is running in a production-like environment.
+
+*We will only accept development work as done when it can be successfully built, deployed, and confirmed that it runs as expected in a production-like environment*.
+
+**Conclusion**
+
+
+
+
+
+
+
+
+
