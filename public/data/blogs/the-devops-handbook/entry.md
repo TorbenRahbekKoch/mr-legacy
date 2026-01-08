@@ -721,6 +721,82 @@ A feature is not DONE before it is running in a production-like environment.
 
 *By making production infrastructure easier to rebuild than to repair, we make resolving problems easier and faster, as well as making it easier to expand capacity*.
 
+### 10. Enable fast and reliable automated testing
+
+It is a misconception that better observability means less testing. We want to catch errors as
+soon as possible, so close to the developer, as possible. Using Event Modeling you can even
+catch the errors before one line of code is written.
+
+Automated tests also works as a safety belt securing you when you drive of the road.
+
+**Continuously Build, Test, and Integrate Our Code and Environments**
+
+We want to build quality into our product and do this by shortening the feedback
+cycle with automated tests. 
+
+*Our deployment pipeline validates after every change that our code successfully integrates into a production-like environment*.
+
+*it will be used to create self-service builds to UAT (user acceptance testing), integration testing, and security testing environments.*
+
+*we want to package our code only once so that the same packages are used to deploy code throughout our entire deployment pipeline.*
+
+*Code will be deployed into our integrated test and staging environments in the same way that it is deployed into production.*
+
+*The goal of the deployment pipeline is to provide everyone in the value stream, especially developers, the fastest possible feedback that a change has taken us out of a deployable state.*
+
+**Build a Fast and Reliable Automated Validation Test Suite**
+
+Unit tests, Acceptance tests, Integration tests.
+
+*The objective of acceptance tests is to prove that our application does what the customer meant it to.*
+
+**Catch Errors as Early in Our Automated Testing as Possible**
+
+*Any errors should be found with the fastest category of testing possible*
+
+*If we find that unit or acceptance tests are too difficult and expensive to write and maintain, it’s likely that we have an architecture that is too tightly coupled, where strong separation between our module boundaries no longer exists (or maybe never existed)*
+
+**Ensure Tests Run Quickly (In Parallel, If Necessary)**
+
+*We make any build that passes all our automated tests available to use for exploratory testing, as well as for other forms of manual or resource-intensive testing (such as performance testing).*
+
+**Write Our Automated Tests before We Write the Code (“Test-Driven Development”)**
+
+Good, old TDD rears it head again. And it definitely has validity in some cases.
+
+**Automate as Many of Our Manual Tests as Possible**
+
+*Although testing can be automated, creating quality cannot. To have humans executing tests that should be automated is a waste of human potential.
+
+*Teams that only ship features without test automation are shipping risk and building up technical debt*
+
+*Three strategies for teams to ship both features and test automation in their sprints:*
+
+Collaborate, Automate strategically, Build incrementally.
+
+**Integrate Performance Testing into Our Test Suite**
+
+*Our goal is to write and run automated performance tests that validate our performance across the entire application stack (code, database, storage, network, virtualization, etc.) as part of the deployment pipeline so we detect problems early, when the fixes are cheapest and fastest.*
+
+**Integrate Non-Functional Requirements Testing into Our Test Suite**
+
+The -ilities, such as availability, scalability, capacity, security. 
+
+*We must also build automated tests to validate that our environments have been built and configured properly.*
+
+*Use infrastructure as code configuration management tools*
+
+**Pull Our Andon Cord When the Deployment Pipeline Breaks**
+
+It is the spinal cord, so when it breaks we pull together to fix it.
+
+*Whenever someone introduces a change that causes our build or automated tests to fail, no new work is allowed to enter the system until the problem is fixed.*
+
+*Whenever we help someone move their work forward, we help the entire team.*
+
+**Why We Need to Pull the Andon Cord**
+
+Broken Windows, of course.
 
 
 
