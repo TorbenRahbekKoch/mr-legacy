@@ -798,10 +798,42 @@ It is the spinal cord, so when it breaks we pull together to fix it.
 
 Broken Windows, of course.
 
+### 11. Enable and practice continuous integration
 
+*Integration problems result in a significant amount of rework to get back into a deployable state, including conflicting changes that must be manually merged or merges that break our automated or manual tests, usually requiring multiple developers to successfully resolve.*
 
+**HP’s LaserJet Firmware (2014)**
 
+Another classic example of a company drowning in technical debt and using
+DevOps practices to dig themselves out.
 
+**Small Batch Development and What Happens When We Commit Code to Trunk Infrequently**
 
+*When merging is difficult, we become less able and motivated to improve and refactor our code, because refactorings are more likely to cause rework for everyone else.*
 
+Make the change easy, then make the easy change:
 
+*When we do not aggressively refactor our codebase, it becomes more difficult to make changes and to maintain over time, slowing down the rate at which we can add new features.*
+
+**Adopt Trunk-Based Development Practices**
+
+Possibly even with *gated commits*. 
+
+**Case Study: Continuous Integration at Bazaarvoice (2012)**
+
+The classic example again, but with an interesting observation:
+
+*The majority of changes required were in our customer service and marketing teams, who had to change their processes, such as changing the schedule of their weekly customer emails to make sure customers knew that feature changes were coming.*
+
+It is clear that DevOps is not just about engineering. It is also about the entire
+organization adopting a Product mindset. If we can release more often it changes
+the burden for other parts of the organization.
+
+**Conclusion**
+
+It is clear that trunk-based development is an essential tool. When wielded properly
+it predicts higher performance if there are three or fewer active branches, branches
+are merged at least daily, and there is no such thing as code freezes.
+
+Event Modeling with very narrow slices reduce the risk of stepping on each other's
+toes considerably and can therefore easily increase the number of active branches.
