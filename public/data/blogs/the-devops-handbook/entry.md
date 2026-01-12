@@ -837,3 +837,94 @@ are merged at least daily, and there is no such thing as code freezes.
 
 Event Modeling with very narrow slices reduce the risk of stepping on each other's
 toes considerably and can therefore easily increase the number of active branches.
+
+### 12. Automate and enable low-risk releases
+
+Starts out with Chuck Rossi telling about deploying at Facebook in 2012. Interesting!
+
+**Automate Our Deployment Process**
+
+Reduce time-consuming steps, reduce the number of handoffs and hence lead times.
+
+*Having developers focus on automating and optimizing the deployment process can lead to significant improvements in deployment flow*,
+and this requires that Development and Operations work close together. DevOps.
+
+Deployment to all environments should be the same. And the same packages should be deployed.
+
+Do (automatic!) smoke testing. Test the environments to ensure consistency.
+
+**Case Study: Daily Deployments at CSG International (2013)**
+
+A development team had become very good at releasing to the test environment, but since
+deployment to production was in the the hands of Operations, they were not very well
+practiced in this.
+
+A Shared Operations Team helped by being resonsible for managing all environments.
+
+They created realistic testing data to simulate full-scale environments to catch
+any surprises there sooner.
+
+Eventually doubling production releases and production incidents
+went down 91%. MTTR went down by 80%.
+
+**Enable Automated Self-Service Deployments**
+
+*When there are shared goals that span Development and Operations and there is transparency, responsibility, and accountability for deployment outcomes, it doesn’t matter who performs the deployment*.
+
+Anyone should be able to deploy. Anyone should be able to run the automated test suite 
+on their own workstation or in a test environment.
+
+*Our goal is to ensure that deployments are fast* with fast feedback, so one can quickly
+determine whether deployment was successful.
+
+**Case Study: Etsy—Self-Service Developer Deployment: An Example of Continuous Deployment (2014)**
+
+Etsy became so good at this that *new engineers could perform a production deployment on their first day at work.*.
+
+**Decouple Deployments from Releases**
+
+This is a very interesting part. 
+
+*Deployment is the installation of a specified version of software to a given environment*.
+
+*Release is when we make a feature (or set of features) available to all our customers or a segment of customers*.
+
+*Decoupling these two activities allows us to empower Development and Operations to be responsible for the success of fast and frequent deployments, while enabling product owners to be responsible for the successful business outcomes of the release.*
+
+*As we become able to deploy on demand, how quickly we expose new functionality to customers becomes a business and marketing decision, not a technical decision.*
+
+There are various ways to control this.
+
+**Environment-Based Release Patterns**
+
+This includes Blue-Green deployment, Canary and Cluster System Release Patterns.
+
+**Case Study: Dixons Retail—Blue-Green Deployment for Point-Of-Sale System (2008)**
+
+**Application-Based Patterns to Enable Safer Releases**
+
+Feature toggles/feature flags with the options to do A/B testing and Dark Launches are our favorite.
+
+**Case Study: Dark Launch of Facebook Chat (2008)**
+
+A poster example for how to do a dark launch.
+
+**Survey of Continuous Delivery and Continuous Deployment in Practice**
+
+*Deployments should be low-risk, push-button events we can perform on demand*.
+
+*When trunk is always kept in a releasable state and when we can release on demand at the push of a button during normal business hours, we are doing continuous delivery.*
+
+*Continuous delivery is the prerequisite for continuous deployment just as continuous integration is a prerequisite for continuous delivery*.
+
+**Case Study: Creating a Win-Win for Dev & Ops at CSG (2016)**
+
+Continuing on their journey on *making operations an engineering problem.*
+
+*Our biggest surprise is how hard Ops really is*. That is true, Operations is hard!
+
+**Conclusion**
+
+*Releases and deployments do not have to be high-risk, high-drama affairs that require tens or hundreds of engineers to work around the clock to complete.*
+
+*They can be made entirely routine and a part of everyone’s daily work.*
