@@ -928,3 +928,45 @@ Continuing on their journey on *making operations an engineering problem.*
 *Releases and deployments do not have to be high-risk, high-drama affairs that require tens or hundreds of engineers to work around the clock to complete.*
 
 *They can be made entirely routine and a part of everyone’s daily work.*
+
+### 13. Architect for low-risk releases
+
+*The challenge is how to keep migrating from the architecture we have to the architecture we need*.
+
+Generally the fine Martin Fowler has you covered with the strangler fig pattern, which will help you overcome 
+the Second Law of Architectural Thermodynamics: The downward spiral.
+
+**An Architecture that Enables Productivity, Testability, and Safety**
+
+*A loosely coupled architecture with well-defined interfaces that enforce how modules connect with each other promotes productivity and safety*.
+
+**Architectural Archetypes: Monoliths vs. Microservices**
+
+*Monolithic architectures are not inherently bad—in fact, they are often the best choice for an organization early in a product life cycle*.
+
+**Case Study: Evolutionary Architecture at Amazon (2002)**
+
+Amazon is one of the most prime examples of converting a strictly monolithic
+application to a service oriented architecture.
+
+**Use the Strangler Fig Application Pattern to Safely Evolve Our Enterprise Architecture**
+
+*If the services we call do not have cleanly defined APIs, we should build them or at least hide the complexity of communicating with such systems within a client library that has a cleanly defined API.*
+
+And then move on with *versioned services*/*immutable services*.
+
+Strangler Fig often wins over rewrites, because often *even old bugs often need to be added to the rewritten system.*
+
+**Case Study: Strangler Fig Pattern at Blackboard Learn (2011)**
+
+Changing to well-defined APIs and *building blocks* made developers much more productive
+and a lot more happy.
+
+**Conclusion**
+
+*The architecture that our services operate within dictates how we test and deploy our code*.
+
+*We must be able to safely migrate from one architecture to another*.
+
+## Part IV - The Second Way: The Technical Practices of Feedback
+
