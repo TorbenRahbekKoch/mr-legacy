@@ -970,3 +970,83 @@ and a lot more happy.
 
 ## Part IV - The Second Way: The Technical Practices of Feedback
 
+### 14. Create telemetry to enable seeing and solving problems
+
+What you don't know *can* actually hurt you. So be proactive. Plan ahead. Create telemetry.
+
+**Case Study: DevOps Transformation at Etsy (2012)**
+
+*Production monitoring was a critical part of Etsy’s DevOps transformation* and together with
+deployment metrics it was obvious when a deployment had unintended consequences.
+
+Tracking is key and therefore tracking has to be easy. 
+
+**Create Our Centralized Telemetry Infrastructure**
+
+We need metrics from various layers: *business logic*, *application*, and *environments* and
+obviously we need tools that can aggregate and visualize the telemetry data.
+
+Deployments are an important metric, too. 
+
+*We will create telemetry that tells us exactly when anything of interest happens, as well as where and how*.
+
+*Monitoring is so important that our monitoring systems need to be more available and scalable than the systems being monitored*.
+
+**Create Application Logging Telemetry That Helps Production**
+
+*Every feature should be instrumented. If it was important enough for an engineer to implement, then it is important enough to generate enough production telemetry to confirm that it is operating as designed and that the desired outcomes are being achieved*.
+
+Create metrics for important events, such as *authentication/authorization*"*, *invalid input*, *circuit breaker trips* and
+a lot more.
+
+**Use Telemetry to Guide Problem Solving**
+
+*High performers use a disciplined approach to solving problems*.
+
+*Telemetry enables us to use the scientific method to formulate hypotheses about what is causing a particular problem and what is required to solve it. *
+
+**Enable Creation of Production Metrics as Part of Daily Work**
+
+*Enable everyone to create metrics in their daily work that can be easily created, displayed, and analyzed.*
+
+**Create Self-Service Access to Telemetry and Information Radiators**
+
+*Our goal is to radiate this information to the rest of the organization, ensuring that anyone who wants information about any of the services we are running can get it* making it possible for *everyone in the value stream can share a common view of reality*.
+
+*We want our production telemetry to be highly visible, which means putting it in central areas where Development and Operations work, thus allowing everyone who is interested to see how our services are performing.*
+
+*Instead of trying to keep customer-impacting problems a secret, we can broadcast this information to our external customers*.
+
+**Case Study: Creating Self-Service Metrics at LinkedIn (2011)**
+
+*The effectiveness of our monitoring system was highlighted in an instant where our InGraphs monitoring functionality tied to a major web-mail provider started trending downwards and the provider realized they had a problem in their system only after we reached out to them*.
+
+**Find and Fill Any Telemetry Gaps**
+
+Metrics needed include: *Business level*, *Application level*, *Infrastructure level*, *Client software level*,
+*Deployment pipeline level*.
+
+*By detecting and correcting problems earlier, we can fix them while they are small and easy to fix with fewer customers impacted.*
+
+*After every production incident, we should identify any missing telemetry that could have enabled faster detection and recovery*.
+
+**Application and Business Metrics**
+
+*Have every business metric be actionable*.
+
+*Ideally, anyone viewing our information radiators will be able to make sense of the information we are showing in the context of desired organizational outcomes, such as goals around revenue, user attainment, conversion rates, etc.*
+
+*We reinforce the cultural expectations that instrumenting and analyzing customer usage is also a part of our daily work, so we better understand how our work contributes to our organizational goals.*
+
+**Infrastructure Metrics**
+
+*Graphing our business metrics alongside our application and infrastructure metrics allows us to detect when things go wrong.*
+
+**Continuous Learning**
+
+*Infrastructure monitoring contributed to continuous delivery*.
+
+**Overlaying Other Relevant Information Onto Our Metrics**
+
+*For instance, for a service that handles a large number of inbound transactions, production changes can result in a significant settling period, where performance degrades substantially as all cache lookups miss.*
+
