@@ -1050,3 +1050,67 @@ Metrics needed include: *Business level*, *Application level*, *Infrastructure l
 
 *For instance, for a service that handles a large number of inbound transactions, production changes can result in a significant settling period, where performance degrades substantially as all cache lookups miss.*
 
+### 15. Analyze telemetry to better anticipate problems and achieve goals
+
+In general you simply cannot manually set thresholds or define normality
+for all your thousands of metrics, so need to have some automated statistics
+to keep false alerts down to a minimum.
+
+One can't help wonder whether AI could help out here, as well.
+
+**Telemetry at Netflix (2012)**
+
+Watching movies follows a rather predictable and recurrent pattern, but 
+still individual nodes may fail, so the way is 
+*first compute what was the ‘current normal’ right now, given the population of nodes in a compute cluster. And then we identified which nodes didn’t fit that pattern, and removed those nodes from production*.
+
+*We can automatically flag misbehaving nodes without having to actually define what the ‘proper’ behavior is in any way.*
+
+**Use Means and Standard Deviations to Detect Potential Problems**
+
+Using *mean* and *standard deviation* is fairly straigt forward
+to work with, but also highly susceptible to alert fatigue. 
+
+Therefore it is advisable to couple data with a Gaussian distribution
+(also known as normal or bell curve distribution) and set alerts
+to trigger on some number of standard deviations greater than the 
+mean. If you know statistics you know this better than me.
+
+**Instrument and Alert on Undesired Outcomes**
+
+Prepare for the unknown is naturally a difficult exercise, but learning
+from already excisting outages is possible. We can
+*analyze our most severe incidents in the recent past (e.g., thirty days) and create a list of telemetry that could have enabled earlier and faster detection and diagnosis of the problem, as well as easier and faster confirmation that an effective fix had been implemented*.
+
+**Problems That Arise When Our Telemetry Data Has Non-Gaussian Distribution**
+
+If all data were equal it would be so much easier, but of course
+that is not the case. Some are e.g. *chi square distributions*.
+
+**Case Study: Auto-Scaling Capacity at Netflix (2012)**
+
+Netflix has a fairly concistent and predictable load, which is not
+even close to a Gaussian distribution, so they use e.g. 
+fast fourier transform (FFT) and linear regression techniques
+to spot anomalies in and do forecasting on their data.
+
+**Using Anomaly Detection Techniques**
+
+*Anomaly detection* is *the search for items or events which do not conform to an expected pattern*.
+
+Various statistical tools, such as R, can be used to analyze data and do e.g.
+*smoothing* which can be done e.g. by doing a rolling average.
+
+There's also something as exotic as the *Kolmogorov-Smirnov test*.
+
+**Case Study: Advanced Anomaly Detection (2014)**
+
+Describes how Komogorov-Smirnov is used to detect problems.
+
+**Conclusion**
+
+It is important to have the metrics, but it is even more important to
+be able to work with the metrics.
+
+In these modern times 
+[AI might help with that](https://www.honeycomb.io/blog/you-had-one-job-why-twenty-years-of-devops-has-failed-to-do-it).
