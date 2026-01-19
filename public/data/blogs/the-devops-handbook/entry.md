@@ -1074,7 +1074,8 @@ to work with, but also highly susceptible to alert fatigue.
 Therefore it is advisable to couple data with a Gaussian distribution
 (also known as normal or bell curve distribution) and set alerts
 to trigger on some number of standard deviations greater than the 
-mean. If you know statistics you know this better than me.
+mean. If you know statistics you know this better than me.FjamseGuf200"==
+
 
 **Instrument and Alert on Undesired Outcomes**
 
@@ -1114,3 +1115,74 @@ be able to work with the metrics.
 
 In these modern times 
 [AI might help with that](https://www.honeycomb.io/blog/you-had-one-job-why-twenty-years-of-devops-has-failed-to-do-it).
+
+### 16. Enable feedback so development and operations can safely deploy code
+
+*We found that having a separate group for testing, and even deployment, was simply too slow.*
+
+*Faster and more frequent feedback to engineers performing deployments (whether Dev or Ops), as well as reducing the batch size of their work, created safety and then confidence*.
+
+*We are now deploying code more frequently than ever, and service stability is better than ever too*.
+
+*The secret to smooth and continuous flow is making small, frequent changes that anyone can inspect and easily understand*.
+
+*It is not enough to merely automate the deployment process—we must also integrate the monitoring of production telemetry into our deployment work*.
+
+**Use Telemetry to Make Deployments Safer**
+
+*We ensure that we are actively monitoring our production telemetry when anyone performs a production deployment*.
+
+*Our goal is to catch errors in our deployment pipeline before they get into production*.
+
+*Fixing forward can often be dangerous, it can be extremely safe when we have automated testing*.
+
+**Dev Shares Pager Rotation Duties with Ops**
+
+*In any complex service we will still have unexpected problems*.
+
+*We will have everyone in the value stream share the downstream responsibilities of handling operational incidents*.
+
+*Everyone is helping find the proper balance between fixing production defects and developing new functionality*.
+
+*We found that when we woke up developers at 2 AM, defects were fixed faster than ever*.
+
+*When developers get feedback on how their applications perform in production, which includes fixing it when it breaks, they become closer to the customer. This creates a buy-in that everyone in the value stream benefits from*.
+
+**Have Developers Follow Work Downstream**
+
+*...when the product team watches a customer use the application in their natural environment ... often uncovers startling ways that customers struggle with the application".
+
+*Use this same technique to observe how our work affects our internal customers*.
+
+**Have Developers Initially Self-Manage Their Production Service**
+
+*Operational learnings often happen too late in the software life cycle.*
+
+*By having developers be responsible for deployment and production support, we are far more likely to have a smooth transition to Operations.*
+
+*Ops engineers should act as consultants to help them make their services production-ready.*
+
+*Launch guidance and requirements will likely include the following:*
+
+- Defect counts and severity
+- Type/frequency of pager alerts
+- Monitoring coverage
+- System architecture
+- Deployment process
+- Production hygiene
+
+*By integrating operability requirements into the earliest stages of the development process and having Development initially self-manage their own applications and services, the process of transitioning new services into production becomes smoother, easier, and more predictable to complete.*
+
+**Case Study: The Launch and HandOff Readiness Review at Google (2010)**
+
+Google coined the term *site reliability engineer*.
+
+*Helping product teams is a long-term investment that will pay off many months later when it comes time to launch*.
+
+*At Google, having product teams self manage their own services brings learning to the front, giving them valuable insight into how their code behaves in true production conditions. This practice also strengthens the relationship and understanding between Dev and Ops, creating a cultural feedback loop.*
+
+**Conclusion**
+
+*We discussed the feedback mechanisms that enable us to improve our service at every stage of our daily work*
+
+*By creating these feedback loops, we make production deployments safer, increase the production readiness of code created by Development, and help create a better working relationship between Development and Operations by reinforcing shared goals, responsibilities, and empathy.*

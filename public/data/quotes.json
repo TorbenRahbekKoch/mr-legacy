@@ -575,7 +575,13 @@
         "author": "Allen Holub",
         "languages": ["dk", "en"],
         "source": "https://www.linkedin.com/posts/allenholub_the-notion-of-big-infrequent-software-releases-activity-7413291544067149825-3jc0"
+    },{
+        "quote": "We found that when we woke up developers at 2 AM, defects were fixed faster than ever",
+        "author": "Patrick Lightbody",
+        "languages": ["dk", "en"],
+        "source": "https://www.youtube.com/watch?v=ShmPod8JecQ"
     }
+
 
 ]
 }
