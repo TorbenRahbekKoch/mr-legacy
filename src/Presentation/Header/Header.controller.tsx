@@ -11,6 +11,7 @@ export interface Props {
 export interface Texts {
   source: string
   twitterSource: string
+  xSource: string
   linkedinSource: string
   oreillySource: string
   youtubeSource: string

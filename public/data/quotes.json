@@ -585,6 +585,11 @@
         "author": "Jezz Humble",
         "languages": ["dk", "en"],
         "source": "Lean Enterprise"
+    },{
+        "quote": "Ask a programmer to review ten lines of code, he’ll find ten issues. Ask him to do five hundred lines, and he’ll say it looks good",
+        "author": "Giray Özil",
+        "languages": ["dk", "en"],
+        "source": "https://x.com/girayozil/status/306836785739210752"
     }
 ]
 }

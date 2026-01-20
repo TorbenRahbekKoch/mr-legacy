@@ -1233,3 +1233,93 @@ This means, in other words: *two-thirds of features either have a negligible imp
 *Success requires us to not only deploy and release software quickly but also to out-experiment our competition.*
 
 *Pretotyping*: *In almost every case, we shouldn’t prioritize a feature without some form of validation.*
+
+### 18. Create review and coordination processes to increase quality of our currrent work
+
+**Peer Review at GitHub (2011)**
+
+*GitHub pioneered the process called pull request, one of the most popular forms of peer review that span Dev and Ops.*
+
+**The Dangers of Change Approval Processes**
+
+Discussing The Knight Capital failure. 
+
+*The surprising reality is that in environments that have low-trust and command-and-control cultures the outcomes of these types of change control and testing countermeasures often result in an increased likelihood that problems will occur again, potentially with even worse outcomes*.
+
+**Potential Dangers of “Overly Controlling Changes”**
+
+*Long lead times and reducing the strength and immediacy of feedback from the deployment process.*
+
+*People closest to a problem typically know the most about it*.
+
+*DORA’s 2019 State of DevOps Report found that a clear, lightweight change process, where developers are confident they can go from “submitted” to “accepted” for all typical approvals, contributes to high performance*.
+
+**Case Study: From Six-Eye Principle to Release at Scale at Adidas (2020)**
+
+One can wonder what Adidas needs *550 million lines of code* and *two thousand engineers* for, but there you go.
+
+*Adidas automated change reviews, ensuring the quality of the code across numerous dependencies, without the need for costly and slow review boards.*
+
+**Enable Coordination and Scheduling of Changes**
+
+*The more loosely coupled our architecture, the less we need to communicate and coordinate with other component teams*.
+
+*We may use chat rooms to announce changes and proactively find collisions that may exist.*
+
+**Enable Peer Review of Changes**
+
+*The principle of small batch sizes also applies to code reviews.*
+
+*Ask a programmer to review ten lines of code, he’ll find ten issues. Ask him to do five hundred lines, and he’ll say it looks good.*
+
+*Code reviews come in various forms:*
+
+- Pair programming
+- "Over the shoulder"
+- Email pass-around
+- Tool-assisted code review
+
+**Case Study: Code Reviews at Google (2010)**
+
+The massive amount of commits and deployments at Google obviously means that code
+quality needs to be taken seriously.
+
+*Google is an excellent example of a company that employs trunk-based development and continuous delivery at scale through the use of code reviews.*
+
+**Potential Dangers of Doing More Manual Testing and Change Freezes**
+
+*When we increase our deployment batch size, our change success rates go down and our incident counts and MTTR go up*.
+
+*Fully integrate testing into our daily work as part of the smooth and continual flow into production and increase our deployment frequency.*
+
+**Enable Pair Programming to Improve All Our Changes**
+
+*Skills are transferred as an automatic side effect.*
+
+Jeff Atwood writes: *I can’t help wondering if pair programming is nothing more than code review on steroids. . . . The advantage of pair programming is its gripping immediacy: it is impossible to ignore the reviewer when he or she is sitting right next to you ... 
+Pairing may be invasive, but it can also force a level of communication that you’d otherwise never achieve*
+
+*Pairs typically consider more design alternatives than programmers working alone and arrive at simpler, more maintainable designs; they also catch design defects early*.
+
+*Pair programming has the additional benefit of spreading knowledge throughout the organization and increasing information flow within the team.*
+
+**Case Study: Pair Programming Replacing Broken Code Review Processes at Pivotal Labs (2011)**
+
+*Particularly when the culture is not yet in place, pair programming can serve as a valuable interim practice*.
+
+**Evaluating the Effectiveness of Pull Request Processes**
+
+*A bad pull request is one that doesn’t have enough context for the reader, having little or no documentation of what the change is intended to do*.
+
+**Fearlessly Cut Bureaucratic Processes**
+
+*A great metric to publish widely is how many meetings and work tickets are mandatory to perform a release*.
+
+Have *a dedicated team removing obstacles—including tools, processes, and approvals—that impede work completion*.
+
+**Conclusion**
+
+*Creating the conditions that enable change implementers to fully own the quality of their changes is an essential part of the high-trust, generative culture we are striving to build.*
+
+## Part V - The Third Way: The Technical Practices of Continual Learning and Experimentation
+

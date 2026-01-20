@@ -15,6 +15,7 @@
     "services": "Services",
     "source" : "Source",
     "twitterSource": "Twitter",
+    "xSource": "X",
     "linkedinSource": "LinkedIn",
     "oreillySource": "OReilly",
     "youtubeSource": "YouTube"

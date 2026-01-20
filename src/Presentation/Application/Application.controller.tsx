@@ -87,6 +87,7 @@ export function ApplicationController() {
   const headerTexts = useMemo(() => ({
     source: texts.source,
     twitterSource: texts.twitterSource,
+    xSource: texts.xSource,
     linkedinSource: texts.linkedinSource,
     oreillySource: texts.oreillySource,
     youtubeSource: texts.youtubeSource

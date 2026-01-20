@@ -10,6 +10,7 @@ export interface QuoteData {
 export interface Texts {
   source: string
   twitterSource: string
+  xSource: string
   linkedinSource: string
   oreillySource: string
   youtubeSource: string
@@ -41,6 +42,9 @@ export function Quote(props: Props) {
       }
       else if (source.indexOf("youtube.com") > 0) {
         text = props.texts.youtubeSource
+      }
+      else if (source.indexOf("x.com") > 0) {
+        text = props.texts.xSource
       }
 
       source = `[${text}](${props.quote.source})`

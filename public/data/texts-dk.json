@@ -15,6 +15,7 @@
     "services": "Ydelser",
     "source": "Kilde",
     "twitterSource": "Twitter",
+    "xSource": "X",
     "linkedinSource": "LinkedIn",
     "oreillySource": "OReilly",
     "youtubeSource": "YouTube"
