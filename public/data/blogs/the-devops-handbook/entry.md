@@ -1186,3 +1186,50 @@ Google coined the term *site reliability engineer*.
 *We discussed the feedback mechanisms that enable us to improve our service at every stage of our daily work*
 
 *By creating these feedback loops, we make production deployments safer, increase the production readiness of code created by Development, and help create a better working relationship between Development and Operations by reinforcing shared goals, responsibilities, and empathy.*
+
+### 17. Integrate hypothesis-driven development and A/B testing into our daily work
+
+*The most inefficient way to test a business model or product idea is to build the complete product to see whether the predicted demand actually exists.*
+
+**Hypothesis-Driven Development at Intuit, Inc. (2012)**
+
+*What is needed is “a system where every employee can do rapid, high-velocity experiments.*
+
+*The faster we can experiment, iterate, and integrate feedback into our product or service, the faster we can learn and out-experiment the competition.*
+
+**A Brief History of A/B Testing**
+
+The time when A/B Testing was a boon for the Postal Service.
+
+**Integrating A/B Testing into Our Feature Testing**
+
+*Evaluating well-designed and executed experiments that were designed to improve a key metric, only about one-third were successful at improving the key metric!*
+
+This means, in other words: *two-thirds of features either have a negligible impact or actually make things worse.*
+
+*If we are not performing user research, the odds are that two-thirds of the features we are building deliver zero or negative value to our organization* and
+*the effort to build these features is often made at the expense of delivering features that would deliver value (i.e., opportunity cost).*
+
+*Taken to an extreme, the organization and customers would have been better off giving the entire team a vacation, instead of building one of these non–value-adding features*.
+
+*Our countermeasure is to integrate A/B testing into the way we design, implement, test, and deploy our features*.
+
+**Integrate A/B Testing into Our Release**
+
+*Doing this requires useful production telemetry at all levels of the application stack.*
+
+**Integrating A/B Testing into Our Feature Planning**
+
+*We must ensure that product owners think about each feature as a hypothesis.*
+
+*Adopting an experimental approach to product development requires us to not only break down work into small units (stories or requirements) but also validate whether each unit of work is delivering the expected outcomes*.
+
+**Case Study: Doubling Revenue Growth through Fast Release Cycle Experimentation at Yahoo! Answers (2010)**
+
+*If experiments are not performed frequently (daily or weekly), the focus of daily work is merely on the feature they’re working on, as opposed to customer outcomes.*
+
+**Conclusion**
+
+*Success requires us to not only deploy and release software quickly but also to out-experiment our competition.*
+
+*Pretotyping*: *In almost every case, we shouldn’t prioritize a feature without some form of validation.*

@@ -580,8 +580,11 @@
         "author": "Patrick Lightbody",
         "languages": ["dk", "en"],
         "source": "https://www.youtube.com/watch?v=ShmPod8JecQ"
+    },{
+        "quote": "The most inefficient way to test a business model or product idea is to build the complete product to see whether the predicted demand actually exists",
+        "author": "Jezz Humble",
+        "languages": ["dk", "en"],
+        "source": "Lean Enterprise"
     }
-
-
 ]
 }
