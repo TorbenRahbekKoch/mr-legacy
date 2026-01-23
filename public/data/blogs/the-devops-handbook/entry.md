@@ -1323,3 +1323,98 @@ Have *a dedicated team removing obstacles—including tools, processes, and appr
 
 ## Part V - The Third Way: The Technical Practices of Continual Learning and Experimentation
 
+### Part V: Introduction
+
+We now know how to move work forward fast, we receive feedback helping us to determine
+whether we did a good job.
+
+Now we move on how to learn something!
+
+### 19. Enable and inject learning into daily work
+
+About a resilient organization: *For such an organization, responding to crises is not idiosyncratic work. It is something that is done all the time*.
+
+**AWS US-East and Netflix (2011)**
+
+Bringing down an Amazon entire availability zone in US-East wasn't enough
+to bring Netflix down. It took the release of Stranger Things, season 5, to
+shake its foundation.
+
+Netflix have designed their systems to keep running, even if an entire
+availability zone goes down. Loose coupling, aggressive timeouts and
+circuit breakers are among the techniques used.
+
+Another, fairly famous, method is the *Chaos Monkey* which simply
+injects failures by randomly killing production servers. This is just
+one example of how learning can be integrated into daily work.
+
+*Learning organizations think about failures, accidents, and mistakes—as an opportunity for learning and not something to be punished*.
+
+**Establish a Just, Learning Culture**
+
+My person opinion is that we are humans. We make mistakes. Dr. Sidney Dekker, who coined
+the term *just culture*, asserts that we make mistakes as a consequence of the design
+of the tools we give them.
+
+If goes without saying (one should think) that a blameless culture is essential
+for an organization to learn. One way to do this is to do blameless
+post-mortems (a.k.a. retrospectives).
+
+**Schedule Retrospective Meetings after Accidents Occur**
+
+*Retrospectives help us examine “mistakes in a way that focuses on the situational aspects of a failure’s mechanism and the decision-making process of individuals proximate to the failure.*
+
+- Construct a timeline
+- Empower all engineers to improve safety
+- Enable and encourage people who do make mistakes to be the experts who educate the rest of the organization on how not to make them in the future
+- Accept that there is always a discretionary space where humans can decide to take action or not, and that the judgment of those decisions lies in hindsight
+- Propose countermeasures to prevent a similar accident from happening in the future and ensure these countermeasures are recorded with a target date and an owner for follow-up
+
+Disallow the phrases “would have” or “could have and instead focus on *Why did it make sense to me when I took that action?*
+
+**Publish Our Retrospective Reviews as Widely as Possible**
+
+*Conducting retrospectives is so important that we may even prohibit production incidents from being closed until the retrospective has been completed.*
+
+Retrospectives contribute to
+*helping teams feel better about sharing information, taking smart risks, and understanding the value of learning*.
+
+**Decrease Incident Tolerances to Find Ever-Weaker Failure Signals**
+
+As we get better at anticipating errors and problems, we will start looking
+for and remedying smaller problems.
+
+**Redefine Failure and Encourage Calculated Risk-Taking**
+
+*DevOps must allow this sort of innovation and the resulting risks of people making mistakes. Yes, you’ll have more failures in production. But that’s a good thing and should not be punished*.
+
+**Inject Production Failures to Enable Resilience and Learning**
+
+Michael Nygard says:
+*If you do not design your failure modes, then you will get whatever unpredictable—and usually dangerous—ones happen to emerge.*
+
+**Institute Game Days to Rehearse Failures**
+
+Jesse Robbins *defines resilience engineering as “an exercise designed to increase resilience through large-scale fault injection across critical systems."*
+
+*A service is not really tested until we break it in production.*
+
+*By executing game days, we progressively create a more resilient service and a higher degree of assurance that we can resume operations when inopportune events occur, as well as create more learnings and a more resilient organization.*
+
+Who you gonna call?
+
+*An often-overlooked area of testing is business process and communications. Systems and processes are highly intertwined, and separating testing of systems from testing of business processes isn’t realistic: a failure of a business system will affect the business process, and conversely a working system is not very useful without the right personnel.*
+
+*One of the other outputs of game days is that people actually know who to call and know who to talk to.*
+
+**Turning an Outage into a Powerful Learning Opportunity at CSG (2021)**
+
+*In this case study, a blameless post-mortem (retrospective) led CSG to completely revamp the way they handle incidents. They directly applied their learnings regarding how they conduct their work, changing their culture and not blaming an individual or team.*
+
+**Conclusion**
+
+*To create a just culture that enables organizational learning, we have to re-contextualize so-called failures.*
+
+*Errors that are inherent in complex systems can create a dynamic learning environment where all of the shareholders feel safe enough to come forward with ideas and observations, and where groups rebound more readily from projects that don’t perform as expected.*
+
+*The only sustainable competitive advantage is an organization’s ability to learn faster than the competition*.
