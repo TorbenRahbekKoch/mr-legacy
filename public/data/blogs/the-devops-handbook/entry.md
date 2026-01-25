@@ -1503,3 +1503,62 @@ of approved tools and technologies and suggestions for new ones.
 
 *We elevate the state of the practice of not only Dev and Ops but also the entire organization, so everyone who performs work does so with the cumulative experience of the entire organization.*
 
+### 21. Reserve time to create organizational learning and improvement
+
+*Improvement blitz, kaizen blitz:* *a dedicated and concentrated period of time to address a particular issue.*
+
+**Thirty-Day Challenge at Target (2015)**
+
+At the Target *DevOps Dojo*, teams could come with a particular problem and spend
+e.g. 30 days (a month) with dedicate Dojo coaches to solve that problem.
+
+Further practices such as *flash builds* and *open labs* improve and 
+institutionalize organizational learning.
+
+**Institutionalize Rituals to Pay Down Technical Debt*
+
+In short: set dedicated time aside for improvement work.
+
+*What makes improvement blitzes so powerful is that we are empowering those closest to the work to continually identify and solve their own problems*.
+
+*We must create the organizational culture and norms that lead to everyone continually finding and fixing broken strands as part of our daily work*.
+
+At Facebook this resulted in the HipHop PHP-compiler and later the HipHop virtual machine.
+
+**Enable Everyone to Teach and Learn**
+
+Everyone should be able to both teach and learn, be it a 30 minute quick-tips session
+or whatever.
+
+**ASREDS Learning Loop**
+
+In Sooner, Safer, Happier the ASREDS learning loop is introduced: 
+Align, Sense, Response, Experiment, Distill, Share.
+
+**Share your Experiences from DevOps Conferences**
+
+Well, from any conference.
+
+*To help build a learning organization, we should encourage our engineers (both from Development and Operations) to attend conferences, give talks at them, and, when necessary, create and organize internal or external conferences themselves.*
+
+**Case Study: Internal Technology Conferences at Nationwide Insurance, Capital One, and Target (2014)*
+
+*Institutions can enable their technologists by providing a dynamic culture of learning and teaching, not only through attending and presenting at external conferences but also by building and holding internal conferences. This can foster greater team and organizational trust, increase communication and innovation, and improve daily work.*
+
+The DORA 2019 report showed that 
+*high performers favor strategies that create community structures at both low and high levels in the organization, likely making them more sustainable and resilient to re-organizations and product changes.*
+
+**Create Community Structures to Spread Practices**
+
+An - almost rogue - group at Google created their *Testing on the Toilet*, a weekly periodical, which was
+literally distributed to toilets on every Google location.
+
+In the episode *Test Certified: Lousy Name, Great Results* the three levels of testing
+automation in Google was covered.
+
+**Conclusion**
+
+*Institute rituals that help reinforce the culture that we are all lifelong learners and that we value the improvement of daily work over daily work itself*.
+
+## Part VI: The Technological Practices of Integrating Information Security, Change Management and Compliance
+
