@@ -1418,3 +1418,88 @@ Who you gonna call?
 *Errors that are inherent in complex systems can create a dynamic learning environment where all of the shareholders feel safe enough to come forward with ideas and observations, and where groups rebound more readily from projects that don’t perform as expected.*
 
 *The only sustainable competitive advantage is an organization’s ability to learn faster than the competition*.
+
+### 20. Convert local discoveries into global improvements
+
+*Create mechanisms that make it possible for new learnings and improvements discovered locally to be captured and shared globally throughout the entire organization, multiplying the effect of global knowledge and improvement.*
+
+**Use Chat Rooms and Chat Bots to Automate and Capture Organizational Knowledge**
+
+*Chat rooms can also be used to trigger automation.*
+
+*Even when you’re new to the team, you can look in the chat logs and see how everything is done. It’s as if you were pair-programming with them all the time.*
+
+Using a chat room also means that everyone can see everything happening and new
+engineers can immediately see how daily work is done.
+
+*Chat rooms inherently record and make all communications public.*
+
+**Hubot at GitHub**
+
+At Github everyone was remote which of course lets the chat room add even more value.
+*The chat room was the water cooler.*
+
+**Automate Standardized Processes in Software for Reuse**
+
+*Instead of putting our expertise into Word documents, we need to transform these documented standards and processes, which encompass the sum of our organizational learnings and knowledge, into an executable form that makes them easier to reuse.*
+
+*By putting our design standards into automated blueprints that were able to be used easily by anyone, we achieved consistency as a byproduct.*
+
+*The actual compliance of an organization is in direct proportion to the degree to which its policies are expressed as code.*
+
+The book here needs som actualy guidance on how to make this happen.
+
+**Create a Single, Shared Source Code Repository for Our Entire Organization**
+
+A monorepo souns like an interesting and possibly overwhelming idea. There are
+definitely pros and cons. 
+
+Even though Tom Limoncelli in 
+*The Practice of Cloud System Administration: Designing and Operating Large Distributed Systems*
+states that *the value of having a single repository for an entire organization is so powerful it is difficult to even explain*,
+I personally would still be weary of the idea. But maybe that's inexperience talking.
+
+Dependency management becomes a breeze, of course. Managing access is not a problem because
+you trust your engineers.
+
+*It is essential to ensure that dependencies are drawn only from within the organization’s source control repository or package repository in order to prevent attacks through this “sofware supply chain” from compromising an organization’s systems.*
+
+**Spread Knowledge by Using Automated Tests as Documentation and Communities of Practice**
+
+On shared libraries: *Ensuring that each of these libraries has significant amounts of automated testing included means these libraries become self-documenting and show other engineers how to use them.* Furthermore: *we should (ideally) only allow one version to be used in production*. This would automatically happen in a monorepo, I guess.
+
+**Design for Operations through Codified Non-Functional Requirements**
+
+*When Development follows their work downstream and participates in production incident resolution activities, the application becomes increasingly better designed for Operations*.
+
+*Examples of non-functional requirements:* sufficient production telemetry, accurately track
+dependencies, trace requests between services, centralized runtime configuraiton.
+
+**Build Reusable Operations User Stories into Development**
+
+This part would have benefitted from some concrete examples. It is entirely unclear what they
+are on about here.
+
+**Ensure Technology Choices Help Achieve Organizational Goals**
+
+Be pragmatic about what tools and technologies are allowed and entertain
+a reasonable discussion about it whenever new possibilities come along.
+
+We don't want people chase the framework of the week. We want them to focus
+on creating value for the customers.
+
+Self-service platforms is a way to do this. 
+
+**Case Study: Standardizing a New Technology Stack at Etsy (2010)**
+
+*By removing problematic infrastructure and platforms, an organization can shift its focus to architectures that best align with and help achieve their goals.*
+
+**Case Study: Crowdsourcing Technology Governance at Target (2018)**
+
+A good example of using a Github repository as a discussion forum, so to say,
+of approved tools and technologies and suggestions for new ones.
+
+**Conclusion**
+
+*We elevate the state of the practice of not only Dev and Ops but also the entire organization, so everyone who performs work does so with the cumulative experience of the entire organization.*
+
