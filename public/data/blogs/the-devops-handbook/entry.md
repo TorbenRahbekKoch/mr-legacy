@@ -1562,3 +1562,142 @@ automation in Google was covered.
 
 ## Part VI: The Technological Practices of Integrating Information Security, Change Management and Compliance
 
+### Part VI: Introduction
+
+*When we integrate security work into everyone’s daily work, making it everyone’s responsibility, we help the organization have better security.*
+
+### 22: Information security is everyone's job every day
+
+*DevOps may be one of the best ways to better integrate information security into the daily work of everyone in the technology value stream.* This is also known as DevSecOps or *Rugged DevOps*.
+
+**Integrate Security into Development Iteration Demonstrations**
+
+*Compliance by demonstration’ became one of the rituals we used to shift all this complexity earlier in the process*.
+
+It makes sense. If you're doing e.g. Sprint Reviews you should of course also focus on what you
+have done with security.
+
+*...their top three key business measurements as “development velocity (i.e., speed of delivering features to market), failed customer interactions (i.e., outages, errors), and compliance response time (i.e., lead time from audit request to delivery of all quantitative and qualitative information required to fulfill the request*.
+
+**Integrate Security into Defect Tracking and Post-Mortems**
+
+*we want to track all open security issues in the same work tracking system that Development and Operations are using, ensuring the work is visible and can be prioritized against all other work.*
+
+**Integrate Preventive Security Controls into Shared Source Code Repositories and Shared Services**
+
+*We will add libraries that are pre-blessed by security to fulfill specific Infosec objectives, such as authentication and encryption libraries and services.*
+
+*our goal is to provide the security libraries or services that every modern application or environment requires, such as enabling user authentication, authorization, password management, data encryption, and so forth.*
+
+*We should also collaborate with Ops teams to create a base cookbook or base image of our OS, databases, and other infrastructure.*
+
+*organizations should use a container registry to hold all base images... these source versions should be stored along with a secure hash of the image created.*
+
+**Integrate Security into Our Deployment Pipeline**
+
+*Our goal is to provide both Dev and Ops with fast feedback on their work so that they are notified whenever they commit changes that are potentially insecure.*
+
+Tools such Gauntlt and ZAP (Zed Attack Proxy) can help you out.
+
+**Ensure Security of the Application**
+
+Happy paths and sad paths - even though the first is definitely more fun the latter
+also need exploring. Automatically, of course.
+
+We also want to static and dynamic analysis, dependency scanning using e.g.
+[OWASP Dependency-Check](https://owasp.org/www-project-dependency-check/).
+
+Source code should be signed using individual developer keys on commits.
+
+*we should define design patterns to help developers write code to prevent abuse, such as putting in rate limits for our services and graying out submit buttons after they have been pressed*.
+
+A lot of help can be found in 
+[OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/).
+
+**Case Study: Static Security Testing at Twitter (2009)**
+
+*They found that they were fixing the same defects and vulnerabilities over and over again*. In 
+order to avoid repeating mistakes they would e.g. *Integrate security objectives into existing developer tools*,
+*Make everything security related self-service, if possible*.
+
+**Ensure Security of Our Software Supply Chain**
+
+*we are no longer writing customized software—instead, we assemble what we need from open source parts, which has become the software supply chain that we are very much reliant upon*.
+
+*In 2021, the authors of the DBIR analyzed the vulnerabilities on all the internet-facing assets for eighty-five organizations and found that most had vulnerabilities that were from 2010 or before.*
+
+*When the component and all of its transitives are analyzed, 47% of components have at least one vulnerability.*
+
+*the best security patching strategy is to remain current on all dependencies.*
+
+*the “popularity” of a software project (e.g., number of GitHub stars or forks or the number of Maven Central downloads) is not correlated with better security characteristics.*
+
+**Ensure Security of the Environment**
+
+*ensure that the environments are in a hardened, risk-reduced state... we must put in monitoring controls to ensure that all production instances match these known good states.*
+
+*We do this by generating automated tests to ensure that all appropriate settings have been correctly applied for configuration hardening, database security settings, key lengths, and so forth*.
+
+Use e.g. Nmap and Metasploit.
+
+**Case Study: 18F Automating Compliance for the Federal Government with Compliance Masonry (2016)**
+
+*Not only does the platform handle many of the operational concerns delivery teams might otherwise have to take care of, such as logging, monitoring, alerting, and service life cycle management, it also handles the bulk of compliance concerns.*
+
+*This case study demonstrates how an organization—even one as monolithic as the federal government—can use a PaaS to generate automated tests and still meet compliance.*
+
+**Integrate Information Security into Production Telemetry**
+
+*By radiating how our services are being attacked in the production environment, we reinforce that everyone needs to be thinking about security risks and designing countermeasures in their daily work*.
+
+**Creating Security Telemetry in Our Applications**
+
+*we must create the relevant telemetry in our applications... we might display the ratio of unsuccessful login attempts to successful logins*
+
+**Creating Security Telemetry in Our Environment**
+
+*we also need to create sufficient telemetry in our environments so that we can detect early indicators of unauthorized access*.
+
+*We also want to confirm that we’ve correctly configured our logging so that all telemetry is being sent to the right place*.
+
+**Case Study: Instrumenting the Environment at Etsy (2010)**
+
+*...defined fraud as when “the system works incorrectly, allowing invalid or un-inspected input into the system, causing financial loss, data loss/theft, system downtime, vandalism, or an attack on another system*.
+
+*zero tolerance for database syntax errors in our code*.
+
+*Nothing helps developers understand how hostile the operating environment is than seeing their code being attacked in real time*.
+
+*Presenting security-related telemetry brought security into developers’ daily work and made vulnerabilities more visible to everyone.*
+
+**Protect Our Deployment Pipeline**
+
+*if the deployment pipeline has write access, an attacker could also inject malicious changes into our version control repository*.
+
+*Where would be a good place to hide malicious code? The answer was obvious: in the unit tests*.
+
+*we must also mitigate the attack vectors on our deployment pipeline.*
+
+*hardening continuous build and integration servers and ensuring we can reproduce them in an automated manner*.
+
+*reviewing all changes introduced into version control*
+
+*instrumenting our repository to detect when test code contains suspicious API calls*
+
+*ensuring every CI process runs on its own isolated container or VM, and ensuring this is recreated from a known, good, verified base image at the start of every build*
+
+*ensuring the version control credentials used by the CI system are read-only*
+
+**Case Study: Shifting Security Left at Fannie Mae (2020)**
+
+*It boiled down to two key changes: changing culture and changing the way security communicated with Dev teams and how they integrated security tools.*
+
+*fully integrate all security tests within the CI/CD pipeline*
+
+*a mindset change is needed from development and security*
+
+*We are getting critical business changes into production much faster, with fewer errors, using fewer resources, and generating less rework*.
+
+**Conclusion**
+
+*Integrating security testing into the deployment pipeline and ensuring the creation of security telemetry in pre-production and production environments. *

@@ -595,6 +595,11 @@
         "author": "Peter M. Senge",
         "languages": ["dk", "en"],
         "source": "The Fifth Discipline"
+    },{
+        "quote": "Nothing helps developers understand how hostile the operating environment is than seeing their code being attacked in real time",
+        "author": "Nick Galbreath",
+        "languages": ["dk", "en"],
+        "source": ""
     }
 ]
 }
