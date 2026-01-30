@@ -1566,7 +1566,7 @@ automation in Google was covered.
 
 *When we integrate security work into everyone’s daily work, making it everyone’s responsibility, we help the organization have better security.*
 
-### 22: Information security is everyone's job every day
+### 22. Information security is everyone's job every day
 
 *DevOps may be one of the best ways to better integrate information security into the daily work of everyone in the technology value stream.* This is also known as DevSecOps or *Rugged DevOps*.
 
@@ -1700,4 +1700,99 @@ Use e.g. Nmap and Metasploit.
 
 **Conclusion**
 
-*Integrating security testing into the deployment pipeline and ensuring the creation of security telemetry in pre-production and production environments. *
+*Integrating security testing into the deployment pipeline and ensuring the creation of security telemetry in pre-production and production environments.*
+
+### 23. Protecting the deployment pipeline
+
+**Integrate Security and Compliance into Change Approval Processes**
+
+*If we have constructed our deployment pipeline correctly so that deployments are low risk, the majority of our changes won’t need to go through a manual change approval process, because we will have placed our reliance on controls such as automated testing and proactive production monitoring.*
+
+ITIL defines *Standard changes*, *Normal changes*, *Urgent changes*. 
+*A key goal of DevOps practices is to streamline our normal change process such that it is also suitable for emergency changes.*
+
+**Recategorize Lower-Risk Changes as Standard Changes**
+
+*we should seek to gain agreement from Operations and the relevant change authorities that our changes have been demonstrated to be low risk enough to be defined as standard changes, pre-approved by the CAB*.
+
+*Ideally, deployments will be performed automatically by our configuration management and deployment pipeline tools and the results will be automatically recorded.*
+
+*Creating this traceability and context should be easy and should not create an overly onerous or time-consuming burden for engineers*.
+
+**What to Do When Changes Are Categorized as Normal Changes**
+
+*Our goal is still to ensure that we can deploy quickly, even if it is not fully automated*.
+
+*Our goal is to share the evidence and artifacts that give us confidence that the change will operate in production as designed*.
+
+*our goal should be to continually show an exemplary track record of successful changes, so we can eventually gain their agreement that our automated changes can be safely classified as standard changes.*
+
+**Case Study: Automated Infrastructure Changes as Standard Changes at Salesforce.com (2012)**
+
+Salesforce started a multi-year DevOps transformation in 2009 and 
+*by implementing DevOps principles and practices, the company reduced their deployment lead times from six days to five minutes by 2013*.
+
+To *make quality engineering everyone’s job... they integrated automated testing into all stages of the application and environment creation, as well as into the continuous integration and deployment process*.
+
+They also performed *destructive testing*.
+
+*Salesforce not only integrated their DevOps processes with the change management process but also created further motivation to automate the change process for more of their infrastructure.*
+
+**Implement Separation of Duty through Code Review**
+
+*As complexity and deployment frequency increase, performing successful production deployments increasingly requires everyone in the value stream to quickly see the outcomes of their actions.*
+
+*We should choose controls such as pair programming, continuous inspection of code check-ins, and code review.*
+
+**Case Study: PCI Compliance and a Cautionary Tale of Separating Duties at Etsy (2014)**
+
+*This case study shows that compliance is possible in organizations using DevOps. However, the potentially cautionary tale here is that all the virtues that we associate with high-performing DevOps teams are fragile—even a team that has shared experiences with high trust and shared goals can begin to struggle when low-trust control mechanisms are put into place.*
+
+**Case Study: Biz and Tech Partnership toward Ten “No Fear Releases” Per Day at Capital One (2020)**
+
+*they worked backwards from the customer’s needs* because
+*they wanted to make sure they were not just building a faster and stronger horse but actually solving a problem*.
+
+*We were looking for the minimum viable experience that we could give to our customers, not just any small product we could come up with*.
+
+*Building out their CI/CD pipeline enabled incremental releases and empowered teams by reducing cycle time and risk*.
+
+*Using the pipeline, they were able to block releases when certain controls were not met.*
+
+*The pipeline also allowed teams to focus on product features, since the pipeline was a tool to leverage rather than a required investment from each team*.
+
+*Focusing on customer needs and building a CI/CD pipeline helped Captial One not only meet business needs but move faster.*
+
+**Ensure Documentation and Proof for Auditors and Compliance Officers**
+
+*These new DevOps patterns challenge traditional thinking about auditing, controls, and risk mitigation*.
+
+**Case Study: Proving Compliance in Regulated Environments (2015)**
+
+*One of the problems is that auditors have been trained in methods that aren’t very suitable for DevOps work patterns*.
+
+*When infrastructure is code, and when auto-scaling makes servers appear and disappear all the time, how do you sample that?*
+
+*teams work with auditors in the control design process*
+
+*With modern audit logging, chat rooms, and deployment pipelines, there’s unprecedented visibility and transparency into what’s happening in production*. *the challenge is to turn all that evidence into something an auditor recognizes*
+
+*That requires deriving the engineering requirements from the actual regulations.*
+
+*How to fulfill that requirement is the discussion that needs to be happening between compliance and regulatory officers, and the security and DevOps teams, specifically around how to prevent, detect, and correct problems*.
+
+*the DevOps Audit Defense Toolkit describes the end-to-end narrative of the compliance and audit process for a fictitious organization*.
+
+*This case study shows how building documentation helps bridge the gap between Dev and Ops practices and auditor requirements, showing DevOps can comply with requirements and improve risk assessment and mitigation.*.
+
+**Case Study: Relying on Production Telemetry for ATM Systems (2013)**
+
+*Information Security, auditors, and regulators often put too much reliance on code reviews to detect fraud*.
+
+*they should be relying on production monitoring controls in addition to using automated testing, code reviews, and approvals to effectively mitigate the risks associated with errors and fraud.*
+
+*As this case study demonstrates, auditors’ overreliance on code reviews and separation of duties between Dev and Ops can leave vulnerabilities. Telemetry helps provide the necessary visibility to detect and act upon errors and fraud, mitigating the perceived need to separate duties or create additional layers of change review boards.*
+
+**Conclusion**
+
+*we have discussed practices that make information security everyone’s job*.
