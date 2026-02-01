@@ -1796,3 +1796,114 @@ They also performed *destructive testing*.
 **Conclusion**
 
 *we have discussed practices that make information security everyone’s job*.
+
+### Part VI Conclusion
+
+*Better security ensures that we are defensible and sensible with our data, that we can recover from security problems before they become catastrophic, and, most importantly, that we can make the security of our systems and data better than ever.*
+
+*Safety Differently: Human Factors for a New Era by Sidney Dekker addresses how to turn safety from bureaucratic accountability back into an ethical responsibility, and it embraces the human factor not as a problem to control but as a solution to harness.*
+
+## A call to action: Conclusion to The DevOps Handbook
+
+*DevOps offers a solution*.
+
+*DevOps requires potentially new cultural and management norms and changes in our technical practices and architecture. 
+This requires a coalition that spans business leadership, Product Management, Development, QA, IT Operations, Information Security, and even Marketing, where many technology initiatives originate*.
+
+*DevOps is not just a technology imperative but an organizational imperative.*
+
+*Innovation is impossible without risk-taking*.
+
+*DevOps benefits all of us in the technology value stream, whether we are Dev, Ops, QA, Infosec, Product Owners, or customers*.
+
+## Afterword to the second edition
+
+*Data and experience have reinforced the importance of using good automation, strategic process, and a culture that prioritizes trust and information flow to help teams achieve high software delivery performance*.
+
+*The SPACE framework to help developers, teams, and leaders think about and measure productivity. It includes five dimensions: satisfaction and well-being, performance, activity, communication and collaboration, and efficiency and flow*.
+
+*technology capabilities not only need to be a core competency in almost every organization but that they also need to be embedded throughout the organization, closest to where customer problems are being solved*.
+
+*sustained process improvement, architectural evolution, culture change, and teamwork of the kind that produces a lasting impact is hard*.
+
+*high performance starts with organizations whose leadership focuses on building an environment where people from different backgrounds and with different identities, experiences, and perspectives can feel psychologically safe working together,* - it's all
+about people.
+
+*That broader view of improvement and thinking beyond the pipeline/automation is where most people/organizations get stuck.*
+
+## Appendices
+
+### Appendix 1: The Convergence of DevOps
+
+A short history of how DevOps came to be, starting with *The Lean Movement*,
+*The Agile Movement*, *The Velocity Conference Movement*, 
+*The Agile Infrastrucure Movement*, *The Continuous Delivery Movement*,
+*The Toyota Kata Movement*, *The Lean Startup Movement*,
+*The Lean UX Movement*, *"*The Rugged Computing Movement*.
+
+There's a lot of movement, which is also what DevOps is all about. 
+
+### Appendix 2: Theory of Constraints and Core, Chronic Conflicts
+
+*a very well-known core, chronic conflict in manufacturing. Every plant manager had two valid business goals: protect sales and reduce costs.*
+
+The same conflict arises in Software Development between Sales and IT, especially when you see IT
+as a cost center, instead of a profit center.
+
+### Appendix 3: Tabular Form of Downward Spiral
+
+Tabularizing the conflict between Dev and Ops.
+
+### Appendix 4: The Dangers of Handoffs and Queues
+
+About how wait time, where work is not worked on, goes through the roof
+when resource utilization goes up.
+
+### Appendix 5: Myths of Industrial Safety
+
+*Saying what people should have done doesn’t explain why it made sense for them to do what they did.*
+
+### Appendix 6: The Toyota Andon Cord
+
+About what happens when the Andon Cord is pulled.
+
+### Appendix 7: COTS Software
+
+Ideas on how to get COTS into version control.
+
+### Appendix 8: Post-Mortem Meetings (Retrospective)
+
+*Facilitators might read the “Retrospective Prime Directive” from the website Retrospective.com.*
+
+*Blamelessness in a post-mortem does not mean that no one takes responsibility*.
+
+*by removing blame, you remove fear, and by removing fear, you get honesty*
+
+### Appendix 9: The Simian Army
+
+It's not just one monkey. It's an army of monkeys!
+
+### Appendix 10: Transparent Uptime
+
+*You create a single and obvious place for your users to come to when they are experiencing downtime. You save your users’ time currently spent searching forums, Twitter, or your blog.*
+
+# Conclusion
+
+First: I think the book is too long and somewhat repetitive. It took me quite
+a long time to get through it.
+
+But that said: The message
+still applies. Software Development can actually be based on research instead of 
+nervous hand-wavy "trust me, I'm a professional". 
+
+As "The call to action" above says: "DevOps offers a solution".
+
+Is it an easy solution? No, of course not. Even though software development is
+mostly a solved problem it is still not an easy problem. Just stop trying to solve
+it yourself and find those giants whose shoulders you can stand on.
+Gene Kim, Jez Humble, Patrick Debois, John Willis, Nicole Forsgren are some of
+those giants.
+
+Start aknowledging the fact that software development isn't about technology. It's
+about people. And people seem to have it built-in to make things more complicated
+than they have to be.
