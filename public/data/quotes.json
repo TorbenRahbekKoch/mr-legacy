@@ -600,6 +600,11 @@
         "author": "Nick Galbreath",
         "languages": ["dk", "en"],
         "source": ""
+    },{
+        "quote": "Doing the work should be fun, and delivering the work should be boring.",
+        "author": "Bryan Finster",
+        "languages": ["dk", "en"],
+        "source": "https://www.linkedin.com/posts/bryan-finster_in-the-devops-community-etsy-was-famous-activity-7424555970091114498-6M6W"
     }
 ]
 }
