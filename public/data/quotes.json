@@ -566,7 +566,7 @@
         "languages": ["dk", "en"],
         "source": "https://www.youtube.com/watch?v=AVQG8UtTauc"
     },{
-        "quote": "The most important aspect of delivering a system at speed is the ability for engineers to ‘just get on with it'",
+        "quote": "The most important aspect of delivering a system at speed is the ability for engineers to just get on with it",
         "author": "Matt Hyatt",
         "languages": ["dk", "en"],
         "source": "https://www.youtube.com/watch?v=4nMfy53Mxyk"
@@ -601,10 +601,15 @@
         "languages": ["dk", "en"],
         "source": ""
     },{
-        "quote": "Doing the work should be fun, and delivering the work should be boring.",
+        "quote": "Doing the work should be fun, and delivering the work should be boring",
         "author": "Bryan Finster",
         "languages": ["dk", "en"],
         "source": "https://www.linkedin.com/posts/bryan-finster_in-the-devops-community-etsy-was-famous-activity-7424555970091114498-6M6W"
+    },{
+        "quote": "It is not a lack of innovation that can kill an organization, but rather its inertia in response to change",
+        "author": "Susanne Kaiser",
+        "languages": ["dk", "en"],
+        "source": "Architecture for Flow"
     }
 ]
 }

@@ -371,6 +371,13 @@
             "dir": "",
             "date": "2026-02-01",
 			"categories": ["review"]            
+        },{
+            "url" : "/blogs/architecture-for-flow",
+            "title": "Architecture For Flow - a review",
+            "teaser": "Let it flow!",
+            "dir": "",
+            "date": "2026-04-07",
+			"categories": ["review"]            
         }
     ]
 }
