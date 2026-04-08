@@ -201,3 +201,102 @@ The implementation part of DDD - Tactical design.
 From here on a smaller code example of the Conference Planner
 System is used for showing the tactical design.
 
+### 5. Optimizing for Flow of Change with Team Topologies
+
+If you haven't read [Team Topologies](/blogs/team-topologies), you really should. 
+[There's a 2nd edition](https://teamtopologies.com/book).
+
+*systems consist of not just technology (including software architecture), but also people, teams, and their interactions with each other.*
+
+**System Impacts Identified by Conway’s Law**
+
+And of course, Conway strikes again. *Organizational design and communication paths will be mirrored in the organization’s software architecture*.
+
+*When designing systems, it is essential to focus on team structures, team interactions, and the overall flow of work*. Software development IS about people.
+
+**Challenges with Functional Silo Teams**
+
+*an organization whose teams are organized by functional expertise (functional silos) is very likely to produce a siloed system architecture*. This is problem: 
+*Implementing changes that span multiple layers—for example, adding new business functionality—requires crossing several team boundaries, triggering handoffs.*
+
+This *handoffs require layers of coordination, interrupt the flow of change, and create wait time and delays, as each team must wait for a dependent team to complete its tasks before starting or finishing their own.*
+
+Not only does stuff take much longer to get through the pipeline. Much more work is in
+progress, many more context switches take place, leading to cognitive overload and
+burnout. 
+
+**Requirements for Flow Optimization from a Team Perspective** 
+
+*optimizing for a flow of change from a team perspective requires the following considerations:*
+
+- Avoiding functional silos
+- Minimizing repeated handovers 
+- Adopting small, long-lived teams
+- Having teams own the system or subsystem for which they are responsible
+- Minimizing excessive team cognitive load
+- Minimizing ongoing high-bandwidth communication between the teams to enable fast flow
+
+**Impact on Software Delivery Performance**
+
+*software delivery performance greatly impacts the productivity, profitability, and market share of tech organizations*.
+
+*DevOps Research and Assessment (DORA) or Accelerate metrics:*
+
+- Deployment frequency
+- Lead time for changes
+- Mean time to restore (MTTR)
+- Change failure rate
+
+**Team Cognitive Load and Mental Workload**
+
+[John Sweller](https://en.wikipedia.org/wiki/John_Sweller) coined the term
+*cognitive load* referring *to the maximum amount of information that human working memory can hold at any given time.*  Sweller's three kinds of cognitive load:
+
+- Intrinsic load
+- Extraneous
+- Germane load
+
+*Mental workload relates to the cognitive demand of a task.*
+
+*When people reach their cognitive capacity limits and become overloaded, their performance drops and error rates increase.*
+
+*If a team’s cognitive load is largely exceeded, it introduces delivery bottlenecks that can lead to delays and quality issues, decrease motivation, and negatively affect software delivery performance.*
+
+*reducing delivery bottlenecks requires optimizing cognitive load*.
+
+**The Fundamental Team Topologies**
+
+The four team types:
+
+- Complicated-subsystem team
+- Enabling team
+- Platform team
+- Stream-aligned team
+
+and the three interaction types:
+
+- Collaboration (Rapid discovery)
+- X-as-a-Service (Self-service capabilities)
+- Facilitating (Upskilling)
+
+**Team Topologies Applying Doctrinal Principles of Wardley Mapping**
+
+*applying universal doctrinal principles enhances the organization’s adaptability to external changes.*
+
+*The doctrinal principle of thinking in small teams is anchored in Team Topologies by considering the trust boundaries and their associated level of trust.*
+
+*Team Topologies advocates small, long-lived teams consisting of five to roughly nine people as the standard.*
+
+*Optimizing flow and reducing bottlenecks is the heart of the Team Topologies approach.*
+
+*Applying Team Topologies results in a flexible organizational design that supports constant evolution and quick adaptation to changes.*
+
+*Team topologies also apply the doctrinal principle of providing purpose, mastery, and autonomy*
+
+*the platform, enabling, and complicated-subsystem teams aim to increase autonomy and reduce the cognitive load of stream-aligned teams.*
+
+**Summary**
+
+This chapter is, of course, a bare-bones introduction to Team Topologies, but it
+hits the nail where nails should be hit.
+
