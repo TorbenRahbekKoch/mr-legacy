@@ -4,11 +4,11 @@
 
 [Rating: ?????](/blogs/how-am-i-doing-my-reviews)
 
-![Cover of Architecture for Flow](/data/blogs/architecture-for-flow.jpeg)
+![Cover of Architecture for Flow](/data/blogs/architecture-for-flow/architecture-for-flow.jpeg)
 
 I'm reading [the O'Reilly ebook](https://learning.oreilly.com/library/view/architecture-for-flow/9780137392759/).
 
-Written by Susanne Kaiser
+Written by [Susanne Kaiser](https://susannekaiser.net/)
 
 I'm publishing the review as I'm reading the book.
 
@@ -300,3 +300,147 @@ and the three interaction types:
 This chapter is, of course, a bare-bones introduction to Team Topologies, but it
 hits the nail where nails should be hit.
 
+## Part II - Architecture for Flow
+
+### 6. Connecting the Dots
+
+**Identifying Suitable Streams of Change**
+
+*Optimizing for a fast flow of change involves analyzing the drivers of value and change within an organization*.
+
+*The types of streams can differ in each organization, ranging from task-, role-, activity-, geography-, and customer segment–oriented stream types*.
+
+**Assessing Flow of Changes**
+
+*Building the thing right requires optimizing for a fast flow of change*
+
+*Ideally, teams should fully own the entire end-to-end flow—from designing, to developing, to testing, to releasing, to running their parts of the system—without handoffs to other teams*.
+
+*tracing the dependencies in a value chain provides a high-level understanding of how changes might propagate through the system by identifying which interdependent components would be involved in a change and which corresponding teams need to communicate and coordinate to make that change effective.*
+
+*One value stream can enable and support a different value stream’s process step or activity (e.g., with self-service capabilities).*
+
+*To identify blockers to flow, value stream mapping is a powerful tool*.
+
+**Analyzing Dependencies**
+
+Dr. Russell Ackoff: *The system is not the sum of the behavior of its parts. It’s a product of their interactions.*
+
+*authors Dominica DeGrandis and Tonianne Demaria propose visually exposing dependencies between teams to create awareness of what needs to happen before finishing the work of a team*
+
+*They categorize dependencies into the following three types:* Architecture, Expertise, Activity.
+
+*Bounded contexts help to group related business behavior together, enforcing high cohesion and modularity*.
+
+*Handovers require a high amount of ongoing, frequent communication and coordination efforts between multiple teams to implement and deliver changes—leading to motion waste.*
+
+**Managing Constraints**
+
+*What if a team that another team depends on is drowning in its own work and cannot keep up with the requests it receives?*
+
+*The overwhelmed team becomes a constraint or bottleneck in the change process.*
+
+*A constraint or bottleneck significantly limits the system’s overall performance*.
+
+*Improving a non-constraint area of a system does not necessarily improve the overall system’s performance*.
+
+Eliyahu M. Goldratt: *Any improvement made anywhere besides the bottleneck is an illusion* and *Constraints dictage the performance of the whole*.
+
+Contraints can be found by e.g. Value Stream Mapping, looking for long queues and then following Goldratt's steps can be used to improve the situation:
+*Identify the constraint*, 
+*Exploiting the constraint*, *Subordinating to the constraint*, 
+*Elevating the constraint*, *Start over again*.
+
+**Finding Suitable Team Ownership Boundaries**
+
+*Bounded contexts serve as both effective domain boundaries and well-defined ownership boundaries, forming a unit of purpose, mastery, and autonomy.
+They also work well as suitable team ownership boundaries for stream-aligned teams.*
+
+[Independent Service Heuristics](https://teamtopologies.com/key-concepts-content/finding-good-stream-boundaries-with-independent-service-heuristics) is also
+a good place to start.
+
+**Targeting Small Teams**
+
+*High trust in organizations and teams is important for a fast flow of change and innovation*.
+
+*Smaller teams tend to have a higher level of trust than larger teams.*
+
+Brook's law: *when new members are added to a team, the amount of interactions and communication bandwidth between team members increase significantly*.
+
+**Optimizing for Team Cognitive Load**
+
+*To optimize for team cognitive load, one strategy is to establish clear responsibility boundaries*
+
+*a bounded context is owned by one team only; however, one team can own several bounded contexts.*
+
+*Another aspect of optimizing cognitive load is limiting the number, size, and complexity of software systems a team has to work with. That involves matching the boundary size to the team’s cognitive load and limiting the number and subdomain type (or their related evolution stage) of bounded contexts per team.*
+
+The evolution stages of a Wardley Map can help determine the complexity
+of the bounded contexts and thereby how many bounded contexts each team can
+handle.
+
+*Bounded contexts residing in the commodity (+ utility) evolution stage can leverage best practice solutions, offering a clear path to action*.
+
+*the further left a bounded context—or a component in general—is located on the Wardley Map, the higher the level of uncertainty is, which requires practices focusing more on exploration and discovery*.
+
+*As a heuristic, the less clear the path to action, the higher the potential cognitive load is.*
+
+*a single team could theoretically manage more or larger bounded contexts (or components in general) residing in the commodity (+ utility) stage than in the genesis stage.*
+
+*It is advisable to complement this approach with other techniques or frameworks—for example, Cynefin.* 
+
+Cynefins's cause-and-effect relationships: *Complex*, *Complicated*,
+*Chaotic*, *Clear*, *Disorder*.
+
+*Classifying the bounded contexts into Cynefin’s archetypes of clear, complicated, complex, and chaotic situations not only helps determine the appropriate approach for reacting to the situation, but also indicates the level of cognitive load required to process it.*
+
+*Complementing the component’s evolution stage with Cynefin’s domains helps derive the level of team cognitive load that is involved when producing or consuming that component.*
+
+In *Team Topologies, the authors recommend that a single, small team could handle two to three clear domains*
+
+**Considering a Mix of Mindsets for Adaptive Teams**
+
+*Wardley’s doctrinal principle of “thinking aptitude and attitude” describes how there is no one culture and mindset that fits all teams*.
+
+*teams that are responsible for components residing in the genesis or custom-built evolution stage should be composed of individuals with a predominantly Explorer mindset*
+
+*The members of teams addressing components in product + rental should have a Villager attitude*
+
+*addressing components in commodity + utility should have a mindset geared toward Town Planner*
+
+*Wardley recommends not to cross and mix evolution stages excessively when assigning responsibilities to teams.*
+
+Team should generally aim to move components through evolution stages, but this
+could also mean that a component should at some point move to a different team with a different mindset.
+
+*With increasing knowledge, the complex domain can become a complicated domain, and a complicated domain can potentially become a clear domain*.
+
+*Each evolution stage tends toward a particular mindset or preference.*. 
+
+*a set of mindsets exists in each team, where one mindset might be more prevalent than the others.*
+
+*teams owning components in the genesis or custom-built evolution stage might tend toward an Explorer mindset with a preference for discovering and experimenting. Teams owning components in product (+rental) might prefer to improve and stabilize with a Villager mindset. Teams owning commodity (+ utility) components might prefer to mature and optimize with a Town Planner mindset*
+
+*Depending on the evolution stages of the components they own, a particular mindset and preference might be prevalent—building a kind of T-shaped mindset per team. *
+
+*the preferences for Explorers, Villagers, and Town Planners are not mutually exclusive*.
+
+This is also complimentary to 3X - Explore-Expand-Extract.
+
+**Identify Services Supporting Flow of Change**
+
+*Stream-aligned teams rely on other teams to support them in delivering their work*
+
+**Identifying Capability Gaps**
+
+*Cross-functional autonomous teams need to cover a range of capabilities, such as software design and architecture, application security, user experience (UX), testing, infrastructure, observability aspects, software development, and more. *
+
+*team members need skills related to effective communication and improvement of practices, such as team coaching, mentoring, well-written documentation, process improvement, and so on*
+
+*Identifying capability gaps and helping teams acquire the missing capabilities are the responsibilities of enabling teams*
+
+*it might make sense to start with part-time enabling teams and later transition to full-time, dedicated enabling teams.*
+
+**Summary**
+
+*Users and user needs not only reflect the anchor of a Wardley Map, but also outline the problem domain in the context of DDD.*
