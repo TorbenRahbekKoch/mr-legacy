@@ -444,3 +444,44 @@ This is also complimentary to 3X - Explore-Expand-Extract.
 **Summary**
 
 *Users and user needs not only reflect the anchor of a Wardley Map, but also outline the problem domain in the context of DDD.*
+
+### 7. Visualizing Team Perspectives with Wardley Maps
+
+**A Wardley Map from a Platform Team Perspective**
+
+Assume we've decided to use a microservices architecture with all
+the complexities and cognitive load that comes with it. 
+This can be vizualized with a 
+Wardley Map, which correspondingly will be complex.
+
+**The Platform Value Chains**
+
+*stream-aligned teams rely on internal services, which enable them to deliver their work autonomously*
+
+*Switching to the platform team perspective makes the stream-aligned teams become the users of the self-service services and tools provided by the platform team.*
+
+A platform can be many things, e.g.: *build-and-release*, 
+*operation-and-monitoring*, *infrastructure*, *compliance and regulation*.
+
+**Infrastructure Platform Value Chain Mapped to the Wardley Evolution Stages**
+
+*If the organization chooses to use open-source or off-the-shelf products, these components typically go into the product (+ rental) evolution stage of the Wardley Map.*
+
+**Mapping Microservices’ Infrastructure and Operational Complexities**
+
+*Platform teams for cloud-hosted infrastructure help to bridge the gap between raw cloud services and the needs of the developers and the organization* and
+*help to ensure that organization-specific security policies, compliance rules, and cost controls are enforced*
+
+*platform teams can help to reduce cognitive load and enhance the developer experience by simplifying cloud usage through documentation, guidelines, preconfigured (but flexible) templates, self-service tools, and APIs tailored to the organization’s context.*
+
+*The platform team must recognize that the internal customers—the consuming teams—may differ in terms of their cloud expertise and context*
+
+*platform teams may need to balance flexibility with standardization, potentially offering multiple abstraction levels to match the diverse needs of the consuming teams across the organizations.*
+
+**The Value Chain from an Enabling Team Perspective**
+
+*Enabling teams offer internal coaching and aim to make other teams self-sufficient. Their goal is to increase autonomy and reduce the cognitive load of the help-receiving team for specific capabilities*
+
+*cross-functional stream-aligned teams must cover a wide range of capabilities, such as software design and architecture, application security, user experience (UX) and accessibility, testing and quality assurance (QA), software development, product management*. This is *where the specialists of an enabling team can support bridging capability gaps (i.e., skills) of the stream-aligned teams*
+
+*The enabling team can facilitate the platform teams by coaching them about what is important to achieve good developer experience, how to design a good API, how to write good documentation, and similar advanced practices*
