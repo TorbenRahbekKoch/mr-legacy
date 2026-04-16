@@ -485,3 +485,63 @@ A platform can be many things, e.g.: *build-and-release*,
 *cross-functional stream-aligned teams must cover a wide range of capabilities, such as software design and architecture, application security, user experience (UX) and accessibility, testing and quality assurance (QA), software development, product management*. This is *where the specialists of an enabling team can support bridging capability gaps (i.e., skills) of the stream-aligned teams*
 
 *The enabling team can facilitate the platform teams by coaching them about what is important to achieve good developer experience, how to design a good API, how to write good documentation, and similar advanced practices*
+
+### 8. The Architecture for Flow Cancas
+
+[Architecture for Flow Canvas](https://architectureforflow.com/canvas)
+
+**Assessing the As-Is Situation**
+
+*Understanding the current state is essential for improving flow.*
+
+*The as-is assessment* ... *explores how teams are currently structured and interact, identifies blockers and enablers to flow, and visualizes the existing business landscape*.
+
+**Describing the Current Teams and Their Way of Working**
+
+The **assessment includes several key aspects:**
+
+- Team structure
+- Team sizes
+- Current responsibilities and system ownership
+- Dependencies
+- Interaction modes
+- Current practices
+
+*These insights help to create an understanding of the existing team setup*
+
+**Assessing the Current Flow of Change**
+
+*Creating a shared understanding of both blockers and enablers allows teams to take informed actions to optimize flow*
+
+**Visualizing the Current Business Landscape**
+
+*A Wardley Map helps to identify areas for investment and innovation, as well as what the organization can evolve or outsource to gain a competitive advantage.*
+
+**Categorizing the Problem Space**
+
+*Categorizing the problem space bridges the status quo and the future landscape.*
+
+*the users and user needs not only represent the anchor of a Wardley Map but also reflect the problem space or problem domain.*
+
+**Visualizing the Future Landscape**
+
+*not just the bounded contexts but the entire value chain needs to be considered when targeting future strategic investments and assessing efficiency gaps*
+
+*Can further evolved components that do not belong to the organization’s core domain be leveraged to increase efficiency?*
+
+**Deriving the Future Team Organization**
+
+*the Team Topologies approach can be applied to optimize a system for fast flow based on well-defined team types and interaction modes*
+
+*optimizing for fast flow involves analyzing the key drivers of value and change within an organization*
+
+*The user needs of a Wardley Map are strong candidates for customer-driven streams of change*
+
+*bounded contexts provide well-defined ownership boundaries, making them not only good modularity boundaries but also good candidates for stream-aligned teams.*
+
+*When shifting the focus from external customers to internal teams, stream-aligned teams and their user needs become the anchor of the map*
+
+*a platform team might initially collaborate with one of the stream-aligned teams for a limited period of time to understand the stream-aligned team’s pain points and needs to deliver value.*
+
+*enabling teams can engage as internal coaches, supporting other teams in acquiring missing skills*
+
