@@ -378,6 +378,13 @@
             "dir": "",
             "date": "2026-04-07",
 			"categories": ["review"]            
+        },{
+            "url" : "/blogs/stranger-magic-3",
+            "title": "Stranger Magic - Part 3",
+            "teaser": "Is it going to be a magical evening?",
+            "dir": "stranger-magic",
+            "date": "2026-04-17",
+			"categories": ["fiction"]
         }
     ]
 }

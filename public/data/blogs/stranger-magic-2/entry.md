@@ -43,3 +43,5 @@ open and out of order. The stairs seemed in working condition, though, and he bo
 She instantly opened the door. "You're late", she said, looking flustered and almost out of breath. Still she managed to smile in that way that made his knees look desperately around for a chair. "Come on in", she continued, "please come in". He went through the door, hot red in the face, feeling like he was sweating profusely, because he was, but still, she wrapped her arms around and kissed him. Much to his surprise - and probably to the surprise of physics, as well - he stopped sweating and felt at ease. Even his knees manned up and took part in the challenge and kept him upright.
 
 A truly magical evening had begun.
+
+[Part 3](/blogs/stranger-magic-3)
